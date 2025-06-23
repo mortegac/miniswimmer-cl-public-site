@@ -152,8 +152,6 @@ const Footer = () => {
                       className={`flex duration-200 ease-out hover:text-white`}
                     >
                       <Link
-                        // onClick={() => setNavbarOpen(false)}
-                        
                         href={
                           item?.path
                             ? item?.path.includes('#') && !item?.newTab
@@ -170,7 +168,7 @@ const Footer = () => {
                     </li>
                   
                 )}
-                
+            {/* <li>      
                 <li
                       key={"swimming-lessons-in-miami-dade"}
                       className={`flex duration-200 ease-out hover:text-white`}
@@ -195,7 +193,7 @@ const Footer = () => {
                         {h("locationsBroward")}
                       </Link>
                     </li>
-                    
+	*/}
                     
                     
                 <li
