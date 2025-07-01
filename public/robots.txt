@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://miniswimmer.us/sitemap.xml
+Sitemap: https://miniswimmer.cl/sitemap.xml
 
 # Disallow admin and api routes
 Disallow: /api/

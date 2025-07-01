@@ -8,10 +8,10 @@ export const metadata: Metadata = {
 	title: "Terms and Conditions of Service",
 	description: `Mini Swimmer's services require registration with medical details and age proof, have a cancellation/rescheduling policy with advance notice, and enforce class rules like timely arrival and proper attire for both children and guardians.`,
 	alternates: {
-		canonical: 'https://miniswimmer.us/terms-and-conditions',
+		canonical: 'https://miniswimmer.cl/terms-and-conditions',
 		languages: {
-			'en-US': 'https://miniswimmer.us/terms-and-conditions',
-			'es': 'https://miniswimmer.us/terms-and-conditions',
+			'en-US': 'https://miniswimmer.cl/terms-and-conditions',
+			'es': 'https://miniswimmer.cl/terms-and-conditions',
 		},
 	},
 	robots: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		type: "website",
-		url: 'https://miniswimmer.us/terms-and-conditions',
+		url: 'https://miniswimmer.cl/terms-and-conditions',
 		title: `Terms and Conditions of Service`,
 		description: `Mini Swimmer's services require registration with medical details and age proof, have a cancellation/rescheduling policy with advance notice, and enforce class rules like timely arrival and proper attire for both children and guardians.`,
 		images: [
@@ -56,7 +56,7 @@ const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.us/terms-and-conditions",
+	"url": "https://miniswimmer.cl/terms-and-conditions",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Mini Swimmer's services require registration with medical details and age proof, have a cancellation/rescheduling policy with advance notice, and enforce class rules like timely arrival and proper attire for both children and guardians.",
 	"sameAs": [

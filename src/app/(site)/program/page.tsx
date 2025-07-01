@@ -8,10 +8,10 @@ export const metadata: Metadata = {
 	title: "What is our program about?",
 	description: `Our swimming program is designed to help swimmers of all levels improve their technique, build endurance, and gain confidence in the water. Learn more about our program and how it can benefit you.`,
 	alternates: {
-		canonical: 'https://miniswimmer.us/program',
+		canonical: 'https://miniswimmer.cl/program',
 		languages: {
-			'en-US': 'https://miniswimmer.us/program',
-			'es': 'https://miniswimmer.us/program',
+			'en-US': 'https://miniswimmer.cl/program',
+			'es': 'https://miniswimmer.cl/program',
 		},
 	},
 	robots: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		type: "website",
-		url: 'https://miniswimmer.us/program',
+		url: 'https://miniswimmer.cl/program',
 		title: `What is our program about?`,
 		description: `Our swimming program is designed to help swimmers of all levels improve their technique, build endurance, and gain confidence in the water. Learn more about our program and how it can benefit you.`,
 		images: [
@@ -56,7 +56,7 @@ const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.us/program",
+	"url": "https://miniswimmer.cl/program",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Our swimming program is designed to help swimmers of all levels improve their technique, build endurance, and gain confidence in the water. Learn more about our program and how it can benefit you.",
 	"sameAs": [

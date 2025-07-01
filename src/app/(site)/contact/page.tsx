@@ -8,10 +8,10 @@ export const metadata: Metadata = {
 	title: "How can we help?",
 	description: `Tell us about yourself and we'll connect you with an expert who can answer any questions you have.`,
 	alternates: {
-		canonical: 'https://miniswimmer.us/contact',
+		canonical: 'https://miniswimmer.cl/contact',
 		languages: {
-			'en-US': 'https://miniswimmer.us/contact',
-			'es': 'https://miniswimmer.us/contact',
+			'en-US': 'https://miniswimmer.cl/contact',
+			'es': 'https://miniswimmer.cl/contact',
 		},
 	},
 	robots: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		type: "website",
-		url: 'https://miniswimmer.us/contact',
+		url: 'https://miniswimmer.cl/contact',
 		title: `How can we help?`,
 		description: `Tell us about yourself and we'll connect you with an expert who can answer any questions you have.`,
 		images: [
@@ -57,7 +57,7 @@ const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.us/contact",
+	"url": "https://miniswimmer.cl/contact",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Tell us about yourself and we'll connect you with an expert who can answer any questions you have.",
 	"sameAs": [

@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://miniswimmer.us';
+  const baseUrl = 'https://miniswimmer.cl';
   
   // Rutas estáticas
   const routes = [

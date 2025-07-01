@@ -7,10 +7,10 @@ export const metadata: Metadata = {
 	title: "Learn about the Miniswimmer method",
 	description: `Our method uses neurolinguistic programming and coaching to ensure children experience real and meaningful learning throughout their lives.`,
 	alternates: {
-		canonical: 'https://miniswimmer.us',
+		canonical: 'https://miniswimmer.cl',
 		languages: {
-			'en-US': 'https://miniswimmer.us',
-			'es': 'https://miniswimmer.us',
+			'en-US': 'https://miniswimmer.cl',
+			'es': 'https://miniswimmer.cl',
 		},
 	},
 	robots: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		type: "website",
-		url: 'https://miniswimmer.us',
+		url: 'https://miniswimmer.cl',
 		title: `Learn about the Miniswimmer method`,
 		description: `Our method uses neurolinguistic programming and coaching to ensure children experience real and meaningful learning throughout their lives.`,
 		images: [
@@ -56,7 +56,7 @@ const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.us",
+	"url": "https://miniswimmer.cl",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Our method uses neurolinguistic programming and coaching to ensure children experience real and meaningful learning throughout their lives.",
 	"sameAs": [

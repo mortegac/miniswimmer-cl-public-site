@@ -3,13 +3,13 @@ import SchemaMarkup from "@/components/Common/SchemaMarkup";
 import Pricing from "@/components/Pricing";
 
 export const metadata: Metadata = {
-	title: "Pricing for our Class Packages",
+	title: "Conoce nuestras sedes y valores",
 	description: `Discover our swimming rates for regular, premium, and at-home locations. Classes for babies, children, adults, and pregnant individuals with certified instructors, from 2 months old to advanced levels.`,
 	alternates: {
-		canonical: 'https://miniswimmer.cl/pricing',
+		canonical: 'https://miniswimmer.cl/conoce-nuestras-sedes',
 		languages: {
-			'en-US': 'https://miniswimmer.cl/pricing',
-			'es': 'https://miniswimmer.cl/pricing',
+			'en-US': 'https://miniswimmer.cl/conoce-nuestras-sedes',
+			'es': 'https://miniswimmer.cl/conoce-nuestras-sedes',
 		},
 	},
 	robots: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		type: "website",
-		url: 'https://miniswimmer.cl/pricing',
+		url: 'https://miniswimmer.cl/conoce-nuestras-sedes',
 		title: `Pricing for our Class Packages`,
 		description: `Discover our swimming rates for regular, premium, and at-home locations. Classes for babies, children, adults, and pregnant individuals with certified instructors, from 2 months old to advanced levels.`,
 		images: [
@@ -54,7 +54,7 @@ const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.cl/pricing",
+	"url": "https://miniswimmer.cl/conoce-nuestras-sedes",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Discover our swimming rates for regular, premium, and at-home locations. Classes for babies, children, adults, and pregnant individuals with certified instructors, from 2 months old to advanced levels.",
 	"sameAs": [

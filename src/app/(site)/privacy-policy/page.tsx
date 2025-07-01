@@ -7,10 +7,10 @@ export const metadata: Metadata = {
 	title: "Learn about our Privacy Policy",
 	description: `Mini Swimmer details its privacy practices regarding the collection, use, and protection of personal data from both children (with parental consent) and their guardians for managing swimming services. Users have rights to access, modify, or delete their data, and the policy outlines security measures and contact information for inquiries.`,
 	alternates: {
-		canonical: 'https://miniswimmer.us/privacy-policy',
+		canonical: 'https://miniswimmer.cl/privacy-policy',
 		languages: {
-			'en-US': 'https://miniswimmer.us/privacy-policy',
-			'es': 'https://miniswimmer.us/privacy-policy',
+			'en-US': 'https://miniswimmer.cl/privacy-policy',
+			'es': 'https://miniswimmer.cl/privacy-policy',
 		},
 	},
 	robots: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		type: "website",
-		url: 'https://miniswimmer.us/privacy-policy',
+		url: 'https://miniswimmer.cl/privacy-policy',
 		title: `Learn about our Privacy Policy`,
 		description: `Mini Swimmer details its privacy practices regarding the collection, use, and protection of personal data from both children (with parental consent) and their guardians for managing swimming services. Users have rights to access, modify, or delete their data, and the policy outlines security measures and contact information for inquiries.`,
 		images: [
@@ -57,7 +57,7 @@ const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.us/privacy-policy",
+	"url": "https://miniswimmer.cl/privacy-policy",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Mini Swimmer details its privacy practices regarding the collection, use, and protection of personal data from both children (with parental consent) and their guardians for managing swimming services. Users have rights to access, modify, or delete their data, and the policy outlines security measures and contact information for inquiries.",
 	"sameAs": [

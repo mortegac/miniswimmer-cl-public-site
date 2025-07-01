@@ -6,10 +6,10 @@ export const metadata: Metadata = {
 	title: "Pricing for our Class Packages",
 	description: `Discover our swimming rates for regular, premium, and at-home locations. Classes for babies, children, adults, and pregnant individuals with certified instructors, from 2 months old to advanced levels.`,
 	alternates: {
-		canonical: 'https://miniswimmer.cl/pricing',
+		canonical: 'https://miniswimmer.cl/precios-y-valores-de-nuestros-servicios',
 		languages: {
-			'en-US': 'https://miniswimmer.cl/pricing',
-			'es': 'https://miniswimmer.cl/pricing',
+			'en-US': 'https://miniswimmer.cl/precios-y-valores-de-nuestros-servicios',
+			'es': 'https://miniswimmer.cl/precios-y-valores-de-nuestros-servicios',
 		},
 	},
 	robots: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		type: "website",
-		url: 'https://miniswimmer.cl/pricing',
+		url: 'https://miniswimmer.cl/precios-y-valores-de-nuestros-servicios',
 		title: `Pricing for our Class Packages`,
 		description: `Discover our swimming rates for regular, premium, and at-home locations. Classes for babies, children, adults, and pregnant individuals with certified instructors, from 2 months old to advanced levels.`,
 		images: [
@@ -54,7 +54,7 @@ const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.cl/pricing",
+	"url": "https://miniswimmer.cl/precios-y-valores-de-nuestros-servicios",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Discover our swimming rates for regular, premium, and at-home locations. Classes for babies, children, adults, and pregnant individuals with certified instructors, from 2 months old to advanced levels.",
 	"sameAs": [

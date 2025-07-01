@@ -8,10 +8,10 @@ export const metadata: Metadata = {
 	title: "Meet the Miniswimmer Team",
 	description: `Our professionals are Physical Education teachers, Kinesiologists, experts in Water Baby Classes (Matronatación), and focused on excellent management. We provide an effective methodology and an unparalleled learning experience for our students.`,
 	alternates: {
-		canonical: 'https://miniswimmer.us/about',
+		canonical: 'https://miniswimmer.cl/about',
 		languages: {
-			'en-US': 'https://miniswimmer.us/about',
-			'es': 'https://miniswimmer.us/about',
+			'en-US': 'https://miniswimmer.cl/about',
+			'es': 'https://miniswimmer.cl/about',
 		},
 	},
 	robots: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		type: "website",
-		url: 'https://miniswimmer.us/about',
+		url: 'https://miniswimmer.cl/about',
 		title: `Meet the Miniswimmer Team`,
 		description: `Our professionals are Physical Education teachers, Kinesiologists, experts in Water Baby Classes (Matronatación), and focused on excellent management. We provide an effective methodology and an unparalleled learning experience for our students.`,
 		images: [
@@ -57,7 +57,7 @@ const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.us/about",
+	"url": "https://miniswimmer.cl/about",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Our professionals are Physical Education teachers, Kinesiologists, experts in Water Baby Classes (Matronatación), and focused on excellent management. We provide an effective methodology and an unparalleled learning experience for our students.",
 	"sameAs": [
