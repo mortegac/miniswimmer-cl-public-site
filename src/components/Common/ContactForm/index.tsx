@@ -20,8 +20,8 @@ const Features = (props:any) => {
   const [isSentEmail, setIsSentEmail] = useState({
     sentEmail: false,
     isFailure: false,
-    title: "Page Not Found 😭",
-    text: "It looks like we can't find the page you're looking for.",
+    title: "Página no encontrada 😭",
+    text: "Parece que no podemos encontrar la página que estás buscando.",
   });
   
   const { pageTraslation } = props;
@@ -50,8 +50,8 @@ const Features = (props:any) => {
     setIsSentEmail({
       sentEmail: true,
       isFailure: false,
-      title: "Connecting to the satellite, please wait a moment ⌛",
-      text: "We are sending your request.",
+      title: "Conectando al satélite, por favor espere un momento ⌛",
+      text: "Estamos enviando su solicitud.",
     });
     
     try {
@@ -73,8 +73,8 @@ const Features = (props:any) => {
       setIsSentEmail({
         sentEmail: true,
         isFailure: false,
-        title: "Message Sent 🎉",
-        text: "We will get in touch with you as soon as possible.",
+        title: "Mensaje enviado 🎉",
+        text: "Nos pondremos en contacto con usted lo antes posible.",
         // response: response || "",
       });
     } catch (error) {
@@ -82,8 +82,8 @@ const Features = (props:any) => {
       setIsSentEmail({
         sentEmail: true,
         isFailure: true,
-        title: "Could not send message 😭",
-        text: "You can send us a message at welcome@miniswimmer.cl.",
+        title: "No se pudo enviar el mensaje 😭",
+        text: "Puedes enviarnos un mensaje a welcome@miniswimmer.cl.",
       });
     } finally {
       setIsSubmitting(false);
@@ -126,7 +126,7 @@ const Features = (props:any) => {
             :(<form onSubmit={handleSubmit(onSubmit)} className="space-y-4  w-full">
                 <div>
                   <label htmlFor="nombre" className="block text-lg font-light text-gray-700 dark:text-gray-300">
-                    Name
+                    Nombre
                   </label>
                   <input
                     {...register('nombre')}
@@ -156,7 +156,7 @@ const Features = (props:any) => {
 
                 <div>
                   <label htmlFor="mensaje" className="block text-lg font-light text-gray-700 dark:text-gray-300">
-                  How can we help you?
+                  ¿Cómo podemos ayudarle?
                   </label>
                   <textarea
                     {...register('mensaje')}
@@ -174,7 +174,7 @@ const Features = (props:any) => {
                   disabled={isSubmitting}
                   className="w-full rounded-md bg-primary px-4 py-2 text-white hover:bg-primary/95 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:opacity-50"
                 >
-                  {isSubmitting ? 'Sending...' : 'Sent'}
+                  {isSubmitting ? 'Enviando...' : 'Enviar'}
                 </button>
               </form>
             )}

@@ -8,13 +8,13 @@ export default getRequestConfig(async () => {
   const cookieStore = await cookies();
   const requestedLocale = cookieStore.get('locale')?.value || '';
 
-  let locale = 'en'; // Default locale
+  let locale = 'es'; // Default locale cambiado a español
 
   if (integrations.isI18nEnabled && SUPPORTED_LOCALES.includes(requestedLocale)) {
     locale = requestedLocale;
   }
 
-  const defaultMessages = (await import('../../dictionary/en.json')).default;
+  const defaultMessages = (await import('../../dictionary/es.json')).default;
   const userMessages = (await import(`../../dictionary/${locale}.json`)).default;
 
   const messages = deepmerge(defaultMessages, userMessages, {

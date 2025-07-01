@@ -5,8 +5,8 @@ import TermsAndConditions from "@/components/TermsAndConditions";
 
 
 export const metadata: Metadata = {
-	title: "Terms and Conditions of Service",
-	description: `Mini Swimmer's services require registration with medical details and age proof, have a cancellation/rescheduling policy with advance notice, and enforce class rules like timely arrival and proper attire for both children and guardians.`,
+	title: "Términos y condiciones del servicio",
+	description: `Los servicios de Mini Swimmer requieren registro con detalles médicos y prueba de edad, tienen una política de cancelación/reprogramación con aviso previo y hacen cumplir las reglas de la clase, como la llegada puntual y la vestimenta adecuada tanto para los niños como para los apoderados.`,
 	alternates: {
 		canonical: 'https://miniswimmer.cl/terms-and-conditions',
 		languages: {
@@ -25,14 +25,14 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "website",
 		url: 'https://miniswimmer.cl/terms-and-conditions',
-		title: `Terms and Conditions of Service`,
-		description: `Mini Swimmer's services require registration with medical details and age proof, have a cancellation/rescheduling policy with advance notice, and enforce class rules like timely arrival and proper attire for both children and guardians.`,
+		title: `Términos y condiciones del servicio`,
+		description: `Los servicios de Mini Swimmer requieren registro con detalles médicos y prueba de edad, tienen una política de cancelación/reprogramación con aviso previo y hacen cumplir las reglas de la clase, como la llegada puntual y la vestimenta adecuada tanto para los niños como para los apoderados.`,
 		images: [
 			{
 				url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 				width: 1200,
 				height: 630,
-				alt: "Miniswimmer Method"
+				alt: "Método Miniswimmer"
 			}
 		],
 	},
@@ -40,14 +40,14 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		site: "@miniswimmer_edu",
 		creator: "@miniswimmer_edu",
-		title: `Terms and Conditions of Service`,
-		description: `Mini Swimmer's services require registration with medical details and age proof, have a cancellation/rescheduling policy with advance notice, and enforce class rules like timely arrival and proper attire for both children and guardians.`,
+		title: `Términos y condiciones del servicio`,
+		description: `Los servicios de Mini Swimmer requieren registro con detalles médicos y prueba de edad, tienen una política de cancelación/reprogramación con aviso previo y hacen cumplir las reglas de la clase, como la llegada puntual y la vestimenta adecuada tanto para los niños como para los apoderados.`,
 		images: [
 			{
 				url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 				width: 1200,
 				height: 630,
-				alt: "Miniswimmer Method"
+				alt: "Método Miniswimmer"
 			}
 		],
 	},
@@ -58,7 +58,7 @@ const organizationSchema = {
 	"name": "Miniswimmer",
 	"url": "https://miniswimmer.cl/terms-and-conditions",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
-	"description": "Mini Swimmer's services require registration with medical details and age proof, have a cancellation/rescheduling policy with advance notice, and enforce class rules like timely arrival and proper attire for both children and guardians.",
+	"description": "Los servicios de Mini Swimmer requieren registro con detalles médicos y prueba de edad, tienen una política de cancelación/reprogramación con aviso previo y hacen cumplir las reglas de la clase, como la llegada puntual y la vestimenta adecuada tanto para los niños como para los apoderados.",
 	"sameAs": [
 		"https://www.facebook.com/miniswimmer.academy",
 		"https://www.instagram.com/miniswimmer.chile", 

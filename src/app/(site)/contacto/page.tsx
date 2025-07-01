@@ -5,8 +5,8 @@ import Contact from "@/components/Contact";
 
 
 export const metadata: Metadata = {
-	title: "How can we help?",
-	description: `Tell us about yourself and we'll connect you with an expert who can answer any questions you have.`,
+	title: "¿Cómo podemos ayudar?",
+	description: `Cuéntenos sobre usted y le conectaremos con un experto que podrá responder cualquier pregunta que tenga.`,
 	alternates: {
 		canonical: 'https://miniswimmer.cl/contact',
 		languages: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 		type: "website",
 		url: 'https://miniswimmer.cl/contact',
 		title: `How can we help?`,
-		description: `Tell us about yourself and we'll connect you with an expert who can answer any questions you have.`,
+		description: `Cuéntenos sobre usted y le conectaremos con un experto que podrá responder cualquier pregunta que tenga.`,
 		images: [
 			{
 				url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 		site: "@miniswimmer_edu",
 		creator: "@miniswimmer_edu",
 		title: `How can we help?`,
-		description: `Tell us about yourself and we'll connect you with an expert who can answer any questions you have.`,
+		description: `Cuéntenos sobre usted y le conectaremos con un experto que podrá responder cualquier pregunta que tenga.`,
 		images: [
 			{
 				url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
@@ -59,7 +59,7 @@ const organizationSchema = {
 	"name": "Miniswimmer",
 	"url": "https://miniswimmer.cl/contact",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
-	"description": "Tell us about yourself and we'll connect you with an expert who can answer any questions you have.",
+	"description": "Cuéntenos sobre usted y le conectaremos con un experto que podrá responder cualquier pregunta que tenga.",
 	"sameAs": [
 		"https://www.facebook.com/miniswimmer.academy",
 		"https://www.instagram.com/miniswimmer.chile", 

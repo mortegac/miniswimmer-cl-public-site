@@ -201,7 +201,7 @@ const Footer = () => {
                       className={`flex duration-200 ease-out hover:text-white`}
                     >
                       <Link
-                        href="contact"
+                        href="contacto"
                         rel="noopener noreferrer" 
                         className={`flex duration-200 ease-out hover:text-white`}
                       >

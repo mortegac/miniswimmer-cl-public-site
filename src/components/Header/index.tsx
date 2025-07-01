@@ -162,7 +162,7 @@ const Header = () => {
               
 								
                 <Link 
-                href="contact"
+                href="contacto"
                 rel="noopener noreferrer" 
                 // className='font-satoshi text-heading-4 font-bold -tracking-[1.6px] text-red-700 dark:text-white lg:text-heading-2 xl:text-[48px] xl:leading-[1.12]'
                 className='items-center rounded-full bg-black py-2 px-6 font-satoshi font-medium text-white hover:bg-opacity-90 dark:bg-primary'

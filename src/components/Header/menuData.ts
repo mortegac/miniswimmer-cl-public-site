@@ -16,19 +16,19 @@ export const menuData: Menu[] = [
     id: 2,
     titleKey: 'program',
     newTab: false,
-    path: '/program',
+    path: '/metodo',
   },
   {
     id: 3,
     titleKey: 'about',
     newTab: false,
-    path: '/about',
+    path: '/nosotros',
   },
   {
     id: 4,
     titleKey: 'pricing',
     newTab: false,
-    path: '/pricing',
+    path: '/valores',
   },
   // {
   //   id: 2,
