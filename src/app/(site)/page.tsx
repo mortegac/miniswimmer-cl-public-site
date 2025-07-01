@@ -4,8 +4,8 @@ import SchemaMarkup from "@/components/Common/SchemaMarkup";
 import Home from "@/components/Home";
 
 export const metadata: Metadata = {
-	title: "Learn about the Miniswimmer method",
-	description: `Our method uses neurolinguistic programming and coaching to ensure children experience real and meaningful learning throughout their lives.`,
+	title: "Conozca el método Miniswimmer",
+	description: `Nuestro método utiliza programación neurolingüística y coaching para garantizar que los niños experimenten un aprendizaje real y significativo a lo largo de sus vidas.`,
 	alternates: {
 		canonical: 'https://miniswimmer.cl',
 		languages: {
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "website",
 		url: 'https://miniswimmer.cl',
-		title: `Learn about the Miniswimmer method`,
-		description: `Our method uses neurolinguistic programming and coaching to ensure children experience real and meaningful learning throughout their lives.`,
+		title: `Conozca el método Miniswimmer`,
+		description: `Nuestro método utiliza programación neurolingüística y coaching para garantizar que los niños experimenten un aprendizaje real y significativo a lo largo de sus vidas.`,
 		images: [
 			{
 				url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		site: "@miniswimmer_edu",
 		creator: "@miniswimmer_edu",
-		title: `Learn about the Miniswimmer method`,
-		description: `Our method uses neurolinguistic programming and coaching to ensure children experience real and meaningful learning throughout their lives.`,
+		title: `Conozca el método Miniswimmer`,
+		description: `Nuestro método utiliza programación neurolingüística y coaching para garantizar que los niños experimenten un aprendizaje real y significativo a lo largo de sus vidas.`,
 		images: [
 			{
 				url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
@@ -58,7 +58,7 @@ const organizationSchema = {
 	"name": "Miniswimmer",
 	"url": "https://miniswimmer.cl",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
-	"description": "Our method uses neurolinguistic programming and coaching to ensure children experience real and meaningful learning throughout their lives.",
+	"description": "Nuestro método utiliza programación neurolingüística y coaching para garantizar que los niños experimenten un aprendizaje real y significativo a lo largo de sus vidas.",
 	"sameAs": [
 		"https://www.facebook.com/miniswimmer.academy",
 		"https://www.instagram.com/miniswimmer.chile", "https://www.instagram.com/miniswimmer.us/",
