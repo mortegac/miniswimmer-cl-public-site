@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Conoce al equipo de Miniswimmer",
+	title: "Descuentos y Oportunidades para nuestra Comunidad de Nadadores",
 	description: `Explora las colaboraciones y beneficios únicos para nuestras familias. Accede a descuentos exclusivos con nuestros partners en natación infantil`,
 	alternates: {
 		canonical: 'https://miniswimmer.cl/alianzas',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "website",
 		url: 'https://miniswimmer.cl/alianzas',
-		title: `Conoce al equipo de Miniswimmer`,
+		title: `Descuentos y Oportunidades para nuestra Comunidad de Nadadores`,
 		description: `Explora las colaboraciones y beneficios únicos para nuestras familias. Accede a descuentos exclusivos con nuestros partners en natación infantil`,
 		images: [
 			{
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		site: "@miniswimmer_edu",
 		creator: "@miniswimmer_edu",
-		title: `Conoce al equipo de Miniswimmer`,
+		title: `Descuentos y Oportunidades para nuestra Comunidad de Nadadores`,
 		description: `Explora las colaboraciones y beneficios únicos para nuestras familias. Accede a descuentos exclusivos con nuestros partners en natación infantil`,
 		images: [
 			{
