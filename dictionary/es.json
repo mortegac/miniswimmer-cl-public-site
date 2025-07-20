@@ -1122,16 +1122,16 @@
           "codigo": "LACTA10",
           "descuento": "10",
           "descuento_texto": "Presionar el aquí para obtener el 10% de descuento en asesorías de lactancia",
-          "descuento_link": "https://api.whatsapp.com/send?phone=56987484028",
+          "descuento_link": "https://api.whatsapp.com/send/?phone=56987484028&text=Soy+cliente+de+miniswimmer+y+tengo+10%+descuento&type=phone_number&app_absent=0",
           "image": "https://images.prismic.io/miniswimmerchile/aHwMt0MqNJQqIH37_club-de-lactancia.png?auto=format,compress"
 				},
 				{
           "title": "Purlac",
-					"description": "Especialista en lactancia-Sueño pediátrico-Desarrollo emocional-Alimentación sensorial y BLW. Consultas prescenciales; online regiones y extranjero",
+					"description": "Especialista en lactancia-Sueño pediátrico-Desarrollo emocional-Alimentación sensorial y BLW. Consultas presenciales; online regiones y extranjero",
           "codigo": "PURLAC10",
           "descuento": "10",
           "descuento_texto": "Presionar el aquí para obtener el 10% de descuento en asesorías",
-          "descuento_link": "https://api.whatsapp.com/send?phone=56949531718",
+          "descuento_link": "https://api.whatsapp.com/send/?phone=56949531718&text=Soy+cliente+de+miniswimmer+y+tengo+10%+descuento&type=phone_number&app_absent=0",
           "image": "https://images.prismic.io/miniswimmerchile/aHwMuEMqNJQqIH38_purlacpng.png?auto=format,compress"
 				},
         {
