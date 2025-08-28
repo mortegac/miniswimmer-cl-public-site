@@ -168,33 +168,6 @@ const Footer = () => {
                     </li>
                   
                 )}
-            {/* <li>      
-                <li
-                      key={"swimming-lessons-in-miami-dade"}
-                      className={`flex duration-200 ease-out hover:text-white`}
-                    >
-                      <Link
-                        href="swimming-lessons-in-miami-dade"
-                        rel="noopener noreferrer" 
-                        className={`flex duration-200 ease-out hover:text-white`}
-                      >
-                        {h("locationsMiamiDade")}
-                      </Link>
-                    </li>
-                <li
-                      key={"swimming-lessons-in-broward"}
-                      className={`flex duration-200 ease-out hover:text-white`}
-                    >
-                      <Link
-                        href="swimming-lessons-in-broward"
-                        rel="noopener noreferrer" 
-                        className={`flex duration-200 ease-out hover:text-white`}
-                      >
-                        {h("locationsBroward")}
-                      </Link>
-                    </li>
-	*/}
-                    
                     
                 <li
                       key={"contact-menu"}

@@ -30,6 +30,12 @@ export const menuData: Menu[] = [
     newTab: false,
     path: '/valores',
   },
+  {
+    id: 5,
+    titleKey: 'services',
+    newTab: false,
+    path: '/servicios',
+  },
   // {
   //   id: 2,
   //   titleKey: 'blog',

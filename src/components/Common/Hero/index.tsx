@@ -37,7 +37,7 @@ const Hero = (props:any) => {
               })}
             </h1>
             { t('subtitle') !== "" &&  <p className='mx-auto w-full max-w-[585px] text-slate-100 dark:text-gray-4 text-lg'>{t('subtitle')}</p>}
-           { t('cta') !== "" &&  <div className='ml-4 mb-5 relative z-10'>
+           { t('cta') !== "" &&  <div className='ml-4 mb-5 relative z-10 mt-6'>
               <Link 
                 href={t('url')}
                 target="_blank" 

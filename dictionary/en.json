@@ -39,6 +39,7 @@
     "termsAndConditions": "Terms of Service",
     "blog": "Blog",
     "program": "Program",
+    "services": "Services",
     "about": "About",
     "pages": "Pages",
     "blogDetails": "Blog Details",
@@ -60,7 +61,7 @@
   "homepage": {
     "hero_section": {
       "title": "Learn about the <marker>Miniswimmer method</marker>",
-      "subtitle": "Our method uses neurolinguistic programming and coaching to ensure children experience real and meaningful learning throughout their lives.",
+      "subtitle": "In our baby swim and children's swim academy, we've developed a method that uses neurolinguistic programming (NLP) and coaching. This approach is designed to give children a genuine and meaningful lifelong learning experience.",
       "cta": "SCHEDULE A CLASS",
      "image": "/images/hero/header-2.png",
       "url": "https://wa.me/56973447496?text=would%20like%20to%20schedule%20a%20swimming%20lesson"
@@ -1457,6 +1458,180 @@
           "mainImage": "https://images.prismic.io/miniswimmer-academy/Z-SPundAxsiBv82c_Screenshot2025-03-26at8.37.16PM.png?auto=format,compress?imwidth=1920",
           "url": "https://miniswimmer.academy/blog/beneficios-emocionales-y-sociales-de-la-matronatacion",
           "tags": ["baby swimming", "infant swim", "babies", "children", "swimming lessons for kids", "swim coach certification", "swimming classes for babies", "Miniswimmer Method"]
+        }
+      ]
+    },
+    "cta_section": {
+      "title": "Transforme el futuro de su hijo con Miniswimmer",
+      "subtitle": "Nuestro método único combina programación neurolingüística y coaching para garantizar un aprendizaje significativo y duradero.",
+      "cta": "RESERVE SU CLASE AHORA"
+    }
+  },
+  "servicespage": {
+    "hero_section": {
+      "title": "Check out our <marker>Services</marker>",
+      "subtitle": "At Miniswimmer, our swim academy, we offer classes for babies and children, parent-and-child swimming, and courses for adults and pregnant women. We also certify coaches in our method.",
+      "cta": "SCHEDULE YOUR CLASS",
+      "image": "/images/hero/header-childs.png",
+      "url": "https://wa.me/56973447496?text=Me%20gustaria%20agendar%20una%20clase%20de%20natacion"
+    },
+    "features_with_image_section": {
+      "title": "¿Conoce nuestro Método?",
+      "subtitle": "¿Quieres que tus hijos aprendan a nadar de verdad, con confianza y autonomía en el agua? En nuestra academia, hemos revolucionado la enseñanza de la natación infantil con un método único que integra la Programación Neurolingüística (PNL) y el Coaching.",
+      
+      "items": [
+        {
+          "subtitle2": "Tranquilidad en el Agua:",
+          "title": "Prevención y Supervivencia Acuática para tus Hijos",
+          "subtitle": "Enseñamos técnicas para evitar ahogamientos y habilidades de supervivencia en el agua.",
+          "img": "https://images.prismic.io/miniswimmerchile/aA_Zv_IqRLdaBr0n_happy-child-2.png?auto=format,compress",
+          "features": [
+            "<marker>Seguridad Proactiva:</marker> Aprendizaje de normas de seguridad esenciales y cómo identificar y evitar peligros acuáticos.", 
+            "<marker>Técnicas de Supervivencia:</marker> Desarrollo de habilidades vitales como flotación, volteo al dorso y desplazamiento seguro en el agua.", 
+            "<marker>Confianza para Actuar:</marker> Fomentamos la calma y la capacidad de respuesta ante situaciones inesperadas, transformando el miedo en seguridad."
+          ]
+        },
+        {
+          "subtitle2": "Libertad en el Agua:",
+          "title": "Autonomía en el Agua",
+          "subtitle": "Creemos en formar nadadores independientes y seguros desde las primeras etapas de su aprendizaje. Nuestro programa está diseñado para cultivar la autonomía en el agua, brindándoles las herramientas y la confianza para desenvolverse por sí mismos con habilidad y seguridad.",
+          "img": "https://images.prismic.io/miniswimmerchile/aA_ZwPIqRLdaBr0o_happy-child.png?auto=format,compress",
+          "features": [
+            "<marker>Independencia Acuática:</marker> Desarrollo de la capacidad de moverse y actuar con confianza sin depender constantemente de un instructor.", 
+            "<marker>Habilidad Consolidada:</marker> Adquisición de técnicas de nado sólidas y eficientes que les permitirán disfrutar del agua durante toda su vida.", 
+            "<marker>Desarrollo Integral:</marker> Fomento de la autoconfianza, la responsabilidad y la toma de decisiones en el entorno acuático."
+          ]
+        }
+      ]
+    },
+    "features_section": {
+			"title": "Parent-and-Child Swimming, Classes for Babies, Children, and Adults | Miniswimmer Swim Academy",
+      "imagen01": "https://images.prismic.io/miniswimmerchile/aK--4GGNHVfTOY2P_Clases-para-Bebe%CC%81s-Nin%CC%83os-Adultos.png?auto=format,compress",
+			"imagen02": "https://images.prismic.io/miniswimmerchile/aK--4mGNHVfTOY2R_Clases-para-embarazadas.png?auto=format,compress",
+			"imagen03": "https://images.prismic.io/miniswimmerchile/aK--4WGNHVfTOY2Q_Clases-para-adultos.png?auto=format,compress",
+			"subtitle": "At our swim academy, Miniswimmer, we offer a wide range of services designed for every stage of life. For the little ones, our baby and children's classes focus on meaningful and fun learning. We are also experts in parent-and-child swimming, strengthening the bond between parents and children in the water. We also have specialized swimming classes for adults, classes for pregnant women, and an international certification for swimming coaches in the Miniswimmer method.",
+			"featuresTop": [
+				{
+					"title": "MiniSwimmer: Parent-and-Child Swimming",
+					"description": "Our parent-and-child swimming classes for babies starting at two months old strengthen the bond in the water. At our swim academy, little ones have fun and learn in a safe and happy environment."
+				},
+				{
+					"title": "MiniSwimmer: Classes for Children",
+					"description": "At our swim academy, our children's classes focus on developing skills, safety, and confidence in the water through a playful and effective learning approach."
+				},
+        {
+          "title": "Mommy Swimmer",
+          "description": "Mommy Swimmer offers specialized swimming classes for pregnant women. Maintain an active lifestyle and prepare your body for childbirth with pre- and post-natal exercises in the water."
+        }
+			],
+			"features": [
+				{
+					"title": "Hydro Swimmer",
+					"description": "Hydro Swimmer is water aerobics for everyone. Burn calories and strengthen your body without impact on your joints. Enjoy a fun and refreshing exercise routine."
+				},
+				{
+					"title": "Big Swimmer",
+					"description": "At Big Swimmer, we offer swimming classes for adults. Whether you want to learn from scratch, improve your technique, or train, our coaches will help you reach your goals in the water."
+				},
+				{
+					"title": "TEA Swimmer",
+					"description": "We offer a unique and specialized teaching method for people with Autism Spectrum Disorder (ASD). This therapeutic and safe approach promotes independence and confidence in the water."
+				}
+			]
+		},
+    "counter_section": {
+      "title": "Families who trust our method",
+      "type_one": "Families",
+      "type_two": "Happy Children and Babies",
+      "type_three": "Pregnant People, and Adults"
+    },
+    "testimonials_section": {
+      "title": "Lo Que Nuestras Familias Dicen: Historias de Éxito en el Agua",
+      "subtitle": "Descubre por qué tantas familias confían en nosotros para introducir a sus pequeños al maravilloso mundo acuático. Estos testimonios reflejan nuestro compromiso con la seguridad, el aprendizaje y la diversión de cada uno de nuestros nadadores.",
+      "items": [
+        {
+          "name": "Javier Arancibia",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocLyjFwriZEGfjKtDx1G1D-39nocPGVyCEaG-8w2KHjhVOH2VQ=s100-c-rp-mo-br100",
+          "designation": "Madre de 2 años",
+          "comment": "Muy buenas clases, y muy didácticas para los niños"
+        },
+        {
+          "name": "Avo Queen",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocLTTKMIMdS1E31rJKVnckOcwFO4B9qHwyAk9Vn5uJ8uO7S-yA=s100-c-rp-mo-br100",
+          "designation": "Madre de 2 años",
+          "comment": "Nos costo mucho encontrar clases para mi hija de 2 años, ya que todas eran muy monotonas y ella se aburria. Hasta que encontre por redes sociales esta escuela y fui a una clase a probar. Quede fascinada con los millones de materiales y juegos que realizan. Nunca había visto algo así. Mi hija es la más feliz ahora. La inscribimos y ella lleva 2 meses y ya comenzó a nadar por si misma y ahora no logro sacarla del agua. Estamos muy felices como familia."
+        },
+        {
+          "name": "Paloma Ferrero",
+          "image": "https://lh3.googleusercontent.com/a-/ALV-UjU3mM6jVh4fYctriC5VGCwjloBAzgNOlhN3hFN8d85T210x6saX=s100-c-rp-mo-br100",
+          "designation": "Madre de 3 años",
+          "comment": "Excelentes clases! La piscina súper ambientada para el disfrute de los niños/as, materiales novedosos y coloridos y las coaches las mejores por lejos!  Todas con mucha experiencia en bebés y niños, mi hija lo pasa excelente cada vez que va y ha aprendido mucho :)"
+        },
+        {
+          "name": "Andrea Zalavari",
+          "image": "https://lh3.googleusercontent.com/a-/ALV-UjUvwOvv9w25RU3V_fuo0Ky7Fd9pwPZ5NjYVNM5GUAaxnn6pHUEP=s100-c-rp-mo-br100",
+          "designation": "Madre de 1 año",
+          "comment": "Maravillosa experiencia y método! Cada clase hay avances en mi pequeña y además lo pasa muy bien! Gracias Miniswimmer ❤️"
+        },
+        {
+          "name": "Sebastián Rubio",
+          "image": "https://lh3.googleusercontent.com/a-/ALV-UjWzi7DtVEOY-YImKmNLE9SaDtKNH-l4-DMGIr9xCXTDFvswaM9i=s150-c-rp-mo-br100",
+          "designation": "Padre de 3 años y 4 meses",
+          "comment": "Recomiendo ampliamente las clases de natación de Mini Swimmer para niños pequeños. Mi hija de 1 año y 3 meses asistió recientemente al programa con Nicole. Ella fue paciente, amable y brindó atención individualizada en clases con grupos pequeños. La confianza y la habilidad de mi hija en el agua mejoraron significativamente con cada lección. También proporcionó equipo apropiado para su edad y el enfoque en la seguridad acuática fue evidente, lo cual es crucial para los niños pequeños. En general, las clases de natación de Mini Swimmer son divertidas, efectivas y están diseñadas para hacer del aprendizaje de la natación una experiencia positiva. Recomiendo encarecidamente este programa a cualquier padre que busque introducir a su hijo en la natación. ¡Cinco estrellas en todo!"
+       },
+        {
+          "name": "Chay",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocLTTKMIMdS1E31rJKVnckOcwFO4B9qHwyAk9Vn5uJ8uO7S-yA=s100-c-rp-mo-br100",
+          "designation": "Madre de 5 años",
+          "comment": "Descubrí está academia de natación en redes sociales, mi hijo tiene 8 años. La ubicación en la Reina es conveniente, con estacionamiento privado y seguro. Lo que realmente destaca es su metodología de enseñanza. Los profesores son dedicados y hacen que cada clase sea una experiencia divertida y educativa. Mi hijo ha progresado notablemente desde que comenzó. Al principio tenía miedo al agua, pero ahora nada con confianza. Los instructores tienen una paciencia increíble y explican las técnicas de manera que los niños las entienden fácilmente..."
+        },
+        {
+          "name": "Luisa Maldonado",
+          "image": "https://user-images.trustpilot.com/643ecc5a612df50012c3d633/73x73.png",
+          "designation": "Tia de 5,7 años",
+          "comment": "No tengo suficientes palabras para expresar lo felices que estuvieron mis sobrinos de recibir la ayuda de miniswimmer. Llegaron con mucho miedo al agua y los profesores les dieron las herramientas para estar más seguros cuando entraran en ella. Muy agradecida por el conocimiento que les brindaron. Excelente servicio."
+        }
+      ]
+    },   
+    "newsletter_section": {
+      "title":"¡Suscríbete a <marker>Nuestro Newsletter!</marker>",
+      "description": "No te pierdas nuestras clases especiales de natación para bebés, niños, embarazadas y adultos. Entérate de eventos, descuentos y aprende sobre la prevención, seguridad y el método Miniswimmer para desarrollar nadadores confiados e independientes.",
+      "nameForm": "Ingrese su nombre",
+      "emailForm": "Ingrese su email",
+      "buttonText": "Subscribirse"
+    },
+    "whatsapp_contact": {
+      "title":"Hablemos por WhatsApp!",
+      "phone": "+56 (973) 447 496",
+      "url": "https://wa.me/56973447496?text=Necesito%20información%20para%20clases%20de%20natacion"
+    },
+    "latest_blog_section": {
+      "title": "Blog: Más Allá del Agua:",
+      "subtitle": "Estimulación Temprana y Desarrollo Infantil. La natación como herramienta transformadora para el crecimiento de tu hijo",
+      "posts": [
+        {
+          "title": "Que es la matronatación y que beneficios tiene",
+          "metadata": "Imagina a tu bebé disfrutando del agua, riendo y fortaleciendo sus músculos, todo mientras crea recuerdos inolvidables contigo. La matronatación no es solo un pasatiempo, es una experiencia transformadora que puede beneficiar enormemente a los bebés desde los 2 meses de edad. Pero, ¿qué es exactamente y cómo puede ayudar a tu pequeño?",
+          "body": ["Imagina a tu bebé disfrutando del agua, riendo y fortaleciendo sus músculos, todo mientras crea recuerdos inolvidables contigo. La matronatación no es solo un pasatiempo, es una experiencia transformadora que puede beneficiar enormemente a los bebés desde los 2 meses de edad. Pero, ¿qué es exactamente y cómo puede ayudar a tu pequeño?"],
+          "mainImage": "https://images.prismic.io/miniswimmer-academy/Z-SOPHdAxsiBv82K_Screenshot2025-03-26at8.30.52PM.png?auto=format,compress?imwidth=1920",
+          "url": "https://miniswimmer.academy/blog/que-es-la-matronatacion-y-que-beneficios-tiene",
+          "tags": ["matronatación", "matronatacion", "bebes", "niños", "Método Miniswimmer"]
+        },
+        {
+          "title": "¿Cómo la Programación Neurolingüística Mejora el Aprendizaje de tu Hijo?",
+          "metadata": "¿Te has preguntado alguna vez por qué algunos niños aprenden más rápido que otros? La programación neurolingüística ofrece respuestas fascinantes sobre cómo cada cerebro procesa la información de manera única.",
+          "body": ["¿Te has preguntado alguna vez por qué algunos niños aprenden más rápido que otros? La programación neurolingüística ofrece respuestas fascinantes sobre cómo cada cerebro procesa la información de manera única."],
+          "mainImage": "https://images.prismic.io/miniswimmer-academy/Z-NjGXdAxsiBv6B5_pnl-kids.png?auto=format,compress?imwidth=1920",
+          "url": "https://miniswimmer.academy/blog/como-la-programacion-neurolinguistica-mejora-el-aprendizaje-de-tu-hijo",
+          "tags": ["matronatación", "PNL", "Programación Neurolingüística" ,"Aprendizaje", "bebes", "niños", "Método Miniswimmer"]
+        },
+        {
+          "title": "Beneficios emocionales y sociales de la Matronatación",
+          "metadata": "La matronatación ofrece numerosos beneficios físicos para los bebés de 2 meses o más. El agua proporciona una resistencia suave que ayuda a fortalecer los músculos del bebé de manera gradual y segura.",
+          "body": ["La matronatación ofrece numerosos beneficios físicos para los bebés de 2 meses o más. El agua proporciona una resistencia suave que ayuda a fortalecer los músculos del bebé de manera gradual y segura."],
+          "mainImage": "https://images.prismic.io/miniswimmer-academy/Z-SPundAxsiBv82c_Screenshot2025-03-26at8.37.16PM.png?auto=format,compress?imwidth=1920",
+          "url": "https://miniswimmer.academy/blog/beneficios-emocionales-y-sociales-de-la-matronatacion",
+          "tags": ["matronatación", "matronatacion", "bebes", "niños", "Clase de natación niños","Certificación coach de natación", "Clase de natación bebes", "Método Miniswimmer"]
         }
       ]
     },
