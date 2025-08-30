@@ -882,15 +882,122 @@
 				{
 					"title": "Maintencillo",
 					"description": "¡Maintencillo es pura agua y diversión! Dale a tus pequeños la alegría y seguridad de nadar con Miniswimmer. Nuestras clases personalizadas les enseñarán habilidades vitales mientras disfrutan cada chapuzón. ¡Inscríbelos hoy y que comience la aventura acuática! Clases de natación en Maintencillo"
+				},
+				{
+					"title": "Cooper City",
+					"description": "¡Descubre la magia acuática en Cooper City con Miniswimmer! Dale a tus hijos la confianza y las habilidades para disfrutar del agua de forma segura y divertida. ¡Inscríbelos hoy y que comience su aventura con Clases de natación en Cooper City"
+				},
+				{
+					"title": "Coral Springs",
+					"description": "¡En Coral Springs, el agua es parte de nuestra vida! Impulsa el desarrollo y la seguridad de tus pequeños con las clases personalizadas de Miniswimmer. ¡Únete a nuestra familia acuática y reserva su lugar hoy! En las Clases de natación en Coral Springs"
+				},
+				{
+					"title": "Dania Beach",
+					"description": "¡El sol y el agua esperan en Dania Beach! En Miniswimmer, hacemos que aprender a nadar sea una experiencia emocionante y segura para niños de todas las edades. ¡Inscríbelos ahora y vamos a nadar! Clases de natación en Dania Beach"
+				},
+				{
+					"title": "Davie",
+					"description": "¡Davie es sinónimo de playa y diversión! Dale a tus hijos la habilidad esencial de nadar con las clases amigables y efectivas de Miniswimmer. ¡Comienza su viaje acuático hoy mismo! Clases de natación en Davie"
+				},
+        {
+					"title": "Fort Lauderdale",
+					"description": "¡La hermosa Fort Lauderdale llama a la aventura acuática! Inscribe a tus hijos en Miniswimmer y mira cómo desarrollan habilidades de natación esenciales y una gran confianza en el agua. ¡Empieza su aprendizaje hoy! Clases de natación en Fort Lauderdale"
 				}
 				
 			],
 			"features": [
 				{
-					"title": "Maintencillo",
-					"description": "¡Maintencillo es pura agua y diversión! Dale a tus pequeños la alegría y seguridad de nadar con Miniswimmer. Nuestras clases personalizadas les enseñarán habilidades vitales mientras disfrutan cada chapuzón. ¡Inscríbelos hoy y que comience la aventura acuática! Clases de natación en Maintencillo"
+					"title": "Hallandale Beach",
+					"description": "¡Fomenta la confianza y el bienestar de tus hijos en Hallandale Beach con Miniswimmer! Nuestras clases de natación personalizadas les brindarán habilidades para toda la vida en un ambiente seguro y estimulante. ¡Contáctanos para inscribirlos!  Clases de natación en Hallandale Beach"
+				},
+				{
+					"title": "Hillsboro Beach",
+					"description": "¡Hillsboro Beach es un lugar ideal para amar el agua! Con Miniswimmer, tus hijos aprenderán a nadar con instructores expertos y en un entorno divertido. ¡Asegura su futuro acuático hoy mismo!  Clases de natación en Hillsboro Beach"
+				},
+				{
+					"title": "Hollywood",
+					"description": "¡En Hollywood, la diversión y el aprendizaje se unen en Miniswimmer! Nuestras clases de natación están diseñadas para que los niños de todos los niveles se sientan seguros y disfruten del agua. ¡Inscríbelos y que comience la diversión!  Clases de natación en Hollywood"
+				},
+				{
+					"title": "Lauderdale Lakes",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en Lauderdale Lakes con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Lauderdale Lakes"
+				},
+				{
+					"title": "Lauderhill",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en Lauderhill con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Lauderhill"
+				},
+				{
+					"title": "Lighthouse Point",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en Lighthouse Point con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Lighthouse Point"
+				},
+				{
+					"title": "Margate",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en Margate con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Margate"
+				},
+				{
+					"title": "Miramar",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en Miramar con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Miramar"
+				},
+				{
+					"title": "North Lauderdale",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en North Lauderdale con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en North Lauderdale"
+				},
+				{
+					"title": "Oakland Park",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en Oakland Park con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Oakland Park"
+				},
+				{
+					"title": "Parkland",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en Parkland con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Parkland"
+				},
+				{
+					"title": "Pembroke Park",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en Pembroke Park con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Pembroke Park"
+				},
+				{
+					"title": "Pembroke Pines",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en Pembroke Pines con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Pembroke Pines"
+				},
+				{
+					"title": "Plantation",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en Plantation con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Plantation"
+				},
+				{
+					"title": "Pompano Beach",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en Pompano Beach con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Pompano Beach"
+				},
+				{
+					"title": "Sea Ranch Lakes",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en Sea Ranch Lakes con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Sea Ranch Lakes"
+				},
+				{
+					"title": "Southwest Ranches",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en Southwest Ranches con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Southwest Ranches"
+				},
+				{
+					"title": "Sunrise",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en Sunrise con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Sunrise"
+				},
+				{
+					"title": "Tamarac",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en Tamarac con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Tamarac"
+				},
+				{
+					"title": "Lazy Lake",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en Lazy Lake con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Lazy Lake"
+				},
+				{
+					"title": "West Park",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en West Park con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en West Park"
+				},
+				{
+					"title": "Weston",
+					"description": "¡Dale a tus hijos la valiosa habilidad de nadar en Weston con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Weston"
+				},
+				{
+					"title": "Wilton Manors",
+					"description": "¡Dale  tus hijos la valiosa habilidad de nadar en Wilton Manors con Miniswimmer! Nuestras clases personalizadas fomentan la confianza y la técnica en un ambiente amigable. ¡Contáctanos hoy para más información e inscripciones!  Clases de natación en Wilton Manors"
 				}
-				
 			]
 		},
     
