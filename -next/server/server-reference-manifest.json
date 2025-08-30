@@ -1,0 +1,28 @@
+{
+  "node": {
+    "000974d5c9fe6f64c5e2154cf840d26b71fd830b49": {
+      "workers": {
+        "app/(site)/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmanu%2F_CODE%2FMINISWIMMER.us%2F_CODE%2Fminiswimmer-cl-public-site%2Fsrc%2Fcomponents%2FHeader%2Faction.ts%22%2C%5B%7B%22id%22%3A%22000974d5c9fe6f64c5e2154cf840d26b71fd830b49%22%2C%22exportedName%22%3A%22getSelectedLangCode%22%7D%2C%7B%22id%22%3A%2240d57453a7f8e39f6b2a68c0a692773b517582b734%22%2C%22exportedName%22%3A%22switchLanguage%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/(site)/page": "action-browser"
+      }
+    },
+    "40d57453a7f8e39f6b2a68c0a692773b517582b734": {
+      "workers": {
+        "app/(site)/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fmanu%2F_CODE%2FMINISWIMMER.us%2F_CODE%2Fminiswimmer-cl-public-site%2Fsrc%2Fcomponents%2FHeader%2Faction.ts%22%2C%5B%7B%22id%22%3A%22000974d5c9fe6f64c5e2154cf840d26b71fd830b49%22%2C%22exportedName%22%3A%22getSelectedLangCode%22%7D%2C%7B%22id%22%3A%2240d57453a7f8e39f6b2a68c0a692773b517582b734%22%2C%22exportedName%22%3A%22switchLanguage%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/(site)/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "LU4Edc/4LpSqOJTR2eeaQYkAQ3bsawcrpNpcepy4K3s="
+}

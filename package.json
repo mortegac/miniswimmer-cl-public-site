@@ -1,5 +1,5 @@
 {
-  "name": "saasbold-lite",
+  "name": "Miniswimmer-Public-site",
   "version": "1.2.0",
   "private": true,
   "engines": {
@@ -9,6 +9,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "postbuild": "node scripts/generate-sitemap.js",
     "stripe:listen": "stripe listen --forward-to https://www.miniswimmer.us/api/stripe/webhook",
     "check-format": "prettier --check .",
     "check-lint": "eslint . --ext ts --ext tsx --ext js",
