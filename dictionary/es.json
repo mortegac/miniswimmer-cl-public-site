@@ -862,35 +862,51 @@
     }
 
   },
-  "lessonBrowardpage": {
+  "lessonMaintencillopage": {
     "hero_section": {
-      "title": "Método Miniswimmer: Clases de Natación para Niños en  <marker>Maitencillo, V Región</marker>",
-      "subtitle": "Encuentra nuestras convenientes ubicaciones para clases de natación. Ayudamos a bebés y niños de todos los niveles a mejorar su técnica, resistencia y confianza en el agua.",
-      "cta": "AGENDA TU CLASE PARA MAINTENCILLO",
+      "title": "Clases de Natación para Bebes y Niños en  <marker>Maitencillo, V Región</marker>",
+      "subtitle": "Encuentra clases de natación para bebés, niños, adultos y para embarazadas en Maitencillo, Zapallar, Cachagua y sus alrededores. Nuestro Método Miniswimmer usa PNL para un aprendizaje real y para toda la vida",
+      "cta": "AGENDA TU CLASE PARA MAITENCILLO",
       
       "image": "/images/hero/header-childs.png",
       "url": "https://wa.me/56973447496?text=Me%20gustaria%20agendar%20una%20clase%20de%20natacion%20para%20Broward"
       
     },
     "features_section": {
-			"title": "¡Inscribe a tu Hijo a Natación en Maintencillo!",
-			"imagen01": "https://images.prismic.io/miniswimmerchile/aB1ZOSdWJ-7kRyux_broward-florida-01.png?auto=format,compress",
-			"imagen02": "https://images.prismic.io/miniswimmerchile/aB1ZOidWJ-7kRyuy_broward-florida-02.png?auto=format,compress",
-			"imagen03": "https://images.prismic.io/miniswimmerchile/aB1ZPCdWJ-7kRyuz_broward-florida-03.png?auto=format,compress",
-			"subtitle": "Apoderados de Maintencillo: Inscriban a sus hijos en nuestras clases de natación con nuestros expertos en toda las ciudades de Maintencillo. Desarrollamos confianza y habilidades acuáticas esenciales en un ambiente seguro y divertido. ¡Encuentra tu ubicación más cercana y comienza hoy!",
+			"title": "¡Inscribe a tu Hijo a Natación en nuestra sede en Maitencillo!",
+			"imagen01": "https://images.prismic.io/miniswimmerchile/aLMYDmGNHVfTOdt8_maintencillo-01.png?auto=format,compress",
+			"imagen02": "https://images.prismic.io/miniswimmerchile/aLMYD2GNHVfTOdt9_maintencillo-02.png?auto=format,compress",
+			"imagen03": "https://images.prismic.io/miniswimmerchile/aLMYEGGNHVfTOdt-_maintencillo-03.png?auto=format,compress",
+			"subtitle": "En Miniswimmer, vamos más allá de las clases de natación tradicionales. Nuestra academia, ubicada en la hermosa Quinta Región, se especializa en la enseñanza de natación para bebés, niños, adultos y embarazadas. A través de nuestro exclusivo Método Miniswimmer, que integra Programación Neurolingüística (PNL) y Coaching, garantizamos un aprendizaje profundo y significativo que genera confianza y autonomía en el agua para toda la vida.",
 			"featuresTop": [
 				{
-					"title": "Maintencillo",
-					"description": "¡Maintencillo es pura agua y diversión! Dale a tus pequeños la alegría y seguridad de nadar con Miniswimmer. Nuestras clases personalizadas les enseñarán habilidades vitales mientras disfrutan cada chapuzón. ¡Inscríbelos hoy y que comience la aventura acuática! Clases de natación en Maintencillo"
+					"title": "Maitencillo",
+					"description": "¡La belleza de las playas de Maitencillo y sus alrededores no solo atrae a surfistas, sino que también crea un entorno inigualable para aprender a nadar.",
+          "cta":"AGENDA TU CLASE PARA MAITENCILLO"
+				},
+				{
+					"title": "Zapallar",
+					"description": "Zapallar se destaca por su ambiente exclusivo y sus paisajes naturales que fusionan la elegancia con la tranquilidad del mar. Aquí, tus hijos no solo desarrollarán habilidades acuáticas esenciales con nuestro método Miniswimmer, sino que también aprenderán a respetar y amar el océano que nos rodea.",
+          "cta":""
+				},
+				{
+					"title": "Cachagua",
+					"description": "La exclusividad y la belleza natural de Cachagua la convierten en un destino privilegiado para familias que buscan un entorno tranquilo y seguro. Sus playas de arenas finas y la serenidad de su refugio marino ofrecen el escenario perfecto para que niños y adultos se sumerjan en el aprendizaje de la natación.",
+          "cta":""
 				}
 				
 			],
 			"features": [
 				{
-					"title": "Maintencillo",
-					"description": "¡Maintencillo es pura agua y diversión! Dale a tus pequeños la alegría y seguridad de nadar con Miniswimmer. Nuestras clases personalizadas les enseñarán habilidades vitales mientras disfrutan cada chapuzón. ¡Inscríbelos hoy y que comience la aventura acuática! Clases de natación en Maintencillo"
-				}
-				
+					"title": "Papudo",
+					"description": "Conocida por su caleta pintoresca y sus playas de aguas calmas, Papudo es el lugar perfecto para quienes buscan un ambiente relajado y seguro para sus clases de natación. La tranquilidad de sus bahías, protegidas del oleaje, crea un entorno ideal para que los principiantes, ya sean niños o adultos, desarrollen confianza y se familiaricen con el agua sin presiones."
+				},{
+					"title": "Puchuncaví",
+					"description": "La extensa costa de la comuna de Puchuncaví, que abarca desde Ventanas hasta Maitencillo, ofrece una diversidad de entornos ideales para el aprendizaje de la natación. Con sus playas amplias y la cercanía a un rico ecosistema marino, este es el lugar perfecto para quienes buscan combinar la seguridad de nuestras clases con la aventura de explorar el océano."
+				},{
+					"title": "La Ligua",
+					"description": "La Ligua es un refugio donde la conexión con el agua se vive de otra manera. En las piscinas privadas de los hogares y parcelas del sector, creamos un ambiente propicio para el enfoque y la confianza. Nuestra metodología, que integra la Programación Neurolingüística (PNL), se beneficia de esta tranquilidad para ayudar a nuestros alumnos a superar miedos y a desarrollar una relación positiva y duradera con el agua, lejos del oleaje y las multitudes."
+				}				
 			]
 		},
     

@@ -205,6 +205,19 @@ const Footer = () => {
                         {h("termsAndConditions")}
                       </Link>
                     </li>
+                <li
+                      key={"clases-natacion-maintencillo"}
+                      className={`flex duration-200 ease-out hover:text-white`}
+                    >
+                      <Link
+                        href="clases-natacion-maintencillo"
+                        rel="noopener noreferrer" 
+                        className={`flex duration-200 ease-out hover:text-white`}
+                      >
+                        {/* {h("termsAndConditions")} */}
+                        Clases de natación en Maintencillo
+                      </Link>
+                    </li>
                 {/* <li>
                   <a className='text-gray-5 duration-200 ease-out hover:text-white' href='#'>
                     {t('resources.items.ourBlog')}

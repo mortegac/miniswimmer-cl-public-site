@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import SchemaMarkup from "@/components/Common/SchemaMarkup";
-import LessonsInBroward from "@/components/LessonsInBroward";
+import LessonsInBroward from "@/components/LessonsInMaintencillo";
 
 
 

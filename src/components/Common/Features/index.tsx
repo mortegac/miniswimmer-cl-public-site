@@ -20,7 +20,10 @@ const Features = (props:any) => {
       className='relative z-1 overflow-hidden bg-gray-1 py-17.5 dark:bg-black dark:text-white lg:py-22.5 xl:py-27.5'
     >
       {/* <!-- section title --> */}
-      <SectionHeader title={t('title')} description={t('subtitle')} />
+      <SectionHeader 
+        title={t('title')} 
+        description={t('subtitle')} 
+      />
 
       <div className='relative z-1 mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0'>
         <div className='grid grid-cols-1 gap-7.5 sm:grid-cols-2 lg:grid-cols-3'>
