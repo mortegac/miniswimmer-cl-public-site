@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import SchemaMarkup from "@/components/Common/SchemaMarkup";
-import LessonsInMaintencillo from "@/components/LessonsInMaintencillo";
+import LessonsInVinadelMar from "@/components/LessonsInVinadelMar";
 
 
 
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 		description: `¿Buscas clases de natación en Maitencillo, Zapallar, Cachagua, Marbella, Ppauydo, Puchuncaví o La Ligua? Con nuestro Método Miniswimmer, combinamos la natación con PNL y coaching para que tus hijos aprendan de forma real y significativa. Ofrecemos lecciones personalizadas para bebés y niños de todas las edades. ¡Inscríbelos hoy!`,
 		images: [
 			{
-				url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+				url: "https://images.prismic.io/miniswimmerchile/aLToIWGNHVfTOeON_SOCIAL-MEDIA-Maintencillo.png?auto=format,compress",
 				width: 1200,
 				height: 630,
 				alt: "Método Miniswimmer: Clases de Natación para Bebes, Niños, Adultos, Embarazadas, Adulto mayor en Maitencillo, V Región"
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 		description: `¿Buscas clases de natación en Maitencillo, Zapallar, Cachagua, Marbella, Ppauydo, Puchuncaví o La Ligua? Con nuestro Método Miniswimmer, combinamos la natación con PNL y coaching para que tus hijos aprendan de forma real y significativa. Ofrecemos lecciones personalizadas para bebés y niños de todas las edades. ¡Inscríbelos hoy!`,
 		images: [
 			{
-				url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+				url: "https://images.prismic.io/miniswimmerchile/aLToIWGNHVfTOeON_SOCIAL-MEDIA-Maintencillo.png?auto=format,compress",
 				width: 1200,
 				height: 630,
 				alt: "Método Miniswimmer: Clases de Natación para Bebes, Niños, Adultos, Embarazadas, Adulto mayor en Maitencillo, V Región"
@@ -57,7 +57,7 @@ const organizationSchema = {
 	"@type": "Organization",
 	"name": "Miniswimmer",
 	"url": "https://www.miniswimmer.us/clases-natacion-maintencillo",
-	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+	"logo": "https://images.prismic.io/miniswimmerchile/aLToIWGNHVfTOeON_SOCIAL-MEDIA-Maintencillo.png?auto=format,compress",
 	"description": "¿Buscas clases de natación en Maitencillo, Zapallar, Cachagua, Marbella, Ppauydo, Puchuncaví o La Ligua? Con nuestro Método Miniswimmer, combinamos la natación con PNL y coaching para que tus hijos aprendan de forma real y significativa. Ofrecemos lecciones personalizadas para bebés y niños de todas las edades. ¡Inscríbelos hoy!",
 	"sameAs": [
 		"https://www.facebook.com/miniswimmer.academy",
@@ -67,12 +67,12 @@ const organizationSchema = {
 	]
 };
 
-export default function LessonsInMaintencilloPage() {
+export default function LessonsInVinadelMarPage() {
 	return (
 		<>
 			<SchemaMarkup type="Organization" data={organizationSchema} />
 			<main>
-				<LessonsInMaintencillo />
+				<LessonsInVinadelMar />
 			</main>
 		</>
 	);
