@@ -116,7 +116,7 @@ const Footer = () => {
               </li>
               <li>
               <a
-                  href='https://www.facebook.com/miniswimmer.academy.academy'
+                  href='https://www.facebook.com/miniswimmer.academy'
                   aria-label='Facebook Miniswimmer'
                    target="_blank"
                    rel="nofollow"

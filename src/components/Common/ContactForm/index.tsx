@@ -64,7 +64,7 @@ const Features = (props:any) => {
 
       await emailjs.send(
         'service_ucb8wga', // Reemplaza con tu Service ID de EmailJS
-        'template_xcg0oul', // Reemplaza con tu Template ID de EmailJS
+        'template_3z2nv7b', // Template CONTACTO-CHILE 
         templateParams,
         'Csc41asZklkk5HTWk' // Reemplaza con tu Public Key de EmailJS
       );
