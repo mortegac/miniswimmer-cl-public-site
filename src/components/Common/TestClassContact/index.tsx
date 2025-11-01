@@ -69,6 +69,7 @@ const TestClassContact = (props:any) => {
       const templateParams = {
         from_name: data.nombre,
         from_phone: data.phone,
+        message: "Necesito clases para la sede de Peñalolen",
         from_email: data.email,
         class: selectedSlot.slotId,
         to_name: 'Miniswimmer',
