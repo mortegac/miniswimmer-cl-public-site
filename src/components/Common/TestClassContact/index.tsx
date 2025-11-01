@@ -14,7 +14,7 @@ const schema = yup.object({
   nombre: yup.string().required('El nombre es requerido'),
   email: yup.string().email('Email inválido').required('El email es requerido'),
   phone: yup.string().required('El teléfono es requerido'),
-  mensaje: yup.string().required('El mensaje es requerido')
+  mensaje: yup.string().default('')
 }).required();
 
 type FormData = yup.InferType<typeof schema>;
@@ -68,15 +68,15 @@ const TestClassContact = (props:any) => {
     try {
       const templateParams = {
         from_name: data.nombre,
-        from_phone: data.email,
-        from_email: data.phone,
+        from_phone: data.phone,
+        from_email: data.email,
         class: selectedSlot.slotId,
         to_name: 'Miniswimmer',
       };
 
       await emailjs.send(
         'service_ucb8wga', // Reemplaza con tu Service ID de EmailJS
-        'template_xcg0oul', // Reemplaza con tu Template ID de EmailJS
+        'template_3z2nv7b', // Reemplaza con tu Template ID de EmailJS
         templateParams,
         'Csc41asZklkk5HTWk' // Reemplaza con tu Public Key de EmailJS
       );
@@ -190,18 +190,25 @@ const TestClassContact = (props:any) => {
                   )}
                 </div>
 
+                {/* Campo oculto para mensaje */}
+                <input
+                  {...register('mensaje')}
+                  type="hidden"
+                  value={selectedSlot.slotId || ''}
+                />
+
                 {/* Selección de Fechas */}
                 <div>
-                  <label htmlFor="mensaje" className="block text-base sm:text-lg font-light text-gray-700">
-                    Seleccione la fecha de su clase
+                  <label htmlFor="mensaje" className="block text-base sm:text-lg font-light text-gray-700 mb-10">
+                    Seleccione el tipo de clase
                   </label>
                   <div id="availableDates" className="w-full">
-                    <h3 className="font-satoshi text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">
+                    {/* <h3 className="font-satoshi text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">
                       Fechas y Horarios Disponibles
-                    </h3>
+                    </h3> */}
                     
                     {/* Slots con scroll responsive */}
-                    <div id="slots" className="space-y-4 sm:space-y-6 h-64 sm:h-80 lg:h-96 overflow-y-auto pr-2">
+                    <div id="slots" className="space-y-4 sm:space-y-6 pr-2">
                      
                         <div key={"bebes"} className="bg-white/10 rounded-lg p-0 sm:p-0 backdrop-blur-sm">
                           
@@ -220,6 +227,7 @@ const TestClassContact = (props:any) => {
                           }` */}
                               <button
                                 key={`bebes-01`}
+                                type="button"
                                 className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
                               `}
                                 onClick={() => handleSlotSelection("bebes")}
@@ -240,6 +248,7 @@ const TestClassContact = (props:any) => {
                            
                               <button
                                 key={`toddler-01`}
+                                type="button"
                                 className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
                               `}
                               onClick={() => handleSlotSelection("toddler")}
@@ -260,6 +269,7 @@ const TestClassContact = (props:any) => {
                               
                               <button
                                 key={`niños-01`}
+                                type="button"
                                 className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
                               `}
                                 onClick={() => handleSlotSelection("niños")}
@@ -281,6 +291,7 @@ const TestClassContact = (props:any) => {
                               
                               <button
                                 key={`niños-02`}
+                                type="button"
                                 className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
                               `}
                                 onClick={() => handleSlotSelection("niños6omas")}
@@ -301,6 +312,7 @@ const TestClassContact = (props:any) => {
                               
                               <button
                                 key={`tea-01`}
+                                type="button"
                                 className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
                               `}
                                 onClick={() => handleSlotSelection("tea")}
@@ -335,6 +347,7 @@ const TestClassContact = (props:any) => {
                           }` */}
                               <button
                                 key={`mamiswimmer-01`}
+                                type="button"
                                 className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
                               `}
                                 onClick={() => handleSlotSelection("mamiswimmer")}
@@ -355,6 +368,7 @@ const TestClassContact = (props:any) => {
                            
                               <button
                                 key={`hidro-01`}
+                                type="button"
                                 className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
                               `}
                                 onClick={() => handleSlotSelection("hidroswimmer")}
@@ -375,6 +389,7 @@ const TestClassContact = (props:any) => {
                               
                               <button
                                 key={`bigswimmer-01`}
+                                type="button"
                                 className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
                               `}
                                 onClick={() => handleSlotSelection("bigswimmer")}
@@ -396,6 +411,7 @@ const TestClassContact = (props:any) => {
                               
                               <button
                                 key={`senior-01`}
+                                type="button"
                                 className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
                               `}
                                 onClick={() => handleSlotSelection("seniorswimmer")}
