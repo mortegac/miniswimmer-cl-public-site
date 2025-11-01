@@ -1172,6 +1172,157 @@
     }
 
   },
+"lessonsInPenalolenpage": {
+    "hero_section": {
+      "title": "Clases de Natación para Bebes y Niños en  <marker>Peñalolen, Santiago</marker>",
+      "subtitle": "Encuentra clases de natación para bebés, niños, adultos y para embarazadas en Peñalolen, La Reina, La Florida, Macul, Ñuñoa y sus alrededores. Nuestro Método Miniswimmer usa PNL para un aprendizaje real y para toda la vida",
+      "cta": "AGENDA TU CLASE PARA PEÑALOLEN",
+      
+      "image": "https://images.prismic.io/miniswimmerchile/aLTkymGNHVfTOeNz_header-clases-miniswimmer-07.png?auto=format,compress",
+      "url": "https://api.whatsapp.com/send/?phone=56973447496&text=Quiero+agendar+una+clase+de+prueba+desde+miniswimmer.cl&type=phone_number&app_absent=0%20para%Penalolen"
+      
+    },
+    
+    "features_section": {
+      "title": "¡Inscribe a tu Hijo a Natación en nuestra sede en Peñalolen!",
+			"subtitle": "En Miniswimmer, vamos más allá de las clases de natación tradicionales. Nuestra academia, ubicada en la hermosa Quinta Región, se especializa en la enseñanza de natación para bebés, niños, adultos y embarazadas. A través de nuestro exclusivo Método Miniswimmer, que integra Programación Neurolingüística (PNL) y Coaching, garantizamos un aprendizaje profundo y significativo que genera confianza y autonomía en el agua para toda la vida.",
+			"imagen01": "https://images.prismic.io/miniswimmerchile/aLTiJWGNHVfTOeNj_vina-del-mar-miniswimmer-01.png?auto=format,compress",
+			"imagen02": "https://images.prismic.io/miniswimmerchile/aLTiJWGNHVfTOeNk_vina-del-mar-miniswimmer-02.png?auto=format,compress",
+			"imagen03": "https://images.prismic.io/miniswimmerchile/aLTiJmGNHVfTOeNl_vina-del-mar-miniswimmer-03.png?auto=format,compress",
+			"featuresTop": [
+				{
+					"title": "Peñalolen",
+					"description": "A pasos del condominio La Reserva de Peñalolén Alto aprende a nadar. Ofrecemos clases de natación para bebes y niños, además de cursos para embarazadas y adultos. Nuestra academia de natación tiene un enfoque lúdico y seguro para todos.",
+          "cta":"AGENDA TU CLASE PARA PEÑALOLEN"
+				},
+				{
+					"title": "La Reina",
+					"description": "Descubre la natación premium con nuestra sede a pasos de la comuna de La Reina, muy cerca de las calles Álvaro Casanova y Antupirén. Con nuestras clases de natación para niños y bebés, transformamos el aprendizaje en una experiencia divertida y efectiva. ",
+          "cta":"Descubre la natación premium con nuestra sede estratégicamente ubicada a pasos de la comuna de La Reina, muy cerca de las calles Álvaro Casanova y Antupirén. Con nuestras clases de natación para niños y bebés, transformamos el aprendizaje en una experiencia divertida y efectiva. Además, ofrecemos: Cursos de Matronatación (para la estimulación temprana), Clases para Adultos (desde nivel principiante a avanzado). ¡Aprovecha nuestra ubicación privilegiada y aprende a nadar con nosotros en un ambiente seguro y profesional!"
+				},
+				{
+					"title": "La Florida",
+					"description": "Muy cerca de Las Pircas, Alto Macul, Casa Grande, Parque Cousino Macul , ofrecemos clases de natación para bebes y niños. Nuestra academia de natación tiene un enfoque especial en matronatación para bebes. ¡Únete a nosotros y disfruta del agua!",
+          "cta":"A pasos del condominio La Reserva de Peñalolén Alto y muy cerca de Las Pircas, Alto Macul, Casa Grande, , ofrecemos clases de natación para bebes y niños. Nuestra academia de natación tiene un enfoque especial en matronatación para bebes. ¡Únete a nosotros y disfruta del agua!"
+				}
+				
+			],
+			"features": [
+				{
+					"title": "Macul",
+					"description": "Clases de Natación a solo 14 min de Macul: Sede a pasos de la Comunidad Ecológica de Peñalolen. Método Miniswimmer: Natación + PNL para niños y bebés. ¡Cerca de ti y con la mejor metodología!"
+				},{
+					"title": "Nuñoa",
+					"description": "Clases de Natación Premium a solo 12 min de Ñuñoa 🚗. Sede Peñalolén con Método Miniswimmer (Natación + PNL) para niños y bebés. ¡Máxima calidad y pasos de la Comunidad Ecológica de Peñalolen!"
+				}			
+			]
+		},
+    
+    "counter_section": {
+      "title": "Familias que confian en nuestro método",
+      "type_one": "Familias",
+      "type_two": "Niños/as y bebes felices",
+      "type_three": "Embarazadas y Adultos"
+    },
+    "testimonials_section": {
+      "title": "Lo Que Nuestras Familias Dicen: Historias de Éxito en el Agua",
+      "subtitle": "Descubre por qué tantas familias confían en nosotros para introducir a sus pequeños al maravilloso mundo acuático. Estos testimonios reflejan nuestro compromiso con la seguridad, el aprendizaje y la diversión de cada uno de nuestros nadadores.",
+      "items": [
+        {
+          "name": "Javier Arancibia",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocLyjFwriZEGfjKtDx1G1D-39nocPGVyCEaG-8w2KHjhVOH2VQ=s100-c-rp-mo-br100",
+          "designation": "Madre de 2 años",
+          "comment": "Muy buenas clases, y muy didácticas para los niños"
+        },
+        {
+          "name": "Avo Queen",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocLTTKMIMdS1E31rJKVnckOcwFO4B9qHwyAk9Vn5uJ8uO7S-yA=s100-c-rp-mo-br100",
+          "designation": "Madre de 2 años",
+          "comment": "Nos costo mucho encontrar clases para mi hija de 2 años, ya que todas eran muy monotonas y ella se aburria. Hasta que encontre por redes sociales esta escuela y fui a una clase a probar. Quede fascinada con los millones de materiales y juegos que realizan. Nunca había visto algo así. Mi hija es la más feliz ahora. La inscribimos y ella lleva 2 meses y ya comenzó a nadar por si misma y ahora no logro sacarla del agua. Estamos muy felices como familia."
+        },
+        {
+          "name": "Paloma Ferrero",
+          "image": "https://lh3.googleusercontent.com/a-/ALV-UjU3mM6jVh4fYctriC5VGCwjloBAzgNOlhN3hFN8d85T210x6saX=s100-c-rp-mo-br100",
+          "designation": "Madre de 3 años",
+          "comment": "Excelentes clases! La piscina súper ambientada para el disfrute de los niños/as, materiales novedosos y coloridos y las coaches las mejores por lejos!  Todas con mucha experiencia en bebés y niños, mi hija lo pasa excelente cada vez que va y ha aprendido mucho :)"
+        },
+        {
+          "name": "Andrea Zalavari",
+          "image": "https://lh3.googleusercontent.com/a-/ALV-UjUvwOvv9w25RU3V_fuo0Ky7Fd9pwPZ5NjYVNM5GUAaxnn6pHUEP=s100-c-rp-mo-br100",
+          "designation": "Madre de 1 año",
+          "comment": "Maravillosa experiencia y método! Cada clase hay avances en mi pequeña y además lo pasa muy bien! Gracias Miniswimmer ❤️"
+        },
+        {
+          "name": "Sebastián Rubio",
+          "image": "https://lh3.googleusercontent.com/a-/ALV-UjWzi7DtVEOY-YImKmNLE9SaDtKNH-l4-DMGIr9xCXTDFvswaM9i=s150-c-rp-mo-br100",
+          "designation": "Padre de 3 años y 4 meses",
+          "comment": "Recomiendo ampliamente las clases de natación de Mini Swimmer para niños pequeños. Mi hija de 1 año y 3 meses asistió recientemente al programa con Nicole. Ella fue paciente, amable y brindó atención individualizada en clases con grupos pequeños. La confianza y la habilidad de mi hija en el agua mejoraron significativamente con cada lección. También proporcionó equipo apropiado para su edad y el enfoque en la seguridad acuática fue evidente, lo cual es crucial para los niños pequeños. En general, las clases de natación de Mini Swimmer son divertidas, efectivas y están diseñadas para hacer del aprendizaje de la natación una experiencia positiva. Recomiendo encarecidamente este programa a cualquier padre que busque introducir a su hijo en la natación. ¡Cinco estrellas en todo!"
+       },
+        {
+          "name": "Chay",
+          "image": "https://lh3.googleusercontent.com/a/ACg8ocLTTKMIMdS1E31rJKVnckOcwFO4B9qHwyAk9Vn5uJ8uO7S-yA=s100-c-rp-mo-br100",
+          "designation": "Madre de 5 años",
+          "comment": "Descubrí está academia de natación en redes sociales, mi hijo tiene 8 años. La ubicación en la Reina es conveniente, con estacionamiento privado y seguro. Lo que realmente destaca es su metodología de enseñanza. Los profesores son dedicados y hacen que cada clase sea una experiencia divertida y educativa. Mi hijo ha progresado notablemente desde que comenzó. Al principio tenía miedo al agua, pero ahora nada con confianza. Los instructores tienen una paciencia increíble y explican las técnicas de manera que los niños las entienden fácilmente..."
+        },
+        {
+          "name": "Luisa Maldonado",
+          "image": "https://user-images.trustpilot.com/643ecc5a612df50012c3d633/73x73.png",
+          "designation": "Tia de 5,7 años",
+          "comment": "No tengo suficientes palabras para expresar lo felices que estuvieron mis sobrinos de recibir la ayuda de miniswimmer. Llegaron con mucho miedo al agua y los profesores les dieron las herramientas para estar más seguros cuando entraran en ella. Muy agradecida por el conocimiento que les brindaron. Excelente servicio."
+        }
+      ]
+    },   
+    "newsletter_section": {
+      "title":"¡Suscríbete a <marker>Nuestro Newsletter!</marker>",
+      "description": "No te pierdas nuestras clases especiales de natación para bebés, niños, embarazadas y adultos. Entérate de eventos, descuentos y aprende sobre la prevención, seguridad y el método Miniswimmer para desarrollar nadadores confiados e independientes.",
+      "nameForm": "Ingrese su nombre",
+      "emailForm": "Ingrese su email",
+      "buttonText": "Subscribirse"
+    },
+    "whatsapp_contact": {
+      "title":"Hablemos por WhatsApp!",
+      "phone": "+56 (973) 447 496",
+      "url": "https://api.whatsapp.com/send/?phone=56973447496&text=Necesito+informacion+desde+miniswimmer.cl&type=phone_number&app_absent=0"
+    },
+    "latest_blog_section": {
+      "title": "Blog: Más Allá del Agua:",
+      "subtitle": "Estimulación Temprana y Desarrollo Infantil. La natación como herramienta transformadora para el crecimiento de tu hijo",
+      "posts": [
+        {
+          "title": "Que es la matronatación y que beneficios tiene",
+          "metadata": "Imagina a tu bebé disfrutando del agua, riendo y fortaleciendo sus músculos, todo mientras crea recuerdos inolvidables contigo. La matronatación no es solo un pasatiempo, es una experiencia transformadora que puede beneficiar enormemente a los bebés desde los 2 meses de edad. Pero, ¿qué es exactamente y cómo puede ayudar a tu pequeño?",
+          "body": ["Imagina a tu bebé disfrutando del agua, riendo y fortaleciendo sus músculos, todo mientras crea recuerdos inolvidables contigo. La matronatación no es solo un pasatiempo, es una experiencia transformadora que puede beneficiar enormemente a los bebés desde los 2 meses de edad. Pero, ¿qué es exactamente y cómo puede ayudar a tu pequeño?"],
+          "mainImage": "https://images.prismic.io/miniswimmer-academy/Z-SOPHdAxsiBv82K_Screenshot2025-03-26at8.30.52PM.png?auto=format,compress?imwidth=1920",
+          "url": "https://miniswimmer.academy/blog/que-es-la-matronatacion-y-que-beneficios-tiene",
+          "tags": ["matronatación", "matronatacion", "bebes", "niños", "Método Miniswimmer"]
+        },
+        {
+          "title": "¿Cómo la Programación Neurolingüística Mejora el Aprendizaje de tu Hijo?",
+          "metadata": "¿Te has preguntado alguna vez por qué algunos niños aprenden más rápido que otros? La programación neurolingüística ofrece respuestas fascinantes sobre cómo cada cerebro procesa la información de manera única.",
+          "body": ["¿Te has preguntado alguna vez por qué algunos niños aprenden más rápido que otros? La programación neurolingüística ofrece respuestas fascinantes sobre cómo cada cerebro procesa la información de manera única."],
+          "mainImage": "https://images.prismic.io/miniswimmer-academy/Z-NjGXdAxsiBv6B5_pnl-kids.png?auto=format,compress?imwidth=1920",
+          "url": "https://miniswimmer.academy/blog/como-la-programacion-neurolinguistica-mejora-el-aprendizaje-de-tu-hijo",
+          "tags": ["matronatación", "PNL", "Programación Neurolingüística" ,"Aprendizaje", "bebes", "niños", "Método Miniswimmer"]
+        },
+        {
+          "title": "Beneficios emocionales y sociales de la Matronatación",
+          "metadata": "La matronatación ofrece numerosos beneficios físicos para los bebés de 2 meses o más. El agua proporciona una resistencia suave que ayuda a fortalecer los músculos del bebé de manera gradual y segura.",
+          "body": ["La matronatación ofrece numerosos beneficios físicos para los bebés de 2 meses o más. El agua proporciona una resistencia suave que ayuda a fortalecer los músculos del bebé de manera gradual y segura."],
+          "mainImage": "https://images.prismic.io/miniswimmer-academy/Z-SPundAxsiBv82c_Screenshot2025-03-26at8.37.16PM.png?auto=format,compress?imwidth=1920",
+          "url": "https://miniswimmer.academy/blog/beneficios-emocionales-y-sociales-de-la-matronatacion",
+          "tags": ["matronatación", "matronatacion", "bebes", "niños", "Clase de natación niños","Certificación coach de natación", "Clase de natación bebes", "Método Miniswimmer"]
+        }
+      ]
+    },
+    
+    
+    "cta_section": {
+      "title": "Transforme el futuro de su hijo con Miniswimmer",
+      "subtitle": "Nuestro método único combina programación neurolingüística y coaching para garantizar un aprendizaje significativo y duradero.",
+      "cta": "RESERVE SU CLASE AHORA"
+    }
+
+  },
   "contactpage": {
     "hero_section": {
       "title": "Te queremos <marker>escuchar</marker>",
