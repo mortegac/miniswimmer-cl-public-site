@@ -28,6 +28,7 @@ const schema = yup.object({
   sede: yup.string().required('La sede es requerida'),
   phone: yup.string().required('El teléfono es requerido'),
   fecha: yup.string().required('La fecha es requerida'),
+  motivo: yup.string().required('El motivo del reagendamiento es requerido'),
   mensaje: yup.string().default('')
 }).required();
 
@@ -69,7 +70,7 @@ const ReagendamientoForm = (props:any) => {
     reset
   } = useForm<FormData>({
     resolver: yupResolver(schema),
-    defaultValues: { fecha: '' }
+    defaultValues: { fecha: '', motivo: '' }
   });
 
   const onSubmit = async (data: FormData) => {
@@ -83,8 +84,11 @@ const ReagendamientoForm = (props:any) => {
     
     try {
       const messageParts = [
+        `CLASE DE REAGENDAMIENTO`,
+        `-----------------------------------`,
         `Sede: ${data.sede}`,
         `Fecha preferida: ${selectedSlot.date || selectedSlot.slotId}`,
+        `Motivo del reagendamiento: ${data.motivo}`,
       ];
       if (data.mensaje) messageParts.push(`Mensaje: ${data.mensaje}`);
 
@@ -104,7 +108,7 @@ const ReagendamientoForm = (props:any) => {
         'Csc41asZklkk5HTWk' // Reemplaza con tu Public Key de EmailJS
       );
 
-      reset({ nombre: '', email: '', sede: '', phone: '', fecha: '', mensaje: '' });
+      reset({ nombre: '', email: '', sede: '', phone: '', fecha: '', motivo: '', mensaje: '' });
       setSelectedSlot((prev) => ({ ...prev, slotId: '', date: '' }));
       setIsSentEmail({
         sentEmail: true,
@@ -263,6 +267,23 @@ const ReagendamientoForm = (props:any) => {
                   )}
                 </div>
 
+  {/* Campo Motivo del reagendamiento */}
+  <div>
+                  <label htmlFor="motivo" className="block text-base sm:text-lg font-light text-gray-700 dark:text-gray-300">
+                    Motivo del reagendamiento
+                  </label>
+                  <textarea
+                    {...register('motivo')}
+                    id="motivo"
+                    rows={3}
+                    placeholder="Indique el motivo por el cual necesita reagendar..."
+                    className="mt-2 sm:mt-1 mb-8 sm:mb-12 block w-full border border-[rgba(0,17,51,0.15)] rounded-[6px] p-3 sm:p-[13px] text-[rgba(0,17,51,0.8)] font-normal text-sm sm:text-[14px] transition-all duration-400 outline-none shadow-none focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white resize-y"
+                  />
+                  {errors.motivo && (
+                    <p className="-mt-6 sm:-mt-10 text-xs sm:text-sm text-red-300">{errors.motivo.message}</p>
+                  )}
+                </div>
+                
                 {/* Campo oculto para mensaje */}
                 <input
                   {...register('mensaje')}
@@ -323,6 +344,8 @@ const ReagendamientoForm = (props:any) => {
                    
                   </div>
                 </div>
+
+              
 
                 {/* Slot seleccionado */}
                 {selectedSlot.slotId && (
