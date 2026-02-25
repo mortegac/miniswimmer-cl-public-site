@@ -83,27 +83,31 @@ const ReagendamientoForm = (props:any) => {
     });
     
     try {
-      const messageParts = [
-        `CLASE DE REAGENDAMIENTO`,
-        `-----------------------------------`,
-        `Sede: ${data.sede}`,
-        `Fecha preferida: ${selectedSlot.date || selectedSlot.slotId}`,
-        `Motivo del reagendamiento: ${data.motivo}`,
-      ];
-      if (data.mensaje) messageParts.push(`Mensaje: ${data.mensaje}`);
+      // const messageParts = [
+      //   `CLASE DE REAGENDAMIENTO`,
+      //   `-----------------------------------`,
+      //   `Sede: ${data.sede}`,
+      //   `Fecha clase: ${selectedSlot.date || selectedSlot.slotId}`,
+      //   `Motivo del reagendamiento: ${data.motivo}`,
+      // ];
+      // if (data.mensaje) messageParts.push(`Mensaje: ${data.mensaje}`);
 
       const templateParams = {
         from_name: data.nombre,
         from_phone: data.phone,
         from_email: data.email,
-        message: messageParts.join('\n'),
+        // message: messageParts.join('\n'),
+        message: data.mensaje,
         class: selectedSlot.slotId,
-        to_name: 'Miniswimmer',
+        locationToClass: data.sede,
+        dateToClass: `${selectedSlot.date || selectedSlot.slotId}`,
+        reasonToClass: data.motivo,
+        to_name: 'Miniswimmer reagendamientos',
       };
 
       await emailjs.send(
         'service_ucb8wga', // Reemplaza con tu Service ID de EmailJS
-        'template_3z2nv7b', // Reemplaza con tu Template ID de EmailJS
+        'template_eedooa7', // Reemplaza con tu Template ID de EmailJS
         templateParams,
         'Csc41asZklkk5HTWk' // Reemplaza con tu Public Key de EmailJS
       );
