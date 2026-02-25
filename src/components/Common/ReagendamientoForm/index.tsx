@@ -24,6 +24,7 @@ const SEDES = [
 
 const schema = yup.object({
   nombre: yup.string().required('El nombre es requerido'),
+  apellido: yup.string().required('El apellido es requerido'),
   email: yup.string().email('Email inválido').required('El email es requerido'),
   sede: yup.string().required('La sede es requerida'),
   phone: yup.string().required('El teléfono es requerido'),
@@ -93,7 +94,7 @@ const ReagendamientoForm = (props:any) => {
       // if (data.mensaje) messageParts.push(`Mensaje: ${data.mensaje}`);
 
       const templateParams = {
-        from_name: data.nombre,
+        from_name: `${data.nombre} ${data.apellido}`,
         from_phone: data.phone,
         from_email: data.email,
         // message: messageParts.join('\n'),
@@ -112,7 +113,7 @@ const ReagendamientoForm = (props:any) => {
         'Csc41asZklkk5HTWk' // Reemplaza con tu Public Key de EmailJS
       );
 
-      reset({ nombre: '', email: '', sede: '', phone: '', fecha: '', motivo: '', mensaje: '' });
+      reset({ nombre: '', apellido: '', email: '', sede: '', phone: '', fecha: '', motivo: '', mensaje: '' });
       setSelectedSlot((prev) => ({ ...prev, slotId: '', date: '' }));
       setIsSentEmail({
         sentEmail: true,
@@ -204,18 +205,46 @@ const ReagendamientoForm = (props:any) => {
                 {/* Campo Nombre */}
                 <div>
                   <label htmlFor="nombre" className="block text-base sm:text-lg font-light text-gray-700 dark:text-gray-300">
-                    Nombre apoderado
+                    Nombre y apellido del Alumno
+                  </label>
+                  <div className='flex flex-row'>   
+                    <input
+                      {...register('nombre')}
+                      type="text"
+                      id="nombre"
+                      placeholder="Juanin"
+                      className="mt-2 mr-2 sm:mt-1 mb-8 sm:mb-12 block w-full h-[44px] sm:h-[48px] border border-[rgba(0,17,51,0.15)] rounded-[6px] p-3 sm:p-[13px] text-[rgba(0,17,51,0.8)] font-normal text-sm sm:text-[14px] transition-all duration-400 outline-none shadow-none focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                    />
+                    <input
+                      {...register('apellido')}
+                      type="text"
+                      id="apellido"
+                      placeholder="Vargas Plaza"
+                      className="mt-2 sm:mt-1 mb-8 sm:mb-12 block w-full h-[44px] sm:h-[48px] border border-[rgba(0,17,51,0.15)] rounded-[6px] p-3 sm:p-[13px] text-[rgba(0,17,51,0.8)] font-normal text-sm sm:text-[14px] transition-all duration-400 outline-none shadow-none focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                    />
+                  </div>
+                  {(errors.apellido || errors.nombre) && (
+                    <p className="-mt-6 sm:-mt-10 text-xs sm:text-sm text-red-300">Campos obligatorios</p>
+                  )}
+                  {/* {errors.nombre && (
+                    <p className="-mt-6 sm:-mt-10 text-xs sm:text-sm text-red-300">{errors.nombre.message}</p>
+                  )} */}
+                  
+                </div>
+                {/* <div>
+                  <label htmlFor="apellido" className="block text-base sm:text-lg font-light text-gray-700 dark:text-gray-300">
+                    Apellido del Alumno
                   </label>
                   <input
-                    {...register('nombre')}
+                    {...register('apellido')}
                     type="text"
-                    id="nombre"
+                    id="apellido"
                     className="mt-2 sm:mt-1 mb-8 sm:mb-12 block w-full h-[44px] sm:h-[48px] border border-[rgba(0,17,51,0.15)] rounded-[6px] p-3 sm:p-[13px] text-[rgba(0,17,51,0.8)] font-normal text-sm sm:text-[14px] transition-all duration-400 outline-none shadow-none focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                   />
-                  {errors.nombre && (
-                    <p className="-mt-6 sm:-mt-10 text-xs sm:text-sm text-red-300">{errors.nombre.message}</p>
+                  {errors.apellido && (
+                    <p className="-mt-6 sm:-mt-10 text-xs sm:text-sm text-red-300">{errors.apellido.message}</p>
                   )}
-                </div>
+                </div> */}
 
                 {/* Campo Email */}
                 <div>
