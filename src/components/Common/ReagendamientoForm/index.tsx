@@ -135,15 +135,20 @@ const ReagendamientoForm = (props:any) => {
     }
   };
 
-  // Array de fechas: desde 12h adelante hasta 3 semanas
+  // Array de fechas: base = ahora + 12h; no se muestra nunca el día actual (now)
   const dateSlots = useMemo(() => {
     const now = new Date();
     const startDate = new Date(now.getTime() + 12 * 60 * 60 * 1000);
     const endDate = new Date(now.getTime() + 21 * 24 * 60 * 60 * 1000);
 
     const dates: { value: string; label: string; weekday: string }[] = [];
-    const current = new Date(startDate);
+    let current = new Date(startDate);
     current.setHours(0, 0, 0, 0);
+
+    const todayKey = now.toISOString().split('T')[0];
+    if (current.toISOString().split('T')[0] === todayKey) {
+      current.setDate(current.getDate() + 1);
+    }
 
     const end = new Date(endDate);
     end.setHours(23, 59, 59, 999);
@@ -330,6 +335,7 @@ const ReagendamientoForm = (props:any) => {
                 <div>
                   <label htmlFor="fecha" className="block text-base sm:text-lg font-light text-gray-700 mb-10">
                     Seleccione la fecha de su clase
+                    <p className='-mt-1 text-[.9rem] text-red-700'>(Si su fecha no aparece, no es posible reagendarla.)</p>
                   </label>
                   {errors.fecha && (
                     <p className="mb-2 text-xs sm:text-sm text-red-500">{errors.fecha.message}</p>

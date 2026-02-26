@@ -41,6 +41,7 @@
     "program": "Método",
     "services": "Servicios",
     "about": "Nosotros",
+    "reagendamiento": "Reagendar",
     "pages": "Pages",
     "blogDetails": "Blog Details",
     "signIn": "Sign In",
@@ -157,6 +158,12 @@
       "nameForm": "Ingrese su nombre",
       "emailForm": "Ingrese su email",
       "buttonText": "Subscribirse"
+    },
+    "reagendamiento_section": {
+      "title":"¿Necesitas <marker>reagendar</marker>?",
+      "description": "Gestiona el cambio de tu fecha de forma rápida y sencilla a través de nuestro sistema de solicitudes en línea.",
+      "buttonText": "Reagendar aquí",
+      "url": "/reagendamiento"
     },
     "whatsapp_contact": {
       "title":"Hablemos por WhatsApp!",

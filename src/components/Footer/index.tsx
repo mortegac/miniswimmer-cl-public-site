@@ -159,7 +159,7 @@ const Footer = () => {
                               : item?.path
                             : ''
                         }
-                         target="_blank"
+                        //  target="_blank"
                         rel={item?.newTab ? 'noopener noreferrer ' : ''}
                         className={`flex duration-200 ease-out hover:text-white ${item?.path?.startsWith('#') ? 'menu-scroll' : ''}`}
                       >

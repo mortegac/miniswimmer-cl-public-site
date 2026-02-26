@@ -41,6 +41,7 @@
     "program": "Program",
     "services": "Services",
     "about": "About",
+    "reagendamiento": "Reschedule",
     "pages": "Pages",
     "blogDetails": "Blog Details",
     "signIn": "Sign In",
@@ -160,6 +161,12 @@
       "nameForm": "Enter your name",
       "emailForm": "Enter your email",
       "buttonText": "Subscribe"
+    },
+   "reagendamiento_section": {
+      "title": "Need to <marker>reschedule</marker>?",
+      "description": "Manage your date change quickly and easily through our online request system.",
+      "buttonText": "Reschedule here",
+      "url": "/reagendamiento"
     },
     "latest_blog_section": {
       "title": "Blog: Going Deeper Than Water:",

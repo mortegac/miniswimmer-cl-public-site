@@ -24,17 +24,23 @@ export const menuData: Menu[] = [
     newTab: false,
     path: '/nosotros',
   },
-  {
-    id: 4,
-    titleKey: 'pricing',
-    newTab: false,
-    path: '/valores',
-  },
+  // {
+  //   id: 4,
+  //   titleKey: 'pricing',
+  //   newTab: false,
+  //   path: '/valores',
+  // },
   {
     id: 5,
     titleKey: 'services',
     newTab: false,
     path: '/servicios',
+  },
+  {
+    id: 6,
+    titleKey: 'reagendamiento',
+    newTab: false,
+    path: '/reagendamiento',
   },
   // {
   //   id: 2,
