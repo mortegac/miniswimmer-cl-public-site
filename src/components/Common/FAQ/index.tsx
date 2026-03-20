@@ -2,10 +2,17 @@
 
 import SectionHeader from '@/components/Common/SectionHeader';
 import { useTranslations } from 'next-intl';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const FAQ = () => {
+  // mounted tracks hydration — before mount (SSR), all answers are visible in HTML
+  // so crawlers always see the full Q&A content regardless of JS execution
+  const [mounted, setMounted] = useState(false);
   const [activeFaq, setActiveFaq] = useState<number | null>(0);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const t = useTranslations('homepage.faq_section');
   const faq: Record<string, string>[] = t.raw('items');
@@ -14,15 +21,16 @@ const FAQ = () => {
     activeFaq === id ? setActiveFaq(null) : setActiveFaq(id);
   };
 
+  // Before hydration: all items open (SSR-visible to crawlers)
+  // After hydration: only activeFaq item is open
+  const isOpen = (i: number) => !mounted || activeFaq === i;
+
   return (
     <section className='overflow-hidden bg-gray-1 py-17.5 dark:bg-black lg:py-22.5 xl:py-27.5'>
-      {/* <!-- section title --> */}
-
       <SectionHeader title={t('title')} description={t('subtitle')} />
 
       <div className='mx-auto w-full max-w-[662px] px-4 sm:px-8 xl:px-0'>
         <div className='flex flex-col gap-4 '>
-          {/* <!-- Accordion Item --> */}
           {faq?.map(({ question, answer }, i) => (
             <div key={i} className='rounded-lg bg-white shadow-1 dark:bg-gray-dark'>
               <button
@@ -33,7 +41,7 @@ const FAQ = () => {
               >
                 {question}
 
-                <span className={`duration-300 ${activeFaq === i ? 'rotate-180' : ''}`}>
+                <span className={`duration-300 ${isOpen(i) ? 'rotate-180' : ''}`}>
                   <svg
                     width='24'
                     height='25'
@@ -53,7 +61,7 @@ const FAQ = () => {
               <div
                 className={'grid'}
                 style={{
-                  gridTemplateRows: `${activeFaq === i ? '1fr' : '0fr'}`,
+                  gridTemplateRows: isOpen(i) ? '1fr' : '0fr',
                   transition: 'grid-template-rows 300ms',
                 }}
               >

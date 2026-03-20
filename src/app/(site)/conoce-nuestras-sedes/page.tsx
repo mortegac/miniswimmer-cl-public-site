@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 	alternates: {
 		canonical: 'https://miniswimmer.cl/conoce-nuestras-sedes',
 		languages: {
-			'en-US': 'https://miniswimmer.cl/conoce-nuestras-sedes',
+			'x-default': 'https://miniswimmer.cl/conoce-nuestras-sedes',
 			'es': 'https://miniswimmer.cl/conoce-nuestras-sedes',
 		},
 	},
@@ -53,8 +53,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
+	"@id": "https://miniswimmer.cl/#organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.cl/conoce-nuestras-sedes",
+	"url": "https://miniswimmer.cl",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Descubre nuestras planes de natación para clases regulares, premium y a domicilio. Clases para bebés, niños, adultos y embarazadas con instructores certificados, desde los 2 meses hasta niveles avanzados.",
 	"sameAs": [

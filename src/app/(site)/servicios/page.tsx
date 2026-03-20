@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 	alternates: {
 		canonical: 'https://miniswimmer.cl/servicios',
 		languages: {
-			'en-US': 'https://miniswimmer.cl/servicios',
+			'x-default': 'https://miniswimmer.cl/servicios',
 			'es': 'https://miniswimmer.cl/servicios',
 		},
 	},
@@ -56,8 +56,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
+	"@id": "https://miniswimmer.cl/#organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.cl/servicios",
+	"url": "https://miniswimmer.cl",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Descubre los servicios de nuestra academia de natación: matronatación, clases para bebés, niños y adultos, gimnasia acuática y cursos especializados. ¡Agenda tu clase en MiniSwimmer!",
 	"sameAs": [

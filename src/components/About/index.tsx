@@ -37,11 +37,10 @@ const AboutPage = () => {
 			<Counter pageTraslation={PAGE} />
 			<Features pageTraslation={PAGE} />
 			{/* <FeaturesWithImage pageTraslation={PAGE} /> */}
-			{/* <WhatsappContact pageTraslation={PAGE} />
-			<Testimonials pageTraslation={PAGE} /> */}
-			{/* <Newsletter pageTraslation={PAGE}/>
-			 */}
-			 <Blog pageTraslation={PAGE}/>
+			<WhatsappContact pageTraslation={PAGE} />
+			<Testimonials pageTraslation={PAGE} />
+			{/* <Newsletter pageTraslation={PAGE}/> */}
+			<Blog pageTraslation={PAGE}/>
 		</>
 	);
 };

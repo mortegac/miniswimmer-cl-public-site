@@ -5,13 +5,14 @@ import Contact from "@/components/Contact";
 
 
 export const metadata: Metadata = {
-	title: "¿Cómo podemos ayudar?",
+	title: "How can we help? | Miniswimmer",
 	description: `Cuéntenos sobre usted y le conectaremos con un experto que podrá responder cualquier pregunta que tenga.`,
 	alternates: {
 		canonical: 'https://miniswimmer.cl/contact',
 		languages: {
+			'x-default': 'https://miniswimmer.cl/contact',
 			'en-US': 'https://miniswimmer.cl/contact',
-			'es': 'https://miniswimmer.cl/contact',
+			'es': 'https://miniswimmer.cl/contacto',
 		},
 	},
 	robots: {
@@ -56,8 +57,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
+	"@id": "https://miniswimmer.cl/#organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.cl/contact",
+	"url": "https://miniswimmer.cl",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Cuéntenos sobre usted y le conectaremos con un experto que podrá responder cualquier pregunta que tenga.",
 	"sameAs": [

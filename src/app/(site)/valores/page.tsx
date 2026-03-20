@@ -8,8 +8,9 @@ export const metadata: Metadata = {
 	alternates: {
 		canonical: 'https://miniswimmer.cl/valores',
 		languages: {
-			'en-US': 'https://miniswimmer.cl/valores',
+			'x-default': 'https://miniswimmer.cl/valores',
 			'es': 'https://miniswimmer.cl/valores',
+			'en-US': 'https://miniswimmer.cl/pricing',
 		},
 	},
 	robots: {
@@ -53,8 +54,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
+	"@id": "https://miniswimmer.cl/#organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.cl/valores",
+	"url": "https://miniswimmer.cl",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Descubre nuestras planes de natación para clases regulares, premium y a domicilio. Clases para bebés, niños, adultos y embarazadas con instructores certificados, desde los 2 meses hasta niveles avanzados.",
 	"sameAs": [

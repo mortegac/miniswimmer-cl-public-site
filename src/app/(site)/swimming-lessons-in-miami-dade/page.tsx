@@ -8,10 +8,10 @@ export const metadata: Metadata = {
 	title: "Enroll Your Child in Swimming in Miami-Dade!",
 	description: `Find our convenient locations for personalized in-home swimming lessons. We help babies and children of all levels improve their technique, build endurance, and gain confidence in the water. We serve the cities of Aventura, North Bay Village, North Miami, North Miami Beach, Sunny Isles Beach, Golden Beach in Miami-Dade County.`,
 	alternates: {
-		canonical: 'https://www.miniswimmer.us/swimming-lessons-in-miami-dade',
+		canonical: 'https://miniswimmer.cl/swimming-lessons-in-miami-dade',
 		languages: {
-			'en-US': 'https://www.miniswimmer.us/swimming-lessons-in-miami-dade',
-			'es': 'https://www.miniswimmer.us/swimming-lessons-in-miami-dade',
+			'x-default': 'https://miniswimmer.cl/swimming-lessons-in-miami-dade',
+			'en-US': 'https://miniswimmer.cl/swimming-lessons-in-miami-dade',
 		},
 	},
 	robots: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		type: "website",
-		url: 'https://www.miniswimmer.us/swimming-lessons-in-miami-dade',
+		url: 'https://miniswimmer.cl/swimming-lessons-in-miami-dade',
 		title: `Enroll Your Child in Swimming in Miami-Dade!`,
 		description: `Find our convenient locations for personalized in-home swimming lessons. We help babies and children of all levels improve their technique, build endurance, and gain confidence in the water.`,
 		images: [
@@ -55,8 +55,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
+	"@id": "https://miniswimmer.cl/#organization",
 	"name": "Miniswimmer",
-	"url": "https://www.miniswimmer.us/swimming-lessons-in-miami-dade",
+	"url": "https://miniswimmer.cl",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Find our convenient locations for personalized in-home swimming lessons. We help babies and children of all levels improve their technique, build endurance, and gain confidence in the water.",
 	"sameAs": [

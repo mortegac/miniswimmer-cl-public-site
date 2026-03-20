@@ -10,8 +10,9 @@ export const metadata: Metadata = {
 	alternates: {
 		canonical: 'https://miniswimmer.cl/program',
 		languages: {
+			'x-default': 'https://miniswimmer.cl/metodo',
+			'es': 'https://miniswimmer.cl/metodo',
 			'en-US': 'https://miniswimmer.cl/program',
-			'es': 'https://miniswimmer.cl/program',
 		},
 	},
 	robots: {
@@ -55,8 +56,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
+	"@id": "https://miniswimmer.cl/#organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.cl/program",
+	"url": "https://miniswimmer.cl",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Nuestro programa de natación está diseñado para ayudar a nadadores de todos los niveles a mejorar su técnica, desarrollar resistencia y ganar confianza en el agua. Descubre más sobre nuestro programa y cómo puede beneficiarte.",
 	"sameAs": [

@@ -10,8 +10,9 @@ export const metadata: Metadata = {
 	alternates: {
 		canonical: 'https://miniswimmer.cl/about',
 		languages: {
+			'x-default': 'https://miniswimmer.cl/about',
 			'en-US': 'https://miniswimmer.cl/about',
-			'es': 'https://miniswimmer.cl/about',
+			'es': 'https://miniswimmer.cl/nosotros',
 		},
 	},
 	robots: {
@@ -56,8 +57,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
+	"@id": "https://miniswimmer.cl/#organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.cl/about",
+	"url": "https://miniswimmer.cl",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Nuestros profesionales son profesores de Educación Física, Kinesiólogos, expertos en Matronatación y se enfocan en una gestión excelente. Ofrecemos una metodología eficaz y una experiencia de aprendizaje inigualable para nuestros estudiantes.",
 	"sameAs": [

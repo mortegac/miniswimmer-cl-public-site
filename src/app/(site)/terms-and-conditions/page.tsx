@@ -10,8 +10,9 @@ export const metadata: Metadata = {
 	alternates: {
 		canonical: 'https://miniswimmer.cl/terms-and-conditions',
 		languages: {
+			'x-default': 'https://miniswimmer.cl/terminos-y-condiciones-del-servicio',
+			'es': 'https://miniswimmer.cl/terminos-y-condiciones-del-servicio',
 			'en-US': 'https://miniswimmer.cl/terms-and-conditions',
-			'es': 'https://miniswimmer.cl/terms-and-conditions',
 		},
 	},
 	robots: {
@@ -55,8 +56,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
+	"@id": "https://miniswimmer.cl/#organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.cl/terms-and-conditions",
+	"url": "https://miniswimmer.cl",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Los servicios de Mini Swimmer requieren registro con detalles médicos y prueba de edad, tienen una política de cancelación/reprogramación con aviso previo y hacen cumplir las reglas de la clase, como la llegada puntual y la vestimenta adecuada tanto para los niños como para los apoderados.",
 	"sameAs": [

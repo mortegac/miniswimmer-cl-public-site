@@ -5,7 +5,7 @@ import Alianzas from "@/components/Alianzas";
 
 
 export const metadata: Metadata = {
-	title: "Conoce al equipo de Miniswimmer",
+	title: "Alianzas y Partners de Miniswimmer",
 	description: `Explora las colaboraciones y beneficios únicos para nuestras familias. Accede a descuentos exclusivos con nuestros partners en natación infantil`,
 	alternates: {
 		canonical: 'https://miniswimmer.cl/alianzas',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "website",
 		url: 'https://miniswimmer.cl/alianzas',
-		title: `Conoce al equipo de Miniswimmer`,
+		title: `Alianzas y Partners de Miniswimmer`,
 		description: `Explora las colaboraciones y beneficios únicos para nuestras familias. Accede a descuentos exclusivos con nuestros partners en natación infantil`,
 		images: [
 			{
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		site: "@miniswimmer_edu",
 		creator: "@miniswimmer_edu",
-		title: `Conoce al equipo de Miniswimmer`,
+		title: `Alianzas y Partners de Miniswimmer`,
 		description: `Explora las colaboraciones y beneficios únicos para nuestras familias. Accede a descuentos exclusivos con nuestros partners en natación infantil`,
 		images: [
 			{
@@ -56,8 +56,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
+	"@id": "https://miniswimmer.cl/#organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.cl/alianzas",
+	"url": "https://miniswimmer.cl",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Explora las colaboraciones y beneficios únicos para nuestras familias. Accede a descuentos exclusivos con nuestros partners en natación infantil",
 	"sameAs": [

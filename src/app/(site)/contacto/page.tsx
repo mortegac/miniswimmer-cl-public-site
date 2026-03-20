@@ -10,8 +10,9 @@ export const metadata: Metadata = {
 	alternates: {
 		canonical: 'https://miniswimmer.cl/contacto',
 		languages: {
-			'en-US': 'https://miniswimmer.cl/contacto',
+			'x-default': 'https://miniswimmer.cl/contacto',
 			'es': 'https://miniswimmer.cl/contacto',
+			'en-US': 'https://miniswimmer.cl/contact',
 		},
 	},
 	robots: {
@@ -25,14 +26,14 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "website",
 		url: 'https://miniswimmer.cl/contacto',
-		title: `How can we help?`,
+		title: `¿Cómo podemos ayudar?`,
 		description: `Cuéntenos sobre usted y le conectaremos con un experto que podrá responder cualquier pregunta que tenga.`,
 		images: [
 			{
 				url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 				width: 1200,
 				height: 630,
-				alt: "Miniswimmer Method"
+				alt: "Miniswimmer"
 			}
 		],
 	},
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		site: "@miniswimmer_edu",
 		creator: "@miniswimmer_edu",
-		title: `How can we help?`,
+		title: `¿Cómo podemos ayudar?`,
 		description: `Cuéntenos sobre usted y le conectaremos con un experto que podrá responder cualquier pregunta que tenga.`,
 		images: [
 			{
@@ -56,8 +57,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
+	"@id": "https://miniswimmer.cl/#organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.cl/contacto",
+	"url": "https://miniswimmer.cl",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Cuéntenos sobre usted y le conectaremos con un experto que podrá responder cualquier pregunta que tenga.",
 	"sameAs": [

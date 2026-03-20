@@ -104,6 +104,9 @@ const ReagendamientoForm = (props:any) => {
         dateToClass: `${selectedSlot.date || selectedSlot.slotId}`,
         reasonToClass: data.motivo,
         to_name: 'Miniswimmer reagendamientos',
+        asunto: 'Solicitud de Reagendamiento',
+        html_title:"<h2>Solicitud de reagendamiento</h2><p>Hemos recibido tu solicitud de reagendamiento y te responderemos lo antes posible.</p>",
+        html_service: `<p><b>Servicio :</b> ${data.motivo}</p>`
       };
 
       await emailjs.send(

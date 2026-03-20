@@ -9,23 +9,23 @@ export const metadata: Metadata = {
 	// description: `Clases de Natación Exclusivas en Reina y Peñalolen, Las Pircas y Alto Macul. 💧 Método Miniswimmer: Natación + PNL y Coaching. Lecciones personalizadas para bebés y niños en Álvaro Casanova, Lo Cañas y El Parral. ¡Aprendizaje real y seguro! ¡Inscríbelos hoy!`,
 	description: `Clases de Natación Exclusivas en Reina y Peñalolen, Las Pircas y Alto Macul. 💧 Método Miniswimmer: Natación + PNL y Coaching. Lecciones personalizadas para bebés y niños en Álvaro Casanova, Lo Cañas y El Parral. ¡Aprendizaje real y seguro! ¡Inscríbelos hoy!`,
 	alternates: {
-		canonical: 'https://www.miniswimmer.cl/reagendamiento',
+		canonical: 'https://miniswimmer.cl/reagendamiento',
 		languages: {
-			'en-US': 'https://www.miniswimmer.cl/reagendamiento',
-			'es': 'https://www.miniswimmer.cl/reagendamiento',
+			'en-US': 'https://miniswimmer.cl/reagendamiento',
+			'es': 'https://miniswimmer.cl/reagendamiento',
 		},
 	},
 	robots: {
-		index: true,
-		follow: true,
+		index: false,
+		follow: false,
 		googleBot: {
-			index: true,
-			follow: true,
+			index: false,
+			follow: false,
 		},
 	},
 	openGraph: {
 		type: "website",
-		url: 'https://www.miniswimmer.cl/reagendamiento',
+		url: 'https://miniswimmer.cl/reagendamiento',
 		title: `Academia de Natación para Bebés, Niños, Embarazadas en Peñalolen`,
 		description: `Clases de Natación Exclusivas en Reina y Peñalolen, Las Pircas y Alto Macul. 💧 Método Miniswimmer: Natación + PNL y Coaching. Lecciones personalizadas para bebés y niños en Álvaro Casanova, Lo Cañas y El Parral. ¡Aprendizaje real y seguro! ¡Inscríbelos hoy!`,
 		images: [
@@ -57,7 +57,7 @@ const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
 	"name": "Miniswimmer",
-	"url": "https://www.miniswimmer.cl/reagendamiento",
+	"url": "https://miniswimmer.cl/reagendamiento",
 	"logo": "https://images.prismic.io/miniswimmerchile/aLTn32GNHVfTOeOK_SOCIAL-MEDIA-Vina-del-mar.png?auto=format,compress",
 	"description": "Clases de Natación Exclusivas en Reina y Peñalolen, Las Pircas y Alto Macul. 💧 Método Miniswimmer: Natación + PNL y Coaching. Lecciones personalizadas para bebés y niños en Álvaro Casanova, Lo Cañas y El Parral. ¡Aprendizaje real y seguro! ¡Inscríbelos hoy!",
 	"sameAs": [

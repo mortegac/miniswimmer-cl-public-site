@@ -1,25 +1,47 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import emailjs from '@emailjs/browser';
 
-import SectionHeader from '@/components/Common/SectionHeader';
+const SERVICIOS = [
+  'Clases para Bebés',
+  'Clases para Niños',
+  'Mami Swimmer',
+  'Hidro Swimmer',
+  'Big Swimmer',
+  'Tea Swimmer',
+] as const;
+
+const SEDES = [
+  'Peñalolen',
+  'La Reina',
+  'Nuñoa',
+  'Vitacura',
+  'Lo Barnechea',
+  'Rancagua',
+  'Viña del Mar',
+  'Valparaiso',
+  'Chillán',
+] as const;
 
 const schema = yup.object({
   nombre: yup.string().required('El nombre es requerido'),
+  edad: yup.string().required('La edad es requerida'),
   email: yup.string().email('Email inválido').required('El email es requerido'),
+  sede: yup.string().required('La sede es requerida'),
   phone: yup.string().required('El teléfono es requerido'),
+  fecha: yup.string().required('La fecha es requerida'),
+  servicio: yup.array().of(yup.string().required()).min(1, 'Seleccione al menos un servicio').required(),
   mensaje: yup.string().default('')
 }).required();
 
 type FormData = yup.InferType<typeof schema>;
 
-const TestClassContact = (props:any) => {
+const TestClassContact = (_props?: any) => {
   const [isSentEmail, setIsSentEmail] = useState({
     sentEmail: false,
     isFailure: false,
@@ -42,18 +64,18 @@ const TestClassContact = (props:any) => {
     phone: ""
   });
   
-  const { pageTraslation } = props;
-  const t = useTranslations(`${pageTraslation}.features_section`);
-
+  const [edadUnidad, setEdadUnidad] = useState<'Meses' | 'Años'>('Años');
   const [isSubmitting, setIsSubmitting] = useState(false);
   
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors },
     reset
   } = useForm<FormData>({
-    resolver: yupResolver(schema)
+    resolver: yupResolver(schema),
+    defaultValues: { fecha: '', edad: '', sede: 'Peñalolen', servicio: [] }
   });
 
   const onSubmit = async (data: FormData) => {
@@ -66,23 +88,40 @@ const TestClassContact = (props:any) => {
     });
     
     try {
+      // const messageParts = [
+      //   `CLASE DE REAGENDAMIENTO`,
+      //   `-----------------------------------`,
+      //   `Sede: ${data.sede}`,
+      //   `Fecha clase: ${selectedSlot.date || selectedSlot.slotId}`,
+      //   `Motivo del reagendamiento: ${data.motivo}`,
+      // ];
+      // if (data.mensaje) messageParts.push(`Mensaje: ${data.mensaje}`);
+
       const templateParams = {
         from_name: data.nombre,
         from_phone: data.phone,
-        message: "Necesito clases para la sede de Peñalolen",
         from_email: data.email,
+        message: data.mensaje,
         class: selectedSlot.slotId,
-        to_name: 'Miniswimmer',
+        locationToClass: data.sede,
+        dateToClass: `${selectedSlot.date || selectedSlot.slotId}`,
+        edadAlumno: `${data.edad} ${edadUnidad}`,
+        servicioToClass: data.servicio.join(', '),
+        to_name: 'Miniswimmer reagendamientos',
+        asunto: 'Clase de prueba',
+        html_title: "<h2>Solicitud de clase de Prueba</h2><p>Hemos recibido tu solicitud y te responderemos lo antes posible.</p>",
+        html_service: `<p><b>Servicio :</b> ${data.servicio.join(', ')}</p>`
       };
 
       await emailjs.send(
         'service_ucb8wga', // Reemplaza con tu Service ID de EmailJS
-        'template_3z2nv7b', // Reemplaza con tu Template ID de EmailJS
+        'template_eedooa7', // Reemplaza con tu Template ID de EmailJS
         templateParams,
         'Csc41asZklkk5HTWk' // Reemplaza con tu Public Key de EmailJS
       );
 
-      reset();
+      reset({ nombre: '', edad: '', email: '', sede: '', phone: '', fecha: '', servicio: [], mensaje: '' });
+      setSelectedSlot((prev) => ({ ...prev, slotId: '', date: '' }));
       setIsSentEmail({
         sentEmail: true,
         isFailure: false,
@@ -103,13 +142,45 @@ const TestClassContact = (props:any) => {
     }
   };
 
-  // Función para manejar la selección de slot
-  const handleSlotSelection = (slot: string) => {
-    setSelectedSlot(prev => ({
+  // Array de fechas: base = ahora + 12h; no se muestra nunca el día actual (now)
+  const dateSlots = useMemo(() => {
+    const now = new Date();
+    const startDate = new Date(now.getTime() + 12 * 60 * 60 * 1000);
+    const endDate = new Date(now.getTime() + 21 * 24 * 60 * 60 * 1000);
+
+    const dates: { value: string; label: string; weekday: string }[] = [];
+    let current = new Date(startDate);
+    current.setHours(0, 0, 0, 0);
+
+    const todayKey = now.toISOString().split('T')[0];
+    if (current.toISOString().split('T')[0] === todayKey) {
+      current.setDate(current.getDate() + 1);
+    }
+
+    const end = new Date(endDate);
+    end.setHours(23, 59, 59, 999);
+
+    while (current <= end) {
+      const dateKey = current.toISOString().split('T')[0];
+      const weekday = current.toLocaleDateString('es-CL', { weekday: 'long' });
+      const label = current.toLocaleDateString('es-CL', {
+        day: 'numeric',
+        month: 'short',
+      });
+      dates.push({ value: dateKey, label, weekday });
+      current.setDate(current.getDate() + 1);
+    }
+
+    return dates;
+  }, []);
+
+  const handleDateSelection = (dateValue: string, dateLabel: string, weekday: string) => {
+    setSelectedSlot((prev) => ({
       ...prev,
-      slotId: slot,
-      // date: `${slot.date} ${slot.hour}`,
+      slotId: dateValue,
+      date: `${weekday} ${dateLabel}`,
     }));
+    setValue('fecha', dateValue, { shouldValidate: true });
   };
 
   return (
@@ -143,7 +214,7 @@ const TestClassContact = (props:any) => {
               </>
             ) : (
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 sm:space-y-6 w-full">
-                {/* Campo Nombre */}
+                {/* Campo Nombre apoderado */}
                 <div>
                   <label htmlFor="nombre" className="block text-base sm:text-lg font-light text-gray-700 dark:text-gray-300">
                     Nombre apoderado
@@ -156,6 +227,42 @@ const TestClassContact = (props:any) => {
                   />
                   {errors.nombre && (
                     <p className="-mt-6 sm:-mt-10 text-xs sm:text-sm text-red-300">{errors.nombre.message}</p>
+                  )}
+                </div>
+
+                {/* Campo Edad del alumno */}
+                <div>
+                  <label htmlFor="edad" className="block text-base sm:text-lg font-light text-gray-700 dark:text-gray-300">
+                    Edad del alumno
+                  </label>
+                  <div className="mt-2 sm:mt-1 mb-8 sm:mb-12 flex items-center gap-2">
+                    <input
+                      {...register('edad')}
+                      type="number"
+                      id="edad"
+                      min={0}
+                      max={99}
+                      className="block w-full h-[44px] sm:h-[48px] border border-[rgba(0,17,51,0.15)] rounded-[6px] p-3 sm:p-[13px] text-[rgba(0,17,51,0.8)] font-normal text-sm sm:text-[14px] transition-all duration-400 outline-none shadow-none focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                    />
+                    <div className="flex shrink-0 gap-1">
+                      {(['Meses', 'Años'] as const).map((unidad) => (
+                        <button
+                          key={unidad}
+                          type="button"
+                          onClick={() => setEdadUnidad(unidad)}
+                          className={`h-[44px] sm:h-[48px] px-3 rounded-[6px] border text-sm font-medium transition-colors duration-200 ${
+                            edadUnidad === unidad
+                              ? 'bg-primary text-white border-primary'
+                              : 'bg-white text-[rgba(0,17,51,0.6)] border-[rgba(0,17,51,0.15)] hover:border-primary'
+                          }`}
+                        >
+                          {unidad}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  {errors.edad && (
+                    <p className="-mt-6 sm:-mt-10 text-xs sm:text-sm text-red-300">{errors.edad.message}</p>
                   )}
                 </div>
 
@@ -172,6 +279,54 @@ const TestClassContact = (props:any) => {
                   />
                   {errors.email && (
                     <p className="-mt-6 sm:-mt-10 text-xs sm:text-sm text-red-300">{errors.email.message}</p>
+                  )}
+                </div>
+
+                {/* Campo Sede */}
+                <div>
+                  <label htmlFor="sede" className="block text-base sm:text-lg font-light text-gray-700 dark:text-gray-300">
+                    Sede
+                  </label>
+                  <select
+                    {...register('sede')}
+                    id="sede"
+                    className="mt-2 sm:mt-1 mb-8 sm:mb-12 block w-full h-[44px] sm:h-[48px] border border-[rgba(0,17,51,0.15)] rounded-[6px] p-3 sm:p-[13px] text-[rgba(0,17,51,0.8)] text-sm sm:text-[14px] transition-all duration-400 outline-none shadow-none focus:border-primary focus:ring-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                  >
+                    <option value="">Seleccione una sede</option>
+                    {SEDES.map((sede) => (
+                      <option key={sede} value={sede}>
+                        {sede}
+                      </option>
+                    ))}
+                  </select>
+                  {errors.sede && (
+                    <p className="-mt-6 sm:-mt-10 text-xs sm:text-sm text-red-300">{errors.sede.message}</p>
+                  )}
+                </div>
+
+                {/* Campo Servicio */}
+                <div>
+                  <label className="block text-base sm:text-lg font-light text-gray-700 dark:text-gray-300 mb-3">
+                    Servicio de interés
+                  </label>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-8 sm:mb-12">
+                    {SERVICIOS.map((servicio) => (
+                      <label
+                        key={servicio}
+                        className="flex items-center gap-3 cursor-pointer rounded-lg border border-[rgba(0,17,51,0.15)] p-3 hover:border-primary transition-colors duration-200"
+                      >
+                        <input
+                          {...register('servicio')}
+                          type="checkbox"
+                          value={servicio}
+                          className="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary accent-primary"
+                        />
+                        <span className="text-sm text-[rgba(0,17,51,0.8)] dark:text-gray-300">{servicio}</span>
+                      </label>
+                    ))}
+                  </div>
+                  {errors.servicio && (
+                    <p className="-mt-6 sm:-mt-10 text-xs sm:text-sm text-red-300">{errors.servicio.message}</p>
                   )}
                 </div>
 
@@ -198,11 +353,17 @@ const TestClassContact = (props:any) => {
                   value={selectedSlot.slotId || ''}
                 />
 
+                <input {...register('fecha')} type="hidden" />
+
                 {/* Selección de Fechas */}
                 <div>
-                  <label htmlFor="mensaje" className="block text-base sm:text-lg font-light text-gray-700 mb-10">
-                    Seleccione el tipo de clase
+                  <label htmlFor="fecha" className="block text-base sm:text-lg font-light text-gray-700 mb-10">
+                    Seleccione la fecha de su clase
+                    <p className='-mt-1 text-[.9rem] text-gray-500'>La fecha de tu clase de prueba dependerá de los cupos disponibles según el servicio y día seleccionado.</p>
                   </label>
+                  {errors.fecha && (
+                    <p className="mb-2 text-xs sm:text-sm text-red-500">{errors.fecha.message}</p>
+                  )}
                   <div id="availableDates" className="w-full">
                     {/* <h3 className="font-satoshi text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">
                       Fechas y Horarios Disponibles
@@ -211,227 +372,33 @@ const TestClassContact = (props:any) => {
                     {/* Slots con scroll responsive */}
                     <div id="slots" className="space-y-4 sm:space-y-6 pr-2">
                      
-                        <div key={"bebes"} className="bg-white/10 rounded-lg p-0 sm:p-0 backdrop-blur-sm">
+                        <div key={"clases"} className="bg-white/10 rounded-lg p-0 sm:p-0 backdrop-blur-sm">
+                        
                           
-                          {/* Grid responsive para los slots */}
-                          <h4 className="text-lg sm:text-xl font-bold text-slate-500 mb-3 sm:mb-4 text-center">
-                            BEBES y NINOS
-                          </h4>
-                          
-                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
-                           
-                          
-                            {/* ${
-                            selectedSlot.slotId === slot.id
-                              ? 'bg-[#ae5eab] text-white border-[#ae5eab] shadow-xl scale-105'
-                              : 'bg-white text-gray-800 border-gray-200 hover:border-blue-300 hover:shadow-xl hover:-translate-y-1'
-                          }` */}
+                          <div id="listSessions" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
+                            {dateSlots.map((slot) => (
                               <button
-                                key={`bebes-01`}
+                                key={slot.value}
                                 type="button"
-                                className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
-                              `}
-                                onClick={() => handleSlotSelection("bebes")}
+                                className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 ${
+                                  selectedSlot.slotId === slot.value
+                                    ? 'border-primary bg-primary/10 text-primary'
+                                    : 'border-gray-200 hover:border-primary/50'
+                                }`}
+                                onClick={() => handleDateSelection(slot.value, slot.label, slot.weekday)}
                               >
                                 <div className="text-center">
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-white' : 'text-blue-600'} */}
-                                  <div className={`text-base sm:text-lg font-bold mb-1 
-                                  `}>
-                                  BEBES
+                                  <div className="text-xs sm:text-sm font-medium text-gray-600 capitalize">
+                                    {slot.weekday}
                                   </div>
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-slate-50' : 'text-gray-600'} */}
-                                  <div className={`text-xs sm:text-sm leading-tight font-light 
-                                  `}>
-                                   Clases desde los 2 meses
+                                  <div className="text-base sm:text-lg font-bold">
+                                    {slot.label}
                                   </div>
                                 </div>
                               </button>
-                           
-                              <button
-                                key={`toddler-01`}
-                                type="button"
-                                className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
-                              `}
-                              onClick={() => handleSlotSelection("toddler")}
-                              >
-                                <div className="text-center">
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-white' : 'text-blue-600'} */}
-                                  <div className={`text-base sm:text-lg font-bold mb-1 
-                                  `}>
-                                  TODDLER
-                                  </div>
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-slate-50' : 'text-gray-600'} */}
-                                  <div className={`text-xs sm:text-sm leading-tight font-light 
-                                  `}>
-                                   Niños entre 2 a 3 años
-                                  </div>
-                                </div>
-                              </button>
-                              
-                              <button
-                                key={`niños-01`}
-                                type="button"
-                                className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
-                              `}
-                                onClick={() => handleSlotSelection("niños")}
-                              >
-                                <div className="text-center">
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-white' : 'text-blue-600'} */}
-                                  <div className={`text-base sm:text-lg font-bold mb-1 
-                                  `}>
-                                  NIÑOS /AS
-                                  </div>
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-slate-50' : 'text-gray-600'} */}
-                                  <div className={`text-xs sm:text-sm leading-tight font-light 
-                                  `}>
-                                   Clases para niños/as de 4 a 6 años
-                                  </div>
-                                </div>
-                              </button>
-                              
-                              
-                              <button
-                                key={`niños-02`}
-                                type="button"
-                                className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
-                              `}
-                                onClick={() => handleSlotSelection("niños6omas")}
-                              >
-                                <div className="text-center">
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-white' : 'text-blue-600'} */}
-                                  <div className={`text-base sm:text-lg font-bold mb-1 
-                                  `}>
-                                  NIÑOS /AS
-                                  </div>
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-slate-50' : 'text-gray-600'} */}
-                                  <div className={`text-xs sm:text-sm leading-tight font-light 
-                                  `}>
-                                   Clases para niños/as 6 o más años
-                                  </div>
-                                </div>
-                              </button>
-                              
-                              <button
-                                key={`tea-01`}
-                                type="button"
-                                className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
-                              `}
-                                onClick={() => handleSlotSelection("tea")}
-                              >
-                                <div className="text-center">
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-white' : 'text-blue-600'} */}
-                                  <div className={`text-base sm:text-lg font-bold mb-1 
-                                  `}>
-                                  TEA SWIMMER
-                                  </div>
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-slate-50' : 'text-gray-600'} */}
-                                  <div className={`text-xs sm:text-sm leading-tight font-light 
-                                  `}>
-                                   Clases para niños neurodivergentes
-                                  </div>
-                                </div>
-                              </button>
-                              
+                            ))}
                           </div>
                           
-                          <h4 className="text-lg sm:text-xl font-bold text-slate-500 mb-3 sm:mb-4 text-center mt-10">
-                            ADULTOS
-                          </h4>
-                          
-                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
-                           
-                          
-                            {/* ${
-                            selectedSlot.slotId === slot.id
-                              ? 'bg-[#ae5eab] text-white border-[#ae5eab] shadow-xl scale-105'
-                              : 'bg-white text-gray-800 border-gray-200 hover:border-blue-300 hover:shadow-xl hover:-translate-y-1'
-                          }` */}
-                              <button
-                                key={`mamiswimmer-01`}
-                                type="button"
-                                className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
-                              `}
-                                onClick={() => handleSlotSelection("mamiswimmer")}
-                              >
-                                <div className="text-center">
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-white' : 'text-blue-600'} */}
-                                  <div className={`text-base sm:text-lg font-bold mb-1 
-                                  `}>
-                                  MAMI SWIMMER
-                                  </div>
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-slate-50' : 'text-gray-600'} */}
-                                  <div className={`text-xs sm:text-sm leading-tight font-light 
-                                  `}>
-                                   Hidrogimnasia pre y post natal
-                                  </div>
-                                </div>
-                              </button>
-                           
-                              <button
-                                key={`hidro-01`}
-                                type="button"
-                                className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
-                              `}
-                                onClick={() => handleSlotSelection("hidroswimmer")}
-                              >
-                                <div className="text-center">
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-white' : 'text-blue-600'} */}
-                                  <div className={`text-base sm:text-lg font-bold mb-1 
-                                  `}>
-                                  HIDRO SWIMMER
-                                  </div>
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-slate-50' : 'text-gray-600'} */}
-                                  <div className={`text-xs sm:text-sm leading-tight font-light 
-                                  `}>
-                                   Gimnasia acuática
-                                  </div>
-                                </div>
-                              </button>
-                              
-                              <button
-                                key={`bigswimmer-01`}
-                                type="button"
-                                className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
-                              `}
-                                onClick={() => handleSlotSelection("bigswimmer")}
-                              >
-                                <div className="text-center">
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-white' : 'text-blue-600'} */}
-                                  <div className={`text-base sm:text-lg font-bold mb-1 
-                                  `}>
-                                  BIG SWIMMER
-                                  </div>
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-slate-50' : 'text-gray-600'} */}
-                                  <div className={`text-xs sm:text-sm leading-tight font-light 
-                                  `}>
-                                   Natación adultos, nivel inicial
-                                  </div>
-                                </div>
-                              </button>
-                              
-                              
-                              <button
-                                key={`senior-01`}
-                                type="button"
-                                className={`rounded-lg p-2 sm:p-3 shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-2 
-                              `}
-                                onClick={() => handleSlotSelection("seniorswimmer")}
-                              >
-                                <div className="text-center">
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-white' : 'text-blue-600'} */}
-                                  <div className={`text-base sm:text-lg font-bold mb-1 
-                                  `}>
-                                  SENIOR SWIMMER
-                                  </div>
-                                  {/* ${selectedSlot.slotId === slot.id ? 'text-slate-50' : 'text-gray-600'} */}
-                                  <div className={`text-xs sm:text-sm leading-tight font-light 
-                                  `}>
-                                   Natación para adulto mayor
-                                  </div>
-                                </div>
-                              </button>
-
-                          </div>
                           
                         </div>
                      
@@ -441,11 +408,13 @@ const TestClassContact = (props:any) => {
                   </div>
                 </div>
 
+              
+
                 {/* Slot seleccionado */}
                 {selectedSlot.slotId && (
                   <div className="mt-4 p-3 sm:p-4 border border-[#ae5eab] rounded-lg">
                     <p className="text-[#ae5eab] font-medium text-sm sm:text-base">
-                      Clase seleccionada: <strong className=' uppercase'>{selectedSlot.slotId}</strong>
+                      Fecha seleccionada: <strong>{selectedSlot.date || selectedSlot.slotId}</strong>
                     </p>
                     {/* <p className="text-white text-xs sm:text-sm">
                       ID: {selectedSlot.slotId}
@@ -486,9 +455,9 @@ const TestClassContact = (props:any) => {
                         1
                       </div>
                       <div className="ml-4 sm:ml-6 pt-1 sm:pt-2">
-                        <h4 className="text-lg sm:text-xl text-white mb-2">Ingresa tus datos</h4>
+                        <h4 className="text-lg sm:text-xl text-white mb-2">Ingresa tus datos y completa el formulario</h4>
                         <p className="text-white/90 leading-relaxed text-sm sm:text-base">
-                          Completa un breve formulario con la información necesaria para coordinar tu clase de prueba.
+                        Completa un breve formulario con la información necesaria para coordinar tu clase de prueba.
                         </p>
                       </div>
                     </div>
@@ -501,7 +470,7 @@ const TestClassContact = (props:any) => {
                       <div className="ml-4 sm:ml-6 pt-1 sm:pt-2">
                         <h4 className="text-lg sm:text-xl text-white mb-2">Selecciona tu clase</h4>
                         <p className="text-white/90 leading-relaxed text-sm sm:text-base">
-                          Elige el día y la hora que mejor se adapten a tu horario entre las opciones disponibles.
+                        Elige el día y la hora que mejor se adapten a tu horario entre las opciones disponibles.
                         </p>
                       </div>
                     </div>
@@ -512,9 +481,9 @@ const TestClassContact = (props:any) => {
                         3
                       </div>
                       <div className="ml-4 sm:ml-6 pt-1 sm:pt-2">
-                        <h4 className="text-lg sm:text-xl text-white mb-2">Te contactaremos para efectuar tu pago</h4>
+                        <h4 className="text-lg sm:text-xl text-white mb-2">Reserva y paga</h4>
                         <p className="text-white/90 leading-relaxed text-sm sm:text-base">
-                          Nuestra ejecutivas te contactarán para concretar tu pre-inscripción.
+                        Nuestra página te guiará al carro de compras para que finalices la reserva de forma segura. Puedes pagar con tarjeta de débito o crédito.
                         </p>
                       </div>
                     </div>
@@ -524,7 +493,7 @@ const TestClassContact = (props:any) => {
 
               {/* Texto final responsive */}
               <section className="mt-8 sm:mt-12">
-                <p className="text-white/90 leading-relaxed text-sm sm:text-base">¡Así de simple! En pocos pasos, tendrás tu pre-incripción para tus clases en nuestra nueva sede en Peñalolen que podría cambiar para siempre la relación de tu hijo con el agua. ¡Te esperamos para comenzar esta aventura juntos!</p>
+                <p className="text-white/90 leading-relaxed text-sm sm:text-base">¡Así de simple! En pocos pasos, tendrás tu cupo asegurado para una clase que podría cambiar para siempre la relación de tu hijo con el agua. ¡Te esperamos para comenzar esta aventura juntos!</p>
               </section>
             </div>
           </div>

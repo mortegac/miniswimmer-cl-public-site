@@ -1,17 +1,17 @@
 import { Metadata } from "next";
 import SchemaMarkup from "@/components/Common/SchemaMarkup";
-import LessonsInBroward from "@/components/LessonsInMaintencillo";
+import LessonsInBroward from "@/components/LessonsInBroward";
 
 
 
 export const metadata: Metadata = {
 	title: "Enroll Your Child in Swimming in Broward!",
-	description: `Find our convenient locations for personalized in-home swimming lessons. We help babies and children of all levels improve their technique, build endurance, and gain confidence in the water. We serve the cities of Coconut Creek, Cooper City, Coral Springs, Dania Beach, Davie, Deerfield Beach, Fort Lauderdale, Hallandale Beach, Hillsboro Beach, Hollywood, Lauderdale Lakes, Lauderdale-By-The-Sea, Lauderhill, Lighthouse Point, Margate, Miramar, North Lauderdale, Oakland Park, Parkland, Pembroke Park, Pembroke Pines, Plantation, Pompano Beach, Sea Ranch Lakes, Southwest Ranches, Sunrise, Tamarac, Lazy Lake, West Park, Weston, Wilton Manors in Broward County.`,
+	description: `In-home swimming lessons for babies and children across Broward County — Fort Lauderdale, Hollywood, Coral Springs, Pembroke Pines, Miramar, Weston, and more. Personalized coaching with the Miniswimmer Method.`,
 	alternates: {
-		canonical: 'https://www.miniswimmer.us/swimming-lessons-in-broward',
+		canonical: 'https://miniswimmer.cl/swimming-lessons-in-broward',
 		languages: {
-			'en-US': 'https://www.miniswimmer.us/swimming-lessons-in-broward',
-			'es': 'https://www.miniswimmer.us/swimming-lessons-in-broward',
+			'x-default': 'https://miniswimmer.cl/swimming-lessons-in-broward',
+			'en-US': 'https://miniswimmer.cl/swimming-lessons-in-broward',
 		},
 	},
 	robots: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		type: "website",
-		url: 'https://www.miniswimmer.us/swimming-lessons-in-broward',
+		url: 'https://miniswimmer.cl/swimming-lessons-in-broward',
 		title: `Enroll Your Child in Swimming in Broward!`,
 		description: `Find our convenient locations for personalized in-home swimming lessons. We help babies and children of all levels improve their technique, build endurance, and gain confidence in the water.`,
 		images: [
@@ -55,8 +55,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
+	"@id": "https://miniswimmer.cl/#organization",
 	"name": "Miniswimmer",
-	"url": "https://www.miniswimmer.us/swimming-lessons-in-broward",
+	"url": "https://miniswimmer.cl",
 	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
 	"description": "Find our convenient locations for personalized in-home swimming lessons. We help babies and children of all levels improve their technique, build endurance, and gain confidence in the water.",
 	"sameAs": [

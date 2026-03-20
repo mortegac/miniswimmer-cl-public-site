@@ -206,16 +206,16 @@ const Footer = () => {
                       </Link>
                     </li>
                 <li
-                      key={"clases-natacion-maintencillo"}
+                      key={"clases-natacion-penalolen"}
                       className={`flex duration-200 ease-out hover:text-white`}
                     >
                       <Link
-                        href="clases-natacion-maintencillo"
+                        href="clases-natacion-penalolen"
                         rel="noopener noreferrer" 
                         className={`flex duration-200 ease-out hover:text-white`}
                       >
                         {/* {h("termsAndConditions")} */}
-                        Clases de natación en Maintencillo
+                        Clases de natación en Peñalolen
                       </Link>
                     </li>
                 <li

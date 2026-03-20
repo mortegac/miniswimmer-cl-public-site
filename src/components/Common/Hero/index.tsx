@@ -71,8 +71,7 @@ const Hero = (props:any) => {
           <div className='w-full lg:w-1/2'>
             <Image
               src={t('image')}
-              // src='/images/hero/header-2.png'
-              alt='Hero Image'
+              alt={t('title').replace(/<[^>]*>/g, '')}
               width={600}
               height={500}
               className='h-auto w-full rounded-lg'
@@ -106,7 +105,8 @@ const Hero = (props:any) => {
       <div className='absolute bottom-0 left-0 z-0 w-full'>
         <Image
           src='/images/hero/waves5.svg'
-          alt='Hero Image'
+          alt=''
+          aria-hidden='true'
           width={1920}
           height={423}
           className='h-auto w-full object-cover'
