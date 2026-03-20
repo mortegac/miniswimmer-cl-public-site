@@ -52,26 +52,70 @@ export const metadata: Metadata = {
 		],
 	},
 };
-const organizationSchema = {
+const organizationRefSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
 	"@id": "https://miniswimmer.cl/#organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.cl",
-	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
-	"description": "Find our convenient locations for personalized in-home swimming lessons. We help babies and children of all levels improve their technique, build endurance, and gain confidence in the water.",
-	"sameAs": [
-		"https://www.facebook.com/miniswimmer.academy",
-		"https://www.instagram.com/miniswimmer.chile", 
-		"https://www.instagram.com/miniswimmer.us/",
-		"https://www.linkedin.com/company/105056316"
+	"url": "https://miniswimmer.cl"
+};
+
+const localBusinessSchema = {
+	"@context": "https://schema.org",
+	"@type": ["LocalBusiness", "SportsActivityLocation"],
+	"@id": "https://miniswimmer.cl/swimming-lessons-in-broward#localbusiness",
+	"name": "Miniswimmer — Swimming Lessons in Broward County",
+	"url": "https://miniswimmer.cl/swimming-lessons-in-broward",
+	"image": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+	"logo": {
+		"@type": "ImageObject",
+		"url": "https://miniswimmer.cl/images/logo/logo.svg"
+	},
+	"description": "In-home swimming lessons for babies and children across Broward County. Serving Fort Lauderdale, Hollywood, Coral Springs, Pembroke Pines, Miramar, Weston, and more.",
+	"telephone": "+56973447496",
+	"priceRange": "$$$",
+	"currenciesAccepted": "USD",
+	"paymentAccepted": "Cash, Credit Card",
+	"address": {
+		"@type": "PostalAddress",
+		"addressLocality": "Fort Lauderdale",
+		"addressRegion": "FL",
+		"postalCode": "33301",
+		"addressCountry": "US"
+	},
+	"geo": {
+		"@type": "GeoCoordinates",
+		"latitude": 26.1224,
+		"longitude": -80.1373
+	},
+	"areaServed": ["Fort Lauderdale", "Hollywood", "Coral Springs", "Pembroke Pines", "Miramar", "Weston", "Davie", "Sunrise", "Plantation", "Pompano Beach"],
+	"openingHoursSpecification": [
+		{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "19:00" },
+		{ "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00" }
+	],
+	"makesOffer": [
+		{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "In-Home Baby Swimming Lessons", "description": "Personalized in-home swimming lessons for babies from 2 months old using the Miniswimmer Method." } },
+		{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Children's Swimming Lessons", "description": "Private swimming lessons for children ages 3–12 at your home pool." } }
+	],
+	"parentOrganization": { "@id": "https://miniswimmer.cl/#organization" },
+	"sameAs": ["https://www.facebook.com/miniswimmer.academy", "https://www.instagram.com/miniswimmer.us"]
+};
+
+const breadcrumbSchema = {
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://miniswimmer.cl" },
+		{ "@type": "ListItem", "position": 2, "name": "Swimming Lessons in Broward", "item": "https://miniswimmer.cl/swimming-lessons-in-broward" }
 	]
 };
 
 export default function LessonsInBrowardPage() {
 	return (
 		<>
-			<SchemaMarkup type="Organization" data={organizationSchema} />
+			<SchemaMarkup data={organizationRefSchema} />
+			<SchemaMarkup data={localBusinessSchema} />
+			<SchemaMarkup data={breadcrumbSchema} />
 			<main>
 				<LessonsInBroward />
 			</main>

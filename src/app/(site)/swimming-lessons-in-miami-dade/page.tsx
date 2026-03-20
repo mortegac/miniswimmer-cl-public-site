@@ -52,26 +52,70 @@ export const metadata: Metadata = {
 		],
 	},
 };
-const organizationSchema = {
+const organizationRefSchema = {
 	"@context": "https://schema.org",
 	"@type": "Organization",
 	"@id": "https://miniswimmer.cl/#organization",
 	"name": "Miniswimmer",
-	"url": "https://miniswimmer.cl",
-	"logo": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
-	"description": "Find our convenient locations for personalized in-home swimming lessons. We help babies and children of all levels improve their technique, build endurance, and gain confidence in the water.",
-	"sameAs": [
-		"https://www.facebook.com/miniswimmer.academy",
-		"https://www.instagram.com/miniswimmer.chile", 
-		"https://www.instagram.com/miniswimmer.us/",
-		"https://www.linkedin.com/company/105056316"
+	"url": "https://miniswimmer.cl"
+};
+
+const localBusinessSchema = {
+	"@context": "https://schema.org",
+	"@type": ["LocalBusiness", "SportsActivityLocation"],
+	"@id": "https://miniswimmer.cl/swimming-lessons-in-miami-dade#localbusiness",
+	"name": "Miniswimmer — Swimming Lessons in Miami-Dade",
+	"url": "https://miniswimmer.cl/swimming-lessons-in-miami-dade",
+	"image": "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+	"logo": {
+		"@type": "ImageObject",
+		"url": "https://miniswimmer.cl/images/logo/logo.svg"
+	},
+	"description": "In-home personalized swimming lessons for babies and children in Miami-Dade County. Serving Aventura, North Miami, North Miami Beach, Sunny Isles Beach, Golden Beach, and North Bay Village.",
+	"telephone": "+56973447496",
+	"priceRange": "$$$",
+	"currenciesAccepted": "USD",
+	"paymentAccepted": "Cash, Credit Card",
+	"address": {
+		"@type": "PostalAddress",
+		"addressLocality": "Miami",
+		"addressRegion": "FL",
+		"postalCode": "33160",
+		"addressCountry": "US"
+	},
+	"geo": {
+		"@type": "GeoCoordinates",
+		"latitude": 25.9411,
+		"longitude": -80.1333
+	},
+	"areaServed": ["Aventura", "North Miami", "North Miami Beach", "Sunny Isles Beach", "Golden Beach", "North Bay Village"],
+	"openingHoursSpecification": [
+		{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "19:00" },
+		{ "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00" }
+	],
+	"makesOffer": [
+		{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "In-Home Baby Swimming Lessons", "description": "Personalized in-home swimming lessons for babies from 2 months old using the Miniswimmer Method." } },
+		{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Children's Swimming Lessons", "description": "Private swimming lessons for children ages 3–12 at your home pool." } }
+	],
+	"parentOrganization": { "@id": "https://miniswimmer.cl/#organization" },
+	"sameAs": ["https://www.facebook.com/miniswimmer.academy", "https://www.instagram.com/miniswimmer.us"]
+};
+
+const breadcrumbSchema = {
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://miniswimmer.cl" },
+		{ "@type": "ListItem", "position": 2, "name": "Swimming Lessons in Miami-Dade", "item": "https://miniswimmer.cl/swimming-lessons-in-miami-dade" }
 	]
 };
 
 export default function LessonsInMiamiDadePage() {
 	return (
 		<>
-			<SchemaMarkup type="Organization" data={organizationSchema} />
+			<SchemaMarkup data={organizationRefSchema} />
+			<SchemaMarkup data={localBusinessSchema} />
+			<SchemaMarkup data={breadcrumbSchema} />
 			<main>
 				<LessonsInMiamiDade />
 			</main>

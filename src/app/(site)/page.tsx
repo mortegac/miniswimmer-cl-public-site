@@ -60,20 +60,51 @@ const organizationSchema = {
 	"url": "https://miniswimmer.cl",
 	"logo": {
 		"@type": "ImageObject",
-		"url": "https://miniswimmer.cl/images/logo/logo.svg"
+		"url": "https://miniswimmer.cl/images/logo/logo.svg",
+		"width": 200,
+		"height": 60
 	},
-	"description": "Nuestro método utiliza programación neurolingüística y coaching para garantizar que los niños experimenten un aprendizaje real y significativo a lo largo de sus vidas.",
+	"description": "Academia de natación con el Método Miniswimmer, que combina natación con Programación Neurolingüística (PNL) y coaching. Clases para bebés, niños, adultos y embarazadas en Chile y Estados Unidos.",
+	"telephone": "+56973447496",
+	"email": "contacto@miniswimmer.cl",
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "Camino de la tierra s/n",
+		"addressLocality": "Peñalolén",
+		"addressRegion": "Región Metropolitana",
+		"addressCountry": "CL"
+	},
 	"contactPoint": {
 		"@type": "ContactPoint",
+		"telephone": "+56973447496",
 		"contactType": "customer service",
-		"availableLanguage": ["Spanish", "English"]
+		"availableLanguage": ["Spanish", "English"],
+		"url": "https://miniswimmer.cl/contacto"
 	},
+	"areaServed": [
+		{ "@type": "AdministrativeArea", "name": "Peñalolén, Región Metropolitana, Chile" },
+		{ "@type": "AdministrativeArea", "name": "Maitencillo, Valparaíso, Chile" },
+		{ "@type": "AdministrativeArea", "name": "Viña del Mar, Valparaíso, Chile" },
+		{ "@type": "AdministrativeArea", "name": "Miami-Dade County, Florida, USA" },
+		{ "@type": "AdministrativeArea", "name": "Broward County, Florida, USA" }
+	],
 	"sameAs": [
 		"https://www.facebook.com/miniswimmer.academy",
 		"https://www.instagram.com/miniswimmer.chile",
 		"https://www.instagram.com/miniswimmer.us",
 		"https://www.linkedin.com/company/105056316"
 	]
+};
+
+const websiteSchema = {
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	"@id": "https://miniswimmer.cl/#website",
+	"url": "https://miniswimmer.cl",
+	"name": "Miniswimmer",
+	"description": "Academia de natación para bebés, niños, adultos y embarazadas.",
+	"inLanguage": ["es", "en"],
+	"publisher": { "@id": "https://miniswimmer.cl/#organization" }
 };
 
 const faqSchema = {
@@ -126,7 +157,8 @@ const faqSchema = {
 export default function HomePage() {
 	return (
 		<>
-			<SchemaMarkup type="Organization" data={organizationSchema} />
+			<SchemaMarkup data={organizationSchema} />
+			<SchemaMarkup data={websiteSchema} />
 			<SchemaMarkup data={faqSchema} />
 			<main>
 				<Home />
