@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(yarn dev:*)",
+      "Read(//Users/manu/.config/**)",
+      "Bash(npm list:*)",
+      "Bash(brew install:*)",
+      "Bash(npm install:*)",
+      "Bash(tmux:*)",
+      "Bash(chmod:*)",
+      "Bash(~/.local/bin/tmux-vercel-status; echo:*)",
+      "Bash(vercel login:*)",
+      "Bash(rm:*)",
+      "Bash(find:*)",
+      "Bash(vercel whoami:*)",
+      "Bash(cat:*)",
+      "Bash(python3:*)"
+    ]
+  }
+}

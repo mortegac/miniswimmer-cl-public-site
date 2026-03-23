@@ -329,7 +329,7 @@
         },
         {
           "question": "What programs do you offer?",
-          "answer": "We offer six specialized programs: Matronatación (baby swimming from 2 months with a parent), children's swimming lessons (all ages and skill levels), Mami Swimmer (prenatal aquatic fitness), Big Swimmer (adult lessons), Hidro Swimmer (aquatic fitness for adults), and Tea Swimmer (specialized sessions for children with ASD). Each program is designed by aquatic education specialists and adapted to the physical and emotional needs of each group."
+          "answer": "We offer six specialized programs: Matronatación (baby swimming from 2 months with a parent), children's swimming lessons (all ages and skill levels), Mami Swimmer (prenatal aquatic fitness), Big Swimmer (adult lessons), Hidro Swimmer (aquatic fitness for adults), and Neuro Swimmer (specialized sessions for children with ASD). Each program is designed by aquatic education specialists and adapted to the physical and emotional needs of each group."
         },
         {
           "question": "What should we bring to the first class?",
@@ -611,7 +611,7 @@
         },
         {
           "question": "What programs do you offer?",
-          "answer": "We offer six specialized programs: Matronatación (baby swimming from 2 months with a parent), children's swimming lessons (all ages and skill levels), Mami Swimmer (prenatal aquatic fitness), Big Swimmer (adult lessons), Hidro Swimmer (aquatic fitness for adults), and Tea Swimmer (specialized sessions for children with ASD). Each program is designed by aquatic education specialists and adapted to the physical and emotional needs of each group."
+          "answer": "We offer six specialized programs: Matronatación (baby swimming from 2 months with a parent), children's swimming lessons (all ages and skill levels), Mami Swimmer (prenatal aquatic fitness), Big Swimmer (adult lessons), Hidro Swimmer (aquatic fitness for adults), and Neuro Swimmer (specialized sessions for children with ASD). Each program is designed by aquatic education specialists and adapted to the physical and emotional needs of each group."
         },
         {
           "question": "What should we bring to the first class?",
@@ -883,7 +883,7 @@
         },
         {
           "question": "What programs do you offer?",
-          "answer": "We offer six specialized programs: Matronatación (baby swimming from 2 months with a parent), children's swimming lessons (all ages and skill levels), Mami Swimmer (prenatal aquatic fitness), Big Swimmer (adult lessons), Hidro Swimmer (aquatic fitness for adults), and Tea Swimmer (specialized sessions for children with ASD). Each program is designed by aquatic education specialists and adapted to the physical and emotional needs of each group."
+          "answer": "We offer six specialized programs: Matronatación (baby swimming from 2 months with a parent), children's swimming lessons (all ages and skill levels), Mami Swimmer (prenatal aquatic fitness), Big Swimmer (adult lessons), Hidro Swimmer (aquatic fitness for adults), and Neuro Swimmer (specialized sessions for children with ASD). Each program is designed by aquatic education specialists and adapted to the physical and emotional needs of each group."
         },
         {
           "question": "What should we bring to the first class?",
@@ -1235,7 +1235,7 @@
         },
         {
           "question": "What programs do you offer?",
-          "answer": "We offer six specialized programs: Matronatación (baby swimming from 2 months with a parent), children's swimming lessons (all ages and skill levels), Mami Swimmer (prenatal aquatic fitness), Big Swimmer (adult lessons), Hidro Swimmer (aquatic fitness for adults), and Tea Swimmer (specialized sessions for children with ASD). Each program is designed by aquatic education specialists and adapted to the physical and emotional needs of each group."
+          "answer": "We offer six specialized programs: Matronatación (baby swimming from 2 months with a parent), children's swimming lessons (all ages and skill levels), Mami Swimmer (prenatal aquatic fitness), Big Swimmer (adult lessons), Hidro Swimmer (aquatic fitness for adults), and Neuro Swimmer (specialized sessions for children with ASD). Each program is designed by aquatic education specialists and adapted to the physical and emotional needs of each group."
         },
         {
           "question": "What should we bring to the first class?",
@@ -1514,7 +1514,7 @@
         },
         {
           "question": "What programs do you offer?",
-          "answer": "We offer six specialized programs: Matronatación (baby swimming from 2 months with a parent), children's swimming lessons (all ages and skill levels), Mami Swimmer (prenatal aquatic fitness), Big Swimmer (adult lessons), Hidro Swimmer (aquatic fitness for adults), and Tea Swimmer (specialized sessions for children with ASD). Each program is designed by aquatic education specialists and adapted to the physical and emotional needs of each group."
+          "answer": "We offer six specialized programs: Matronatación (baby swimming from 2 months with a parent), children's swimming lessons (all ages and skill levels), Mami Swimmer (prenatal aquatic fitness), Big Swimmer (adult lessons), Hidro Swimmer (aquatic fitness for adults), and Neuro Swimmer (specialized sessions for children with ASD). Each program is designed by aquatic education specialists and adapted to the physical and emotional needs of each group."
         },
         {
           "question": "What should we bring to the first class?",
@@ -1737,7 +1737,7 @@
           "description": "At Big Swimmer, we offer swimming classes for adults. Whether you want to learn from scratch, improve your technique, or train, our coaches will help you reach your goals in the water."
         },
         {
-          "title": "TEA Swimmer",
+          "title": "Neuro Swimmer",
           "description": "We offer a unique and specialized teaching method for people with Autism Spectrum Disorder (ASD). This therapeutic and safe approach promotes independence and confidence in the water."
         }
       ]
@@ -2331,7 +2331,7 @@
         },
         {
           "question": "What programs do you offer?",
-          "answer": "We offer six specialized programs: Matronatación (baby swimming from 2 months with a parent), children's swimming lessons (all ages and skill levels), Mami Swimmer (prenatal aquatic fitness), Big Swimmer (adult lessons), Hidro Swimmer (aquatic fitness for adults), and Tea Swimmer (specialized sessions for children with ASD). Each program is designed by aquatic education specialists and adapted to the physical and emotional needs of each group."
+          "answer": "We offer six specialized programs: Matronatación (baby swimming from 2 months with a parent), children's swimming lessons (all ages and skill levels), Mami Swimmer (prenatal aquatic fitness), Big Swimmer (adult lessons), Hidro Swimmer (aquatic fitness for adults), and Neuro Swimmer (specialized sessions for children with ASD). Each program is designed by aquatic education specialists and adapted to the physical and emotional needs of each group."
         },
         {
           "question": "What should we bring to the first class?",
@@ -2714,6 +2714,61 @@
     "newsletter_content": {
       "title": "Newsletter Content",
       "description": "Type your message that you want to notify your audience"
+    }
+  },
+  "neuroSwimmerpage": {
+    "hero_section": {
+      "title": "Neuro Swimmer: <marker>inclusive and safe</marker> swimming classes for neurodivergent children",
+      "subtitle": "Because every child deserves to discover the water in their own way. Our coaches are certified in swimming instruction with a neurodivergent focus, designing every class to respect your child's sensory, emotional and motor rhythm.",
+      "cta": "ASK ABOUT NEURO SWIMMER",
+      "image": "https://images.prismic.io/miniswimmerchile/aLTkymGNHVfTOeNz_header-clases-miniswimmer-07.png?auto=format,compress",
+      "url": "https://api.whatsapp.com/send/?phone=56973447496&text=I+want+information+about+Neuro+Swimmer+from+miniswimmer.cl&type=phone_number&app_absent=0"
+    },
+    "features_section": {
+      "title": "What makes Neuro Swimmer classes different?",
+      "subtitle": "Our coaches hold the Neuro Swimmer Certification: specialized training in swimming instruction with a neurodivergent focus. This means every class is designed from an inclusive, conscious perspective grounded in your child's neurological development.",
+      "imagen01": "/images/neuroswimer/NEURO-Swimmer-01.png",
+      "imagen02": "/images/neuroswimer/NEURO-Swimmer-02.png",
+      "imagen03": "/images/neuroswimer/NEURO-Swimmer-03.png",
+      "featuresTop": [
+        {
+          "title": "Certified neurodivergent coaches",
+          "description": "Our instructors are trained to understand how sensory, emotional and motor processes develop in neurodivergent children, adapting their teaching approach to each individual learning profile."
+        },
+        {
+          "title": "Classes designed for your child",
+          "description": "Each class respects your child's individual pace, needs and abilities. There is no rush or misplaced pressure — your child sets the rhythm."
+        },
+        {
+          "title": "Sensory and emotional support in the water",
+          "description": "We know the aquatic environment can be a sensory challenge. Our coaches are equipped to support emotional regulation processes inside the pool, creating a positive and stress-free experience."
+        }
+      ],
+      "features": [
+        {
+          "title": "Trust and connection, step by step",
+          "description": "We build water confidence gradually and safely. The goal is for your child to discover the water in their own way, in their own time, with the support they need."
+        },
+        {
+          "title": "Small groups and private pools",
+          "description": "Classes are held in private pools with small groups, minimizing sensory overload and maximizing the individual attention your child deserves."
+        },
+        {
+          "title": "Real water safety",
+          "description": "We teach adapted aquatic survival skills for each child. Your child's safety near water is our top priority."
+        }
+      ]
+    },
+    "counter_section": {
+      "title": "Families who trust our method",
+      "type_one": "Families",
+      "type_two": "Happy Children and Babies",
+      "type_three": "Pregnant People, and Adults"
+    },
+    "whatsapp_contact": {
+      "title": "Ask about the Neuro Swimmer program",
+      "phone": "+56 (973) 447 496",
+      "url": "https://api.whatsapp.com/send/?phone=56973447496&text=I+want+information+about+Neuro+Swimmer+from+miniswimmer.cl&type=phone_number&app_absent=0"
     }
   }
 }

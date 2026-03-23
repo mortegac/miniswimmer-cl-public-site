@@ -95,7 +95,7 @@ const localBusinessSchema = {
 	"makesOffer": [
 		{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Matronatación", "description": "Clases de natación para bebés de 2 meses a 3 años acompañados de un adulto." } },
 		{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Natación Infantil", "description": "Clases de natación para niños de 3 a 12 años." } },
-		{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tea Swimmer", "description": "Natación adaptada para niños con Trastorno del Espectro Autista." } }
+		{ "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Neuro Swimmer", "description": "Natación adaptada para niños con Trastorno del Espectro Autista." } }
 	],
 	"parentOrganization": { "@id": "https://miniswimmer.cl/#organization" },
 	"sameAs": ["https://www.facebook.com/miniswimmer.academy", "https://www.instagram.com/miniswimmer.chile"]

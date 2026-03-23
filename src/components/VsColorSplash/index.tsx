@@ -41,7 +41,7 @@ const features = [
   },
   {
     label: "Programa para niños con TEA",
-    miniswimmer: "Tea Swimmer — programa adaptado con marco de PNL integrado",
+    miniswimmer: "Neuro Swimmer — programa adaptado con marco de PNL integrado",
     competitor: "T.O. especialista en TEA mencionada, sin programa publicado ni reservas disponibles",
     winner: "miniswimmer",
   },
@@ -125,7 +125,7 @@ const advantages = [
   },
   {
     icon: "🎯",
-    title: "Tea Swimmer e Hidro Swimmer",
+    title: "Neuro Swimmer e Hidro Swimmer",
     desc: "Programas especializados reales y disponibles para niños con TEA e hidroterapia. Color Splash tiene estas especialidades mencionadas como 'en construcción' — sin reservas ni programa publicado.",
   },
 ];

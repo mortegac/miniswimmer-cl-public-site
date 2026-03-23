@@ -49,7 +49,7 @@ const features = [
   {
     label: "Niños con TEA",
     miniswimmer:
-      "Tea Swimmer — programa adaptado con marco de PNL e instrucción especializada.",
+      "Neuro Swimmer — programa adaptado con marco de PNL e instrucción especializada.",
     competitor:
       "Sin programa específico para niños con TEA o necesidades especiales.",
     winner: "miniswimmer",
@@ -134,7 +134,7 @@ const advantages = [
   {
     icon: "👨‍👩‍👧",
     title: "Programas que otros no tienen",
-    desc: "Mami Swimmer (embarazadas), Tea Swimmer (niños con TEA) e Hidro Swimmer (hidroterapia) no existen en Club Recrear. Si tu familia tiene necesidades específicas, Miniswimmer tiene un programa diseñado para ti.",
+    desc: "Mami Swimmer (embarazadas), Neuro Swimmer (niños con TEA) e Hidro Swimmer (hidroterapia) no existen en Club Recrear. Si tu familia tiene necesidades específicas, Miniswimmer tiene un programa diseñado para ti.",
   },
   {
     icon: "⭐",

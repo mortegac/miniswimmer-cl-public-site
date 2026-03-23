@@ -442,7 +442,7 @@
 					"description": "En Big Swimmer, ofrecemos clases de natación para adultos. Ya sea que quieras aprender desde cero, mejorar tu técnica o entrenar, nuestros coaches te ayudarán a alcanzar tus metas en el agua."
 				},
 				{
-					"title": "Tea Swimmer",
+					"title": "Neuro Swimmer",
 					"description": "Ofrecemos un método de enseñanza único y especializado para personas con Trastorno del Espectro Autista (TEA). Un enfoque terapéutico y seguro que promueve la independencia y confianza en el agua."
 				}
 			]

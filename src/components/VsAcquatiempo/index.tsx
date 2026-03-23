@@ -49,7 +49,7 @@ const features = [
   {
     label: "Niños con TEA / Necesidades especiales",
     miniswimmer:
-      "Tea Swimmer — programa adaptado con marco de PNL e instrucción especializada.",
+      "Neuro Swimmer — programa adaptado con marco de PNL e instrucción especializada.",
     competitor:
       "No disponible.",
     winner: "miniswimmer",

@@ -13,7 +13,7 @@ const SERVICIOS = [
   'Mami Swimmer',
   'Hidro Swimmer',
   'Big Swimmer',
-  'Tea Swimmer',
+  'Neuro Swimmer',
 ] as const;
 
 const SEDES = [

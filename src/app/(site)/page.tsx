@@ -140,7 +140,7 @@ const faqSchema = {
 			"name": "¿Qué programas de natación ofrecen?",
 			"acceptedAnswer": {
 				"@type": "Answer",
-				"text": "Ofrecemos Matronatación (bebés de 2 meses a 3 años con un adulto), natación infantil (niños de 3 a 12 años), Mami Swimmer (mamás embarazadas), Big Swimmer (adolescentes y adultos), Hidro Swimmer (hidroterapia) y Tea Swimmer (programa adaptado para niños con TEA)."
+				"text": "Ofrecemos Matronatación (bebés de 2 meses a 3 años con un adulto), natación infantil (niños de 3 a 12 años), Mami Swimmer (mamás embarazadas), Big Swimmer (adolescentes y adultos), Hidro Swimmer (hidroterapia) y Neuro Swimmer (programa adaptado para niños con TEA)."
 			}
 		},
 		{

@@ -26,7 +26,7 @@ const features = [
   },
   {
     label: "Niños con TEA / Neurodiversidad",
-    miniswimmer: "Tea Swimmer — programa adaptado integrado con PNL",
+    miniswimmer: "Neuro Swimmer — programa adaptado integrado con PNL",
     competitor: "Natación para niños neurodivergentes (sin marco metodológico)",
     winner: "miniswimmer",
   },
@@ -101,7 +101,7 @@ const advantages = [
   {
     icon: "👶",
     title: "Bebés y todas las etapas",
-    desc: "Desde Matronatación para bebés hasta Big Swimmer para adultos, pasando por Mami Swimmer, Tea Swimmer e Hidro Swimmer. Salmon Swim no tiene programas para bebés ni para embarazadas.",
+    desc: "Desde Matronatación para bebés hasta Big Swimmer para adultos, pasando por Mami Swimmer, Neuro Swimmer e Hidro Swimmer. Salmon Swim no tiene programas para bebés ni para embarazadas.",
   },
   {
     icon: "🌎",

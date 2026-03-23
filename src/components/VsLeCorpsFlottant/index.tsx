@@ -41,7 +41,7 @@ const features = [
   {
     label: "Niños con TEA",
     miniswimmer:
-      "Tea Swimmer — programa adaptado con marco de PNL e instrucción especializada.",
+      "Neuro Swimmer — programa adaptado con marco de PNL e instrucción especializada.",
     competitor:
       "Sin programa específico para niños con TEA o necesidades especiales.",
     winner: "miniswimmer",
@@ -121,7 +121,7 @@ const advantages = [
   {
     icon: "👨‍👩‍👧",
     title: "Más programas, más familias",
-    desc: "Le Corps Flottant no tiene programas para embarazadas, niños con TEA ni hidroterapia. En Miniswimmer encontrarás Mami Swimmer, Tea Swimmer e Hidro Swimmer — cubriendo necesidades que la mayoría de las academias ignoran.",
+    desc: "Le Corps Flottant no tiene programas para embarazadas, niños con TEA ni hidroterapia. En Miniswimmer encontrarás Mami Swimmer, Neuro Swimmer e Hidro Swimmer — cubriendo necesidades que la mayoría de las academias ignoran.",
   },
   {
     icon: "🌎",

@@ -15,7 +15,7 @@ const features = [
   {
     label: "Programas disponibles",
     miniswimmer:
-      "Matronatación, Niños, Mami Swimmer, Big Swimmer, Hidro Swimmer, Tea Swimmer",
+      "Matronatación, Niños, Mami Swimmer, Big Swimmer, Hidro Swimmer, Neuro Swimmer",
     aqualuz: "Bebés, Niños (4+), Embarazadas — sin adultos ni programas especializados",
     winner: "miniswimmer",
   },
@@ -40,7 +40,7 @@ const features = [
   },
   {
     label: "Programa TEA / Necesidades especiales",
-    miniswimmer: "Tea Swimmer — programa adaptado para niños con TEA",
+    miniswimmer: "Neuro Swimmer — programa adaptado para niños con TEA",
     aqualuz: "No disponible",
     winner: "miniswimmer",
   },
@@ -96,7 +96,7 @@ const advantages = [
   {
     icon: "👶",
     title: "Programas para todos",
-    desc: "Desde bebés de 2 meses hasta adultos: Matronatación, Niños, Mami Swimmer, Big Swimmer, Tea Swimmer e Hidro Swimmer. Aqualuz no ofrece programas para adultos ni programas adaptados.",
+    desc: "Desde bebés de 2 meses hasta adultos: Matronatación, Niños, Mami Swimmer, Big Swimmer, Neuro Swimmer e Hidro Swimmer. Aqualuz no ofrece programas para adultos ni programas adaptados.",
   },
   {
     icon: "💬",
