@@ -103,6 +103,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    // Specialty program pages
+    {
+      url: `${baseUrl}/matronatacion`,
+      lastModified: new Date("2026-03-23"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/neuro-swimmer`,
+      lastModified: new Date("2026-03-23"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     // Competitor comparison pages
     {
       url: `${baseUrl}/miniswimmer-vs-aqualuz`,
