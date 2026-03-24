@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 
 export function useClickOutside<T extends HTMLElement>(callback: () => void) {
   const ref = useRef<T>(null);
@@ -10,10 +10,10 @@ export function useClickOutside<T extends HTMLElement>(callback: () => void) {
       }
     }
 
-    document.addEventListener('mousedown', handleEvent);
+    document.addEventListener("mousedown", handleEvent);
 
     return () => {
-      document.removeEventListener('mousedown', handleEvent);
+      document.removeEventListener("mousedown", handleEvent);
     };
   }, [callback, ref]);
 

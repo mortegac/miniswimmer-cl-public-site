@@ -53,6 +53,7 @@ Forms use **React Hook Form** + **Yup** validation. Email submission via **Email
 ### Feature Flags
 
 `integrations.config.tsx` at root controls enabled integrations:
+
 - Auth: enabled
 - i18n: enabled
 - Payments, Algolia, OpenAI, Mailchimp: disabled

@@ -2758,5 +2758,60 @@
 			"phone": "+56 (973) 447 496",
 			"url": "https://api.whatsapp.com/send/?phone=56973447496&text=Quiero+información+sobre+Neuro+Swimmer+desde+miniswimmer.cl&type=phone_number&app_absent=0"
 		}
+	},
+	"matronatacionpage": {
+		"hero_section": {
+			"title": "Matronatación: clases de natación para <marker>bebés desde los 2 meses</marker> con Miniswimmer",
+			"subtitle": "Fortalece el vínculo con tu bebé en el agua. Nuestras clases de matronatación combinan estimulación temprana, juego y el Método Miniswimmer para que tu pequeño aprenda en un entorno seguro, amoroso y lleno de alegría.",
+			"cta": "AGENDA UNA CLASE DE PRUEBA",
+			"image": "https://images.prismic.io/miniswimmerchile/aLTkymGNHVfTOeNz_header-clases-miniswimmer-07.png?auto=format,compress",
+			"url": "https://api.whatsapp.com/send/?phone=56973447496&text=Quiero+información+sobre+clases+de+matronatación+para+bebés+desde+miniswimmer.cl&type=phone_number&app_absent=0"
+		},
+		"features_section": {
+			"title": "¿Por qué las familias eligen Miniswimmer para sus bebés?",
+			"subtitle": "El Método Miniswimmer lleva más de 20 años ayudando a bebés y familias a descubrir el agua juntos. Cada clase combina estimulación temprana, técnicas de psicomotricidad, juego y el vínculo entre papás e hijitos como protagonistas del proceso.",
+			"imagen01": "/images/matronatacion/matronatacion-01.png",
+			"imagen02": "/images/matronatacion/matronatacion-02.png",
+			"imagen03": "/images/matronatacion/matronatacion-03.png",
+			"featuresTop": [
+				{
+					"title": "Vínculo y amor desde los primeros meses",
+					"description": "La matronatación es una experiencia que viven tú y tu bebé juntos. Cada clase fortalece la confianza, el contacto y el vínculo afectivo mientras los dos disfrutan del agua. Una conexión que va mucho más allá de la piscina."
+				},
+				{
+					"title": "Estimulación temprana acuática con método",
+					"description": "Aplicamos el Método Miniswimmer — que integra PNL, coaching y psicomotricidad — para estimular el desarrollo motor, cognitivo y emocional de tu bebé desde los primeros meses de vida, dentro y fuera del agua."
+				},
+				{
+					"title": "Coaches certificados en primera infancia",
+					"description": "Nuestros instructores están formados para trabajar con bebés de 2 meses en adelante de forma segura y cariñosa. Conocen cada etapa del desarrollo y adaptan la clase a los tiempos y necesidades de tu pequeño."
+				}
+			],
+			"features": [
+				{
+					"title": "Juegos, canciones y actividades para cada edad",
+					"description": "Las clases están llenas de dinamismo: juegos específicos por edad, canciones, actividades de flotación y rutinas que hacen que el aprendizaje sea divertido, natural y significativo para bebés y papás."
+				},
+				{
+					"title": "Técnicas de autorrescate adaptadas al bebé",
+					"description": "Desde temprana edad enseñamos habilidades acuáticas de supervivencia adaptadas a la edad y etapa de desarrollo de tu bebé. Seguridad en el agua como prioridad, sin apuros y con amor."
+				},
+				{
+					"title": "Grupos pequeños en piscinas privadas",
+					"description": "Las clases se realizan en piscinas privadas con grupos muy reducidos, garantizando la atención personalizada que tu bebé necesita y un ambiente tranquilo, cálido y sin distracciones."
+				}
+			]
+		},
+		"counter_section": {
+			"title": "Familias que confian en nuestro método",
+			"type_one": "Familias",
+			"type_two": "Niños/as y bebes felices",
+			"type_three": "Embarazadas y Adultos"
+		},
+		"whatsapp_contact": {
+			"title": "Consulta por clases de matronatación para tu bebé",
+			"phone": "+56 (973) 447 496",
+			"url": "https://api.whatsapp.com/send/?phone=56973447496&text=Quiero+información+sobre+clases+de+matronatación+para+bebés+desde+miniswimmer.cl&type=phone_number&app_absent=0"
+		}
 	}
 }

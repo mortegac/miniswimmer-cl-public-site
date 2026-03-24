@@ -1,21 +1,25 @@
-import deepmerge from 'deepmerge';
-import { getRequestConfig } from 'next-intl/server';
-import { cookies } from 'next/headers';
-import { integrations } from '../../integrations.config';
-import { SUPPORTED_LOCALES } from './supported-locales';
+import deepmerge from "deepmerge";
+import { getRequestConfig } from "next-intl/server";
+import { cookies } from "next/headers";
+import { integrations } from "../../integrations.config";
+import { SUPPORTED_LOCALES } from "./supported-locales";
 
 export default getRequestConfig(async () => {
   const cookieStore = await cookies();
-  const requestedLocale = cookieStore.get('locale')?.value || '';
+  const requestedLocale = cookieStore.get("locale")?.value || "";
 
-  let locale = 'es'; // Default locale cambiado a español
+  let locale = "es"; // Default locale cambiado a español
 
-  if (integrations.isI18nEnabled && SUPPORTED_LOCALES.includes(requestedLocale)) {
+  if (
+    integrations.isI18nEnabled &&
+    SUPPORTED_LOCALES.includes(requestedLocale)
+  ) {
     locale = requestedLocale;
   }
 
-  const defaultMessages = (await import('../../dictionary/es.json')).default;
-  const userMessages = (await import(`../../dictionary/${locale}.json`)).default;
+  const defaultMessages = (await import("../../dictionary/es.json")).default;
+  const userMessages = (await import(`../../dictionary/${locale}.json`))
+    .default;
 
   const messages = deepmerge(defaultMessages, userMessages, {
     arrayMerge: (destination, source) => {
@@ -24,7 +28,10 @@ export default getRequestConfig(async () => {
        * source: userMessages array
        */
 
-      if (source.length === destination.length || source.length > destination.length) {
+      if (
+        source.length === destination.length ||
+        source.length > destination.length
+      ) {
         return source;
       }
 

@@ -26,16 +26,14 @@ const features = [
     label: "Programa bebés e infantes",
     miniswimmer:
       "Matronatación desde los primeros meses de edad con estimulación significativa.",
-    competitor:
-      "No disponible. La edad mínima para natación es 4 años.",
+    competitor: "No disponible. La edad mínima para natación es 4 años.",
     winner: "miniswimmer",
   },
   {
     label: "Miedo al agua",
     miniswimmer:
       "El Método Miniswimmer trata explícitamente la ansiedad acuática con PNL — en niños y adultos.",
-    competitor:
-      "Sin programa ni contenido dedicado al miedo al agua.",
+    competitor: "Sin programa ni contenido dedicado al miedo al agua.",
     winner: "miniswimmer",
   },
   {
@@ -50,14 +48,12 @@ const features = [
     label: "Niños con TEA / Necesidades especiales",
     miniswimmer:
       "Neuro Swimmer — programa adaptado con marco de PNL e instrucción especializada.",
-    competitor:
-      "No disponible.",
+    competitor: "No disponible.",
     winner: "miniswimmer",
   },
   {
     label: "Hidroterapia",
-    miniswimmer:
-      "Hidro Swimmer — programa de hidroterapia acuática.",
+    miniswimmer: "Hidro Swimmer — programa de hidroterapia acuática.",
     competitor:
       "No disponible. El SPA (sauna y baño de vapor) no es terapia acuática instructiva.",
     winner: "miniswimmer",
@@ -74,22 +70,19 @@ const features = [
     label: "Ubicaciones",
     miniswimmer:
       "Peñalolén, Maitencillo, Viña del Mar (Chile) · Miami-Dade y Broward (USA)",
-    competitor:
-      "Única sede: Av. Ejército Libertador 346, Santiago Centro.",
+    competitor: "Única sede: Av. Ejército Libertador 346, Santiago Centro.",
     winner: "miniswimmer",
   },
   {
     label: "Reserva online",
-    miniswimmer:
-      "Formulario de clase de prueba funcional en el sitio.",
+    miniswimmer: "Formulario de clase de prueba funcional en el sitio.",
     competitor:
-      "Clases de natación solo se compran en persona (\"venta presencial, consultar en recepción\").",
+      'Clases de natación solo se compran en persona ("venta presencial, consultar en recepción").',
     winner: "miniswimmer",
   },
   {
     label: "Transparencia de precios",
-    miniswimmer:
-      "Consulta directa vía WhatsApp o formulario.",
+    miniswimmer: "Consulta directa vía WhatsApp o formulario.",
     competitor:
       "Planes de gym publicados online. Packs de natación solo disponibles en recepción.",
     winner: "empate",
@@ -104,8 +97,7 @@ const features = [
   },
   {
     label: "Contenido educativo",
-    miniswimmer:
-      "Blog activo sobre PNL, matronatación y desarrollo infantil.",
+    miniswimmer: "Blog activo sobre PNL, matronatación y desarrollo infantil.",
     competitor:
       "Sin blog ni contenido educativo. El sitio es un catálogo de planes y horarios.",
     winner: "miniswimmer",
@@ -114,8 +106,7 @@ const features = [
     label: "Sitio bilingüe / mercado internacional",
     miniswimmer:
       "Español + Inglés — sedes en Miami-Dade y Broward para familias en EE.UU.",
-    competitor:
-      "Solo español. Sin presencia internacional.",
+    competitor: "Solo español. Sin presencia internacional.",
     winner: "miniswimmer",
   },
 ];
@@ -158,7 +149,9 @@ export default function VsAcquatiempo() {
               <span className="text-[#87e0ff]">Acqua Tiempo</span>
             </h1>
             <p className="mx-auto mb-8 max-w-[680px] text-lg text-slate-100">
-              ¿Clases de natación en un gimnasio o con una academia especializada? Comparamos programas, metodología y experiencia para que decidas con información real.
+              ¿Clases de natación en un gimnasio o con una academia
+              especializada? Comparamos programas, metodología y experiencia
+              para que decidas con información real.
             </p>
             <Link
               href={WHATSAPP_URL}
@@ -168,8 +161,19 @@ export default function VsAcquatiempo() {
             >
               <span>AGENDA TU CLASE DE PRUEBA GRATIS</span>
               <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-primary text-white">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M3.411 10.625a.625.625 0 0 1 0-1.25h10.733L10.3 5.524a.625.625 0 1 1 .884-.884l5.208 5.208a.625.625 0 0 1 0 .884L11.183 15.94a.625.625 0 1 1-.883-.883l3.844-3.432H3.41z" fill="currentColor" />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M3.411 10.625a.625.625 0 0 1 0-1.25h10.733L10.3 5.524a.625.625 0 1 1 .884-.884l5.208 5.208a.625.625 0 0 1 0 .884L11.183 15.94a.625.625 0 1 1-.883-.883l3.844-3.432H3.41z"
+                    fill="currentColor"
+                  />
                 </svg>
               </span>
             </Link>
@@ -189,20 +193,31 @@ export default function VsAcquatiempo() {
         {/* Mobile: cards */}
         <div className="block lg:hidden space-y-4">
           {features.map((f) => (
-            <div key={f.label} className="rounded-xl border border-slate-200 p-4 shadow-sm">
+            <div
+              key={f.label}
+              className="rounded-xl border border-slate-200 p-4 shadow-sm"
+            >
               <p className="mb-2 text-sm font-bold text-slate-700">{f.label}</p>
               <div className="flex flex-col gap-2">
                 <div className="flex items-start gap-2">
-                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary text-white text-xs">✓</span>
+                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary text-white text-xs">
+                    ✓
+                  </span>
                   <div>
-                    <p className="text-xs font-semibold text-primary">Miniswimmer</p>
+                    <p className="text-xs font-semibold text-primary">
+                      Miniswimmer
+                    </p>
                     <p className="text-sm text-slate-600">{f.miniswimmer}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-slate-200 text-slate-500 text-xs">—</span>
+                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-slate-200 text-slate-500 text-xs">
+                    —
+                  </span>
                   <div>
-                    <p className="text-xs font-semibold text-slate-500">Acqua Tiempo</p>
+                    <p className="text-xs font-semibold text-slate-500">
+                      Acqua Tiempo
+                    </p>
                     <p className="text-sm text-slate-500">{f.competitor}</p>
                   </div>
                 </div>
@@ -216,21 +231,40 @@ export default function VsAcquatiempo() {
           <table className="w-full table-fixed text-sm">
             <thead>
               <tr className="bg-slate-50">
-                <th className="w-1/4 px-6 py-4 text-left font-satoshi text-xs font-bold uppercase tracking-wider text-slate-500">Criterio</th>
-                <th className="w-[37.5%] px-6 py-4 text-left font-satoshi text-xs font-bold uppercase tracking-wider text-primary">Miniswimmer</th>
-                <th className="w-[37.5%] px-6 py-4 text-left font-satoshi text-xs font-bold uppercase tracking-wider text-slate-400">Acqua Tiempo</th>
+                <th className="w-1/4 px-6 py-4 text-left font-satoshi text-xs font-bold uppercase tracking-wider text-slate-500">
+                  Criterio
+                </th>
+                <th className="w-[37.5%] px-6 py-4 text-left font-satoshi text-xs font-bold uppercase tracking-wider text-primary">
+                  Miniswimmer
+                </th>
+                <th className="w-[37.5%] px-6 py-4 text-left font-satoshi text-xs font-bold uppercase tracking-wider text-slate-400">
+                  Acqua Tiempo
+                </th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
               {features.map((f, i) => (
-                <tr key={f.label} className={i % 2 === 0 ? "bg-white" : "bg-slate-50/40"}>
-                  <td className="px-6 py-4 font-medium text-slate-700">{f.label}</td>
+                <tr
+                  key={f.label}
+                  className={i % 2 === 0 ? "bg-white" : "bg-slate-50/40"}
+                >
+                  <td className="px-6 py-4 font-medium text-slate-700">
+                    {f.label}
+                  </td>
                   <td className="px-6 py-4">
                     <div className="flex items-start gap-2">
                       {f.winner === "miniswimmer" && (
-                        <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary text-white text-xs">✓</span>
+                        <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary text-white text-xs">
+                          ✓
+                        </span>
                       )}
-                      <span className={f.winner === "miniswimmer" ? "text-slate-800 font-medium" : "text-slate-600"}>
+                      <span
+                        className={
+                          f.winner === "miniswimmer"
+                            ? "text-slate-800 font-medium"
+                            : "text-slate-600"
+                        }
+                      >
                         {f.miniswimmer}
                       </span>
                     </div>
@@ -253,14 +287,22 @@ export default function VsAcquatiempo() {
             ¿Por qué una academia especializada?
           </h2>
           <p className="mb-12 text-center text-slate-500 max-w-[640px] mx-auto">
-            La natación como add-on de gimnasio no es lo mismo que una academia dedicada a enseñar a nadar.
+            La natación como add-on de gimnasio no es lo mismo que una academia
+            dedicada a enseñar a nadar.
           </p>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {advantages.map((a) => (
-              <div key={a.title} className="rounded-2xl bg-white p-6 shadow-sm border border-slate-100">
+              <div
+                key={a.title}
+                className="rounded-2xl bg-white p-6 shadow-sm border border-slate-100"
+              >
                 <div className="mb-4 text-4xl">{a.icon}</div>
-                <h3 className="mb-2 font-satoshi text-lg font-bold text-slate-800">{a.title}</h3>
-                <p className="text-sm text-slate-500 leading-relaxed">{a.desc}</p>
+                <h3 className="mb-2 font-satoshi text-lg font-bold text-slate-800">
+                  {a.title}
+                </h3>
+                <p className="text-sm text-slate-500 leading-relaxed">
+                  {a.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -274,7 +316,8 @@ export default function VsAcquatiempo() {
             Prueba la diferencia de una academia especializada
           </h2>
           <p className="mx-auto mb-8 max-w-[560px] text-slate-100">
-            Agenda una clase de prueba sin compromiso y descubre lo que el Método Miniswimmer puede hacer por tu hijo o por ti.
+            Agenda una clase de prueba sin compromiso y descubre lo que el
+            Método Miniswimmer puede hacer por tu hijo o por ti.
           </p>
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
@@ -285,8 +328,19 @@ export default function VsAcquatiempo() {
             >
               <span>AGENDAR CLASE DE PRUEBA</span>
               <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-primary text-white">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M3.411 10.625a.625.625 0 0 1 0-1.25h10.733L10.3 5.524a.625.625 0 1 1 .884-.884l5.208 5.208a.625.625 0 0 1 0 .884L11.183 15.94a.625.625 0 1 1-.883-.883l3.844-3.432H3.41z" fill="currentColor" />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M3.411 10.625a.625.625 0 0 1 0-1.25h10.733L10.3 5.524a.625.625 0 1 1 .884-.884l5.208 5.208a.625.625 0 0 1 0 .884L11.183 15.94a.625.625 0 1 1-.883-.883l3.844-3.432H3.41z"
+                    fill="currentColor"
+                  />
                 </svg>
               </span>
             </Link>

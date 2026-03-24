@@ -1,6 +1,4 @@
-
-## COMMANDOS  MCP
-
+## COMMANDOS MCP
 
 ```bash
 # Start Claude Code
@@ -21,7 +19,9 @@ claude
 # Optimize for AI search
 /seo geo https://example.com
 ```
+
 ### Demo:
+
 [Watch the full demo on YouTube](https://www.youtube.com/watch?v=COMnNlUakQk)
 
 **`/seo audit`: full site audit with parallel subagents:**
@@ -30,28 +30,30 @@ claude
 
 ## Commands
 
-| Command | Description |
-|---------|-------------|
-| `/seo audit <url>` | Full website audit with parallel subagent delegation |
-| `/seo page <url>` | Deep single-page analysis |
-| `/seo sitemap <url>` | Analyze existing XML sitemap |
-| `/seo sitemap generate` | Generate new sitemap with industry templates |
-| `/seo schema <url>` | Detect, validate, and generate Schema.org markup |
-| `/seo images <url>` | Image optimization analysis |
-| `/seo technical <url>` | Technical SEO audit (9 categories) |
-| `/seo content <url>` | E-E-A-T and content quality analysis |
-| `/seo geo <url>` | AI Overviews / Generative Engine Optimization |
-| `/seo plan <type>` | Strategic SEO planning (saas, local, ecommerce, publisher, agency) |
-| `/seo programmatic <url>` | Programmatic SEO analysis and planning |
-| `/seo competitor-pages <url>` | Competitor comparison page generation |
-| `/seo hreflang <url>` | Hreflang/i18n SEO audit and generation |
+| Command                       | Description                                                        |
+| ----------------------------- | ------------------------------------------------------------------ |
+| `/seo audit <url>`            | Full website audit with parallel subagent delegation               |
+| `/seo page <url>`             | Deep single-page analysis                                          |
+| `/seo sitemap <url>`          | Analyze existing XML sitemap                                       |
+| `/seo sitemap generate`       | Generate new sitemap with industry templates                       |
+| `/seo schema <url>`           | Detect, validate, and generate Schema.org markup                   |
+| `/seo images <url>`           | Image optimization analysis                                        |
+| `/seo technical <url>`        | Technical SEO audit (9 categories)                                 |
+| `/seo content <url>`          | E-E-A-T and content quality analysis                               |
+| `/seo geo <url>`              | AI Overviews / Generative Engine Optimization                      |
+| `/seo plan <type>`            | Strategic SEO planning (saas, local, ecommerce, publisher, agency) |
+| `/seo programmatic <url>`     | Programmatic SEO analysis and planning                             |
+| `/seo competitor-pages <url>` | Competitor comparison page generation                              |
+| `/seo hreflang <url>`         | Hreflang/i18n SEO audit and generation                             |
 
 ### `/seo programmatic [url|plan]`
+
 **Programmatic SEO Analysis & Planning**
 
 Build SEO pages at scale from data sources with quality safeguards.
 
 **Capabilities:**
+
 - Analyze existing programmatic pages for thin content and cannibalization
 - Plan URL patterns and template structures for data-driven pages
 - Internal linking automation between generated pages
@@ -59,11 +61,13 @@ Build SEO pages at scale from data sources with quality safeguards.
 - Quality gates: WARNING at 100+ pages, HARD STOP at 500+ without audit
 
 ### `/seo competitor-pages [url|generate]`
+
 **Competitor Comparison Page Generator**
 
 Create high-converting "X vs Y" and "alternatives to X" pages.
 
 **Capabilities:**
+
 - Structured comparison tables with feature matrices
 - Product schema markup with AggregateRating
 - Conversion-optimized layouts with CTA placement
@@ -71,11 +75,13 @@ Create high-converting "X vs Y" and "alternatives to X" pages.
 - Fairness guidelines for accurate competitor representation
 
 ### `/seo hreflang [url]`
+
 **Hreflang / i18n SEO Audit & Generation**
 
 Validate and generate hreflang tags for multi-language sites.
 
 **Capabilities:**
+
 - Generate hreflang tags (HTML, HTTP headers, or XML sitemap)
 - Validate self-referencing tags, return tags, x-default
 - Detect common mistakes (missing returns, invalid codes, HTTP/HTTPS mismatch)
@@ -85,6 +91,7 @@ Validate and generate hreflang tags for multi-language sites.
 ## Features
 
 ### Core Web Vitals (Current Metrics)
+
 - **LCP** (Largest Contentful Paint): Target < 2.5s
 - **INP** (Interaction to Next Paint): Target < 200ms
 - **CLS** (Cumulative Layout Shift): Target < 0.1
@@ -92,13 +99,16 @@ Validate and generate hreflang tags for multi-language sites.
 > Note: INP replaced FID on March 12, 2024. FID was fully removed from all Chrome tools on September 9, 2024.
 
 ### E-E-A-T Analysis
+
 Updated to September 2025 Quality Rater Guidelines:
+
 - **Experience**: First-hand knowledge signals
 - **Expertise**: Author credentials and depth
 - **Authoritativeness**: Industry recognition
 - **Trustworthiness**: Contact info, security, transparency
 
 ### Schema Markup
+
 - Detection: JSON-LD (preferred), Microdata, RDFa
 - Validation against Google's supported types
 - Generation with templates
@@ -108,13 +118,16 @@ Updated to September 2025 Quality Rater Guidelines:
   - SpecialAnnouncement: Deprecated (July 2025)
 
 ### AI Search Optimization (GEO)
+
 New for 2026 - optimize for:
+
 - Google AI Overviews
 - ChatGPT web search
 - Perplexity
 - Other AI-powered search
 
 ### Quality Gates
+
 - Warning at 30+ location pages
 - Hard stop at 50+ location pages
 - Thin content detection per page type

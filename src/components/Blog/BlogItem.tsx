@@ -8,7 +8,7 @@ const BlogItem = ({ blog }: { blog: Blog }) => {
     <article className="group overflow-hidden rounded-[15px] bg-white shadow-dropdown dark:bg-gray-dark">
       <Link
         href={blog?.url}
-         target="_blank"
+        target="_blank"
         className="block overflow-hidden relative h-[200px]"
       >
         <Image
@@ -22,19 +22,17 @@ const BlogItem = ({ blog }: { blog: Blog }) => {
 
       <Link
         href={blog?.url}
-         target="_blank"
+        target="_blank"
         className="block overflow-hidden relative"
       >
-      <div className="px-6 py-7">
-        <h3 className="mb-4 font-satoshi text-custom-2xl font-bold -tracking-[0.3px] text-black hover:text-primary dark:text-white">
-          {blog?.title.substring(0, 80)}...
-          
-        </h3>
-        <p className="w-full max-w-[272px] dark:text-gray-5">
-          {blog?.metadata.substring(0, 200)}...
-        </p>
-        
-      </div>
+        <div className="px-6 py-7">
+          <h3 className="mb-4 font-satoshi text-custom-2xl font-bold -tracking-[0.3px] text-black hover:text-primary dark:text-white">
+            {blog?.title.substring(0, 80)}...
+          </h3>
+          <p className="w-full max-w-[272px] dark:text-gray-5">
+            {blog?.metadata.substring(0, 200)}...
+          </p>
+        </div>
       </Link>
     </article>
   );

@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import Script from 'next/script';
+import Script from "next/script";
 
 export default function GoogleAnalytics() {
-//   const measurementId = process?.env?.NEXT_PUBLIC_GA_MEASUREMENT_ID || "G-R7QC4J3R7H";
+  //   const measurementId = process?.env?.NEXT_PUBLIC_GA_MEASUREMENT_ID || "G-R7QC4J3R7H";
   const measurementId = "G-R7QC4J3R7H";
 
   if (!measurementId) {
@@ -26,4 +26,4 @@ export default function GoogleAnalytics() {
       </Script>
     </>
   );
-} 
+}

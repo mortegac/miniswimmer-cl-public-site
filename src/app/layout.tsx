@@ -1,18 +1,22 @@
-import { NextIntlClientProvider } from 'next-intl';
-import { getLocale, getMessages } from 'next-intl/server';
-import { Inter } from 'next/font/google';
-import { type Viewport } from 'next';
-import GoogleAnalytics from '@/components/GoogleAnalytics';
-import GoogleTagManager from '@/components/GoogleTagManager';
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
+import { Inter } from "next/font/google";
+import { type Viewport } from "next";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import GoogleTagManager from "@/components/GoogleTagManager";
 
 export const viewport: Viewport = {
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
 };
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const locale = await getLocale();
   const messages = await getMessages();
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID ?? "GTM-K9KD3K78";
@@ -22,14 +26,16 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <head>
         <GoogleTagManager />
       </head>
-      <body className={`${inter.className} flex min-h-screen flex-col dark:bg-[#151F34]`}>
+      <body
+        className={`${inter.className} flex min-h-screen flex-col dark:bg-[#151F34]`}
+      >
         {gtmId && (
           <noscript>
             <iframe
               src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
               height="0"
               width="0"
-              style={{ display: 'none', visibility: 'hidden' }}
+              style={{ display: "none", visibility: "hidden" }}
             />
           </noscript>
         )}

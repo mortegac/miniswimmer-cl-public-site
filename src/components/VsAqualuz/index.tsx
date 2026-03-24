@@ -16,7 +16,8 @@ const features = [
     label: "Programas disponibles",
     miniswimmer:
       "Matronatación, Niños, Mami Swimmer, Big Swimmer, Hidro Swimmer, Neuro Swimmer",
-    aqualuz: "Bebés, Niños (4+), Embarazadas — sin adultos ni programas especializados",
+    aqualuz:
+      "Bebés, Niños (4+), Embarazadas — sin adultos ni programas especializados",
     winner: "miniswimmer",
   },
   {
@@ -163,20 +164,31 @@ export default function VsAqualuz() {
         {/* Mobile: cards */}
         <div className="block lg:hidden space-y-4">
           {features.map((f) => (
-            <div key={f.label} className="rounded-xl border border-slate-200 p-4 shadow-sm">
+            <div
+              key={f.label}
+              className="rounded-xl border border-slate-200 p-4 shadow-sm"
+            >
               <p className="mb-2 text-sm font-bold text-slate-700">{f.label}</p>
               <div className="flex flex-col gap-2">
                 <div className="flex items-start gap-2">
-                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary text-white text-xs">✓</span>
+                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary text-white text-xs">
+                    ✓
+                  </span>
                   <div>
-                    <p className="text-xs font-semibold text-primary">Miniswimmer</p>
+                    <p className="text-xs font-semibold text-primary">
+                      Miniswimmer
+                    </p>
                     <p className="text-sm text-slate-600">{f.miniswimmer}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-slate-200 text-slate-500 text-xs">—</span>
+                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-slate-200 text-slate-500 text-xs">
+                    —
+                  </span>
                   <div>
-                    <p className="text-xs font-semibold text-slate-500">Aqualuz</p>
+                    <p className="text-xs font-semibold text-slate-500">
+                      Aqualuz
+                    </p>
                     <p className="text-sm text-slate-500">{f.aqualuz}</p>
                   </div>
                 </div>
@@ -255,7 +267,9 @@ export default function VsAqualuz() {
                 <h3 className="mb-2 font-satoshi text-lg font-bold text-slate-800">
                   {a.title}
                 </h3>
-                <p className="text-sm text-slate-500 leading-relaxed">{a.desc}</p>
+                <p className="text-sm text-slate-500 leading-relaxed">
+                  {a.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -269,8 +283,9 @@ export default function VsAqualuz() {
             Prueba la diferencia Miniswimmer
           </h2>
           <p className="mx-auto mb-8 max-w-[560px] text-slate-100">
-            Agenda una clase de prueba sin compromiso y comprueba por qué cientos
-            de familias en Chile y Estados Unidos eligen el Método Miniswimmer.
+            Agenda una clase de prueba sin compromiso y comprueba por qué
+            cientos de familias en Chile y Estados Unidos eligen el Método
+            Miniswimmer.
           </p>
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link

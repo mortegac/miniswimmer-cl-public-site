@@ -1,4 +1,4 @@
-import { Menu } from '@/types/menu';
+import { Menu } from "@/types/menu";
 
 /**
  * Menu data structure
@@ -11,18 +11,17 @@ import { Menu } from '@/types/menu';
  */
 
 export const menuData: Menu[] = [
-
   {
     id: 2,
-    titleKey: 'program',
+    titleKey: "program",
     newTab: false,
-    path: '/metodo',
+    path: "/metodo",
   },
   {
     id: 3,
-    titleKey: 'about',
+    titleKey: "about",
     newTab: false,
-    path: '/nosotros',
+    path: "/nosotros",
   },
   // {
   //   id: 4,
@@ -32,15 +31,15 @@ export const menuData: Menu[] = [
   // },
   {
     id: 5,
-    titleKey: 'services',
+    titleKey: "services",
     newTab: false,
-    path: '/servicios',
+    path: "/servicios",
   },
   {
     id: 6,
-    titleKey: 'reagendamiento',
+    titleKey: "reagendamiento",
     newTab: false,
-    path: '/reagendamiento',
+    path: "/reagendamiento",
   },
   // {
   //   id: 2,

@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import SectionHeader from '@/components/Common/SectionHeader';
-import { useTranslations } from 'next-intl';
-import { useEffect, useState } from 'react';
+import SectionHeader from "@/components/Common/SectionHeader";
+import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
 
 const FAQ = () => {
   // mounted tracks hydration — before mount (SSR), all answers are visible in HTML
@@ -14,8 +14,8 @@ const FAQ = () => {
     setMounted(true);
   }, []);
 
-  const t = useTranslations('homepage.faq_section');
-  const faq: Record<string, string>[] = t.raw('items');
+  const t = useTranslations("homepage.faq_section");
+  const faq: Record<string, string>[] = t.raw("items");
 
   const handleFaqToggle = (id: number) => {
     activeFaq === id ? setActiveFaq(null) : setActiveFaq(id);
@@ -26,47 +26,52 @@ const FAQ = () => {
   const isOpen = (i: number) => !mounted || activeFaq === i;
 
   return (
-    <section className='overflow-hidden bg-gray-1 py-17.5 dark:bg-black lg:py-22.5 xl:py-27.5'>
-      <SectionHeader title={t('title')} description={t('subtitle')} />
+    <section className="overflow-hidden bg-gray-1 py-17.5 dark:bg-black lg:py-22.5 xl:py-27.5">
+      <SectionHeader title={t("title")} description={t("subtitle")} />
 
-      <div className='mx-auto w-full max-w-[662px] px-4 sm:px-8 xl:px-0'>
-        <div className='flex flex-col gap-4 '>
+      <div className="mx-auto w-full max-w-[662px] px-4 sm:px-8 xl:px-0">
+        <div className="flex flex-col gap-4 ">
           {faq?.map(({ question, answer }, i) => (
-            <div key={i} className='rounded-lg bg-white shadow-1 dark:bg-gray-dark'>
+            <div
+              key={i}
+              className="rounded-lg bg-white shadow-1 dark:bg-gray-dark"
+            >
               <button
                 onClick={() => handleFaqToggle(i)}
                 className={
-                  'text-medium flex w-full items-center justify-between px-6 py-4 text-left text-lg text-dark dark:text-white md:text-xl'
+                  "text-medium flex w-full items-center justify-between px-6 py-4 text-left text-lg text-dark dark:text-white md:text-xl"
                 }
               >
                 {question}
 
-                <span className={`duration-300 ${isOpen(i) ? 'rotate-180' : ''}`}>
+                <span
+                  className={`duration-300 ${isOpen(i) ? "rotate-180" : ""}`}
+                >
                   <svg
-                    width='24'
-                    height='25'
-                    viewBox='0 0 24 25'
-                    fill='none'
-                    xmlns='http://www.w3.org/2000/svg'
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      fillRule='evenodd'
-                      clipRule='evenodd'
-                      d='M4.43057 8.87618C4.70014 8.56168 5.17361 8.52526 5.48811 8.79483L12 14.3765L18.5119 8.79483C18.8264 8.52526 19.2999 8.56168 19.5695 8.87618C19.839 9.19067 19.8026 9.66415 19.4881 9.93371L12.4881 15.9337C12.2072 16.1745 11.7928 16.1745 11.5119 15.9337L4.51192 9.93371C4.19743 9.66415 4.161 9.19067 4.43057 8.87618Z'
-                      fill='currentColor'
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M4.43057 8.87618C4.70014 8.56168 5.17361 8.52526 5.48811 8.79483L12 14.3765L18.5119 8.79483C18.8264 8.52526 19.2999 8.56168 19.5695 8.87618C19.839 9.19067 19.8026 9.66415 19.4881 9.93371L12.4881 15.9337C12.2072 16.1745 11.7928 16.1745 11.5119 15.9337L4.51192 9.93371C4.19743 9.66415 4.161 9.19067 4.43057 8.87618Z"
+                      fill="currentColor"
                     />
                   </svg>
                 </span>
               </button>
               <div
-                className={'grid'}
+                className={"grid"}
                 style={{
-                  gridTemplateRows: isOpen(i) ? '1fr' : '0fr',
-                  transition: 'grid-template-rows 300ms',
+                  gridTemplateRows: isOpen(i) ? "1fr" : "0fr",
+                  transition: "grid-template-rows 300ms",
                 }}
               >
-                <div className='overflow-hidden transition-all duration-300'>
-                  <p className='border-t border-stroke px-6 py-7 dark:border-stroke-dark'>
+                <div className="overflow-hidden transition-all duration-300">
+                  <p className="border-t border-stroke px-6 py-7 dark:border-stroke-dark">
                     {answer}
                   </p>
                 </div>

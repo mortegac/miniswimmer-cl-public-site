@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { useClickOutside } from '@/hooks/use-click-outside';
-import { cn } from '@/libs/utils';
-import { SetStateActionType } from '@/types/set-state-action-type';
-import { getScrollBarWidth } from '@/utils/get-scrollbar-width';
-import { createContext, useContext, useEffect, useId, useRef } from 'react';
-import { createPortal } from 'react-dom';
+import { useClickOutside } from "@/hooks/use-click-outside";
+import { cn } from "@/libs/utils";
+import { SetStateActionType } from "@/types/set-state-action-type";
+import { getScrollBarWidth } from "@/utils/get-scrollbar-width";
+import { createContext, useContext, useEffect, useId, useRef } from "react";
+import { createPortal } from "react-dom";
 
 type DropdownContextType = {
   isOpen: boolean;
@@ -22,7 +22,7 @@ const DropdownContext = createContext<DropdownContextType | null>(null);
 function useDropdownContext() {
   const context = useContext(DropdownContext);
   if (!context) {
-    throw new Error('useDropdownContext must be used within a Dropdown');
+    throw new Error("useDropdownContext must be used within a Dropdown");
   }
   return context;
 }
@@ -43,7 +43,7 @@ export function Dropdown({ children, isOpen, setIsOpen }: DropdownProps) {
   const contentId = useId();
 
   const handleKeyDown = (event: React.KeyboardEvent) => {
-    if (event.key === 'Escape') {
+    if (event.key === "Escape") {
       handleClose();
     }
   };
@@ -57,12 +57,15 @@ export function Dropdown({ children, isOpen, setIsOpen }: DropdownProps) {
     if (isOpen) {
       triggerRef.current = document.activeElement as HTMLButtonElement;
 
-      document.body.style.setProperty('pointer-events', 'none');
-      document.body.style.setProperty('--scroll-bar-width', getScrollBarWidth() + 'px');
-      document.body.setAttribute('data-scroll-locked', '1');
+      document.body.style.setProperty("pointer-events", "none");
+      document.body.style.setProperty(
+        "--scroll-bar-width",
+        getScrollBarWidth() + "px",
+      );
+      document.body.setAttribute("data-scroll-locked", "1");
     } else {
-      document.body.style.removeProperty('pointer-events');
-      document.body.removeAttribute('data-scroll-locked');
+      document.body.style.removeProperty("pointer-events");
+      document.body.removeAttribute("data-scroll-locked");
     }
   }, [isOpen]);
 
@@ -90,7 +93,7 @@ export function Dropdown({ children, isOpen, setIsOpen }: DropdownProps) {
         contentId,
       }}
     >
-      <div className='relative' ref={dropdownRef} onKeyDown={handleKeyDown}>
+      <div className="relative" ref={dropdownRef} onKeyDown={handleKeyDown}>
         {children}
       </div>
     </DropdownContext.Provider>
@@ -98,7 +101,7 @@ export function Dropdown({ children, isOpen, setIsOpen }: DropdownProps) {
 }
 
 type DropdownContentProps = {
-  align?: 'start' | 'end' | 'center';
+  align?: "start" | "end" | "center";
   className?: string;
   children: React.ReactNode;
   sideOffset?: number; // The distance in pixels from the trigger.
@@ -106,7 +109,7 @@ type DropdownContentProps = {
 
 export function DropdownContent({
   children,
-  align = 'center',
+  align = "center",
   className,
   sideOffset = 8,
 }: DropdownContentProps) {
@@ -122,31 +125,39 @@ export function DropdownContent({
     if (isOpen) {
       const { left, top, height } = dropdownRef.current.getBoundingClientRect();
 
-      contentRef.current?.style.setProperty('top', `${top + height + sideOffset}px`);
+      contentRef.current?.style.setProperty(
+        "top",
+        `${top + height + sideOffset}px`,
+      );
 
-      if (window.innerHeight < top + height + (contentRef.current?.offsetWidth || 0)) {
+      if (
+        window.innerHeight <
+        top + height + (contentRef.current?.offsetWidth || 0)
+      ) {
         contentRef.current?.style.setProperty(
-          'transform',
-          `translate(0, -${height + contentRef.current?.offsetHeight + sideOffset * 2}px)`
+          "transform",
+          `translate(0, -${height + contentRef.current?.offsetHeight + sideOffset * 2}px)`,
         );
       } else {
-        contentRef.current?.style.removeProperty('transform');
+        contentRef.current?.style.removeProperty("transform");
       }
 
       // Set the left position based on the alignment
       // Default leftPosition is for align="start"
       let leftPosition = left;
 
-      if (align === 'end') {
+      if (align === "end") {
         leftPosition =
-          left - Number(contentRef.current?.clientWidth) + Number(triggerRef?.current?.clientWidth);
+          left -
+          Number(contentRef.current?.clientWidth) +
+          Number(triggerRef?.current?.clientWidth);
       }
 
-      if (align === 'center') {
+      if (align === "center") {
         leftPosition = left - Number(triggerRef?.current!.clientWidth) / 2;
       }
 
-      contentRef.current?.style.setProperty('left', `${leftPosition}px`);
+      contentRef.current?.style.setProperty("left", `${leftPosition}px`);
     }
   }, [isOpen, align]);
 
@@ -155,19 +166,19 @@ export function DropdownContent({
   return createPortal(
     <div
       ref={contentRef}
-      role='menu'
-      aria-orientation='vertical'
+      role="menu"
+      aria-orientation="vertical"
       className={cn(
-        'pointer-events-auto fixed min-w-[8rem] origin-top-right rounded-lg',
-        className
+        "pointer-events-auto fixed min-w-[8rem] origin-top-right rounded-lg",
+        className,
       )}
-      data-state={isOpen ? 'open' : 'closed'}
+      data-state={isOpen ? "open" : "closed"}
       id={contentId}
       aria-labelledby={triggerId}
     >
       {children}
     </div>,
-    document.body
+    document.body,
   );
 }
 
@@ -176,7 +187,8 @@ type DropdownTriggerProps = React.HTMLAttributes<HTMLButtonElement> & {
 };
 
 export function DropdownTrigger({ children, className }: DropdownTriggerProps) {
-  const { handleOpen, isOpen, triggerRef, triggerId, contentId } = useDropdownContext();
+  const { handleOpen, isOpen, triggerRef, triggerId, contentId } =
+    useDropdownContext();
 
   return (
     <button
@@ -184,8 +196,8 @@ export function DropdownTrigger({ children, className }: DropdownTriggerProps) {
       className={className}
       onClick={handleOpen}
       aria-expanded={isOpen}
-      aria-haspopup='menu'
-      data-state={isOpen ? 'open' : 'closed'}
+      aria-haspopup="menu"
+      data-state={isOpen ? "open" : "closed"}
       id={triggerId}
       aria-controls={contentId}
     >

@@ -16,4 +16,4 @@ const SchemaMarkup = ({ type, data }: SchemaMarkupProps) => {
   );
 };
 
-export default SchemaMarkup; 
+export default SchemaMarkup;

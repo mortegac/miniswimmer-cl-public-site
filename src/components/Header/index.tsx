@@ -1,23 +1,23 @@
-'use client';
-import logoLight from '@/../public/images/logo/logo-light.svg';
-import logo from '@/../public/images/logo/logo.svg';
-import { onScroll } from '@/libs/scrollActive';
+"use client";
+import logoLight from "@/../public/images/logo/logo-light.svg";
+import logo from "@/../public/images/logo/logo.svg";
+import { onScroll } from "@/libs/scrollActive";
 // import { useSession } from 'next-auth/react';
-import { useTranslations } from 'next-intl';
-import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import { integrations } from '../../../integrations.config';
-import GlobalSearchModal from '../GlobalSearch';
+import { useTranslations } from "next-intl";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import { integrations } from "../../../integrations.config";
+import GlobalSearchModal from "../GlobalSearch";
 // import Account from './Account';
-import Dropdown from './Dropdown';
+import Dropdown from "./Dropdown";
 // import ThemeSwitcher from './ThemeSwitcher';
-import { LanguageSwitcher } from './language-switcher';
-import { menuData } from './menuData';
+import { LanguageSwitcher } from "./language-switcher";
+import { menuData } from "./menuData";
 
 const Header = () => {
-  const t = useTranslations('header');
+  const t = useTranslations("header");
   const [stickyMenu, setStickyMenu] = useState(false);
   const [searchModalOpen, setSearchModalOpen] = useState(false);
   // const { data: session } = useSession();
@@ -39,70 +39,76 @@ const Header = () => {
   };
 
   useEffect(() => {
-    if (window.location.pathname === '/') {
-      window.addEventListener('scroll', onScroll);
+    if (window.location.pathname === "/") {
+      window.addEventListener("scroll", onScroll);
     }
 
     return () => {
-      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener("scroll", onScroll);
     };
   }, []);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleStickyMenu);
+    window.addEventListener("scroll", handleStickyMenu);
   });
 
   return (
     <>
       <header
         className={`fixed left-0 top-0 z-999 w-full transition-all duration-300 ease-in-out  ${
-          stickyMenu ? 'bg-primary py-4 shadow  xl:py-0' : 'bg-primary py-7 xl:py-0'
+          stickyMenu
+            ? "bg-primary py-4 shadow  xl:py-0"
+            : "bg-primary py-7 xl:py-0"
         }`}
       >
-        <div className='relative mx-auto max-w-[1170px] items-center justify-between px-4 sm:px-8 xl:flex xl:px-0'>
-          <div className='flex shrink-0 items-center justify-between'>
-            <Link href='/' className='shrink-0'>
-              <Image src={logoLight} alt='Logo' className='hidden w-full dark:block' />
-              <Image src={logo} alt='Logo' className='w-full dark:hidden' />
+        <div className="relative mx-auto max-w-[1170px] items-center justify-between px-4 sm:px-8 xl:flex xl:px-0">
+          <div className="flex shrink-0 items-center justify-between">
+            <Link href="/" className="shrink-0">
+              <Image
+                src={logoLight}
+                alt="Logo"
+                className="hidden w-full dark:block"
+              />
+              <Image src={logo} alt="Logo" className="w-full dark:hidden" />
             </Link>
 
-            <div className='ml-auto mr-4 lg:hidden'>
+            <div className="ml-auto mr-4 lg:hidden">
               <LanguageSwitcher />
             </div>
 
             {/* <!-- Hamburger Toggle BTN --> */}
             <button
               onClick={navbarToggleHandler}
-              aria-label='button for menu toggle'
-              className='block xl:hidden'
+              aria-label="button for menu toggle"
+              className="block xl:hidden"
             >
-              <span className='relative block h-5.5 w-5.5 cursor-pointer'>
-                <span className='du-block absolute right-0 h-full w-full'>
+              <span className="relative block h-5.5 w-5.5 cursor-pointer">
+                <span className="du-block absolute right-0 h-full w-full">
                   <span
                     className={`relative left-0 top-0 my-1 block h-0.5 w-0 rounded-sm bg-black delay-[0] duration-200 ease-in-out dark:bg-white ${
-                      !navbarOpen && '!w-full delay-300'
+                      !navbarOpen && "!w-full delay-300"
                     }`}
                   ></span>
                   <span
                     className={`relative left-0 top-0 my-1 block h-0.5 w-0 rounded-sm bg-black delay-150 duration-200 ease-in-out dark:bg-white ${
-                      !navbarOpen && 'delay-400 !w-full'
+                      !navbarOpen && "delay-400 !w-full"
                     }`}
                   ></span>
                   <span
                     className={`relative left-0 top-0 my-1 block h-0.5 w-0 rounded-sm bg-black delay-200 duration-200 ease-in-out dark:bg-white ${
-                      !navbarOpen && '!w-full delay-500'
+                      !navbarOpen && "!w-full delay-500"
                     }`}
                   ></span>
                 </span>
-                <span className='du-block absolute right-0 h-full w-full rotate-45'>
+                <span className="du-block absolute right-0 h-full w-full rotate-45">
                   <span
                     className={`absolute left-2.5 top-0 block h-full w-0.5 rounded-sm bg-black delay-300 duration-200 ease-in-out dark:bg-white ${
-                      !navbarOpen && '!h-0 delay-[0]'
+                      !navbarOpen && "!h-0 delay-[0]"
                     }`}
                   ></span>
                   <span
                     className={`delay-400 absolute left-0 top-2.5 block h-0.5 w-full rounded-sm bg-black duration-200 ease-in-out dark:bg-white ${
-                      !navbarOpen && 'dealy-200 !h-0'
+                      !navbarOpen && "dealy-200 !h-0"
                     }`}
                   ></span>
                 </span>
@@ -113,12 +119,12 @@ const Header = () => {
           <div
             className={`invisible h-0 w-full items-center justify-between xl:visible xl:flex xl:h-auto ${
               navbarOpen &&
-              '!visible relative mt-4 !h-auto max-h-[400px] overflow-y-scroll rounded-md bg-white p-7.5 shadow-lg dark:bg-gray-dark'
+              "!visible relative mt-4 !h-auto max-h-[400px] overflow-y-scroll rounded-md bg-white p-7.5 shadow-lg dark:bg-gray-dark"
             }`}
           >
-            <nav className='lg:mx-auto'>
-              <ul className='flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-2.5'>
-                {menuData?.map((item:any, key) =>
+            <nav className="lg:mx-auto">
+              <ul className="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-2.5">
+                {menuData?.map((item: any, key) =>
                   !item?.path && item?.submenu ? (
                     <Dropdown
                       stickyMenu={stickyMenu}
@@ -130,50 +136,46 @@ const Header = () => {
                     <li
                       key={key}
                       className={`${
-                        item?.submenu ? 'group relative' : 'nav__menu'
-                      } ${stickyMenu ? 'xl:py-4' : 'xl:py-6'}`}
+                        item?.submenu ? "group relative" : "nav__menu"
+                      } ${stickyMenu ? "xl:py-4" : "xl:py-6"}`}
                     >
                       <Link
                         onClick={() => setNavbarOpen(false)}
                         href={
                           item?.path
-                            ? item?.path.includes('#') && !item?.newTab
+                            ? item?.path.includes("#") && !item?.newTab
                               ? `/${item?.path}`
                               : item?.path
-                            : ''
+                            : ""
                         }
-                        target={item?.newTab ? '_blank' : ''}
-                        rel={item?.newTab ? 'noopener noreferrer' : ''}
+                        target={item?.newTab ? "_blank" : ""}
+                        rel={item?.newTab ? "noopener noreferrer" : ""}
                         className={`flex truncate rounded-full px-[14px] py-[3px] font-satoshi font-medium ${
                           pathUrl === item?.path
-                            ? 'bg-primary/5 text-white dark:bg-white/5 dark:text-white'
-                            : 'text-white hover:bg-white/5 hover:text-white dark:text-gray-5 dark:hover:bg-white/5 dark:hover:text-white'
-                        } ${item?.path?.startsWith('#') ? 'menu-scroll' : ''}`}
+                            ? "bg-primary/5 text-white dark:bg-white/5 dark:text-white"
+                            : "text-white hover:bg-white/5 hover:text-white dark:text-gray-5 dark:hover:bg-white/5 dark:hover:text-white"
+                        } ${item?.path?.startsWith("#") ? "menu-scroll" : ""}`}
                       >
                         {t(item.titleKey)}
                       </Link>
                     </li>
-                  )
+                  ),
                 )}
               </ul>
             </nav>
 
-            <div className='mt-7 flex items-center max-lg:flex-wrap lg:mt-0'>
-              
-								
-                <Link 
+            <div className="mt-7 flex items-center max-lg:flex-wrap lg:mt-0">
+              <Link
                 href="contacto"
-                rel="noopener noreferrer" 
+                rel="noopener noreferrer"
                 // className='font-satoshi text-heading-4 font-bold -tracking-[1.6px] text-red-700 dark:text-white lg:text-heading-2 xl:text-[48px] xl:leading-[1.12]'
-                className='items-center rounded-full bg-black py-2 px-6 font-satoshi font-medium text-white hover:bg-opacity-90 dark:bg-primary'
-          
+                className="items-center rounded-full bg-black py-2 px-6 font-satoshi font-medium text-white hover:bg-opacity-90 dark:bg-primary"
               >
-                <span className=' '>{t('contact')}</span>
-              
+                <span className=" ">{t("contact")}</span>
               </Link>
 
               {integrations.isI18nEnabled && (
-                <div className='mx-2 max-lg:hidden'>
+                <div className="mx-2 max-lg:hidden">
                   <LanguageSwitcher />
                 </div>
               )}

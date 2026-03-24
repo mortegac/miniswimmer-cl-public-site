@@ -8,17 +8,17 @@ import Counter from "../Common/Counter";
 import Blog from "../Common/Blog";
 
 const Home = () => {
-	return (
-		<>
-			<Hero pageTraslation="homepage" />
-			<FeaturesWithImage pageTraslation="homepage" />
-			<WhatsappContact pageTraslation="homepage" />
-			<Counter pageTraslation="homepage" />
-			<Testimonials pageTraslation="homepage" />
-			<RegendamientoSection pageTraslation="homepage"/>
-			<Blog pageTraslation="homepage"/>
-		</>
-	);
+  return (
+    <>
+      <Hero pageTraslation="homepage" />
+      <FeaturesWithImage pageTraslation="homepage" />
+      <WhatsappContact pageTraslation="homepage" />
+      <Counter pageTraslation="homepage" />
+      <Testimonials pageTraslation="homepage" />
+      <RegendamientoSection pageTraslation="homepage" />
+      <Blog pageTraslation="homepage" />
+    </>
+  );
 };
 
 export default Home;

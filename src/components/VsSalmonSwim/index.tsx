@@ -8,7 +8,8 @@ const WHATSAPP_URL =
 const features = [
   {
     label: "Método con nombre propio",
-    miniswimmer: "Método Miniswimmer — PNL + Coaching + Natación, diseñado para un aprendizaje real y significativo",
+    miniswimmer:
+      "Método Miniswimmer — PNL + Coaching + Natación, diseñado para un aprendizaje real y significativo",
     competitor: 'Técnicas "modernas" sin metodología nombrada ni documentada',
     winner: "miniswimmer",
   },
@@ -50,7 +51,8 @@ const features = [
   },
   {
     label: "Ubicaciones / Sedes",
-    miniswimmer: "Peñalolén, Maitencillo, Viña del Mar (Chile) · Miami-Dade y Broward (USA)",
+    miniswimmer:
+      "Peñalolén, Maitencillo, Viña del Mar (Chile) · Miami-Dade y Broward (USA)",
     competitor: "Única sede en La Reina, Santiago",
     winner: "miniswimmer",
   },
@@ -63,24 +65,28 @@ const features = [
   {
     label: "Reserva y pago online",
     miniswimmer: "Formulario de clase de prueba funcional en el sitio",
-    competitor: 'Checkout en desarrollo — botón "En desarrollo" sin funcionalidad',
+    competitor:
+      'Checkout en desarrollo — botón "En desarrollo" sin funcionalidad',
     winner: "miniswimmer",
   },
   {
     label: "Visibilidad en Google",
     miniswimmer: "Sitio Next.js con SSR, sitemap, JSON-LD y metadata completa",
-    competitor: "SPA Angular renderizada en cliente — Google no puede indexar el contenido",
+    competitor:
+      "SPA Angular renderizada en cliente — Google no puede indexar el contenido",
     winner: "miniswimmer",
   },
   {
     label: "Reseñas verificadas",
     miniswimmer: "Testimonios reales con nombres y fotos",
-    competitor: 'Estadísticas propias (95% satisfacción) sin respaldo de terceros',
+    competitor:
+      "Estadísticas propias (95% satisfacción) sin respaldo de terceros",
     winner: "miniswimmer",
   },
   {
     label: "Contenido educativo",
-    miniswimmer: "Blog activo con artículos sobre PNL, matronatación y desarrollo infantil",
+    miniswimmer:
+      "Blog activo con artículos sobre PNL, matronatación y desarrollo infantil",
     competitor: "Sin blog ni contenido educativo",
     winner: "miniswimmer",
   },
@@ -141,8 +147,19 @@ export default function VsSalmonSwim() {
             >
               <span>AGENDA TU CLASE DE PRUEBA GRATIS</span>
               <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-primary text-white">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M3.411 10.625a.625.625 0 0 1 0-1.25h10.733L10.3 5.524a.625.625 0 1 1 .884-.884l5.208 5.208a.625.625 0 0 1 0 .884L11.183 15.94a.625.625 0 1 1-.883-.883l3.844-3.432H3.41z" fill="currentColor" />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M3.411 10.625a.625.625 0 0 1 0-1.25h10.733L10.3 5.524a.625.625 0 1 1 .884-.884l5.208 5.208a.625.625 0 0 1 0 .884L11.183 15.94a.625.625 0 1 1-.883-.883l3.844-3.432H3.41z"
+                    fill="currentColor"
+                  />
                 </svg>
               </span>
             </Link>
@@ -162,20 +179,31 @@ export default function VsSalmonSwim() {
         {/* Mobile: cards */}
         <div className="block lg:hidden space-y-4">
           {features.map((f) => (
-            <div key={f.label} className="rounded-xl border border-slate-200 p-4 shadow-sm">
+            <div
+              key={f.label}
+              className="rounded-xl border border-slate-200 p-4 shadow-sm"
+            >
               <p className="mb-2 text-sm font-bold text-slate-700">{f.label}</p>
               <div className="flex flex-col gap-2">
                 <div className="flex items-start gap-2">
-                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary text-white text-xs">✓</span>
+                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary text-white text-xs">
+                    ✓
+                  </span>
                   <div>
-                    <p className="text-xs font-semibold text-primary">Miniswimmer</p>
+                    <p className="text-xs font-semibold text-primary">
+                      Miniswimmer
+                    </p>
                     <p className="text-sm text-slate-600">{f.miniswimmer}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-2">
-                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-slate-200 text-slate-500 text-xs">—</span>
+                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-slate-200 text-slate-500 text-xs">
+                    —
+                  </span>
                   <div>
-                    <p className="text-xs font-semibold text-slate-500">Salmon Swim</p>
+                    <p className="text-xs font-semibold text-slate-500">
+                      Salmon Swim
+                    </p>
                     <p className="text-sm text-slate-500">{f.competitor}</p>
                   </div>
                 </div>
@@ -202,14 +230,27 @@ export default function VsSalmonSwim() {
             </thead>
             <tbody className="divide-y divide-slate-100">
               {features.map((f, i) => (
-                <tr key={f.label} className={i % 2 === 0 ? "bg-white" : "bg-slate-50/40"}>
-                  <td className="px-6 py-4 font-medium text-slate-700">{f.label}</td>
+                <tr
+                  key={f.label}
+                  className={i % 2 === 0 ? "bg-white" : "bg-slate-50/40"}
+                >
+                  <td className="px-6 py-4 font-medium text-slate-700">
+                    {f.label}
+                  </td>
                   <td className="px-6 py-4">
                     <div className="flex items-start gap-2">
                       {f.winner === "miniswimmer" && (
-                        <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary text-white text-xs">✓</span>
+                        <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary text-white text-xs">
+                          ✓
+                        </span>
                       )}
-                      <span className={f.winner === "miniswimmer" ? "text-slate-800 font-medium" : "text-slate-600"}>
+                      <span
+                        className={
+                          f.winner === "miniswimmer"
+                            ? "text-slate-800 font-medium"
+                            : "text-slate-600"
+                        }
+                      >
                         {f.miniswimmer}
                       </span>
                     </div>
@@ -217,9 +258,17 @@ export default function VsSalmonSwim() {
                   <td className="px-6 py-4">
                     <div className="flex items-start gap-2">
                       {f.winner === "competitor" && (
-                        <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-slate-400 text-white text-xs">✓</span>
+                        <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-slate-400 text-white text-xs">
+                          ✓
+                        </span>
                       )}
-                      <span className={f.winner === "competitor" ? "text-slate-700 font-medium" : "text-slate-400"}>
+                      <span
+                        className={
+                          f.winner === "competitor"
+                            ? "text-slate-700 font-medium"
+                            : "text-slate-400"
+                        }
+                      >
                         {f.competitor}
                       </span>
                     </div>
@@ -231,7 +280,8 @@ export default function VsSalmonSwim() {
         </div>
 
         <p className="mt-4 text-center text-xs text-slate-400">
-          ✓ Indica el criterio donde cada academia tiene ventaja. "Empate" indica oferta equivalente.
+          ✓ Indica el criterio donde cada academia tiene ventaja. "Empate"
+          indica oferta equivalente.
         </p>
       </section>
 
@@ -246,10 +296,17 @@ export default function VsSalmonSwim() {
           </p>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {advantages.map((a) => (
-              <div key={a.title} className="rounded-2xl bg-white p-6 shadow-sm border border-slate-100">
+              <div
+                key={a.title}
+                className="rounded-2xl bg-white p-6 shadow-sm border border-slate-100"
+              >
                 <div className="mb-4 text-4xl">{a.icon}</div>
-                <h3 className="mb-2 font-satoshi text-lg font-bold text-slate-800">{a.title}</h3>
-                <p className="text-sm text-slate-500 leading-relaxed">{a.desc}</p>
+                <h3 className="mb-2 font-satoshi text-lg font-bold text-slate-800">
+                  {a.title}
+                </h3>
+                <p className="text-sm text-slate-500 leading-relaxed">
+                  {a.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -263,8 +320,9 @@ export default function VsSalmonSwim() {
             Prueba la diferencia Miniswimmer
           </h2>
           <p className="mx-auto mb-8 max-w-[560px] text-slate-100">
-            Agenda una clase de prueba sin compromiso y comprueba por qué cientos
-            de familias en Chile y Estados Unidos eligen el Método Miniswimmer.
+            Agenda una clase de prueba sin compromiso y comprueba por qué
+            cientos de familias en Chile y Estados Unidos eligen el Método
+            Miniswimmer.
           </p>
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Link
@@ -275,8 +333,19 @@ export default function VsSalmonSwim() {
             >
               <span>AGENDAR CLASE DE PRUEBA</span>
               <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-primary text-white">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" clipRule="evenodd" d="M3.411 10.625a.625.625 0 0 1 0-1.25h10.733L10.3 5.524a.625.625 0 1 1 .884-.884l5.208 5.208a.625.625 0 0 1 0 .884L11.183 15.94a.625.625 0 1 1-.883-.883l3.844-3.432H3.41z" fill="currentColor" />
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M3.411 10.625a.625.625 0 0 1 0-1.25h10.733L10.3 5.524a.625.625 0 1 1 .884-.884l5.208 5.208a.625.625 0 0 1 0 .884L11.183 15.94a.625.625 0 1 1-.883-.883l3.844-3.432H3.41z"
+                    fill="currentColor"
+                  />
                 </svg>
               </span>
             </Link>

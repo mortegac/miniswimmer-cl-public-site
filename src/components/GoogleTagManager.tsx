@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import Script from 'next/script';
+import Script from "next/script";
 
 export default function GoogleTagManager() {
-//   const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+  //   const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
   const gtmId = "GTM-K9KD3K78";
 
   if (!gtmId) {
@@ -23,4 +23,4 @@ export default function GoogleTagManager() {
       </Script>
     </>
   );
-} 
+}

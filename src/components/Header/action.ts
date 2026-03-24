@@ -1,11 +1,11 @@
-'use server';
+"use server";
 
-import { cookies } from 'next/headers';
+import { cookies } from "next/headers";
 
 export async function switchLanguage(code: string) {
   const cookieStore = await cookies();
 
-  cookieStore.set('locale', code, {
+  cookieStore.set("locale", code, {
     maxAge: 60 * 60 * 24 * 30,
   });
 }
@@ -13,5 +13,5 @@ export async function switchLanguage(code: string) {
 export async function getSelectedLangCode() {
   const cookieStore = await cookies();
 
-  return cookieStore.get('locale')?.value;
+  return cookieStore.get("locale")?.value;
 }

@@ -1,10 +1,10 @@
-export const generateHtml = text => {
+export const generateHtml = (text) => {
   if (!text) return null;
-  
+
   try {
     // Asegurarse de que el texto sea una cadena
     const htmlContent = String(text);
-    
+
     return (
       <div
         dangerouslySetInnerHTML={{

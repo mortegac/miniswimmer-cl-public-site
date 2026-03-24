@@ -1,10 +1,10 @@
-'use client';
-import { Toaster } from 'react-hot-toast';
+"use client";
+import { Toaster } from "react-hot-toast";
 
 const ToastContext = () => {
   return (
-    <div className='z-[99999]'>
-      <Toaster position='top-center' reverseOrder={false} />
+    <div className="z-[99999]">
+      <Toaster position="top-center" reverseOrder={false} />
     </div>
   );
 };

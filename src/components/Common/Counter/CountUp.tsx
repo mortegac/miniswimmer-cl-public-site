@@ -1,5 +1,5 @@
 // CountUp.tsx
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from "react";
 
 interface CountUpProps {
   targetNumber: number;
@@ -9,7 +9,7 @@ const CountUp: React.FC<CountUpProps> = ({ targetNumber }) => {
   const [count, setCount] = useState(0);
   const countRef = useRef<HTMLSpanElement>(null);
 
-  const handleIntersection: IntersectionObserverCallback = entries => {
+  const handleIntersection: IntersectionObserverCallback = (entries) => {
     const entry = entries[0];
     if (entry.isIntersecting) {
       startCount();
@@ -49,7 +49,7 @@ const CountUp: React.FC<CountUpProps> = ({ targetNumber }) => {
   }, []);
 
   return (
-    <span className='counter mr-4 inline-block' ref={countRef}>
+    <span className="counter mr-4 inline-block" ref={countRef}>
       {count}
     </span>
   );
