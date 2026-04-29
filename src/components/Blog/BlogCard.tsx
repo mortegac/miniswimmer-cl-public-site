@@ -13,15 +13,15 @@ export default function BlogCard({ article }: BlogCardProps) {
       {/* Cover image */}
       <Link
         href={`/blog/${article.slug}`}
-        className="relative block aspect-[16/9] overflow-hidden"
+        className="relative block aspect-[3/2] w-full overflow-hidden"
         aria-label={article.h1}
       >
         <Image
           src={article.coverImage.src}
           alt={article.coverImage.alt}
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 390px"
+          className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
       </Link>
