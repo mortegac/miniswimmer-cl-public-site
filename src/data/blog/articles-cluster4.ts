@@ -2,69 +2,69 @@ import { BlogArticle } from "./types";
 
 export const article16: BlogArticle = {
   slug: "natacion-ninos-tea-autismo-beneficios",
-  title: "Natación para niños con TEA: beneficios reales",
+  title: "Natación para niños neurodivergentes: beneficios terapéuticos comprobados",
   metaDescription:
-    "Descubre cómo la natación terapéutica ayuda a niños con autismo en Chile. Neuro Swimmer de Miniswimmer usa metodología especializada para integración sensorial y bienestar.",
-  h1: "Natación para niños con TEA y autismo: beneficios terapéuticos comprobados",
+    "Descubre cómo la natación terapéutica beneficia a niños neurodivergentes en Chile. Neuro Swimmer de Miniswimmer usa metodología especializada para integración sensorial y bienestar.",
+  h1: "Natación para niños neurodivergentes: beneficios terapéuticos comprobados",
   excerpt:
-    "El agua ofrece a los niños con Trastorno del Espectro Autista un entorno único para el desarrollo sensorial, la calma y la conexión. Conoce por qué el programa Neuro Swimmer de Miniswimmer marca la diferencia.",
+    "El agua ofrece a los niños neurodivergentes un entorno único para el desarrollo sensorial, la calma y la conexión. Conoce por qué el programa Neuro Swimmer de Miniswimmer marca la diferencia.",
   category: "programas-especiales",
   publishDate: "2026-04-28",
   readingTime: 8,
   coverImage: {
     src: "https://images.prismic.io/miniswimmerchile/afIIs8BOoF08xazl_miniswimmer-blog-16-natacion-para-ninos-con-tea-y-autismo-beneficios-terapeutico.png?auto=format,compress",
-    alt: "Niño con TEA disfrutando una clase de natación terapéutica en Miniswimmer Chile",
+    alt: "Niño neurodivergente disfrutando una clase de natación terapéutica en Miniswimmer Chile",
   },
   keywords: {
     primary: [
-      "natación niños TEA autismo",
-      "natación niños autismo Chile",
-      "terapia acuática autismo",
+      "natación niños neurodivergentes",
+      "natación niños neurodivergencia Chile",
+      "terapia acuática neurodivergencia",
     ],
     secondary: [
       "Neuro Swimmer Miniswimmer",
-      "hidroterapia TEA",
-      "integración sensorial agua TEA",
+      "hidroterapia neurodivergencia",
+      "integración sensorial agua neurodivergencia",
       "natación terapéutica niños neurodivergentes",
     ],
   },
   content: `
 <article>
   <section>
-    <h2>Por qué el agua funciona especialmente bien para niños con TEA</h2>
-    <p>Los niños con Trastorno del Espectro Autista (TEA) perciben el mundo de una manera diferente. Sus sistemas sensoriales pueden estar hiper o hiposensibilizados, lo que convierte muchos entornos cotidianos en fuentes de estrés. El aula, el patio, el supermercado: todos presentan estímulos imprevisibles que pueden abrumar al sistema nervioso de un niño neurodivergente.</p>
-    <p>El agua, en cambio, ofrece algo raro y valioso: un entorno predecible, contenedor y de estimulación profunda. La presión hidrostática que rodea el cuerpo en una piscina actúa como un abrazo constante, una forma de input propioceptivo que muchos niños con TEA buscan activamente. A eso se suma el efecto rítmico del movimiento en el agua, que tiene un impacto calmante documentado sobre el sistema nervioso autónomo.</p>
-    <p>No es casualidad que muchas familias de niños con autismo reporten que la piscina es uno de los pocos espacios donde sus hijos se muestran relajados, enfocados y genuinamente felices. Esta observación no es solo anecdótica: la evidencia científica la respalda con solidez creciente.</p>
+    <h2>Por qué el agua funciona especialmente bien para niños neurodivergentes</h2>
+    <p>Los niños neurodivergentes perciben el mundo de una manera diferente. Sus sistemas sensoriales pueden estar hiper o hiposensibilizados, lo que convierte muchos entornos cotidianos en fuentes de estrés. El aula, el patio, el supermercado: todos presentan estímulos imprevisibles que pueden abrumar al sistema nervioso de un niño neurodivergente.</p>
+    <p>El agua, en cambio, ofrece algo raro y valioso: un entorno predecible, contenedor y de estimulación profunda. La presión hidrostática que rodea el cuerpo en una piscina actúa como un abrazo constante, una forma de input propioceptivo que muchos niños neurodivergentes buscan activamente. A eso se suma el efecto rítmico del movimiento en el agua, que tiene un impacto calmante documentado sobre el sistema nervioso autónomo.</p>
+    <p>No es casualidad que muchas familias de niños neurodivergentes reporten que la piscina es uno de los pocos espacios donde sus hijos se muestran relajados, enfocados y genuinamente felices. Esta observación no es solo anecdótica: la evidencia científica la respalda con solidez creciente.</p>
   </section>
 
   <section>
-    <h2>Beneficios sensoriales del entorno acuático para el TEA</h2>
-    <p>El agua crea una experiencia multisensorial controlada que resulta ideal para trabajar la integración sensorial en niños con TEA. A continuación, los principales mecanismos terapéuticos:</p>
+    <h2>Beneficios sensoriales del entorno acuático para la neurodivergencia</h2>
+    <p>El agua crea una experiencia multisensorial controlada que resulta ideal para trabajar la integración sensorial en niños neurodivergentes. A continuación, los principales mecanismos terapéuticos:</p>
     <ul>
-      <li><strong>Input propioceptivo y vestibular:</strong> El movimiento en el agua activa los receptores propioceptivos de músculos y articulaciones, así como el sistema vestibular del oído interno. Para niños con TEA que buscan constantemente input sensorial profundo (girando, saltando, chocando), la natación ofrece ese estímulo de forma segura y regulada.</li>
+      <li><strong>Input propioceptivo y vestibular:</strong> El movimiento en el agua activa los receptores propioceptivos de músculos y articulaciones, así como el sistema vestibular del oído interno. Para niños neurodivergentes que buscan constantemente input sensorial profundo (girando, saltando, chocando), la natación ofrece ese estímulo de forma segura y regulada.</li>
       <li><strong>Regulación sensorial:</strong> La presión del agua y la temperatura estable (32–34°C en nuestra piscina temperada) crean un ambiente que permite al sistema nervioso del niño "bajar la guardia" y reducir el estado de alerta. Muchos niños que llegan hiperactivos a la sesión salen mucho más calmados.</li>
       <li><strong>Reducción de la sobrecarga sensorial:</strong> A diferencia de los entornos terrestres llenos de ruidos, texturas y movimientos impredecibles, el interior de la piscina filtra gran parte del "ruido" ambiental, permitiendo que el niño procese la información de forma más manejable.</li>
-      <li><strong>Consciencia corporal:</strong> La resistencia del agua obliga al cuerpo a registrar su propio movimiento con mayor precisión. Esto mejora la interocepción y la propiocepción, dos áreas frecuentemente desafiantes para personas con TEA.</li>
+      <li><strong>Consciencia corporal:</strong> La resistencia del agua obliga al cuerpo a registrar su propio movimiento con mayor precisión. Esto mejora la interocepción y la propiocepción, dos áreas frecuentemente desafiantes para personas neurodivergentes.</li>
     </ul>
   </section>
 
   <section>
     <h2>Evidencia científica: lo que dicen los estudios</h2>
-    <p>La investigación sobre hidroterapia y natación en niños con TEA ha crecido considerablemente en la última década. Los hallazgos son consistentes:</p>
-    <p>Un estudio publicado en el <em>Journal of Autism and Developmental Disorders</em> encontró que programas de natación estructurada de 10 semanas redujeron significativamente los comportamientos repetitivos y mejoraron la atención sostenida en niños de 4 a 12 años con TEA. Los padres también reportaron mejor calidad del sueño y menor ansiedad general en sus hijos.</p>
-    <p>Otra investigación de la Universidad de Sao Paulo evaluó el efecto de la hidroterapia sobre la modulación sensorial en niños con autismo y concluyó que las sesiones regulares en agua mejoraron de forma medible la capacidad de autorregulación, la tolerancia al tacto y la integración bilateral del movimiento.</p>
+    <p>La investigación sobre hidroterapia y natación en niños neurodivergentes ha crecido considerablemente en la última década. Los hallazgos son consistentes:</p>
+    <p>Un estudio publicado en el <em>Journal of Autism and Developmental Disorders</em> encontró que programas de natación estructurada de 10 semanas redujeron significativamente los comportamientos repetitivos y mejoraron la atención sostenida en niños de 4 a 12 años con perfil neurodivergente. Los padres también reportaron mejor calidad del sueño y menor ansiedad general en sus hijos.</p>
+    <p>Otra investigación de la Universidad de Sao Paulo evaluó el efecto de la hidroterapia sobre la modulación sensorial en niños neurodivergentes y concluyó que las sesiones regulares en agua mejoraron de forma medible la capacidad de autorregulación, la tolerancia al tacto y la integración bilateral del movimiento.</p>
     <p>En cuanto a habilidades sociales y comunicación, un programa de natación adaptada de 14 semanas mostró mejoras estadísticamente significativas en la frecuencia de contacto visual, la imitación motora y los comportamientos de iniciativa social durante las sesiones. Las mejoras se generalizaron parcialmente a otros contextos según los reportes de los padres.</p>
-    <p>Finalmente, no podemos ignorar el aspecto físico: los niños con TEA tienen mayor prevalencia de sedentarismo, bajo tono muscular e hiperlaxitud articular. La natación aborda estos desafíos físicos de forma global, trabajando fuerza, coordinación y resistencia cardiovascular simultáneamente.</p>
+    <p>Finalmente, no podemos ignorar el aspecto físico: los niños neurodivergentes tienen mayor prevalencia de sedentarismo, bajo tono muscular e hiperlaxitud articular. La natación aborda estos desafíos físicos de forma global, trabajando fuerza, coordinación y resistencia cardiovascular simultáneamente.</p>
   </section>
 
   <section>
-    <h2>Qué es Neuro Swimmer: el programa de Miniswimmer para niños con TEA</h2>
-    <p>En <a href="/neuro-swimmer">Neuro Swimmer</a>, hemos diseñado un programa específico para niños neurodivergentes — con foco especial en TEA — que combina nuestra metodología de Coaching y Programación Neurolingüística con técnicas validadas de natación adaptada y terapia acuática.</p>
+    <h2>Qué es Neuro Swimmer: el programa de Miniswimmer para niños neurodivergentes</h2>
+    <p>En <a href="/neuro-swimmer">Neuro Swimmer</a>, hemos diseñado un programa específico para niños neurodivergentes que combina nuestra metodología de Coaching y Programación Neurolingüística con técnicas validadas de natación adaptada y terapia acuática.</p>
     <p>El programa no es simplemente "natación con más paciencia". Es un abordaje estructurado que considera:</p>
     <ul>
-      <li><strong>Evaluación inicial personalizada:</strong> Antes de comenzar, realizamos una entrevista con la familia para comprender el perfil sensorial del niño, sus intereses, sus dificultades y sus metas terapéuticas. No hay dos niños con TEA iguales, y nuestras clases reflejan esa individualidad.</li>
+      <li><strong>Evaluación inicial personalizada:</strong> Antes de comenzar, realizamos una entrevista con la familia para comprender el perfil sensorial del niño, sus intereses, sus dificultades y sus metas terapéuticas. No hay dos niños neurodivergentes iguales, y nuestras clases reflejan esa individualidad.</li>
       <li><strong>Grupos pequeños o clases individuales:</strong> Dependiendo del nivel de apoyo que el niño requiera, trabajamos en grupos de máximo 3 alumnos por instructor, o en formato 1 a 1. Esto garantiza atención constante y adaptación en tiempo real.</li>
-      <li><strong>Estructura y predictibilidad:</strong> Cada sesión sigue una rutina clara y consistente. Los niños con TEA prosperan cuando saben qué esperar: la misma secuencia de entrada, los mismos saludos, la misma música de fondo. Minimizamos las sorpresas y maximizamos la seguridad emocional.</li>
+      <li><strong>Estructura y predictibilidad:</strong> Cada sesión sigue una rutina clara y consistente. Los niños neurodivergentes prosperan cuando saben qué esperar: la misma secuencia de entrada, los mismos saludos, la misma música de fondo. Minimizamos las sorpresas y maximizamos la seguridad emocional.</li>
       <li><strong>Uso de apoyos visuales:</strong> Tarjetas de secuencia, señales gestuales y referencias visuales en el borde de la piscina ayudan a los niños que procesan mejor la información visual que la verbal.</li>
       <li><strong>Objetivos funcionales y terapéuticos integrados:</strong> Trabajamos habilidades acuáticas (flotación, patada, respiración) al mismo tiempo que objetivos de desarrollo como el seguimiento de instrucciones, la tolerancia al cambio y la interacción con pares.</li>
     </ul>
@@ -73,9 +73,9 @@ export const article16: BlogArticle = {
 
   <section>
     <h2>Formación de nuestros instructores: el corazón del programa</h2>
-    <p>No basta con ser un buen instructor de natación para trabajar con niños con TEA. En Miniswimmer, nuestros profesionales del programa Neuro Swimmer se forman en:</p>
+    <p>No basta con ser un buen instructor de natación para trabajar con niños neurodivergentes. En Miniswimmer, nuestros profesionales del programa Neuro Swimmer se forman en:</p>
     <ul>
-      <li>Fundamentos del Trastorno del Espectro Autista y otros perfiles neurodivergentes</li>
+      <li>Fundamentos de la neurodivergencia y sus distintos perfiles</li>
       <li>Teoría de la Integración Sensorial (modelo de Ayres) aplicada al medio acuático</li>
       <li>Estrategias de comunicación aumentativa y alternativa básica</li>
       <li>Técnicas de manejo de conducta positivas y regulación emocional en el agua</li>
@@ -99,17 +99,17 @@ export const article16: BlogArticle = {
     </blockquote>
     <blockquote>
       <p>"Probamos muchas terapias antes. La natación con Miniswimmer es la única en que mi hija participa de verdad, sin resistencia. El ambiente es tranquilo, los instructores son pacientes de verdad, no de mentira."</p>
-      <footer>— Madre de alumna con diagnóstico TEA, Vitacura</footer>
+      <footer>— Madre de alumna neurodivergente, Vitacura</footer>
     </blockquote>
   </section>
 
   <section>
     <h2>Qué esperar: progreso realista en el tiempo</h2>
-    <p>Trabajar con niños con TEA requiere una perspectiva de largo plazo y la capacidad de celebrar cada pequeño avance. En Neuro Swimmer, comunicamos a las familias desde el inicio que el progreso no es lineal, pero sí real y acumulativo.</p>
-    <p><strong>Primeras semanas (1–4):</strong> El objetivo principal es la adaptación al medio acuático. Para muchos niños con TEA, entrar a la piscina ya es un gran logro. Trabajamos en familiarizarse con la temperatura del agua, el sonido de la piscina, el instructor y la rutina de la clase. No se presiona ninguna habilidad técnica en esta etapa.</p>
+    <p>Trabajar con niños neurodivergentes requiere una perspectiva de largo plazo y la capacidad de celebrar cada pequeño avance. En Neuro Swimmer, comunicamos a las familias desde el inicio que el progreso no es lineal, pero sí real y acumulativo.</p>
+    <p><strong>Primeras semanas (1–4):</strong> El objetivo principal es la adaptación al medio acuático. Para muchos niños neurodivergentes, entrar a la piscina ya es un gran logro. Trabajamos en familiarizarse con la temperatura del agua, el sonido de la piscina, el instructor y la rutina de la clase. No se presiona ninguna habilidad técnica en esta etapa.</p>
     <p><strong>Mes 2–3:</strong> Una vez establecida la confianza, comenzamos a introducir actividades de flotación asistida, patadas y juego acuático estructurado. Los niños empiezan a anticipar la rutina y a mostrar conductas de iniciativa dentro del agua.</p>
     <p><strong>Mes 4–6:</strong> La mayoría de los alumnos comienza a desarrollar flotación independiente y movimientos de propulsión básicos. Es también en este periodo donde suelen verse los avances más claros en las áreas terapéuticas: mejor regulación emocional, mayor tolerancia a la frustración y más comunicación espontánea.</p>
-    <p><strong>Largo plazo:</strong> Con constancia, los niños con TEA que participan en Neuro Swimmer desarrollan habilidades acuáticas que les dan autonomía y seguridad en el agua — una competencia de seguridad vital — junto con un espacio de bienestar que los acompaña toda la vida.</p>
+    <p><strong>Largo plazo:</strong> Con constancia, los niños neurodivergentes que participan en Neuro Swimmer desarrollan habilidades acuáticas que les dan autonomía y seguridad en el agua — una competencia de seguridad vital — junto con un espacio de bienestar que los acompaña toda la vida.</p>
     <p>Cada alumno tiene su ritmo. Nuestros instructores celebran los avances de cada niño en función de su punto de partida, no de un estándar externo.</p>
   </section>
 
@@ -123,19 +123,19 @@ export const article16: BlogArticle = {
   `,
   faq: [
     {
-      question: "¿A qué edad puede comenzar un niño con TEA el programa Neuro Swimmer?",
+      question: "¿A qué edad puede comenzar un niño neurodivergente el programa Neuro Swimmer?",
       answer:
         "Recibimos niños desde los 2 años. No hay un techo de edad: trabajamos con niños en edad preescolar, escolar y adolescentes. Lo más importante es la evaluación individualizada que hacemos antes de comenzar para adaptar el programa al perfil de cada alumno.",
     },
     {
-      question: "¿Necesita el niño diagnóstico formal de TEA para acceder al programa?",
+      question: "¿Necesita el niño diagnóstico formal para acceder al programa?",
       answer:
-        "No es un requisito estricto. Trabajamos con niños con diagnóstico confirmado de TEA, pero también con niños en proceso de evaluación o con otros perfiles neurodivergentes (TDAH, trastorno del procesamiento sensorial, etc.). Si tienes dudas sobre si el programa es adecuado para tu hijo, contáctanos y lo evaluamos juntos.",
+        "No es un requisito estricto. Trabajamos con niños con diagnóstico confirmado de neurodivergencia (TEA, TDAH, trastorno del procesamiento sensorial, entre otros), así como con niños en proceso de evaluación. Si tienes dudas sobre si el programa es adecuado para tu hijo, contáctanos y lo evaluamos juntos.",
     },
     {
       question: "¿Las clases son individuales o en grupo?",
       answer:
-        "Ofrecemos ambas modalidades. Para niños con TEA de nivel 2 o 3 de apoyo, recomendamos clases individuales (1 instructor por 1 alumno). Para niños con mayor autonomía, trabajamos en grupos reducidos. La modalidad se define en la evaluación inicial y puede ajustarse a medida que el niño avanza.",
+        "Ofrecemos ambas modalidades. Para niños neurodivergentes con mayor necesidad de apoyo, recomendamos clases individuales (1 instructor por 1 alumno). Para niños con mayor autonomía, trabajamos en grupos reducidos. La modalidad se define en la evaluación inicial y puede ajustarse a medida que el niño avanza.",
     },
     {
       question: "¿Qué pasa si mi hijo llora o se resiste a entrar al agua?",
@@ -145,7 +145,7 @@ export const article16: BlogArticle = {
     {
       question: "¿Pueden los padres estar presentes durante las clases?",
       answer:
-        "Sí, especialmente en las primeras sesiones. Para muchos niños con TEA, la presencia del cuidador principal es fundamental para sentirse seguros. A medida que el niño gana confianza con el instructor y el entorno, acordamos juntos cuándo y cómo ir reduciendo gradualmente esa presencia, si es que el objetivo terapéutico lo requiere.",
+        "Sí, especialmente en las primeras sesiones. Para muchos niños neurodivergentes, la presencia del cuidador principal es fundamental para sentirse seguros. A medida que el niño gana confianza con el instructor y el entorno, acordamos juntos cuándo y cómo ir reduciendo gradualmente esa presencia, si es que el objetivo terapéutico lo requiere.",
     },
     {
       question: "¿El programa Neuro Swimmer puede complementarse con otras terapias?",
