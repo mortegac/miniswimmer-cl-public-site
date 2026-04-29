@@ -21,7 +21,7 @@ export default function BlogCard({ article }: BlogCardProps) {
           alt={article.coverImage.alt}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 390px"
-          className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+          className="object-cover object-left transition-transform duration-500 group-hover:scale-105"
         />
         {/* Purple brand overlay */}
         <div className="absolute inset-0 bg-primary/40" />
