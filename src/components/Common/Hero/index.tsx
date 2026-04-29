@@ -80,6 +80,7 @@ const Hero = (props: any) => {
               height={500}
               className="h-auto w-full rounded-lg"
               priority
+              fetchPriority="high"
             />
           </div>
         </div>
