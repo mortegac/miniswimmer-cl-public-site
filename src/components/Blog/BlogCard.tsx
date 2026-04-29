@@ -23,7 +23,10 @@ export default function BlogCard({ article }: BlogCardProps) {
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 390px"
           className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+        {/* Purple brand overlay */}
+        <div className="absolute inset-0 bg-primary/40" />
+        {/* Hover: slightly deeper */}
+        <div className="absolute inset-0 bg-primary/0 transition-colors duration-300 group-hover:bg-primary/15" />
       </Link>
 
       {/* Content */}
