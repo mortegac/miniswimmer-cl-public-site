@@ -5,7 +5,10 @@ const Loader = () => {
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1000);
+    // Hide the loader after the first paint completes rather than
+    // blocking with a fixed 1 s timeout that delays LCP/FCP.
+    const raf = requestAnimationFrame(() => setLoading(false));
+    return () => cancelAnimationFrame(raf);
   }, []);
 
   return (

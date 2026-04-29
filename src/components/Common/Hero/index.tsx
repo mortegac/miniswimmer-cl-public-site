@@ -75,7 +75,7 @@ const Hero = (props: any) => {
           <div className="w-full lg:w-1/2">
             <Image
               src={t("image")}
-              alt={t("title").replace(/<[^>]*>/g, "")}
+              alt={String(t.raw("title")).replace(/<[^>]*>/g, "")}
               width={600}
               height={500}
               className="h-auto w-full rounded-lg"
