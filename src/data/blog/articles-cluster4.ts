@@ -12,7 +12,7 @@ export const article16: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 8,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIs8BOoF08xazl_miniswimmer-blog-16-natacion-para-ninos-con-tea-y-autismo-beneficios-terapeutico.png?auto=format,compress",
     alt: "Niño con TEA disfrutando una clase de natación terapéutica en Miniswimmer Chile",
   },
   keywords: {
@@ -179,7 +179,7 @@ export const article17: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 6,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIucBOoF08xazm_miniswimmer-blog-17-piscina-temperada-para-bebes-por-que-la-temperatura-del-agua.png?auto=format,compress",
     alt: "Bebé en piscina temperada a temperatura ideal durante clase de matronatación en Miniswimmer",
   },
   keywords: {
@@ -328,7 +328,7 @@ export const article18: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 6,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIvsBOoF08xazn_miniswimmer-blog-18-natacion-en-invierno-para-bebes-por-que-no-debes-pausar-las-.png?auto=format,compress",
     alt: "Bebé disfrutando clase de natación en invierno en piscina temperada de Miniswimmer Chile",
   },
   keywords: {
@@ -472,7 +472,7 @@ export const article19: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 7,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIx8BOoF08xazp_miniswimmer-blog-19-after-school-de-natacion-en-santiago-por-que-es-la-extracurr.png?auto=format,compress",
     alt: "Niños en clase de natación after school vespertina en Miniswimmer Santiago Chile",
   },
   keywords: {
@@ -622,7 +622,7 @@ export const article20: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 7,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIzMBOoF08xazq_miniswimmer-blog-20-la-primera-clase-de-natacion-de-tu-bebe-guia-completa-para-p.png?auto=format,compress",
     alt: "Mamá sosteniendo bebé en su primera clase de natación en piscina temperada de Miniswimmer",
   },
   keywords: {

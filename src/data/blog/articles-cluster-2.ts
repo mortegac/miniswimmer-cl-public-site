@@ -12,7 +12,7 @@ export const article6: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 8,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIX8BOoF08xazE_miniswimmer-blog-06-desde-que-edad-pueden-nadar-los-bebes-guia-con-respaldo-cien.png?auto=format,compress",
     alt: "Bebé en el agua con su madre en clase de matronatación Miniswimmer",
   },
   keywords: {
@@ -182,7 +182,7 @@ export const article7: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 7,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIZMBOoF08xazG_miniswimmer-blog-07-desarrollo-psicomotor-del-bebe-en-el-agua-5-mecanismos-que-l.png?auto=format,compress",
     alt: "Bebé en el agua siendo estimulado psicomotoramente en clase de Miniswimmer",
   },
   keywords: {
@@ -312,7 +312,7 @@ export const article8: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 6,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIaMBOoF08xazI_miniswimmer-blog-08-estimulacion-temprana-acuatica-el-agua-como-entorno-de-apren.png?auto=format,compress",
     alt: "Bebé siendo estimulado en el agua con juguetes coloridos en Miniswimmer",
   },
   keywords: {
@@ -428,7 +428,7 @@ export const article9: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 6,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIbsBOoF08xazR_miniswimmer-blog-09-natacion-de-bebes-y-vinculo-como-el-agua-profundiza-el-apego.png?auto=format,compress",
     alt: "Madre sosteniendo a su bebé en la piscina con mirada de conexión profunda",
   },
   keywords: {
@@ -554,7 +554,7 @@ export const article10: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 6,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIdcBOoF08xazT_miniswimmer-blog-10-cuantas-clases-necesita-un-bebe-para-aprender-a-flotar-expec.png?auto=format,compress",
     alt: "Bebé aprendiendo a flotar en la piscina de Miniswimmer con su instructor",
   },
   keywords: {

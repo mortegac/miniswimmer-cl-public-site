@@ -12,7 +12,7 @@ export const article11: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 9,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIgsBOoF08xazY_miniswimmer-blog-11-seguridad-acuatica-para-ninos-en-chile-todo-lo-que-debes-sab-1-.png?auto=format,compress",
     alt: "Seguridad acuática para niños en Chile — Miniswimmer escuela de natación infantil",
   },
   keywords: {
@@ -163,7 +163,7 @@ export const article12: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 7,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIImMBOoF08xazb_miniswimmer-blog-12-supervivencia-acuatica-para-bebes-y-ninos-tecnicas-que-puede.png?auto=format,compress",
     alt: "Bebé aprendiendo flotación defensiva y supervivencia acuática en Miniswimmer",
   },
   keywords: {
@@ -293,7 +293,7 @@ export const article13: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 6,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIoMBOoF08xazg_miniswimmer-blog-13-seguridad-en-piscina-para-bebes-en-verano-la-guia-practica-c.png?auto=format,compress",
     alt: "Bebé en piscina con seguridad durante el verano — Miniswimmer",
   },
   keywords: {
@@ -442,7 +442,7 @@ export const article14: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 5,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIqMBOoF08xazj_miniswimmer-blog-14-que-llevar-a-la-clase-de-natacion-de-tu-bebe-la-lista-defini.png?auto=format,compress",
     alt: "Bolsa lista para clase de natación de bebé — Miniswimmer escuela de natación infantil",
   },
   keywords: {
@@ -582,7 +582,7 @@ export const article15: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 8,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIrcBOoF08xazk_miniswimmer-blog-15-como-elegir-la-mejor-escuela-de-natacion-para-bebes-en-santi.png?auto=format,compress",
     alt: "Cómo elegir la mejor escuela de natación para bebés en Santiago — Miniswimmer",
   },
   keywords: {
