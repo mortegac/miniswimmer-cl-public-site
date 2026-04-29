@@ -63,14 +63,14 @@ export default function BlogArticleLayout({
 
       {/* Article body + sidebar */}
       <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0 py-12 lg:py-20">
-        {/* Cover image — contained within content width */}
-        <div className="relative mb-10 aspect-[16/9] overflow-hidden rounded-10 shadow-features">
+        {/* Cover image — max 1170×400, responsive height */}
+        <div className="relative mb-10 h-[200px] w-full overflow-hidden rounded-10 shadow-features sm:h-[280px] lg:h-[400px]">
           <Image
             src={article.coverImage.src}
             alt={article.coverImage.alt}
             fill
             priority
-            sizes="(max-width: 768px) 100vw, 1170px"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1170px"
             className="object-cover"
           />
         </div>
