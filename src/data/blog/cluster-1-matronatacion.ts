@@ -468,73 +468,106 @@ export const article4: BlogArticle = {
     ],
   },
   content: `
-<p><strong>El método Miniswimmer integra PNL (Programación Neurolingüística) y Coaching con una progresión de 4 etapas acuáticas</strong>, siendo la única escuela en Chile que aplica estas herramientas de desarrollo humano dentro del agua. El resultado es un aprendizaje más profundo, más rápido y emocionalmente más saludable para bebés, niños y sus familias.</p>
+<p><strong>El método Miniswimmer integra PNL (Programación Neurolingüística) y Coaching con una progresión de 4 etapas acuáticas alineadas al neurodesarrollo infantil</strong>, siendo la única academia en Chile que aplica estas herramientas de desarrollo humano dentro del agua. El resultado es un Aprendizaje Significativo más profundo, más duradero y emocionalmente más saludable para bebés, niños y sus familias.</p>
 
-<h2>¿Por qué Miniswimmer nació de una forma diferente?</h2>
-<p>La mayoría de las escuelas de natación infantil toman protocolos diseñados para adultos y los adaptan superficialmente a los niños. En Miniswimmer creemos que los bebés y niños no aprenden como adultos reducidos: aprenden desde el vínculo, la emoción y el juego. Por eso construimos una metodología desde cero, integrando lo mejor de la neurociencia del aprendizaje, el desarrollo infantil temprano, la Programación Neurolingüística y el Coaching sistémico.</p>
-<p>Esta visión se traduce en clases donde no solo enseñamos a moverse en el agua, sino que transformamos la relación de toda la familia con el medio acuático. Los padres aprenden tanto como los bebés. Visita nuestra página de <a href="/metodo">metodología</a> para conocer los fundamentos completos.</p>
+<h2>Una metodología que va más allá de la piscina</h2>
+<p>En Miniswimmer no nos limitamos a enseñar movimientos técnicos; transformamos la relación del niño con el agua a través de la Programación Neurolingüística (PNL) y el Coaching. Mientras que la enseñanza tradicional suele basarse en el adiestramiento y la repetición mecánica, nuestro método se centra en el <strong>Aprendizaje Significativo</strong>. Esto permite que el alumno no solo aprenda a nadar, sino que desarrolle una autonomía real y capacidad de decisión, convirtiendo la seguridad proactiva en un hábito que lo acompañará de por vida.</p>
+<p>Nuestra misión va más allá de la piscina: somos una academia de formación integral. Con certificaciones internacionales que avalan nuestra metodología, garantizamos un estándar de seguridad que trasciende lo convencional. Ya sea en nuestras sesiones para embarazadas (Mami Swimmer) o para adultos (Big Swimmer), el objetivo es el mismo: dotar al ser humano de herramientas de supervivencia y disfrute acuático mediante una conexión profunda entre cuerpo y mente.</p>
 
-<h2>¿Qué hace único al método Miniswimmer?</h2>
-<p>Tres pilares distinguen nuestro enfoque de cualquier otra oferta en el mercado:</p>
-<ul>
-  <li><strong>Progresión por etapas verificables:</strong> cada niño avanza según su desarrollo real, no según una planificación de calendario. Las etapas tienen criterios objetivos de avance.</li>
-  <li><strong>PNL aplicada al aprendizaje acuático:</strong> usamos herramientas de comunicación no verbal, gestión emocional y neurología del aprendizaje para optimizar cómo el cuerpo y la mente del bebé integran cada nueva habilidad.</li>
-  <li><strong>Coaching para familias:</strong> los padres reciben herramientas concretas para acompañar el proceso dentro y fuera de la piscina, creando coherencia entre la clase y el hogar.</li>
-</ul>
+<h2>Miniswimmer vs. el método tradicional: una diferencia fundamental</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Método Tradicional</th>
+      <th>Método Miniswimmer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>El niño sigue instrucciones del instructor</td>
+      <td>El Coaching guía al niño a tomar decisiones en el agua según su etapa de desarrollo</td>
+    </tr>
+    <tr>
+      <td>Repetición mecánica de movimientos</td>
+      <td>Aprendizaje Significativo: el cuerpo y la mente integran juntos cada habilidad</td>
+    </tr>
+    <tr>
+      <td>Seguridad acuática como objetivo final</td>
+      <td>Prevención y Supervivencia Acuática como habilidad transversal desde la primera etapa</td>
+    </tr>
+    <tr>
+      <td>El adulto observa desde el borde</td>
+      <td>El adulto es parte activa del proceso de aprendizaje</td>
+    </tr>
+    <tr>
+      <td>Progresión por edad o calendario</td>
+      <td>Progresión verificable por habilidades reales del niño</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2>¿Qué es la PNL y cómo se aplica en el agua?</h2>
-<p>La Programación Neurolingüística es un conjunto de herramientas que estudia cómo los seres humanos procesan, almacenan y recuperan experiencias. Desarrollada originalmente por Bandler y Grinder en los años 70, ha sido ampliamente adoptada en contextos educativos, terapéuticos y deportivos.</p>
-<p>En el contexto de la educación acuática infantil, aplicamos PNL en tres dimensiones:</p>
+<p>La Programación Neurolingüística estudia cómo los seres humanos procesan, almacenan y recuperan experiencias. En el contexto de la educación acuática infantil, aplicamos PNL en tres dimensiones que optimizan el Aprendizaje Significativo:</p>
 <ul>
-  <li><strong>Calibración:</strong> los instructores observan con precisión las señales no verbales del bebé (tono muscular, expresión facial, respiración, ritmo cardíaco visible en el cuello) para ajustar la intervención en tiempo real.</li>
-  <li><strong>Rapport kinestésico:</strong> el instructor y el adulto aprenden a sincronizar sus movimientos y energía con los del bebé, creando un estado de receptividad óptima para el aprendizaje.</li>
-  <li><strong>Anclajes positivos:</strong> asociamos estímulos específicos (canciones, señales táctiles, palabras clave) con estados de calma y confianza. Con el tiempo, estos anclajes permiten al bebé regular su estado emocional ante el agua de manera autónoma.</li>
+  <li><strong>Calibración:</strong> los instructores observan con precisión las señales no verbales del bebé (tono muscular, expresión facial, respiración) para ajustar la intervención en tiempo real.</li>
+  <li><strong>Rapport kinestésico:</strong> el instructor y el adulto aprenden a sincronizar sus movimientos con los del bebé, creando un estado de receptividad óptima para el aprendizaje.</li>
+  <li><strong>Anclajes positivos:</strong> asociamos estímulos específicos (canciones, señales táctiles, palabras clave) con estados de calma y confianza que el bebé aprende a activar de forma autónoma.</li>
 </ul>
-<p>El resultado práctico es que los bebés de Miniswimmer aprenden más rápido, con menos estrés y con mayor retención que en metodologías convencionales.</p>
 
-<h2>Las 4 Etapas del Método Miniswimmer</h2>
-<p>Nuestro programa de progresión está estructurado en 4 etapas, cada una con objetivos claros, habilidades verificables y un perfil de desarrollo asociado. No hay límites de tiempo rígidos: cada niño avanza cuando está genuinamente listo.</p>
+<h2>Prevención y Supervivencia Acuática: una habilidad transversal desde el día uno</h2>
+<p>En Miniswimmer, la <strong>Prevención y Supervivencia Acuática no es el último escalón del aprendizaje: es una habilidad transversal que se trabaja desde la primera sesión</strong>. Según la <a href="https://www.who.int/es/news-room/fact-sheets/detail/drowning" target="_blank" rel="noopener noreferrer">Organización Mundial de la Salud (OMS)</a>, el ahogamiento es una de las principales causas de muerte accidental en niños menores de 5 años en todo el mundo.</p>
+<p>Esto nos impone una responsabilidad que no podemos diferir. Por eso, desde la Etapa 1, cada sesión de Aprendizaje Significativo incorpora:</p>
+<ul>
+  <li>Respuesta de contención respiratoria ante inmersión (reflejo que se refuerza, no se elimina)</li>
+  <li>Orientación corporal hacia el borde como respuesta automática</li>
+  <li>Familiarización progresiva con la posición de recuperación (flotación dorsal)</li>
+  <li>Protocolo de señal previa antes de cualquier inmersión, que construye anticipación y elimina la respuesta de pánico</li>
+</ul>
+<p>La seguridad no es un módulo adicional: está integrada en cada ejercicio, cada juego y cada interacción dentro del agua.</p>
 
-<h3>Etapa 1: Pequeño Pez (2 meses – 6 meses)</h3>
-<p>Esta es la etapa de bienvenida al agua. El objetivo principal es construir la confianza básica: que el bebé experimente el agua como un entorno seguro, cálido y placentero. El adulto entra al agua con el bebé y aprende las técnicas fundamentales de sujeción, orientación y presentación del agua.</p>
-<p>Las habilidades que se desarrollan en esta etapa incluyen: tolerancia a la temperatura del agua, control cefálico en posición ventral y dorsal con soporte, primeras experiencias de salpicaduras en rostro, respuesta al reflejo de contención respiratoria y exploración sensorial del entorno acuático. La clase completa es un juego guiado, con canciones específicas y rituales de clase que crean predictibilidad y calma.</p>
-<p>Al finalizar la etapa, el bebé muestra placer visible en el agua, el adulto maneja con confianza las técnicas de sujeción y ambos están listos para avanzar.</p>
+<h2>Las 4 Etapas del Método Miniswimmer y el Neurodesarrollo</h2>
+<p>Cada etapa está alineada con las ventanas de desarrollo neurológico del niño. No avanzamos por calendario: avanzamos cuando el sistema nervioso del niño está listo para integrar la siguiente habilidad de forma significativa.</p>
 
-<h3>Etapa 2: Gran Pez (6 meses – 12 meses)</h3>
-<p>En esta etapa, el bebé comienza a tomar iniciativa dentro del agua. Ya no es solo receptor de estímulos: empieza a patear, a dirigir su cuerpo y a responder activamente a las invitaciones del instructor. El adulto aprende a soltar progresivamente, dando más autonomía al bebé en un entorno controlado.</p>
-<p>Las habilidades de esta etapa incluyen: patada de piernas activa y coordinada, flotación en posición dorsal con soporte mínimo, primeras inmersiones cortas voluntarias (con señal previa), desplazamiento asistido hacia el borde y exploración de objetos flotantes. El juego se vuelve más dinámico y el bebé muestra preferencia por ciertos ejercicios.</p>
-<p>La PNL tiene especial relevancia aquí: usamos anclajes de señal (una palabra o gesto específico antes de cada inmersión) que el bebé aprende a reconocer y anticipar, eliminando el factor sorpresa que genera estrés.</p>
+<h3>Etapa 1: Pequeño Pez (2 meses – 6 meses) — Foco: Sistema sensorial y regulación</h3>
+<p>En los primeros meses de vida, el cerebro del bebé está dominado por el <strong>procesamiento sensorial</strong>: temperatura, presión, movimiento y sonido son las principales vías de aprendizaje. El neocórtex, sede del razonamiento, está aún en desarrollo; el sistema límbico —emociones y memoria emocional— es el protagonista.</p>
+<p>Por eso esta etapa no busca "enseñar a nadar": busca construir una <strong>memoria emocional positiva del agua</strong>. Cuando el bebé asocia el medio acuático con calor, seguridad y presencia del adulto, está creando las bases neurológicas que harán que todo aprendizaje acuático posterior sea más rápido y menos resistido.</p>
+<p>Las habilidades desarrolladas: tolerancia a la temperatura, control cefálico con soporte, primeras inmersiones con señal previa, exploración sensorial del entorno. La Prevención y Supervivencia Acuática comienza aquí con el entrenamiento del reflejo respiratorio.</p>
 
-<h3>Etapa 3: Delfín (12 meses – 24 meses)</h3>
-<p>El Delfín es la etapa de la autonomía emergente. El bebé, ahora en transición hacia el niño pequeño, empieza a demostrar respuestas acuáticas autónomas: flota brevemente sin soporte, se orienta hacia el borde al caer al agua y puede desplazarse pequeñas distancias. El adulto continúa dentro del agua, pero su rol se transforma: de soporte físico a acompañante y validador.</p>
-<p>Habilidades de la etapa Delfín: flotación dorsal breve sin soporte, orientación al borde desde la caída, patada de pies coordinada y propulsiva, inmersión voluntaria y salida autónoma de la piscina desde el borde. También comienzan los primeros saltos asistidos desde el borde hacia los brazos del adulto.</p>
-<p>El Coaching tiene su mayor expresión en esta etapa: trabajamos con los padres la gestión de sus propios miedos y resistencias, que son frecuentes cuando el bebé comienza a demostrar independencia en el agua. Un padre ansioso transmite esa ansiedad; un padre confiado acompaña el crecimiento.</p>
+<h3>Etapa 2: Gran Pez (6 meses – 18 meses) — Foco: Iniciativa motora y causa-efecto</h3>
+<p>A partir de los 6-8 meses, el cerebro del bebé activa con fuerza los <strong>circuitos de causa-efecto y agencia motora</strong>: el bebé descubre que sus movimientos generan resultados en el entorno. "Cuando pateo, avanzo. Cuando me muevo, el agua responde." Este es un hito cognitivo mayor.</p>
+<p>En el agua, este descubrimiento es especialmente potente porque la flotabilidad hace visible el efecto de cada movimiento pequeño. Cada patada produce un desplazamiento. Cada impulso genera una respuesta inmediata del medio. El cerebro aprende activamente, no por imitación.</p>
+<p>Habilidades: patada coordinada y propulsiva, flotación dorsal con soporte mínimo, inmersiones voluntarias con señal (el niño toma la decisión de sumergirse), primeros desplazamientos asistidos hacia el borde. La Supervivencia Acuática avanza: el bebé comienza a orientarse hacia superficies de apoyo.</p>
 
-<h3>Etapa 4: Tiburón (24 meses en adelante)</h3>
-<p>El Tiburón es la etapa de la autonomía acuática real. El niño, con 2 o más años, puede desplazarse de manera autónoma, sumergirse voluntariamente y demostrar respuestas de seguridad sin intervención del adulto. El adulto ya no está dentro del agua de manera constante: puede observar desde el borde mientras el instructor trabaja directamente con el niño.</p>
-<p>Las habilidades de esta etapa incluyen: nado propulsivo autónomo (distancias cortas), inmersión y apertura de ojos bajo el agua, recuperación desde posición vertical hasta horizontal, nado con cara en el agua coordinado con respiración y respuesta autónoma de seguridad al caer al agua. Aquí el niño está listo para transitar, si lo desea la familia, hacia un programa de natación técnica.</p>
-<p>Descubre más sobre la transición en nuestro artículo <a href="/blog/matronatacion-vs-natacion-temprana">Matronatación vs. Natación Temprana</a>.</p>
+<h3>Etapa 3: Delfín (18 meses – 36 meses) — Foco: Autoconfianza, lenguaje y autonomía</h3>
+<p>Entre los 18 meses y los 3 años, el cerebro infantil experimenta una explosión del <strong>lenguaje, la autoconciencia y la autoconfianza</strong>. El niño comienza a nombrarse, a reconocer sus propias emociones y a tomar decisiones deliberadas. Es la etapa del "yo solo".</p>
+<p>El Coaching tiene su mayor expresión aquí: en lugar de instruir al niño sobre qué hacer, el instructor usa preguntas y desafíos diseñados para que el niño <strong>tome decisiones propias en el agua</strong>. "¿Puedes llegar solo al borde?" No es una instrucción: es una invitación a decidir. Este enfoque desarrolla no solo habilidades acuáticas, sino confianza cognitiva y emocional transferible a todos los ámbitos de la vida.</p>
+<p>Habilidades: flotación dorsal breve sin soporte, orientación autónoma al borde desde la caída, inmersión voluntaria, primeros saltos asistidos. La Supervivencia Acuática se consolida: respuesta de recuperación sin intervención del adulto en distancias cortas.</p>
+
+<h3>Etapa 4: Tiburón (3 años en adelante) — Foco: Autonomía acuática real y pensamiento estratégico</h3>
+<p>A partir de los 3-4 años, el córtex prefrontal comienza a madurar significativamente, habilitando el <strong>pensamiento estratégico, la planificación y la autorregulación</strong>. El niño puede anticipar, evaluar riesgos y tomar decisiones de mayor complejidad.</p>
+<p>En el Aprendizaje Significativo Miniswimmer, esto significa que el niño ya puede participar activamente en el diseño de sus propios desafíos. El instructor no dice "ahora haz crol": el instructor pregunta "¿cómo harías para llegar al otro lado sin parar?" El niño piensa, decide y ejecuta. El aprendizaje es profundo porque es propio.</p>
+<p>Habilidades: nado propulsivo autónomo en distancias cortas, inmersión con apertura de ojos, coordinación nado-respiración, respuesta autónoma de seguridad ante caída al agua. La Supervivencia Acuática está totalmente integrada como hábito automático.</p>
+<p>Descubre más sobre la transición en nuestro artículo <a href="/blog/matronatacion-vs-natacion-temprana">Matronatación vs. Aprendizaje Acuático Temprano</a>.</p>
 
 <h2>PNL y Coaching para familias: el diferencial invisible</h2>
-<p>Lo que no se ve desde afuera de la piscina es tanto o más importante que lo que ocurre dentro del agua. En Miniswimmer, entrenamos a los padres en habilidades que transforman su rol:</p>
+<p>Lo que no se ve desde afuera de la piscina es tanto o más importante que lo que ocurre dentro del agua. En Miniswimmer, entrenamos a los adultos en habilidades que transforman su rol de espectadores a co-facilitadores del Aprendizaje Significativo:</p>
 <ul>
   <li><strong>Lectura emocional del bebé:</strong> entender qué dice el bebé con su cuerpo antes de que llore o se cierre.</li>
-  <li><strong>Comunicación precisa:</strong> usar palabras, tonos y gestos que el bebé pueda anticipar y procesar sin estrés.</li>
-  <li><strong>Gestión de la propia ansiedad acuática:</strong> muchos adultos tienen reservas inconscientes frente al agua que transmiten sin saberlo a sus hijos.</li>
-  <li><strong>Celebración efectiva:</strong> cómo reconocer y reforzar los logros del bebé para consolidar el aprendizaje.</li>
+  <li><strong>Comunicación precisa:</strong> usar palabras, tonos y gestos que el niño pueda anticipar y procesar sin estrés.</li>
+  <li><strong>Gestión de la propia ansiedad acuática:</strong> muchos adultos transmiten sus miedos inconscientes al agua sin saberlo. El Coaching trabaja esto directamente.</li>
+  <li><strong>Celebración efectiva:</strong> cómo reconocer y reforzar los logros reales del bebé para consolidar el Aprendizaje Significativo.</li>
 </ul>
-<p>Este trabajo con los adultos es lo que hace que los avances del bebé en la piscina se consoliden en casa y se aceleren sesión a sesión.</p>
 
-<h2>Resultados del método: ¿qué dicen las familias?</h2>
-<p>Las familias que completan el programa de Miniswimmer reportan consistentemente:</p>
+<h2>Resultados del método: lo que las familias reportan</h2>
+<p>Las familias que completan el programa de Aprendizaje Significativo Miniswimmer reportan consistentemente:</p>
 <ul>
   <li>Bebés con autonomía acuática verificable antes de los 2 años</li>
-  <li>Reducción significativa de la ansiedad acuática en adultos que la padecían</li>
+  <li>Habilidades de Prevención y Supervivencia Acuática integradas desde las primeras etapas</li>
+  <li>Reducción significativa de la ansiedad acuática en adultos</li>
   <li>Mejor calidad de vínculo y comunicación entre padres e hijos</li>
-  <li>Niños con mayor confianza, autonomía y capacidad de adaptación a nuevos entornos</li>
-  <li>Transición fluida y sin traumas a la natación técnica en etapas posteriores</li>
+  <li>Niños con mayor confianza, autonomía y capacidad de decisión transferible a todos los ámbitos</li>
 </ul>
-<p>Para familias con necesidades especiales, ofrecemos el <a href="/neuro-swimmer">programa Neuro Swimmer</a>, que adapta estas mismas etapas y herramientas metodológicas para niños con Trastorno del Espectro Autista. <a href="/contacto">Contáctanos</a> para conocer más sobre qué programa es el indicado para tu familia.</p>
+<p>Para familias con necesidades especiales, ofrecemos el <a href="/neuro-swimmer">programa Neuro Swimmer</a>, que adapta estas mismas etapas y herramientas de Aprendizaje Significativo para niños con Trastorno del Espectro Autista. <a href="/contacto">Contáctanos</a> para conocer el programa indicado para tu familia.</p>
 `,
   faq: [
     {
