@@ -8,7 +8,7 @@ const Hero = (props: any) => {
 
   return (
     <section className="relative z-1 overflow-hidden bg-primary pb-17.5 pt-30 lg:pb-20 lg:pt-30 xl:pb-25 xl:pt-[170px]">
-      <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">
+      <div className="container">
         <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-12">
           <div className="w-full text-left lg:w-1/2">
             <h1 className="mb-5 font-satoshi text-heading-4 font-bold -tracking-[1.6px] text-white dark:text-white lg:text-heading-2 xl:text-[58px] xl:leading-[1.12]">

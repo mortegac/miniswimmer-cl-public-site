@@ -216,7 +216,7 @@ const TestClassForm = (props: any) => {
       id="features"
       className="relative z-1 overflow-hidden bg-[linear-gradient(90deg,#7e7e7e_0%,#3b3b3b_100%)] py-8 sm:py-12 lg:py-17.5 xl:py-22.5"
     >
-      <div className="relative z-1 mx-auto w-full max-w-[1170px] px-4 sm:px-6 lg:px-8 xl:px-0">
+      <div className="container relative z-1">
         <div className="flex flex-col lg:flex-row justify-center items-start gap-8 lg:gap-12">
           {/* Formulario - Responsive */}
           <div className="w-full lg:max-w-[600px] bg-white border border-[rgba(0,17,51,0.15)] rounded-[16px] sm:rounded-[20px] lg:rounded-[24px] p-6 sm:p-8 lg:p-[48px] flex flex-col justify-start items-start relative">

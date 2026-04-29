@@ -16,7 +16,7 @@ const Testimonials = (props: any) => {
       {/* <!-- section title --> */}
       <SectionHeader title={t("title")} description={t("subtitle")} />
 
-      <div className="relative z-1 mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">
+      <div className="container relative z-1">
         <div className="gap-7.5 space-y-7.5 sm:columns-2 lg:columns-3">
           {/* <!-- 1st Column --> */}
           {testimonialData?.map((data: any, i) => (

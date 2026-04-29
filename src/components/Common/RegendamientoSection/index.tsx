@@ -10,7 +10,7 @@ export default function RegendamientoSection(props: any) {
   return (
     // <section className="relative z-10 overflow-hidden bg-[linear-gradient(90deg,#F7E8F3_0%,#E0E0FC_100%)] py-17.5 dark:bg-gradient-to-t dark:from-gray-dark dark:to-gray-dark lg:py-[100px]">
     <section className="relative z-10 overflow-hidden bg-[linear-gradient(90deg,#ae5eab_0%,#be7ebb_100%)] py-17.5 dark:bg-gradient-to-t dark:from-gray-dark dark:to-gray-dark lg:py-[100px]">
-      <div className="container mx-auto w-full max-w-[1170px]">
+      <div className="container">
         <div className="mx-auto w-full max-w-[590px]">
           <div className="text-center">
             <h2 className="mb-5 font-satoshi text-heading-4 font-bold -tracking-[1.6px] text-white dark:text-white lg:text-heading-2 xl:text-[58px] xl:leading-[1.12]">

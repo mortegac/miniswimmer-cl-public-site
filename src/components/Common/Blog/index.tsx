@@ -56,7 +56,7 @@ const Blog = (props: any) => {
       {/* <!-- section title --> */}
       <SectionHeader title={t("title")} description={t("subtitle")} />
 
-      <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">
+      <div className="container">
         <div className="grid grid-cols-1 gap-7.5 sm:grid-cols-2 lg:grid-cols-3">
           {/* <!-- blog item --> */}
           {posts?.slice(0, 3).map((item: any, key: number) => (
