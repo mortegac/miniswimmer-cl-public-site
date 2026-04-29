@@ -15,7 +15,7 @@ const Html = (props: any) => {
 
   return (
     <section className="relative z-1 overflow-hidden bg-white pb-17.5 pt-30 lg:pb-20 lg:pt-30 xl:pb-25 xl:pt-[170px]">
-      <div className="container">
+      <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">
         <div
           id="htmlContainer"
           className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-600 prose-ul:text-gray-600"
