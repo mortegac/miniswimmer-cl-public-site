@@ -263,7 +263,7 @@ export default function SitemapPage() {
 
       {/* Hero */}
       <section className="bg-gray-1 py-16 dark:bg-dark lg:py-24">
-        <div className="container">
+        <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">
           <div className="mx-auto max-w-3xl text-center">
             <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 font-inter text-sm font-semibold text-primary">
               Mapa del Sitio
@@ -308,7 +308,7 @@ export default function SitemapPage() {
 
       {/* ── STATIC PAGES SECTION ── */}
       <section id="paginas" className="py-16 lg:py-24">
-        <div className="container">
+        <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">
           {/* Section heading */}
           <div className="mb-10">
             <span className="mb-2 block font-inter text-sm font-semibold uppercase tracking-wider text-primary">
@@ -385,7 +385,7 @@ export default function SitemapPage() {
 
       {/* ── BLOG SECTION ── */}
       <section id="blog" className="bg-gray-1 py-16 dark:bg-dark lg:py-24">
-        <div className="container">
+        <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">
           {/* Section heading */}
           <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
@@ -510,7 +510,7 @@ export default function SitemapPage() {
 
       {/* CTA */}
       <section className="py-12">
-        <div className="container">
+        <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">
           <div className="overflow-hidden rounded-10 bg-primary px-8 py-12 text-center shadow-features sm:px-16">
             <h2 className="mb-3 font-satoshi text-heading-5 font-bold text-white">
               ¿Listo para empezar?

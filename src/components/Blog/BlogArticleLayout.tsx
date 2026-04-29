@@ -16,7 +16,7 @@ export default function BlogArticleLayout({
     <article>
       {/* Hero */}
       <header className="bg-gray-1 py-12 dark:bg-dark lg:py-20">
-        <div className="container">
+        <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">
           {/* Breadcrumb */}
           <nav
             aria-label="Breadcrumb"
@@ -74,7 +74,7 @@ export default function BlogArticleLayout({
       </div>
 
       {/* Article body + sidebar */}
-      <div className="container py-12 lg:py-20">
+      <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0 py-12 lg:py-20">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-12 lg:grid-cols-[1fr_320px]">
           {/* Main content */}
           <div>

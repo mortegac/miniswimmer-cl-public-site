@@ -100,7 +100,7 @@ export default function BlogPage() {
 
       {/* Hero */}
       <section className="bg-gray-1 py-16 dark:bg-dark lg:py-24">
-        <div className="container">
+        <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">
           <div className="mx-auto max-w-3xl text-center">
             <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 font-inter text-sm font-semibold text-primary">
               Blog Miniswimmer
@@ -136,7 +136,7 @@ export default function BlogPage() {
 
       {/* Content Hub section */}
       <section className="border-b border-stroke py-10 dark:border-stroke-dark">
-        <div className="container">
+        <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">
           <div className="flex flex-wrap items-center gap-4">
             <span className="font-inter text-sm font-medium text-dark-3 dark:text-dark-4">
               Temas clave:
@@ -155,14 +155,14 @@ export default function BlogPage() {
 
       {/* Articles grid */}
       <section className="py-16 lg:py-24">
-        <div className="container">
+        <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">
           <BlogGrid articles={allArticles} />
         </div>
       </section>
 
       {/* Content Hub banner */}
       <section className="bg-gray-1 py-12 dark:bg-dark">
-        <div className="container">
+        <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">
           <div className="mx-auto max-w-4xl rounded-10 bg-white p-8 shadow-features dark:bg-gray-dark md:p-12">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-center">
               <div>
