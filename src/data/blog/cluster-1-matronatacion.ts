@@ -12,7 +12,7 @@ export const article1: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 9,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIQMBOoF08xay4_miniswimmer-blog-01-que-es-la-matronatacion-la-guia-definitiva-para-padres-1-.png?auto=format,compress",
     alt: "Bebé disfrutando de una clase de matronatación en piscina temperada con su mamá en Miniswimmer",
   },
   keywords: {
@@ -151,7 +151,7 @@ export const article2: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 8,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIRMBOoF08xay5_miniswimmer-blog-02-10-beneficios-de-la-matronatacion-para-bebes-con-evidencia-c.png?auto=format,compress",
     alt: "Bebé feliz en piscina temperada durante clase de matronatación, mostrando los beneficios del agua para su desarrollo",
   },
   keywords: {
@@ -271,7 +271,7 @@ export const article3: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 7,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIITMBOoF08xay7_miniswimmer-blog-03-matronatacion-vs-natacion-temprana-diferencias-beneficios-y-.png?auto=format,compress",
     alt: "Comparación entre clase de matronatación para bebés y natación temprana para niños mayores en piscina temperada",
   },
   keywords: {
@@ -451,7 +451,7 @@ export const article4: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 8,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIUMBOoF08xay8_miniswimmer-blog-04-el-metodo-miniswimmer-las-4-etapas-del-desarrollo-acuatico-c.png?auto=format,compress",
     alt: "Instructor de Miniswimmer trabajando con bebé en piscina temperada usando metodología PNL y etapas de desarrollo acuático",
   },
   keywords: {
@@ -528,22 +528,22 @@ export const article4: BlogArticle = {
 <h2>Las 4 Etapas del Método Miniswimmer y el Neurodesarrollo</h2>
 <p>Cada etapa está alineada con las ventanas de desarrollo neurológico del niño. No avanzamos por calendario: avanzamos cuando el sistema nervioso del niño está listo para integrar la siguiente habilidad de forma significativa.</p>
 
-<h3>Etapa 1: Pequeño Pez (2 meses – 6 meses) — Foco: Sistema sensorial y regulación</h3>
+<h3>Etapa 1 (2 meses – 6 meses) — Foco: Sistema sensorial y regulación</h3>
 <p>En los primeros meses de vida, el cerebro del bebé está dominado por el <strong>procesamiento sensorial</strong>: temperatura, presión, movimiento y sonido son las principales vías de aprendizaje. El neocórtex, sede del razonamiento, está aún en desarrollo; el sistema límbico —emociones y memoria emocional— es el protagonista.</p>
 <p>Por eso esta etapa no busca "enseñar a nadar": busca construir una <strong>memoria emocional positiva del agua</strong>. Cuando el bebé asocia el medio acuático con calor, seguridad y presencia del adulto, está creando las bases neurológicas que harán que todo aprendizaje acuático posterior sea más rápido y menos resistido.</p>
 <p>Las habilidades desarrolladas: tolerancia a la temperatura, control cefálico con soporte, primeras inmersiones con señal previa, exploración sensorial del entorno. La Prevención y Supervivencia Acuática comienza aquí con el entrenamiento del reflejo respiratorio.</p>
 
-<h3>Etapa 2: Gran Pez (6 meses – 18 meses) — Foco: Iniciativa motora y causa-efecto</h3>
+<h3>Etapa 2 (6 meses – 18 meses) — Foco: Iniciativa motora y causa-efecto</h3>
 <p>A partir de los 6-8 meses, el cerebro del bebé activa con fuerza los <strong>circuitos de causa-efecto y agencia motora</strong>: el bebé descubre que sus movimientos generan resultados en el entorno. "Cuando pateo, avanzo. Cuando me muevo, el agua responde." Este es un hito cognitivo mayor.</p>
 <p>En el agua, este descubrimiento es especialmente potente porque la flotabilidad hace visible el efecto de cada movimiento pequeño. Cada patada produce un desplazamiento. Cada impulso genera una respuesta inmediata del medio. El cerebro aprende activamente, no por imitación.</p>
 <p>Habilidades: patada coordinada y propulsiva, flotación dorsal con soporte mínimo, inmersiones voluntarias con señal (el niño toma la decisión de sumergirse), primeros desplazamientos asistidos hacia el borde. La Supervivencia Acuática avanza: el bebé comienza a orientarse hacia superficies de apoyo.</p>
 
-<h3>Etapa 3: Delfín (18 meses – 36 meses) — Foco: Autoconfianza, lenguaje y autonomía</h3>
+<h3>Etapa 3 (18 meses – 36 meses) — Foco: Autoconfianza, lenguaje y autonomía</h3>
 <p>Entre los 18 meses y los 3 años, el cerebro infantil experimenta una explosión del <strong>lenguaje, la autoconciencia y la autoconfianza</strong>. El niño comienza a nombrarse, a reconocer sus propias emociones y a tomar decisiones deliberadas. Es la etapa del "yo solo".</p>
 <p>El Coaching tiene su mayor expresión aquí: en lugar de instruir al niño sobre qué hacer, el instructor usa preguntas y desafíos diseñados para que el niño <strong>tome decisiones propias en el agua</strong>. "¿Puedes llegar solo al borde?" No es una instrucción: es una invitación a decidir. Este enfoque desarrolla no solo habilidades acuáticas, sino confianza cognitiva y emocional transferible a todos los ámbitos de la vida.</p>
 <p>Habilidades: flotación dorsal breve sin soporte, orientación autónoma al borde desde la caída, inmersión voluntaria, primeros saltos asistidos. La Supervivencia Acuática se consolida: respuesta de recuperación sin intervención del adulto en distancias cortas.</p>
 
-<h3>Etapa 4: Tiburón (3 años en adelante) — Foco: Autonomía acuática real y pensamiento estratégico</h3>
+<h3>Etapa 4 (3 años en adelante) — Foco: Autonomía acuática real y pensamiento estratégico</h3>
 <p>A partir de los 3-4 años, el córtex prefrontal comienza a madurar significativamente, habilitando el <strong>pensamiento estratégico, la planificación y la autorregulación</strong>. El niño puede anticipar, evaluar riesgos y tomar decisiones de mayor complejidad.</p>
 <p>En el Aprendizaje Significativo Miniswimmer, esto significa que el niño ya puede participar activamente en el diseño de sus propios desafíos. El instructor no dice "ahora haz crol": el instructor pregunta "¿cómo harías para llegar al otro lado sin parar?" El niño piensa, decide y ejecuta. El aprendizaje es profundo porque es propio.</p>
 <p>Habilidades: nado propulsivo autónomo en distancias cortas, inmersión con apertura de ojos, coordinación nado-respiración, respuesta autónoma de seguridad ante caída al agua. La Supervivencia Acuática está totalmente integrada como hábito automático.</p>
@@ -617,7 +617,7 @@ export const article5: BlogArticle = {
   publishDate: "2026-04-28",
   readingTime: 7,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    src: "https://images.prismic.io/miniswimmerchile/afIIWcBOoF08xazB_miniswimmer-blog-05-vinculo-afectivo-y-matronatacion-la-ciencia-del-apego-en-el-.png?auto=format,compress",
     alt: "Mamá y bebé en piscina temperada durante matronatación, compartiendo momento de vínculo afectivo y apego seguro en el agua",
   },
   keywords: {
