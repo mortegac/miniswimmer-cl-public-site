@@ -1,7 +1,16 @@
 import { MetadataRoute } from "next";
+import { getAllSlugs } from "@/data/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://miniswimmer.cl";
+
+  const blogSlugs = getAllSlugs();
+  const blogEntries: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
+    url: `${baseUrl}/blog/${slug}`,
+    lastModified: new Date("2026-04-28"),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
 
   return [
     {
@@ -203,6 +212,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.3,
     },
+    // HTML sitemap page
+    {
+      url: `${baseUrl}/sitemap`,
+      lastModified: new Date("2026-04-28"),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    // Blog listing page
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date("2026-04-28"),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    // Blog articles
+    ...blogEntries,
     // registration and reagendamiento are noindex — excluded from sitemap
   ];
 }

@@ -28,6 +28,109 @@
   }
 }
 
+@layer components {
+  /* ── Blog / long-form article content ── */
+  .article-content {
+    /* Base text */
+    @apply font-inter text-body;
+  }
+
+  .article-content p {
+    line-height: 2rem;
+    @apply mb-5 font-inter text-base text-body dark:text-dark-4;
+  }
+
+  /* Headings */
+  .article-content h2 {
+    line-height: 2.5rem;
+    @apply mb-4 mt-10 font-satoshi text-2xl font-bold text-dark dark:text-white;
+  }
+
+  .article-content h3 {
+    line-height: 2rem;
+    @apply mb-3 mt-8 font-satoshi text-xl font-bold text-dark dark:text-white;
+  }
+
+  .article-content h4 {
+    line-height: 2rem;
+    @apply mb-2 mt-6 font-satoshi text-lg font-semibold text-dark dark:text-white;
+  }
+
+  /* Links */
+  .article-content a {
+    @apply text-primary underline-offset-2 hover:underline;
+  }
+
+  /* Bold */
+  .article-content strong {
+    @apply font-semibold text-dark dark:text-white;
+  }
+
+  /* Unordered lists */
+  .article-content ul {
+    @apply mb-5 ml-5 list-disc space-y-2;
+  }
+
+  .article-content ul li {
+    line-height: 2rem;
+    @apply font-inter text-base text-body dark:text-dark-4;
+  }
+
+  /* Ordered lists — extra line break between items */
+  .article-content ol {
+    @apply mb-5 ml-5 list-decimal;
+  }
+
+  .article-content ol li {
+    line-height: 2rem;
+    margin-bottom: 1rem; /* extra spacing between numbered items */
+    @apply font-inter text-base text-body dark:text-dark-4;
+  }
+
+  .article-content ol li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Tables — 100% width, subtle borders, gray headers */
+  .article-content table {
+    width: 100%;
+    border-collapse: collapse;
+    @apply mb-6 overflow-hidden rounded-lg;
+  }
+
+  .article-content thead {
+    @apply bg-gray dark:bg-gray-dark;
+  }
+
+  .article-content th {
+    border: 1px solid #E8E8E8;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    @apply font-satoshi text-sm font-semibold text-dark dark:border-stroke-dark dark:text-white;
+  }
+
+  .article-content td {
+    border: 1px solid #E8E8E8;
+    padding: 0.75rem 1rem;
+    line-height: 2rem;
+    @apply font-inter text-sm text-body dark:border-stroke-dark dark:text-dark-4;
+  }
+
+  .article-content tr:nth-child(even) td {
+    @apply bg-gray-1 dark:bg-dark;
+  }
+
+  /* Blockquote */
+  .article-content blockquote {
+    @apply mb-5 border-l-4 border-primary bg-primary/5 py-3 pl-5 pr-4 font-inter italic text-dark-3 dark:bg-primary/10 dark:text-dark-4;
+  }
+
+  /* Code */
+  .article-content code {
+    @apply rounded bg-gray-2 px-1.5 py-0.5 font-inter text-sm text-dark dark:bg-gray-dark dark:text-white;
+  }
+}
+
 @layer utilities {
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
