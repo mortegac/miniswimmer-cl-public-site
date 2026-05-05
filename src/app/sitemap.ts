@@ -219,6 +219,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.5,
     },
+    // ExpoBebé 2026 landing page — high priority (event)
+    {
+      url: `${baseUrl}/expo-bebe-2026`,
+      lastModified: new Date("2026-05-05"),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
     // Blog listing page
     {
       url: `${baseUrl}/blog`,
