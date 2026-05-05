@@ -13,7 +13,7 @@ export const article21: BlogArticle = {
   publishDate: "2026-05-05",
   readingTime: 9,
   coverImage: {
-    src: "/images/blog/miniswimmer-blog-21-guia-completa-para-expo-bebe-2026.png",
+    src: "https://miniswimmer.cl/images/blog/miniswimmer-blog-21-guia-completa-para-expo-bebe-2026.png",
     alt: "Guía completa ExpoBebé 2026 — Miniswimmer en Metropolitan Santiago, 29-31 mayo",
   },
   keywords: {
