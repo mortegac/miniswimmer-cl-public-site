@@ -184,6 +184,19 @@ const staticCategories: SitemapCategory[] = [
     ],
   },
   {
+    title: "Eventos",
+    description: "Miniswimmer en ferias y eventos nacionales",
+    icon: "🎪",
+    iconBg: "bg-amber-50 dark:bg-amber-900/20",
+    pages: [
+      {
+        label: "Miniswimmer en ExpoBebé 2026",
+        href: "/expo-bebe-2026",
+        badge: "🎟️ Sorteo",
+      },
+    ],
+  },
+  {
     title: "Contacto",
     description: "Comunícate con nosotros y agenda tu clase",
     icon: "📞",
