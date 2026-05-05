@@ -153,6 +153,39 @@ export default function BlogPage() {
         </div>
       </section>
 
+      {/* ExpoBebé 2026 banner — full width */}
+      <section className="relative overflow-hidden">
+        <a href="/blog/guia-completa-expobebe-2026" className="block">
+          <img
+            src="/images/blog/miniswimmer-blog-21-guia-completa-para-expo-bebe-2026.png"
+            alt="Guía completa ExpoBebé 2026 — Miniswimmer en Metropolitan Santiago 29-31 mayo"
+            className="h-[200px] w-full object-cover object-center sm:h-[260px] lg:h-[320px]"
+          />
+        </a>
+        {/* Overlay CTA strip */}
+        <div className="bg-primary px-6 py-4">
+          <div className="mx-auto flex w-full max-w-[1170px] flex-col items-center justify-between gap-4 sm:flex-row">
+            <p className="font-inter text-sm font-semibold text-white sm:text-base">
+              🎟️ Sorteo de entradas gratuitas para ExpoBebé 2026 — 29 al 31 de mayo, Santiago
+            </p>
+            <div className="flex shrink-0 gap-3">
+              <a
+                href="/blog/guia-completa-expobebe-2026"
+                className="rounded-full border border-white px-5 py-2 font-inter text-sm font-semibold text-white transition-colors hover:bg-white hover:text-primary"
+              >
+                Leer la guía
+              </a>
+              <a
+                href="/expo-bebe-2026"
+                className="rounded-full bg-white px-5 py-2 font-inter text-sm font-semibold text-primary transition-opacity hover:opacity-90"
+              >
+                Ganar entradas gratis →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Articles grid */}
       <section className="py-16 lg:py-24">
         <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">

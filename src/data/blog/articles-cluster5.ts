@@ -13,8 +13,8 @@ export const article21: BlogArticle = {
   publishDate: "2026-05-05",
   readingTime: 9,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
-    alt: "Miniswimmer en ExpoBebé 2026 — feria de maternidad y bebés en Metropolitan Santiago, Vitacura",
+    src: "/images/blog/miniswimmer-blog-21-guia-completa-para-expo-bebe-2026.png",
+    alt: "Guía completa ExpoBebé 2026 — Miniswimmer en Metropolitan Santiago, 29-31 mayo",
   },
   keywords: {
     primary: [
