@@ -4,6 +4,7 @@ import { articlesCluster2 } from "./articles-cluster-2";
 import { articlesCluster3 } from "./articles-cluster3";
 import { articlesCluster4 } from "./articles-cluster4";
 import { articlesCluster5 } from "./articles-cluster5";
+import { articlesCluster6 } from "./articles-cluster6";
 
 export * from "./types";
 
@@ -13,6 +14,7 @@ export const allArticles: BlogArticle[] = [
   ...articlesCluster3,
   ...articlesCluster4,
   ...articlesCluster5,
+  ...articlesCluster6,
 ].sort(
   (a, b) =>
     new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime(),
