@@ -8,10 +8,21 @@ import GiveawayForm from "@/components/ExpoBebe/GiveawayForm";
 // ---------------------------------------------------------------------------
 
 export const metadata: Metadata = {
-  title:
-    "Miniswimmer en ExpoBebé 2026 | 29–31 Mayo, Santiago — Visítanos en la Feria",
+  title: "Miniswimmer en ExpoBebé 2026 — Matronatación · Santiago",
   description:
-    "Miniswimmer estará en ExpoBebé 2026, la mayor feria de maternidad y bebés de Chile. 29 al 31 de mayo, Metropolitan Santiago, Vitacura. Gana entradas gratis con nuestro sorteo.",
+    "Visítanos en ExpoBebé 2026, la feria de bebés y maternidad más grande de Chile: 29–31 mayo, Metropolitan Santiago. Clases de matronatación desde 2 meses, coaches certificados y sorteo de entradas dobles gratis.",
+  keywords: [
+    "expobebe 2026",
+    "expo bebe 2026 santiago",
+    "feria de bebés chile 2026",
+    "feria de maternidad santiago",
+    "matronatación santiago",
+    "clases natación bebés",
+    "miniswimmer expo bebe",
+    "stand expo bebe 2026",
+    "entradas expo bebe gratis",
+    "sorteo expo bebe 2026",
+  ],
   alternates: {
     canonical: "https://miniswimmer.cl/expo-bebe-2026",
     languages: {
@@ -30,16 +41,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://miniswimmer.cl/expo-bebe-2026",
-    title:
-      "Miniswimmer en ExpoBebé 2026 | 29–31 Mayo, Santiago — Visítanos en la Feria",
+    title: "Miniswimmer en ExpoBebé 2026 — Feria de Bebés y Maternidad, Santiago",
     description:
-      "Miniswimmer estará en ExpoBebé 2026, la mayor feria de maternidad y bebés de Chile. 29 al 31 de mayo, Metropolitan Santiago, Vitacura. Gana entradas gratis con nuestro sorteo.",
+      "Visítanos en ExpoBebé 2026: 29–31 mayo, Metropolitan Santiago, Vitacura. Matronatación para bebés desde 2 meses, coaches certificados y sorteo de 2 entradas dobles gratis.",
     images: [
       {
-        url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+        url: "https://www.miniswimmer.cl/images/blog/miniswimmer-blog-22-vive-la-experiencia-miniswimmer-en-expo-bebe-2026-concurso.png",
         width: 1200,
-        height: 630,
-        alt: "Miniswimmer en ExpoBebé 2026 — Feria de Maternidad y Bebés",
+        height: 480,
+        alt: "Vive la experiencia Miniswimmer en Expo Bebé 2026 — Concursa por entradas gratis, Metropolitan Santiago 29-31 mayo",
       },
     ],
   },
@@ -47,16 +57,15 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@miniswimmer_edu",
     creator: "@miniswimmer_edu",
-    title:
-      "Miniswimmer en ExpoBebé 2026 | 29–31 Mayo, Santiago — Visítanos en la Feria",
+    title: "Miniswimmer en ExpoBebé 2026 — Feria de Bebés y Maternidad, Santiago",
     description:
-      "Miniswimmer estará en ExpoBebé 2026, la mayor feria de maternidad y bebés de Chile. 29 al 31 de mayo, Metropolitan Santiago, Vitacura. Gana entradas gratis con nuestro sorteo.",
+      "Visítanos en ExpoBebé 2026: 29–31 mayo, Metropolitan Santiago. Matronatación desde 2 meses y sorteo de 2 entradas dobles gratis.",
     images: [
       {
-        url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+        url: "https://www.miniswimmer.cl/images/blog/miniswimmer-blog-22-vive-la-experiencia-miniswimmer-en-expo-bebe-2026-concurso.png",
         width: 1200,
-        height: 630,
-        alt: "Miniswimmer en ExpoBebé 2026",
+        height: 480,
+        alt: "Miniswimmer en ExpoBebé 2026 — Concursa por entradas gratis",
       },
     ],
   },
@@ -76,7 +85,7 @@ const eventSchema = {
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   location: {
     "@type": "Place",
-    name: "Metropolitan Santiago",
+    name: "Centro de Convenciones Metropolitan Santiago",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Av. San Josemaría Escrivá de Balaguer 5600",
@@ -88,18 +97,35 @@ const eventSchema = {
   organizer: {
     "@type": "Organization",
     name: "Interexpo",
-    url: "https://expobebe.cl",
+    url: "https://www.expobebe.cl",
   },
   performer: {
     "@type": "Organization",
     name: "Miniswimmer",
-    url: "https://miniswimmer.cl",
+    url: "https://www.miniswimmer.cl",
+    description:
+      "Escuela de matronatación para bebés desde 2 meses con coaches certificados en PNL y desarrollo infantil. Sedes en Santiago, Valparaíso, Rancagua y Chillán.",
   },
   description:
-    "ExpoBebé 2026 — 30ª edición, Feria Internacional. Más de 200 marcas, 15.000+ visitantes. Miniswimmer participa con stand, demostraciones y sorteo de entradas.",
-  url: "https://miniswimmer.cl/expo-bebe-2026",
+    "Visita el stand de Miniswimmer en ExpoBebé 2026 — la feria de bebés y maternidad más grande de Chile, en su 30ª edición como Feria Internacional. Más de 200 marcas y 15.000 visitantes. Conoce clases de matronatación desde los 2 meses, habla con nuestros coaches certificados, participa en el sorteo de 2 entradas dobles gratis y aprovecha ofertas exclusivas de feria.",
+  url: "https://www.miniswimmer.cl/expo-bebe-2026",
   image:
-    "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
+    "https://www.miniswimmer.cl/images/blog/miniswimmer-blog-22-vive-la-experiencia-miniswimmer-en-expo-bebe-2026-concurso.png",
+  keywords:
+    "expobebe 2026, expo bebe 2026 santiago, feria de bebés chile, feria de maternidad santiago, matronatación bebés, clases natación bebés, stand expo bebe miniswimmer",
+  audience: {
+    "@type": "Audience",
+    audienceType:
+      "Embarazadas, mamás y papás de bebés 0–3 años, familias con hijos pequeños, profesionales de salud materno-infantil",
+  },
+  offers: {
+    "@type": "Offer",
+    name: "Entradas ExpoBebé 2026",
+    url: "https://www.ticketmaster.cl",
+    availability: "https://schema.org/InStock",
+    validFrom: "2026-01-01",
+    priceCurrency: "CLP",
+  },
 };
 
 const faqSchema = {
@@ -124,10 +150,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "¿Cuánto cuesta la entrada?",
+      name: "¿Cuánto cuesta la entrada a ExpoBebé 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Las entradas se adquieren exclusivamente en Ticketmaster. Los niños hasta 12 años entran gratis. Los adultos mayores de 65 tienen descuento especial.",
+        text: "Las entradas se adquieren exclusivamente en Ticketmaster (ticketmaster.cl). Los niños hasta 12 años entran gratis. Los adultos mayores de 65 tienen descuento especial.",
       },
     },
     {
@@ -170,6 +196,22 @@ const faqSchema = {
         text: "Llena el formulario en esta página, sigue a @miniswimmer.chile en Instagram y publica una historia o post etiquetándonos y contando por qué mereces ganar la entrada.",
       },
     },
+    {
+      "@type": "Question",
+      name: "¿Puedo ir embarazada a ExpoBebé 2026?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sí. El recinto Metropolitan Santiago es completamente accesible, cuenta con áreas de descanso y es apto para coches y movilidad reducida. Se recomienda calzado cómodo y visitar en horarios de menor afluencia (viernes por la mañana o domingo).",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Qué llevar a ExpoBebé 2026 con un bebé?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Puedes ingresar con coche de bebé o portabebés. El recinto tiene zona de lactancia privada y se permiten alimentos para bebés. Lleva una lista de productos que quieres comparar y calcula al menos 3 horas para recorrer la feria.",
+      },
+    },
   ],
 };
 
@@ -208,9 +250,9 @@ const faqItems = [
       "En el Centro de Convenciones Metropolitan Santiago, Av. San Josemaría Escrivá de Balaguer 5600, Vitacura, Santiago.",
   },
   {
-    question: "¿Cuánto cuesta la entrada?",
+    question: "¿Cuánto cuesta la entrada a ExpoBebé 2026?",
     answer:
-      "Las entradas se adquieren exclusivamente en Ticketmaster. Los niños hasta 12 años entran gratis. Los adultos mayores de 65 tienen descuento especial.",
+      "Las entradas se adquieren exclusivamente en Ticketmaster (ticketmaster.cl). Los niños hasta 12 años entran gratis. Los adultos mayores de 65 tienen descuento especial.",
   },
   {
     question: "¿Dónde está el stand de Miniswimmer?",
@@ -236,6 +278,16 @@ const faqItems = [
     question: "¿Cómo participo en el sorteo de entradas?",
     answer:
       "Llena el formulario en esta página, sigue a @miniswimmer.chile en Instagram y publica una historia o post etiquetándonos y contando por qué mereces ganar la entrada.",
+  },
+  {
+    question: "¿Puedo ir embarazada a ExpoBebé 2026?",
+    answer:
+      "Sí, ExpoBebé 2026 es ideal para embarazadas y futuras mamás. El recinto Metropolitan Santiago es completamente accesible, cuenta con áreas de descanso y es apto para coches y movilidad reducida. Se recomienda calzado cómodo y visitar en horarios de menor afluencia (viernes por la mañana o domingo).",
+  },
+  {
+    question: "¿Qué llevar a ExpoBebé 2026 con un bebé?",
+    answer:
+      "Puedes ingresar con coche de bebé o portabebés sin problema. El recinto tiene zona de lactancia privada y se permiten alimentos y artículos para bebés. Lleva una lista de productos que quieres comparar y calcula al menos 3 horas para recorrer la feria con calma.",
   },
 ];
 
@@ -270,7 +322,8 @@ export default function ExpoBebe2026Page() {
               {/* Subtitle */}
               <p className="mx-auto mb-8 w-full max-w-[620px] font-inter text-lg text-slate-100">
                 Visítanos del 29 al 31 de mayo en Metropolitan Santiago,
-                Vitacura. La feria de maternidad y bebés más grande de Chile.
+                Vitacura. La feria de bebés y maternidad más grande de Chile y
+                Latinoamérica — 30ª edición.
               </p>
 
               {/* CTAs */}
@@ -473,7 +526,7 @@ export default function ExpoBebe2026Page() {
           <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">
             <div className="mb-12 text-center">
               <h2 className="mb-4 font-satoshi text-3xl font-bold -tracking-[1.6px] text-dark dark:text-white lg:text-heading-4">
-                Miniswimmer en ExpoBebé
+                Nuestro Stand en ExpoBebé 2026
               </h2>
             </div>
 
@@ -481,15 +534,15 @@ export default function ExpoBebe2026Page() {
               {/* Left: description */}
               <div>
                 <p className="mb-5 font-inter text-lg text-body dark:text-dark-4">
-                  En ExpoBebé 2026 encontrarás nuestro stand con todo lo que
-                  necesitas saber sobre{" "}
+                  En esta feria de bebés y maternidad encontrarás nuestro stand
+                  con todo lo que necesitas saber sobre{" "}
                   <Link
                     href="/matronatacion"
                     className="font-semibold text-primary underline underline-offset-2 hover:text-primary/80"
                   >
-                    matronatación
+                    clases de natación para bebés
                   </Link>{" "}
-                  — clases diseñadas para bebés desde los 2 meses de vida.
+                  — un método diseñado para niños desde los 2 meses de vida.
                   Nuestros coaches certificados en PNL y desarrollo infantil
                   estarán ahí para resolver todas tus dudas y mostrarte el
                   Método Miniswimmer en acción.
@@ -504,13 +557,14 @@ export default function ExpoBebe2026Page() {
                     Neuro Swimmer
                   </Link>
                   , diseñado para acompañar a cada niño a su propio ritmo dentro
-                  del agua.
+                  del agua en un entorno seguro y estimulante.
                 </p>
                 <p className="mb-6 font-inter text-lg text-body dark:text-dark-4">
-                  Además, durante la feria tendremos ofertas exclusivas que no
-                  estarán disponibles en ningún otro canal. Es tu mejor
-                  oportunidad para inscribirte y comenzar esta aventura acuática
-                  con tu bebé.
+                  La feria de maternidad Chile es el mejor lugar para descubrir
+                  y comparar programas de estimulación temprana acuática.
+                  Tendremos ofertas exclusivas de inscripción disponibles solo
+                  durante los 3 días del evento — la oportunidad perfecta para
+                  comenzar esta aventura con tu bebé.
                 </p>
                 <Link
                   href="/contacto"
