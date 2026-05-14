@@ -153,15 +153,17 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* ExpoBebé 2026 banner — full width */}
-      <section className="relative overflow-hidden">
-        <a href="/blog/guia-completa-expobebe-2026" className="block">
-          <img
-            src="/images/blog/miniswimmer-blog-21-guia-completa-para-expo-bebe-2026.png"
-            alt="Guía completa ExpoBebé 2026 — Miniswimmer en Metropolitan Santiago 29-31 mayo"
-            className="h-[200px] w-full object-cover object-center sm:h-[260px] lg:h-[320px]"
-          />
-        </a>
+      {/* ExpoBebé 2026 banner — max 1170px centered */}
+      <section className="overflow-hidden">
+        <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">
+          <a href="/blog/guia-completa-expobebe-2026" className="block overflow-hidden rounded-lg">
+            <img
+              src="/images/blog/miniswimmer-blog-21-guia-completa-para-expo-bebe-2026.png"
+              alt="Guía completa ExpoBebé 2026 — Miniswimmer en Metropolitan Santiago 29-31 mayo"
+              className="h-[200px] w-full object-cover object-center sm:h-[260px] lg:h-[320px]"
+            />
+          </a>
+        </div>
         {/* Overlay CTA strip */}
         <div className="bg-primary px-6 py-4">
           <div className="mx-auto flex w-full max-w-[1170px] flex-col items-center justify-between gap-4 sm:flex-row">
