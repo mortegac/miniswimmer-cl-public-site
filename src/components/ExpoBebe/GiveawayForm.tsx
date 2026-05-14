@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 interface FormFields {
   nombre: string;
@@ -116,11 +117,41 @@ export default function GiveawayForm() {
 
     setIsSubmitting(true);
 
-    // Simulate async submission — replace with real endpoint when available
-    await new Promise<void>((resolve) => setTimeout(resolve, 800));
+    try {
+      const templateParams = {
+        from_name: fields.nombre,
+        from_email: fields.email,
+        from_phone: fields.telefono,
+        to_name: "Miniswimmer Sorteo ExpoBebé 2026",
+        asunto: "Participación Sorteo ExpoBebé 2026",
+        message: [
+          `Instagram: ${fields.instagram}`,
+          `¿Por qué merece ganar?: ${fields.mensaje}`,
+          `Sigue a @miniswimmer.chile: ${fields.checkInstagram ? "Sí" : "No"}`,
+          `Etiquetó en publicación: ${fields.checkPublicacion ? "Sí" : "No"}`,
+        ].join("\n"),
+        html_title:
+          "<h2>Nueva participación — Sorteo ExpoBebé 2026</h2><p>Alguien completó el formulario del sorteo de entradas.</p>",
+        html_service: `<p><b>Instagram:</b> ${fields.instagram}</p><p><b>Mensaje:</b> ${fields.mensaje}</p>`,
+      };
 
-    setIsSubmitting(false);
-    setSubmitted(true);
+      await emailjs.send(
+        "service_ucb8wga",
+        "template_eedooa7",
+        templateParams,
+        "Csc41asZklkk5HTWk",
+      );
+
+      setSubmitted(true);
+    } catch (error) {
+      console.error("Error al enviar el formulario del sorteo:", error);
+      setErrors({
+        mensaje:
+          "No pudimos enviar tu participación. Intenta de nuevo o escríbenos a welcome@miniswimmer.cl.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   if (submitted) {
