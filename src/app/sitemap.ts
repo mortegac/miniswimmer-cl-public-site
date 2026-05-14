@@ -1,13 +1,13 @@
 import { MetadataRoute } from "next";
-import { getAllSlugs } from "@/data/blog";
+import { allArticles } from "@/data/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://miniswimmer.cl";
 
-  const blogSlugs = getAllSlugs();
-  const blogEntries: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
-    url: `${baseUrl}/blog/${slug}`,
-    lastModified: new Date("2026-04-28"),
+  // Use each article's publishDate for accurate lastModified signal
+  const blogEntries: MetadataRoute.Sitemap = allArticles.map((article) => ({
+    url: `${baseUrl}/blog/${article.slug}`,
+    lastModified: new Date(article.publishDate),
     changeFrequency: "monthly",
     priority: 0.8,
   }));
@@ -212,26 +212,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.3,
     },
-    // HTML sitemap page
-    {
-      url: `${baseUrl}/sitemap`,
-      lastModified: new Date("2026-04-28"),
-      changeFrequency: "monthly",
-      priority: 0.5,
-    },
     // ExpoBebé 2026 landing page — high priority (event)
     {
       url: `${baseUrl}/expo-bebe-2026`,
-      lastModified: new Date("2026-05-05"),
+      lastModified: new Date("2026-05-14"),
       changeFrequency: "weekly",
       priority: 0.95,
     },
     // Blog listing page
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date("2026-04-28"),
+      lastModified: new Date("2026-05-14"),
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    // HTML sitemap — updated with new content
+    {
+      url: `${baseUrl}/sitemap`,
+      lastModified: new Date("2026-05-14"),
+      changeFrequency: "monthly",
+      priority: 0.5,
     },
     // Blog articles
     ...blogEntries,

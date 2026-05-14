@@ -210,4 +210,216 @@ export const article22: BlogArticle = {
   ctaHref: "/matronatacion",
 };
 
-export const articlesCluster6: BlogArticle[] = [article22];
+// ---------------------------------------------------------------------------
+// Article 23 — Terapia Acuática durante el Embarazo — Mami Swimmer
+// SEO Cluster: Embarazo + terapia en agua + matronatación como continuación natural
+// ---------------------------------------------------------------------------
+
+export const article23: BlogArticle = {
+  slug: "terapia-acuatica-embarazo-beneficios-mami-swimmer",
+  title:
+    "10 Beneficios de la Terapia Acuática durante el Embarazo — Mami Swimmer",
+  metaDescription:
+    "Descubre los 10 beneficios comprobados de la terapia acuática durante el embarazo: alivio de dolores, mejor circulación, fortalecimiento del piso pélvico y más. Conoce el programa Mami Swimmer de Miniswimmer.",
+  h1: "10 Beneficios de la Terapia Acuática durante el Embarazo y Cómo el Programa Mami Swimmer Puede Acompañarte",
+  excerpt:
+    "Durante el embarazo, el agua es mucho más que un lugar de relajación: es un entorno terapéutico con beneficios comprobados para la mamá y el bebé. Descubre los 10 beneficios de la terapia acuática prenatal y cómo el programa Mami Swimmer de Miniswimmer te acompaña en esta etapa única.",
+  category: "matronatacion",
+  publishDate: "2026-05-14",
+  readingTime: 11,
+  coverImage: {
+    src: "https://images.prismic.io/miniswimmerchile/afIIWcBOoF08xazB_miniswimmer-blog-05-vinculo-afectivo-y-matronatacion-la-ciencia-del-apego-en-el-.png?auto=format,compress",
+    alt: "Mamá embarazada realizando terapia acuática — beneficios del agua durante el embarazo con Mami Swimmer",
+  },
+  keywords: {
+    primary: [
+      "terapia acuática embarazo",
+      "natación embarazadas Chile",
+      "ejercicio en agua embarazo",
+      "mami swimmer",
+      "hidroterapia embarazo Santiago",
+    ],
+    secondary: [
+      "aquagym embarazada Santiago",
+      "beneficios natación embarazada",
+      "ejercicio acuático primer trimestre",
+      "ejercicio acuático tercer trimestre",
+      "piso pélvico embarazo piscina",
+      "dolor espalda embarazo agua",
+      "natación prenatal Chile",
+      "hidrogimnasia embarazada",
+      "matronatación después del parto",
+      "embarazada piscina temperada",
+    ],
+  },
+  content: `
+<article>
+
+  <section>
+    <p>Durante el embarazo, el cuerpo de una mujer atraviesa transformaciones profundas que con frecuencia se traducen en molestias físicas: fatiga, dolores de espalda, hinchazón de pies y tobillos, y una sensación general de pesadez. La <strong>terapia acuática durante el embarazo</strong> — también llamada hidroterapia prenatal o natación prenatal — ofrece una respuesta eficaz a muchas de estas molestias, aprovechando las propiedades únicas del agua para aliviar síntomas, fortalecer el cuerpo y preparar a la mamá para el parto.</p>
+    <p>En Miniswimmer desarrollamos el programa <strong>Mami Swimmer</strong> específicamente para embarazadas que quieren mantenerse activas de forma segura en el agua, con el respaldo de coaches certificados en desarrollo acuático y PNL. A continuación te explicamos los <strong>10 beneficios comprobados</strong> de hacer terapia acuática durante tu embarazo.</p>
+  </section>
+
+  <section>
+    <h2>¿Por Qué el Agua es el Entorno Ideal para el Ejercicio Durante el Embarazo?</h2>
+    <p>La <strong>flotabilidad del agua</strong> es el principio que lo cambia todo. Al sumergirte en una piscina, tu cuerpo pierde hasta el 90% de su peso aparente dependiendo del nivel de inmersión. Esto significa que puedes moverte con libertad, sin el impacto sobre articulaciones y columna que supone el ejercicio en tierra. Para una mujer embarazada, cuyo centro de gravedad se ha desplazado y cuyo peso ha aumentado, esto es un alivio enorme.</p>
+    <p>Adicionalmente, la resistencia suave del agua hace que <strong>cada movimiento fortalezca músculos</strong> de forma segura, sin cargas bruscas ni riesgos de caída.</p>
+  </section>
+
+  <section>
+    <h2>Los 10 Beneficios de la Terapia Acuática durante el Embarazo</h2>
+
+    <h3>1. Mantiene un Peso Saludable y una Rutina de Ejercicio Durante el Embarazo</h3>
+    <p>Uno de los mayores desafíos del embarazo es mantener una actividad física constante y segura. El ejercicio acuático permite a las embarazadas mantenerse activas durante los tres trimestres sin los riesgos asociados al ejercicio de alto impacto. Las sesiones en el agua <strong>queman calorías de forma eficiente</strong> y ayudan a controlar el aumento de peso, sin generar el estrés articular del running, el aeróbic o incluso la caminata prolongada en superficies duras.</p>
+
+    <h3>2. Menor Riesgo de Lesiones — El Ejercicio más Seguro del Embarazo</h3>
+    <p>El ejercicio acuático es considerado uno de los más seguros durante el embarazo precisamente porque <strong>elimina el impacto</strong>. No hay saltos, no hay golpes, no hay movimientos bruscos. La flotabilidad actúa como un amortiguador natural que protege las articulaciones — especialmente la pelvis, las rodillas y los tobillos — que ya están bajo presión adicional por el cambio hormonal (relaxina) que ablanda los ligamentos.</p>
+    <p>Estudios clínicos muestran que el ejercicio acuático durante el embarazo tiene una tasa de lesiones significativamente inferior a la del ejercicio en tierra, incluso en mujeres que no tenían experiencia previa en piscina.</p>
+
+    <h3>3. Alivia el Dolor, los Espasmos Musculares y la Hinchazón</h3>
+    <p>La presión hidrostática del agua actúa como un masaje suave y constante sobre todo el cuerpo. Esto tiene efectos directos sobre:</p>
+    <ul>
+      <li>🦵 <strong>Hinchazón en piernas, tobillos y pies</strong> (edema gestacional) — uno de los síntomas más frecuentes y molestos del tercer trimestre</li>
+      <li>🔙 <strong>Dolor lumbar y de espalda</strong> — el peso del bebé desplaza el centro de gravedad y genera tensión en la zona lumbar; en el agua, esa carga desaparece</li>
+      <li>💪 <strong>Espasmos y contracturas musculares</strong> — el calor del agua (en piscinas temperadas entre 30–32°C) relaja la musculatura y reduce la frecuencia de los espasmos</li>
+      <li>🦷 <strong>Tensión en la cintura pélvica</strong> — la flotabilidad reduce la presión sobre los huesos y articulaciones de la pelvis</li>
+    </ul>
+
+    <h3>4. Mantiene o Mejora el Rango de Movimiento Articular</h3>
+    <p>Durante el embarazo, el sedentarismo puede reducir la movilidad articular, especialmente en caderas y rodillas. El agua permite movimientos amplios y fluidos que en tierra serían incómodos o imposibles. Hacer ejercicio regular en el agua <strong>mantiene —e incluso mejora— el rango de movimiento</strong> en las articulaciones que más se ven afectadas por el embarazo.</p>
+    <p>Esto es especialmente relevante durante el tercer trimestre, cuando la movilidad se ve más comprometida y la preparación del cuerpo para el parto se convierte en prioridad.</p>
+
+    <h3>5. Fortalece la Musculatura Débil — Incluido el Piso Pélvico y el Abdomen</h3>
+    <p>La resistencia del agua (unas 12 veces mayor que la del aire) convierte cada movimiento en un ejercicio de fuerza de baja intensidad. Esto es especialmente valioso para <strong>fortalecer el piso pélvico y la musculatura abdominal</strong>, que son dos grupos musculares críticos tanto durante el parto como en la recuperación posparto.</p>
+    <p>Un piso pélvico fuerte durante el embarazo reduce el riesgo de incontinencia urinaria, mejora el soporte de los órganos pelvianos y facilita la expulsión durante el parto. El agua ofrece el entorno ideal para trabajar estos músculos de forma segura y sin presión excesiva.</p>
+
+    <h3>6. Estimula la Movilidad Funcional y las Actividades Cotidianas</h3>
+    <p>La terapia acuática en el embarazo no busca solo fortalecer músculos: también trabaja <strong>patrones de movimiento funcionales</strong> como caminar, sentarse, levantarse, girar y mantener el equilibrio. Estos patrones se practican en un entorno seguro (el agua) y se transfieren al día a día, haciendo que las actividades cotidianas resulten más fáciles y con menor riesgo de caídas.</p>
+    <p>Las caídas son una causa frecuente de complicaciones durante el embarazo. Mantener una buena coordinación y equilibrio es una forma concreta de prevenirlas.</p>
+
+    <h3>7. Mejora el Equilibrio y la Coordinación</h3>
+    <p>El desplazamiento del centro de gravedad que produce el embarazo altera el equilibrio de forma significativa. El agua, al reducir el peso aparente del cuerpo, crea un entorno en el que <strong>practicar el equilibrio resulta más seguro y efectivo</strong>. Con el tiempo, esto se traduce en una mejor coordinación y una postura más estable fuera del agua también.</p>
+
+    <h3>8. Mejora la Circulación Sanguínea</h3>
+    <p>La presión hidrostática del agua actúa como una compresión suave que <strong>favorece el retorno venoso</strong> — es decir, ayuda a que la sangre que se acumula en las piernas (generando la hinchazón típica del embarazo) vuelva al corazón con mayor facilidad. El resultado es una circulación más eficiente, menor inflamación en extremidades y una sensación general de bienestar.</p>
+    <p>Esta mejora circulatoria también beneficia al bebé, ya que una mejor circulación materna se traduce en un mejor intercambio de oxígeno y nutrientes a través de la placenta.</p>
+
+    <h3>9. El Agua Caliente Estimula el Flujo Sanguíneo y Relaja la Musculatura</h3>
+    <p>Las piscinas temperadas (entre 30 y 33°C, ideales para embarazadas) aprovechan el efecto vasodilatador del calor moderado para <strong>estimular la circulación periférica y relajar la musculatura</strong>. Esta temperatura es suficientemente cálida para generar relajación muscular profunda sin suponer riesgo de sobrecalentamiento para la madre o el feto.</p>
+    <p><strong>Importante:</strong> La temperatura de la piscina es crítica. Las jacuzzis o bañeras calientes (por encima de 38°C) están contraindicadas durante el embarazo. Una piscina temperada correctamente controlada, como las del programa Mami Swimmer, es completamente segura.</p>
+
+    <h3>10. Menor Estrés sobre el Feto — Beneficios Directos para el Bebé</h3>
+    <p>Según varios estudios, el ejercicio acuático durante el embarazo es <strong>menos estresante para el feto</strong> que el ejercicio en tierra equivalente, y no produce el mismo nivel de elevación de la frecuencia cardíaca fetal que la actividad física terrestre de intensidad moderada-alta. Esto sugiere que el bebé experimenta el ejercicio acuático de su mamá de forma más suave y llevadera.</p>
+    <p>Adicionalmente, el movimiento del agua y los cambios en la presión hidrostática que siente el bebé a través del líquido amniótico son un estímulo suave que algunos investigadores relacionan con un mejor desarrollo sensorial prenatal.</p>
+  </section>
+
+  <div style="background: linear-gradient(135deg, #6d28d9 0%, #a78bfa 100%); border-radius: 20px; padding: 36px 32px; margin: 48px 0; text-align: center; color: white; box-shadow: 0 20px 60px rgba(109,40,217,0.3);">
+    <p style="font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; margin: 0 0 10px; opacity: 0.85;">⚡ Oferta Exclusiva · Solo Hoy</p>
+    <h3 style="font-size: 1.9rem; font-weight: 800; margin: 0 0 14px; line-height: 1.25;">Plan Trimestral de 12 Clases<br/>con 30% de Descuento</h3>
+    <p style="font-size: 1.05rem; margin: 0 0 8px; opacity: 0.92; max-width: 520px; margin-left: auto; margin-right: auto;">Comienza hoy tu programa Mami Swimmer al precio más bajo del año. 12 clases para acompañar tu embarazo en el agua, con coaches certificados y piscina temperada.</p>
+    <p style="font-size: 0.9rem; margin: 0 0 28px; opacity: 0.8;">La oferta vence a medianoche.</p>
+    <a href="/contacto" style="display: inline-block; background: white; color: #6d28d9; font-weight: 700; font-size: 1.05rem; padding: 15px 36px; border-radius: 50px; text-decoration: none;">Reservar Mami Swimmer con 30% OFF →</a>
+    <p style="margin: 16px 0 0; font-size: 0.8rem; opacity: 0.75;">Para embarazadas en cualquier trimestre. Consultar disponibilidad de sede.</p>
+  </div>
+
+  <section>
+    <h2>El Programa Mami Swimmer de Miniswimmer</h2>
+    <p>El programa <strong>Mami Swimmer</strong> es la propuesta de Miniswimmer para acompañar a las embarazadas en el agua durante todos los trimestres del embarazo. Desarrollado por coaches certificados en PNL y desarrollo acuático infantil, el programa combina los beneficios terapéuticos del ejercicio acuático con una visión integral del bienestar de la mamá.</p>
+    <p>A diferencia de una clase de hidrogimnasia convencional, Mami Swimmer está diseñado para preparar a la mamá también para lo que viene después: la <a href="/blog/que-es-la-matronatacion"><strong>matronatación con su bebé</strong></a>. Trabajamos en el agua con una visión de continuidad: de la mamá embarazada al bebé recién nacido, con el mismo entorno y el mismo equipo de coaches.</p>
+
+    <h3>¿Qué Incluye una Sesión Mami Swimmer?</h3>
+    <ul>
+      <li>🌊 <strong>Calentamiento acuático:</strong> movilización suave de articulaciones y activación circulatoria</li>
+      <li>💪 <strong>Trabajo de fortalecimiento:</strong> ejercicios específicos para piso pélvico, abdomen transverso y espalda baja</li>
+      <li>🧘 <strong>Relajación hidrostática:</strong> técnicas de flotabilidad asistida para aliviar la presión gravitacional</li>
+      <li>🫁 <strong>Respiración consciente:</strong> preparación respiratoria aplicable al trabajo de parto</li>
+      <li>❤️ <strong>Conexión mamá-bebé:</strong> momentos de consciencia y conexión con el bebé a través del movimiento en el agua</li>
+    </ul>
+
+    <h3>¿Cuándo Puedo Empezar con Mami Swimmer?</h3>
+    <p>El programa está disponible desde el primer trimestre del embarazo, con adaptaciones específicas para cada etapa. Lo ideal es <strong>comenzar lo antes posible</strong> para aprovechar todos los beneficios durante los 9 meses. Dicho esto, nunca es demasiado tarde: incluso en el tercer trimestre, la terapia acuática ofrece un alivio significativo.</p>
+    <p><strong>Requisito médico:</strong> Es necesario contar con el visto bueno de tu médico o matrona antes de comenzar cualquier actividad acuática durante el embarazo. En casos de embarazo de alto riesgo, presentación podálica no corregida u otras complicaciones, el médico determinará si el ejercicio acuático es adecuado.</p>
+
+    <h3>Del Embarazo a la Matronatación — Una Transición Natural</h3>
+    <p>Una de las mayores ventajas de comenzar con Mami Swimmer durante el embarazo es que la transición hacia las <a href="/matronatacion"><strong>clases de matronatación con tu bebé</strong></a> resulta completamente natural. Ya conoces el entorno, ya confías en el equipo de coaches y ya tienes una relación con el agua.</p>
+    <p>Tu bebé, que nació en un cuerpo que disfrutaba el agua, puede comenzar sus propias clases desde los <strong>2 meses de vida</strong>. Lee más en nuestro artículo <a href="/blog/desde-que-edad-nadar-bebes">¿Desde qué edad pueden nadar los bebés?</a></p>
+    <p>Esta continuidad — de la piscina prenatal a las primeras clases del bebé — es lo que hace única la propuesta de Miniswimmer. No te vendemos una clase: te acompañamos en un viaje que comienza antes del nacimiento y continúa durante los primeros años de vida de tu hijo.</p>
+  </section>
+
+  <section>
+    <h2>¿Es Segura la Terapia Acuática para Todas las Embarazadas?</h2>
+    <p>La terapia acuática durante el embarazo es <strong>segura para la gran mayoría de mujeres</strong> con un embarazo de curso normal. Sin embargo, como con cualquier actividad física durante el embarazo, existen situaciones en las que se recomienda consultar primero con el médico:</p>
+    <ul>
+      <li>⚠️ Embarazo de alto riesgo (hipertensión gestacional, diabetes gestacional con mal control)</li>
+      <li>⚠️ Amenaza de parto prematuro</li>
+      <li>⚠️ Placenta previa</li>
+      <li>⚠️ Rotura prematura de membranas</li>
+      <li>⚠️ Embarazo gemelar con complicaciones</li>
+    </ul>
+    <p>Fuera de estas situaciones específicas, el ejercicio acuático moderado es no solo seguro sino <strong>altamente recomendado</strong> por la mayoría de guías obstétricas internacionales.</p>
+  </section>
+
+  <section>
+    <h2>Artículos Relacionados — Cluster Embarazo y Matronatación</h2>
+    <p>Si estás embarazada y ya estás pensando en lo que viene después del parto, estos artículos te ayudarán a entender cómo el agua puede seguir siendo parte de la vida de tu familia:</p>
+    <ul>
+      <li>📘 <a href="/blog/semanas-36-40-embarazo-preparacion-parto-y-llegada-bebe">Semanas 36 a 40 de Embarazo: Guía Completa para la Recta Final</a></li>
+      <li>📘 <a href="/blog/que-es-la-matronatacion">¿Qué es la Matronatación? Guía Completa</a></li>
+      <li>📘 <a href="/blog/beneficios-matronatacion-bebes">10 Beneficios de la Matronatación para Bebés con Evidencia Científica</a></li>
+      <li>📘 <a href="/blog/vinculo-afectivo-matronatacion-madre-bebe">Vínculo Afectivo y Matronatación: la Ciencia del Apego en el Agua</a></li>
+      <li>📘 <a href="/blog/desde-que-edad-nadar-bebes">¿Desde qué Edad Pueden Nadar los Bebés?</a></li>
+      <li>📘 <a href="/blog/primera-clase-natacion-bebe">Primera Clase de Natación para tu Bebé: Qué Esperar</a></li>
+      <li>📘 <a href="/blog/piscina-temperada-bebes-importancia">Piscina Temperada para Bebés: Por Qué es Esencial</a></li>
+      <li>📘 <a href="/blog/estimulacion-temprana-agua-bebes">Estimulación Temprana en Agua para Bebés</a></li>
+    </ul>
+  </section>
+
+</article>
+  `,
+  faq: [
+    {
+      question: "¿Es seguro hacer terapia acuática durante el embarazo?",
+      answer:
+        "Sí, para la gran mayoría de embarazadas con un embarazo de curso normal. El ejercicio acuático es uno de los más recomendados durante el embarazo por su bajo impacto y amplia gama de beneficios. Siempre es necesario contar con el visto bueno de tu médico o matrona antes de comenzar.",
+    },
+    {
+      question: "¿Desde cuándo puedo empezar el programa Mami Swimmer?",
+      answer:
+        "Desde el primer trimestre del embarazo. El programa tiene adaptaciones específicas para cada etapa. Incluso en el tercer trimestre, la terapia acuática ofrece alivio significativo del dolor lumbar, la hinchazón y la sensación de pesadez.",
+    },
+    {
+      question: "¿Qué temperatura debe tener la piscina para embarazadas?",
+      answer:
+        "Entre 30 y 33°C es la temperatura recomendada para embarazadas. Piscinas más calientes (jacuzzi, bañeras sobre 38°C) están contraindicadas durante el embarazo. En Miniswimmer, todas las piscinas del programa Mami Swimmer están temperadas y controladas específicamente para esta necesidad.",
+    },
+    {
+      question: "¿Qué beneficios tiene la terapia acuática para el bebé?",
+      answer:
+        "El ejercicio acuático prenatal es menos estresante para el feto que el ejercicio terrestre equivalente y produce menor elevación de la frecuencia cardíaca fetal. Mejora la circulación materna, favoreciendo el intercambio de oxígeno y nutrientes a través de la placenta. El movimiento del agua también actúa como estímulo sensorial suave para el bebé.",
+    },
+    {
+      question: "¿Necesito saber nadar para el programa Mami Swimmer?",
+      answer:
+        "No. El programa Mami Swimmer no requiere habilidades natatorias previas. Las clases se realizan en zonas donde puedes hacer pie o con apoyo flotador, y los ejercicios están diseñados para embarazadas sin experiencia previa en piscina.",
+    },
+    {
+      question: "¿Cuándo puede empezar mi bebé después del parto?",
+      answer:
+        "Los bebés pueden comenzar clases de matronatación desde los 2 meses de vida. En Miniswimmer, la transición de Mami Swimmer a matronatación es completamente natural: ya conoces el entorno y el equipo. Es una de las ventajas de nuestro programa de continuidad embarazo-posparto.",
+    },
+    {
+      question: "¿La terapia acuática durante el embarazo ayuda con el dolor de espalda?",
+      answer:
+        "Sí. Es uno de los beneficios más consistentemente reportados por las participantes. La flotabilidad del agua elimina hasta el 90% del peso aparente del cuerpo, aliviando la presión sobre la columna lumbar. Además, la temperatura del agua relaja la musculatura y reduce los espasmos.",
+    },
+    {
+      question: "¿En qué sedes de Miniswimmer está disponible el programa Mami Swimmer?",
+      answer:
+        "Contáctanos para consultar disponibilidad en tu sede más cercana. El programa se ofrece en nuestras sedes de Santiago, Valparaíso, Rancagua y Chillán, con disponibilidad variable según la sede y el período del año.",
+    },
+  ],
+  ctaText: "Conocer el Programa Mami Swimmer",
+  ctaHref: "/contacto",
+};
+
+export const articlesCluster6: BlogArticle[] = [article22, article23];
