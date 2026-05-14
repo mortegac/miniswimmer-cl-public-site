@@ -18,8 +18,8 @@ export const article22: BlogArticle = {
   publishDate: "2026-05-14",
   readingTime: 12,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/afIIWcBOoF08xazB_miniswimmer-blog-05-vinculo-afectivo-y-matronatacion-la-ciencia-del-apego-en-el-.png?auto=format,compress",
-    alt: "Mamá y bebé en el agua durante clase de matronatación — vínculo afectivo desde los primeros meses",
+    src: "/images/blog/miniswimmer-blog-23-semanas-36-40-embarazo-preparacion-al-parto-y-llegada-del-bebe.png",
+    alt: "Mami Swimmer — Guía semanas 36 a 40 embarazo: preparación al parto y llegada del bebé",
   },
   keywords: {
     primary: [
@@ -99,12 +99,12 @@ export const article22: BlogArticle = {
     <p>Las últimas semanas del embarazo son el momento ideal para pensar en lo que viene después del parto. Y uno de los regalos más poderosos que puedes darle a tu bebé es <strong>el agua</strong>.</p>
     <p>Tu bebé ha pasado <strong>nueve meses flotando en el líquido amniótico</strong>. El agua es su entorno natural, el ambiente en el que se formó su sistema nervioso, sus músculos y sus reflejos. Aprovechar esa memoria acuática en los primeros meses de vida a través de la <a href="/blog/que-es-la-matronatacion"><strong>matronatación</strong></a> tiene beneficios comprobados por la ciencia que van mucho más allá de aprender a nadar.</p>
 
-    <div style="background: linear-gradient(135deg, #6d28d9 0%, #a78bfa 100%); border-radius: 20px; padding: 36px 32px; margin: 48px 0; text-align: center; color: white; box-shadow: 0 20px 60px rgba(109,40,217,0.3);">
-      <p style="font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; margin: 0 0 10px; opacity: 0.85;">⚡ Oferta Exclusiva · Solo Hoy</p>
-      <h3 style="font-size: 1.9rem; font-weight: 800; margin: 0 0 14px; line-height: 1.25;">Plan Trimestral de 12 Clases<br/>con 30% de Descuento</h3>
-      <p style="font-size: 1.05rem; margin: 0 0 28px; opacity: 0.92; max-width: 480px; margin-left: auto; margin-right: auto;">Reserva hoy mismo las primeras 12 clases de matronatación para tu bebé al precio más bajo del año. Esta oferta es válida solo durante las próximas horas.</p>
-      <a href="/contacto" style="display: inline-block; background: white; color: #6d28d9; font-weight: 700; font-size: 1.05rem; padding: 15px 36px; border-radius: 50px; text-decoration: none; transition: opacity 0.2s;">Reservar mi Plan con 30% OFF →</a>
-      <p style="margin: 16px 0 0; font-size: 0.8rem; opacity: 0.75;">Válido para inscripciones nuevas. Consultar disponibilidad de sede.</p>
+    <div style="background: linear-gradient(135deg, #a030a8 0%, #c455c8 100%); border-radius: 20px; padding: 36px 32px; margin: 48px 0; text-align: center; box-shadow: 0 20px 60px rgba(160,48,168,0.25);">
+      <p style="font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 10px; color: #111;">⚡ Oferta Exclusiva solo para embarazadas</p>
+      <h3 style="font-size: 1.9rem; font-weight: 800; margin: 0 0 16px; line-height: 1.25; color: white;">Plan Trimestral de 12 Clases<br/>con 30% de Descuento</h3>
+      <p style="font-size: 1.0rem; margin: 0 0 24px; color: #111; max-width: 520px; margin-left: auto; margin-right: auto;">Comienza hoy tu programa Mami Swimmer o comprando por adelantado algún plan de natación para tu bebé al precio más bajo del año. 12 clases, contamos con coaches certificados y con piscinas temperadas.<br/><br/>La oferta solo es válida para embarazadas.</p>
+      <a href="/contacto" style="display: inline-block; background: white; color: #a030a8; font-weight: 700; font-size: 1.05rem; padding: 15px 36px; border-radius: 50px; text-decoration: none;">Reservar Mami Swimmer con 30% OFF →</a>
+      <p style="margin: 16px 0 0; font-size: 0.8rem; color: #333;">Para embarazadas en cualquier trimestre. Consultar disponibilidad de sede.</p>
     </div>
 
     <p>Las clases de <a href="/matronatacion">matronatación con Miniswimmer</a> pueden comenzar desde los <strong>2 meses de vida</strong>, y planificarlas ahora — mientras esperas la llegada — te permite organizarte con calma, elegir el horario que mejor funcione y asegurar tu lugar en la sede que más te acomode.</p>
@@ -228,8 +228,8 @@ export const article23: BlogArticle = {
   publishDate: "2026-05-14",
   readingTime: 11,
   coverImage: {
-    src: "https://images.prismic.io/miniswimmerchile/afIIWcBOoF08xazB_miniswimmer-blog-05-vinculo-afectivo-y-matronatacion-la-ciencia-del-apego-en-el-.png?auto=format,compress",
-    alt: "Mamá embarazada realizando terapia acuática — beneficios del agua durante el embarazo con Mami Swimmer",
+    src: "/images/blog/miniswimmer-blog-24-terapia-acuatica-en-el-embarazo-beneficios-mami-swimmer.png",
+    alt: "Mami Swimmer — Terapia acuática en el embarazo: beneficios para mamá y bebé, con embarazada en piscina",
   },
   keywords: {
     primary: [
@@ -313,13 +313,12 @@ export const article23: BlogArticle = {
     <p>Adicionalmente, el movimiento del agua y los cambios en la presión hidrostática que siente el bebé a través del líquido amniótico son un estímulo suave que algunos investigadores relacionan con un mejor desarrollo sensorial prenatal.</p>
   </section>
 
-  <div style="background: linear-gradient(135deg, #6d28d9 0%, #a78bfa 100%); border-radius: 20px; padding: 36px 32px; margin: 48px 0; text-align: center; color: white; box-shadow: 0 20px 60px rgba(109,40,217,0.3);">
-    <p style="font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; margin: 0 0 10px; opacity: 0.85;">⚡ Oferta Exclusiva · Solo Hoy</p>
-    <h3 style="font-size: 1.9rem; font-weight: 800; margin: 0 0 14px; line-height: 1.25;">Plan Trimestral de 12 Clases<br/>con 30% de Descuento</h3>
-    <p style="font-size: 1.05rem; margin: 0 0 8px; opacity: 0.92; max-width: 520px; margin-left: auto; margin-right: auto;">Comienza hoy tu programa Mami Swimmer al precio más bajo del año. 12 clases para acompañar tu embarazo en el agua, con coaches certificados y piscina temperada.</p>
-    <p style="font-size: 0.9rem; margin: 0 0 28px; opacity: 0.8;">La oferta vence a medianoche.</p>
-    <a href="/contacto" style="display: inline-block; background: white; color: #6d28d9; font-weight: 700; font-size: 1.05rem; padding: 15px 36px; border-radius: 50px; text-decoration: none;">Reservar Mami Swimmer con 30% OFF →</a>
-    <p style="margin: 16px 0 0; font-size: 0.8rem; opacity: 0.75;">Para embarazadas en cualquier trimestre. Consultar disponibilidad de sede.</p>
+  <div style="background: linear-gradient(135deg, #a030a8 0%, #c455c8 100%); border-radius: 20px; padding: 36px 32px; margin: 48px 0; text-align: center; box-shadow: 0 20px 60px rgba(160,48,168,0.25);">
+    <p style="font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 10px; color: #111;">⚡ Oferta Exclusiva solo para embarazadas</p>
+    <h3 style="font-size: 1.9rem; font-weight: 800; margin: 0 0 16px; line-height: 1.25; color: white;">Plan Trimestral de 12 Clases<br/>con 30% de Descuento</h3>
+    <p style="font-size: 1.0rem; margin: 0 0 24px; color: #111; max-width: 520px; margin-left: auto; margin-right: auto;">Comienza hoy tu programa Mami Swimmer o comprando por adelantado algún plan de natación para tu bebé al precio más bajo del año. 12 clases, contamos con coaches certificados y con piscinas temperadas.<br/><br/>La oferta solo es válida para embarazadas.</p>
+    <a href="/contacto" style="display: inline-block; background: white; color: #a030a8; font-weight: 700; font-size: 1.05rem; padding: 15px 36px; border-radius: 50px; text-decoration: none;">Reservar Mami Swimmer con 30% OFF →</a>
+    <p style="margin: 16px 0 0; font-size: 0.8rem; color: #333;">Para embarazadas en cualquier trimestre. Consultar disponibilidad de sede.</p>
   </div>
 
   <section>
