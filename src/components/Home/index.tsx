@@ -6,6 +6,7 @@ import RegendamientoSection from "../Common/RegendamientoSection";
 import WhatsappContact from "../Common/WhatsappContact";
 import Counter from "../Common/Counter";
 import Blog from "../Common/Blog";
+import LocalSeoSection from "./LocalSeoSection";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <FeaturesWithImage pageTraslation="homepage" />
       <WhatsappContact pageTraslation="homepage" />
       <Counter pageTraslation="homepage" />
+      <LocalSeoSection />
       <Testimonials pageTraslation="homepage" />
       <RegendamientoSection pageTraslation="homepage" />
       <Blog pageTraslation="homepage" />
