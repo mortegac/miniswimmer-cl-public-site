@@ -217,10 +217,6 @@ export default function LocalSeoSection() {
 
         {/* Bottom CTA */}
         <div className="mt-10 text-center">
-          <p className="mb-4 font-inter text-sm text-body dark:text-dark-4">
-            ¿No encontraste tu comuna? Contáctanos — cubrimos todas las
-            comunas de la Región Metropolitana.
-          </p>
           <Link
             href="/conoce-nuestras-sedes"
             className="inline-flex items-center gap-2 rounded-full border border-primary px-6 py-2.5 font-inter text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
