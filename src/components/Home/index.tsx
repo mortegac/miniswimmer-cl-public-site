@@ -15,9 +15,9 @@ const Home = () => {
       <FeaturesWithImage pageTraslation="homepage" />
       <WhatsappContact pageTraslation="homepage" />
       <Counter pageTraslation="homepage" />
-      <LocalSeoSection />
       <Testimonials pageTraslation="homepage" />
       <RegendamientoSection pageTraslation="homepage" />
+      <LocalSeoSection />
       <Blog pageTraslation="homepage" />
     </>
   );
