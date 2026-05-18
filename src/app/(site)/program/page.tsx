@@ -3,8 +3,8 @@ import SchemaMarkup from "@/components/Common/SchemaMarkup";
 import Program from "@/components/Program";
 
 export const metadata: Metadata = {
-  title: "¿De qué trata nuestro método?",
-  description: `Nuestro programa de natación está diseñado para ayudar a nadadores de todos los niveles a mejorar su técnica, desarrollar resistencia y ganar confianza en el agua. Descubre más sobre nuestro programa y cómo puede beneficiarte.`,
+  title: "What Is Our Swimming Method? | Miniswimmer",
+  description: `Our swimming program is designed to help swimmers of all levels improve their technique, build endurance, and gain confidence in the water. Learn more about our method and how it can benefit you.`,
   alternates: {
     canonical: "https://www.miniswimmer.cl/program",
     languages: {
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.miniswimmer.cl/program",
-    title: `¿De qué trata nuestro método?`,
-    description: `Nuestro programa de natación está diseñado para ayudar a nadadores de todos los niveles a mejorar su técnica, desarrollar resistencia y ganar confianza en el agua. Descubre más sobre nuestro programa y cómo puede beneficiarte.`,
+    title: `What Is Our Swimming Method? | Miniswimmer`,
+    description: `Our swimming program is designed to help swimmers of all levels improve their technique, build endurance, and gain confidence in the water. Learn more about our method and how it can benefit you.`,
     images: [
       {
         url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
         width: 1200,
         height: 630,
-        alt: "¿De qué trata nuestro método?",
+        alt: "What Is Our Swimming Method? | Miniswimmer",
       },
     ],
   },
@@ -39,14 +39,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@miniswimmer_edu",
     creator: "@miniswimmer_edu",
-    title: `¿De qué trata nuestro método?`,
-    description: `Nuestro programa de natación está diseñado para ayudar a nadadores de todos los niveles a mejorar su técnica, desarrollar resistencia y ganar confianza en el agua. Descubre más sobre nuestro programa y cómo puede beneficiarte.`,
+    title: `What Is Our Swimming Method? | Miniswimmer`,
+    description: `Our swimming program is designed to help swimmers of all levels improve their technique, build endurance, and gain confidence in the water. Learn more about our method and how it can benefit you.`,
     images: [
       {
         url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
         width: 1200,
         height: 630,
-        alt: "¿De qué trata nuestro método?",
+        alt: "What Is Our Swimming Method? | Miniswimmer",
       },
     ],
   },

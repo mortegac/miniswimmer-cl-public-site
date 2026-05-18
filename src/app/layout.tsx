@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { Inter } from "next/font/google";
 import { type Metadata, type Viewport } from "next";
+import Script from "next/script";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import GoogleTagManager from "@/components/GoogleTagManager";
 
@@ -45,6 +46,11 @@ export default async function RootLayout({
             />
           </noscript>
         )}
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="WaOeUEhQoKBQutXUPN/SEw"
+          strategy="afterInteractive"
+        />
         <NextIntlClientProvider messages={messages}>
           <GoogleAnalytics />
           {children}

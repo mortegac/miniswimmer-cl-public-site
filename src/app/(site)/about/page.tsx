@@ -4,8 +4,8 @@ import SchemaMarkup from "@/components/Common/SchemaMarkup";
 import About from "@/components/About";
 
 export const metadata: Metadata = {
-  title: "Conoce al equipo de Miniswimmer",
-  description: `Nuestros profesionales son profesores de Educación Física, Kinesiólogos, expertos en Matronatación y se enfocan en una gestión excelente. Ofrecemos una metodología eficaz y una experiencia de aprendizaje inigualable para nuestros estudiantes.`,
+  title: "Meet the Miniswimmer Team",
+  description: `Our professionals are Physical Education teachers, Kinesiologists, and experts in Mother-Baby swimming, focused on delivering excellence. We offer an effective methodology and an unmatched learning experience for our students.`,
   alternates: {
     canonical: "https://www.miniswimmer.cl/about",
     languages: {
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.miniswimmer.cl/about",
-    title: `Conoce al equipo de Miniswimmer`,
-    description: `Nuestros profesionales son profesores de Educación Física, Kinesiólogos, expertos en Matronatación y se enfocan en una gestión excelente. Ofrecemos una metodología eficaz y una experiencia de aprendizaje inigualable para nuestros estudiantes.`,
+    title: `Meet the Miniswimmer Team`,
+    description: `Our professionals are Physical Education teachers, Kinesiologists, and experts in Mother-Baby swimming, focused on delivering excellence. We offer an effective methodology and an unmatched learning experience for our students.`,
     images: [
       {
         url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@miniswimmer_edu",
     creator: "@miniswimmer_edu",
-    title: `Conoce al equipo de Miniswimmer`,
-    description: `Nuestros profesionales son profesores de Educación Física, Kinesiólogos, expertos en Matronatación y se enfocan en una gestión excelente. Ofrecemos una metodología eficaz y una experiencia de aprendizaje inigualable para nuestros estudiantes.`,
+    title: `Meet the Miniswimmer Team`,
+    description: `Our professionals are Physical Education teachers, Kinesiologists, and experts in Mother-Baby swimming, focused on delivering excellence. We offer an effective methodology and an unmatched learning experience for our students.`,
     images: [
       {
         url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",

@@ -4,8 +4,8 @@ import SchemaMarkup from "@/components/Common/SchemaMarkup";
 import PrivacyPolicy from "@/components/PrivacyPolicy";
 
 export const metadata: Metadata = {
-  title: "Conozca nuestra Política de Privacidad",
-  description: `Mini Swimmer detalla sus prácticas de privacidad respecto a la recopilación, el uso y la protección de datos personales de niños (con el consentimiento de sus padres) y sus tutores para la gestión de los servicios de natación. Los usuarios tienen derecho a acceder, modificar o eliminar sus datos, y la política describe las medidas de seguridad y la información de contacto para consultas.`,
+  title: "Privacy Policy | Miniswimmer",
+  description: `Miniswimmer details its privacy practices regarding the collection, use, and protection of personal data of children (with parental consent) and their guardians for swimming service management. Users have the right to access, modify, or delete their data, and the policy outlines security measures and contact information for inquiries.`,
   alternates: {
     canonical: "https://www.miniswimmer.cl/privacy-policy",
     languages: {
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.miniswimmer.cl/privacy-policy",
-    title: `Conozca nuestra Política de Privacidad`,
-    description: `Mini Swimmer detalla sus prácticas de privacidad respecto a la recopilación, el uso y la protección de datos personales de niños (con el consentimiento de sus padres) y sus tutores para la gestión de los servicios de natación. Los usuarios tienen derecho a acceder, modificar o eliminar sus datos, y la política describe las medidas de seguridad y la información de contacto para consultas.`,
+    title: `Privacy Policy | Miniswimmer`,
+    description: `Miniswimmer details its privacy practices regarding the collection, use, and protection of personal data of children (with parental consent) and their guardians for swimming service management. Users have the right to access, modify, or delete their data, and the policy outlines security measures and contact information for inquiries.`,
     images: [
       {
         url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@miniswimmer_edu",
     creator: "@miniswimmer_edu",
-    title: `Conozca nuestra Política de Privacidad`,
-    description: `Mini Swimmer detalla sus prácticas de privacidad respecto a la recopilación, el uso y la protección de datos personales de niños (con el consentimiento de sus padres) y sus tutores para la gestión de los servicios de natación. Los usuarios tienen derecho a acceder, modificar o eliminar sus datos, y la política describe las medidas de seguridad y la información de contacto para consultas.`,
+    title: `Privacy Policy | Miniswimmer`,
+    description: `Miniswimmer details its privacy practices regarding the collection, use, and protection of personal data of children (with parental consent) and their guardians for swimming service management. Users have the right to access, modify, or delete their data, and the policy outlines security measures and contact information for inquiries.`,
     images: [
       {
         url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",

@@ -233,7 +233,7 @@ const Footer = () => {
                   className={`flex duration-200 ease-out hover:text-white`}
                 >
                   <Link
-                    href="contacto"
+                    href="/contacto"
                     rel="noopener noreferrer"
                     className={`flex duration-200 ease-out hover:text-white`}
                   >
@@ -245,7 +245,7 @@ const Footer = () => {
                   className={`flex duration-200 ease-out hover:text-white`}
                 >
                   <Link
-                    href="privacy-policy"
+                    href="/privacy-policy"
                     rel="noopener noreferrer"
                     className={`flex duration-200 ease-out hover:text-white`}
                   >
@@ -257,7 +257,7 @@ const Footer = () => {
                   className={`flex duration-200 ease-out hover:text-white`}
                 >
                   <Link
-                    href="terms-and-conditions"
+                    href="/terms-and-conditions"
                     rel="noopener noreferrer"
                     className={`flex duration-200 ease-out hover:text-white`}
                   >
@@ -269,7 +269,7 @@ const Footer = () => {
                   className={`flex duration-200 ease-out hover:text-white`}
                 >
                   <Link
-                    href="clases-natacion-penalolen"
+                    href="/clases-natacion-penalolen"
                     rel="noopener noreferrer"
                     className={`flex duration-200 ease-out hover:text-white`}
                   >
@@ -282,7 +282,7 @@ const Footer = () => {
                   className={`flex duration-200 ease-out hover:text-white`}
                 >
                   <Link
-                    href="clases-natacion-vina-del-mar"
+                    href="/clases-natacion-vina-del-mar"
                     rel="noopener noreferrer"
                     className={`flex duration-200 ease-out hover:text-white`}
                   >

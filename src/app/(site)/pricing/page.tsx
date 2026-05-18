@@ -3,8 +3,8 @@ import SchemaMarkup from "@/components/Common/SchemaMarkup";
 import Pricing from "@/components/Pricing";
 
 export const metadata: Metadata = {
-  title: "Precios de nuestros planes de clases",
-  description: `Descubre nuestras planes de natación para clases regulares, premium y a domicilio. Clases para bebés, niños, adultos y embarazadas con instructores certificados, desde los 2 meses hasta niveles avanzados.`,
+  title: "Swimming Class Pricing Plans | Miniswimmer",
+  description: `Explore our swimming plans for regular, premium, and home classes. Classes for babies, children, adults, and pregnant women with certified instructors, from 2 months old through advanced levels.`,
   alternates: {
     canonical: "https://www.miniswimmer.cl/pricing",
     languages: {
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.miniswimmer.cl/pricing",
-    title: `Precios de nuestros planes de clases`,
-    description: `Descubre nuestras planes de natación para clases regulares, premium y a domicilio. Clases para bebés, niños, adultos y embarazadas con instructores certificados, desde los 2 meses hasta niveles avanzados.`,
+    title: `Swimming Class Pricing Plans | Miniswimmer`,
+    description: `Explore our swimming plans for regular, premium, and home classes. Classes for babies, children, adults, and pregnant women with certified instructors, from 2 months old through advanced levels.`,
     images: [
       {
         url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@miniswimmer_edu",
-    title: `Precios de nuestros planes de clases`,
-    description: `Descubre nuestras planes de natación para clases regulares, premium y a domicilio. Clases para bebés, niños, adultos y embarazadas con instructores certificados, desde los 2 meses hasta niveles avanzados.`,
+    title: `Swimming Class Pricing Plans | Miniswimmer`,
+    description: `Explore our swimming plans for regular, premium, and home classes. Classes for babies, children, adults, and pregnant women with certified instructors, from 2 months old through advanced levels.`,
     images: [
       {
         url: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
