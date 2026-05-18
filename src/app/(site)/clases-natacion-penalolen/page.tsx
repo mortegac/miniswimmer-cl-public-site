@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   // description: `Clases de Natación Exclusivas en Reina y Peñalolen, Las Pircas y Alto Macul. 💧 Método Miniswimmer: Natación + PNL y Coaching. Lecciones personalizadas para bebés y niños en Álvaro Casanova, Lo Cañas y El Parral. ¡Aprendizaje real y seguro! ¡Inscríbelos hoy!`,
   description: `Clases de Natación Exclusivas en Reina y Peñalolen, Las Pircas y Alto Macul. 💧 Método Miniswimmer: Natación + PNL y Coaching. Lecciones personalizadas para bebés y niños en Álvaro Casanova, Lo Cañas y El Parral. ¡Aprendizaje real y seguro! ¡Inscríbelos hoy!`,
   alternates: {
-    canonical: "https://miniswimmer.cl/clases-natacion-penalolen",
+    canonical: "https://www.miniswimmer.cl/clases-natacion-penalolen",
     languages: {
-      "x-default": "https://miniswimmer.cl/clases-natacion-penalolen",
-      es: "https://miniswimmer.cl/clases-natacion-penalolen",
+      "x-default": "https://www.miniswimmer.cl/clases-natacion-penalolen",
+      es: "https://www.miniswimmer.cl/clases-natacion-penalolen",
     },
   },
   robots: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/clases-natacion-penalolen",
+    url: "https://www.miniswimmer.cl/clases-natacion-penalolen",
     title: `Academia de Natación para Bebés, Niños, Embarazadas en Peñalolen`,
     description: `Clases de Natación Exclusivas en Reina y Peñalolen, Las Pircas y Alto Macul. 💧 Método Miniswimmer: Natación + PNL y Coaching. Lecciones personalizadas para bebés y niños en Álvaro Casanova, Lo Cañas y El Parral. ¡Aprendizaje real y seguro! ¡Inscríbelos hoy!`,
     images: [
@@ -54,22 +54,22 @@ export const metadata: Metadata = {
 const organizationRefSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
 };
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "SportsActivityLocation"],
-  "@id": "https://miniswimmer.cl/clases-natacion-penalolen#localbusiness",
+  "@id": "https://www.miniswimmer.cl/clases-natacion-penalolen#localbusiness",
   name: "Miniswimmer — Clases de Natación en Peñalolén",
-  url: "https://miniswimmer.cl/clases-natacion-penalolen",
+  url: "https://www.miniswimmer.cl/clases-natacion-penalolen",
   image:
     "https://images.prismic.io/miniswimmerchile/aLTn32GNHVfTOeOK_SOCIAL-MEDIA-Vina-del-mar.png?auto=format,compress",
   logo: {
     "@type": "ImageObject",
-    url: "https://miniswimmer.cl/images/logo/logo.svg",
+    url: "https://www.miniswimmer.cl/images/logo/logo.svg",
   },
   description:
     "Clases de natación exclusivas en Peñalolén, Las Pircas y Alto Macul. Método Miniswimmer: Natación + PNL y Coaching. Lecciones personalizadas para bebés y niños en Álvaro Casanova, Lo Cañas y El Parral.",
@@ -138,7 +138,7 @@ const localBusinessSchema = {
       },
     },
   ],
-  parentOrganization: { "@id": "https://miniswimmer.cl/#organization" },
+  parentOrganization: { "@id": "https://www.miniswimmer.cl/#organization" },
   sameAs: [
     "https://www.facebook.com/miniswimmer.academy",
     "https://www.instagram.com/miniswimmer.chile",
@@ -153,13 +153,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Inicio",
-      item: "https://miniswimmer.cl",
+      item: "https://www.miniswimmer.cl",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Clases de Natación en Peñalolén",
-      item: "https://miniswimmer.cl/clases-natacion-penalolen",
+      item: "https://www.miniswimmer.cl/clases-natacion-penalolen",
     },
   ],
 };

@@ -24,10 +24,10 @@ export const metadata: Metadata = {
     "sorteo expo bebe 2026",
   ],
   alternates: {
-    canonical: "https://miniswimmer.cl/expo-bebe-2026",
+    canonical: "https://www.miniswimmer.cl/expo-bebe-2026",
     languages: {
-      "x-default": "https://miniswimmer.cl/expo-bebe-2026",
-      es: "https://miniswimmer.cl/expo-bebe-2026",
+      "x-default": "https://www.miniswimmer.cl/expo-bebe-2026",
+      es: "https://www.miniswimmer.cl/expo-bebe-2026",
     },
   },
   robots: {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/expo-bebe-2026",
+    url: "https://www.miniswimmer.cl/expo-bebe-2026",
     title: "Miniswimmer en ExpoBebé 2026 — Feria de Bebés y Maternidad, Santiago",
     description:
       "Visítanos en ExpoBebé 2026: 29–31 mayo, Metropolitan Santiago, Vitacura. Matronatación para bebés desde 2 meses, coaches certificados y sorteo de 2 entradas dobles gratis.",
@@ -223,13 +223,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Inicio",
-      item: "https://miniswimmer.cl",
+      item: "https://www.miniswimmer.cl",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "ExpoBebé 2026",
-      item: "https://miniswimmer.cl/expo-bebe-2026",
+      item: "https://www.miniswimmer.cl/expo-bebe-2026",
     },
   ],
 };

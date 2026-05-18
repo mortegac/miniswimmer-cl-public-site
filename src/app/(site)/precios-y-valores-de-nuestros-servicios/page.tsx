@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "Precios y Valores Clases — Febrero 2026 | Miniswimmer",
   description: `Consulta los valores actualizados de nuestras clases de natación por sede: Peñalolén, La Reina, Ñuñoa, Vitacura, Viña del Mar, Rancagua, Chillán y Big Swimmer para adultos. Planes para bebés, niños y adultos desde $30.000.`,
   alternates: {
-    canonical: "https://miniswimmer.cl/precios-y-valores-de-nuestros-servicios",
+    canonical: "https://www.miniswimmer.cl/precios-y-valores-de-nuestros-servicios",
     languages: {
       "x-default":
-        "https://miniswimmer.cl/precios-y-valores-de-nuestros-servicios",
-      es: "https://miniswimmer.cl/precios-y-valores-de-nuestros-servicios",
-      "en-US": "https://miniswimmer.cl/pricing",
+        "https://www.miniswimmer.cl/precios-y-valores-de-nuestros-servicios",
+      es: "https://www.miniswimmer.cl/precios-y-valores-de-nuestros-servicios",
+      "en-US": "https://www.miniswimmer.cl/pricing",
     },
   },
   robots: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/precios-y-valores-de-nuestros-servicios",
+    url: "https://www.miniswimmer.cl/precios-y-valores-de-nuestros-servicios",
     title: "Precios y Valores Clases — Febrero 2026 | Miniswimmer",
     description: `Consulta los valores actualizados de nuestras clases de natación por sede: Peñalolén, La Reina, Ñuñoa, Vitacura, Viña del Mar, Rancagua, Chillán y Big Swimmer para adultos. Planes para bebés, niños y adultos desde $30.000.`,
     images: [
@@ -58,9 +58,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
   logo: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
   description:
     "Clases de natación para bebés, niños y adultos en múltiples sedes. Instructores certificados con el Método Miniswimmer.",
@@ -135,13 +135,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Inicio",
-      item: "https://miniswimmer.cl",
+      item: "https://www.miniswimmer.cl",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Precios y Valores",
-      item: "https://miniswimmer.cl/precios-y-valores-de-nuestros-servicios",
+      item: "https://www.miniswimmer.cl/precios-y-valores-de-nuestros-servicios",
     },
   ],
 };

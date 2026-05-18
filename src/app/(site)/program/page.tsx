@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "¿De qué trata nuestro método?",
   description: `Nuestro programa de natación está diseñado para ayudar a nadadores de todos los niveles a mejorar su técnica, desarrollar resistencia y ganar confianza en el agua. Descubre más sobre nuestro programa y cómo puede beneficiarte.`,
   alternates: {
-    canonical: "https://miniswimmer.cl/program",
+    canonical: "https://www.miniswimmer.cl/program",
     languages: {
-      "x-default": "https://miniswimmer.cl/metodo",
-      es: "https://miniswimmer.cl/metodo",
-      "en-US": "https://miniswimmer.cl/program",
+      "x-default": "https://www.miniswimmer.cl/metodo",
+      es: "https://www.miniswimmer.cl/metodo",
+      "en-US": "https://www.miniswimmer.cl/program",
     },
   },
   robots: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/program",
+    url: "https://www.miniswimmer.cl/program",
     title: `¿De qué trata nuestro método?`,
     description: `Nuestro programa de natación está diseñado para ayudar a nadadores de todos los niveles a mejorar su técnica, desarrollar resistencia y ganar confianza en el agua. Descubre más sobre nuestro programa y cómo puede beneficiarte.`,
     images: [
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
   logo: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
   description:
     "Nuestro programa de natación está diseñado para ayudar a nadadores de todos los niveles a mejorar su técnica, desarrollar resistencia y ganar confianza en el agua. Descubre más sobre nuestro programa y cómo puede beneficiarte.",

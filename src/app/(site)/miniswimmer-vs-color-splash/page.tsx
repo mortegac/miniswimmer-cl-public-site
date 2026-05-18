@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   title: "Miniswimmer vs Color Splash: ¿Cuál academia de natación elegir?",
   description: `Comparamos Miniswimmer y Color Splash en metodología, programas, sedes y más. Descubre por qué el Método Miniswimmer (PNL + Coaching + Natación) supera a Color Splash en aprendizaje significativo, cobertura geográfica y programas especializados.`,
   alternates: {
-    canonical: "https://miniswimmer.cl/miniswimmer-vs-color-splash",
+    canonical: "https://www.miniswimmer.cl/miniswimmer-vs-color-splash",
     languages: {
-      "x-default": "https://miniswimmer.cl/miniswimmer-vs-color-splash",
-      es: "https://miniswimmer.cl/miniswimmer-vs-color-splash",
+      "x-default": "https://www.miniswimmer.cl/miniswimmer-vs-color-splash",
+      es: "https://www.miniswimmer.cl/miniswimmer-vs-color-splash",
     },
   },
   robots: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/miniswimmer-vs-color-splash",
+    url: "https://www.miniswimmer.cl/miniswimmer-vs-color-splash",
     title: `Miniswimmer vs Color Splash: ¿Cuál academia de natación elegir?`,
     description: `Comparamos Miniswimmer y Color Splash en metodología, programas, sedes y más. Descubre el Método Miniswimmer: PNL + Coaching + Natación para bebés, niños y adultos.`,
     images: [
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
 const organizationRefSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
 };
 
 const breadcrumbSchema = {
@@ -67,13 +67,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Inicio",
-      item: "https://miniswimmer.cl",
+      item: "https://www.miniswimmer.cl",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Miniswimmer vs Color Splash",
-      item: "https://miniswimmer.cl/miniswimmer-vs-color-splash",
+      item: "https://www.miniswimmer.cl/miniswimmer-vs-color-splash",
     },
   ],
 };

@@ -28,7 +28,7 @@ export async function generateMetadata(
     return { title: "Artículo no encontrado — Miniswimmer" };
   }
 
-  const canonicalUrl = `https://miniswimmer.cl/blog/${article.slug}`;
+  const canonicalUrl = `https://www.miniswimmer.cl/blog/${article.slug}`;
 
   return {
     title: article.title,
@@ -86,7 +86,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     "@type": "BlogPosting",
     headline: article.h1,
     description: article.metaDescription,
-    url: `https://miniswimmer.cl/blog/${article.slug}`,
+    url: `https://www.miniswimmer.cl/blog/${article.slug}`,
     datePublished: article.publishDate,
     dateModified: article.lastModified ?? article.publishDate,
     image: {
@@ -98,15 +98,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     author: {
       "@type": "Organization",
       name: "Miniswimmer",
-      url: "https://miniswimmer.cl",
+      url: "https://www.miniswimmer.cl",
     },
     publisher: {
       "@type": "Organization",
       name: "Miniswimmer",
-      url: "https://miniswimmer.cl",
+      url: "https://www.miniswimmer.cl",
       logo: {
         "@type": "ImageObject",
-        url: "https://miniswimmer.cl/logo.png",
+        url: "https://www.miniswimmer.cl/logo.png",
       },
     },
     keywords: [
@@ -116,7 +116,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     inLanguage: "es-CL",
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://miniswimmer.cl/blog/${article.slug}`,
+      "@id": `https://www.miniswimmer.cl/blog/${article.slug}`,
     },
   };
 
@@ -144,19 +144,19 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         "@type": "ListItem",
         position: 1,
         name: "Inicio",
-        item: "https://miniswimmer.cl",
+        item: "https://www.miniswimmer.cl",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Blog",
-        item: "https://miniswimmer.cl/blog",
+        item: "https://www.miniswimmer.cl/blog",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: article.h1,
-        item: `https://miniswimmer.cl/blog/${article.slug}`,
+        item: `https://www.miniswimmer.cl/blog/${article.slug}`,
       },
     ],
   };

@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   title: "Miniswimmer vs Atrévete y Sumérgete: ¿Cuál academia elegir?",
   description: `Comparamos Miniswimmer y Atrévete y Sumérgete en metodología, programas, sedes e instructores. Descubre por qué el Método Miniswimmer (PNL + Coaching + Natación) es la mejor opción para bebés, niños y adultos en Santiago y Chile.`,
   alternates: {
-    canonical: "https://miniswimmer.cl/miniswimmer-vs-atrevete-y-sumergete",
+    canonical: "https://www.miniswimmer.cl/miniswimmer-vs-atrevete-y-sumergete",
     languages: {
-      "x-default": "https://miniswimmer.cl/miniswimmer-vs-atrevete-y-sumergete",
-      es: "https://miniswimmer.cl/miniswimmer-vs-atrevete-y-sumergete",
+      "x-default": "https://www.miniswimmer.cl/miniswimmer-vs-atrevete-y-sumergete",
+      es: "https://www.miniswimmer.cl/miniswimmer-vs-atrevete-y-sumergete",
     },
   },
   robots: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/miniswimmer-vs-atrevete-y-sumergete",
+    url: "https://www.miniswimmer.cl/miniswimmer-vs-atrevete-y-sumergete",
     title: `Miniswimmer vs Atrévete y Sumérgete: ¿Cuál academia elegir?`,
     description: `Comparamos Miniswimmer y Atrévete y Sumérgete en metodología, programas y sedes. Descubre el Método Miniswimmer: PNL + Coaching + Natación para bebés, niños y adultos.`,
     images: [
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
 const organizationRefSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
 };
 
 const breadcrumbSchema = {
@@ -67,13 +67,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Inicio",
-      item: "https://miniswimmer.cl",
+      item: "https://www.miniswimmer.cl",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Miniswimmer vs Atrévete y Sumérgete",
-      item: "https://miniswimmer.cl/miniswimmer-vs-atrevete-y-sumergete",
+      item: "https://www.miniswimmer.cl/miniswimmer-vs-atrevete-y-sumergete",
     },
   ],
 };

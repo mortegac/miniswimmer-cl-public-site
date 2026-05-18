@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   title: "Academia de Natación para Bebés, Niños, Embarazadas en Viña del Mar",
   description: `¿Buscas clases de natación en Viña del Mar, Concón, Valparaíso, Reñaca, Quilpué, Villa Alemana? Con nuestro Método Miniswimmer, combinamos la natación con PNL y coaching para que tus hijos aprendan de forma real y significativa. Ofrecemos lecciones personalizadas para bebés y niños de todas las edades. ¡Inscríbelos hoy!`,
   alternates: {
-    canonical: "https://miniswimmer.cl/clases-natacion-vina-del-mar",
+    canonical: "https://www.miniswimmer.cl/clases-natacion-vina-del-mar",
     languages: {
-      "x-default": "https://miniswimmer.cl/clases-natacion-vina-del-mar",
-      es: "https://miniswimmer.cl/clases-natacion-vina-del-mar",
+      "x-default": "https://www.miniswimmer.cl/clases-natacion-vina-del-mar",
+      es: "https://www.miniswimmer.cl/clases-natacion-vina-del-mar",
     },
   },
   robots: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/clases-natacion-vina-del-mar",
+    url: "https://www.miniswimmer.cl/clases-natacion-vina-del-mar",
     title: `Academia de Natación para Bebés, Niños, Embarazadas en Viña del Mar`,
     description: `¿Buscas clases de natación en Viña del Mar, Concón, Valparaíso, Reñaca, Quilpué, Villa Alemana? Con nuestro Método Miniswimmer, combinamos la natación con PNL y coaching para que tus hijos aprendan de forma real y significativa. Ofrecemos lecciones personalizadas para bebés y niños de todas las edades. ¡Inscríbelos hoy!`,
     images: [
@@ -53,22 +53,22 @@ export const metadata: Metadata = {
 const organizationRefSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
 };
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "SportsActivityLocation"],
-  "@id": "https://miniswimmer.cl/clases-natacion-vina-del-mar#localbusiness",
+  "@id": "https://www.miniswimmer.cl/clases-natacion-vina-del-mar#localbusiness",
   name: "Miniswimmer — Clases de Natación en Viña del Mar",
-  url: "https://miniswimmer.cl/clases-natacion-vina-del-mar",
+  url: "https://www.miniswimmer.cl/clases-natacion-vina-del-mar",
   image:
     "https://images.prismic.io/miniswimmerchile/aLTn32GNHVfTOeOK_SOCIAL-MEDIA-Vina-del-mar.png?auto=format,compress",
   logo: {
     "@type": "ImageObject",
-    url: "https://miniswimmer.cl/images/logo/logo.svg",
+    url: "https://www.miniswimmer.cl/images/logo/logo.svg",
   },
   description:
     "Clases de natación en Viña del Mar, Concón, Valparaíso, Reñaca, Quilpué y Villa Alemana. Método Miniswimmer: Natación + PNL y Coaching. Lecciones personalizadas para bebés y niños.",
@@ -135,7 +135,7 @@ const localBusinessSchema = {
       },
     },
   ],
-  parentOrganization: { "@id": "https://miniswimmer.cl/#organization" },
+  parentOrganization: { "@id": "https://www.miniswimmer.cl/#organization" },
   sameAs: [
     "https://www.facebook.com/miniswimmer.academy",
     "https://www.instagram.com/miniswimmer.chile",
@@ -150,13 +150,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Inicio",
-      item: "https://miniswimmer.cl",
+      item: "https://www.miniswimmer.cl",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Clases de Natación en Viña del Mar",
-      item: "https://miniswimmer.cl/clases-natacion-vina-del-mar",
+      item: "https://www.miniswimmer.cl/clases-natacion-vina-del-mar",
     },
   ],
 };

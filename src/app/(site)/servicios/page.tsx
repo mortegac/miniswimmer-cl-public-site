@@ -8,10 +8,10 @@ export const metadata: Metadata = {
     "Academia de Natación Miniswimmer | Clases para Bebés, Niños y Adultos",
   description: `Descubre los servicios de nuestra academia de natación: matronatación, clases para bebés, niños y adultos, gimnasia acuática y cursos especializados. ¡Agenda tu clase en MiniSwimmer!`,
   alternates: {
-    canonical: "https://miniswimmer.cl/servicios",
+    canonical: "https://www.miniswimmer.cl/servicios",
     languages: {
-      "x-default": "https://miniswimmer.cl/servicios",
-      es: "https://miniswimmer.cl/servicios",
+      "x-default": "https://www.miniswimmer.cl/servicios",
+      es: "https://www.miniswimmer.cl/servicios",
     },
   },
   robots: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/servicios",
+    url: "https://www.miniswimmer.cl/servicios",
     title: `Academia de Natación Miniswimmer | Clases para Bebés, Niños y Adultos`,
     description: `Descubre los servicios de nuestra academia de natación: matronatación, clases para bebés, niños y adultos, gimnasia acuática y cursos especializados. ¡Agenda tu clase en MiniSwimmer!`,
     images: [
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
   logo: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
   description:
     "Descubre los servicios de nuestra academia de natación: matronatación, clases para bebés, niños y adultos, gimnasia acuática y cursos especializados. ¡Agenda tu clase en MiniSwimmer!",

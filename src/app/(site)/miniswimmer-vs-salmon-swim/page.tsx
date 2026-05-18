@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   title: "Miniswimmer vs Salmon Swim: ¿Cuál academia de natación elegir?",
   description: `Comparamos Miniswimmer y Salmon Swim en metodología, programas, sedes y más. Descubre por qué el Método Miniswimmer (PNL + Coaching + Natación) es la mejor alternativa a Salmon Swim para bebés, niños y adultos en Santiago, Chile y EE.UU.`,
   alternates: {
-    canonical: "https://miniswimmer.cl/miniswimmer-vs-salmon-swim",
+    canonical: "https://www.miniswimmer.cl/miniswimmer-vs-salmon-swim",
     languages: {
-      "x-default": "https://miniswimmer.cl/miniswimmer-vs-salmon-swim",
-      es: "https://miniswimmer.cl/miniswimmer-vs-salmon-swim",
+      "x-default": "https://www.miniswimmer.cl/miniswimmer-vs-salmon-swim",
+      es: "https://www.miniswimmer.cl/miniswimmer-vs-salmon-swim",
     },
   },
   robots: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/miniswimmer-vs-salmon-swim",
+    url: "https://www.miniswimmer.cl/miniswimmer-vs-salmon-swim",
     title: `Miniswimmer vs Salmon Swim: ¿Cuál academia de natación elegir?`,
     description: `Comparamos Miniswimmer y Salmon Swim en metodología, programas, sedes y más. Descubre el Método Miniswimmer: PNL + Coaching + Natación para bebés, niños y adultos.`,
     images: [
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
 const organizationRefSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
 };
 
 const breadcrumbSchema = {
@@ -67,13 +67,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Inicio",
-      item: "https://miniswimmer.cl",
+      item: "https://www.miniswimmer.cl",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Miniswimmer vs Salmon Swim",
-      item: "https://miniswimmer.cl/miniswimmer-vs-salmon-swim",
+      item: "https://www.miniswimmer.cl/miniswimmer-vs-salmon-swim",
     },
   ],
 };

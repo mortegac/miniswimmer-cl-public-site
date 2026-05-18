@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: "Conoce al equipo de Miniswimmer",
   description: `Nuestros profesionales son profesores de Educación Física, Kinesiólogos, expertos en Matronatación y se enfocan en una gestión excelente. Ofrecemos una metodología eficaz y una experiencia de aprendizaje inigualable para nuestros estudiantes.`,
   alternates: {
-    canonical: "https://miniswimmer.cl/about",
+    canonical: "https://www.miniswimmer.cl/about",
     languages: {
-      "x-default": "https://miniswimmer.cl/about",
-      "en-US": "https://miniswimmer.cl/about",
-      es: "https://miniswimmer.cl/nosotros",
+      "x-default": "https://www.miniswimmer.cl/about",
+      "en-US": "https://www.miniswimmer.cl/about",
+      es: "https://www.miniswimmer.cl/nosotros",
     },
   },
   robots: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/about",
+    url: "https://www.miniswimmer.cl/about",
     title: `Conoce al equipo de Miniswimmer`,
     description: `Nuestros profesionales son profesores de Educación Física, Kinesiólogos, expertos en Matronatación y se enfocan en una gestión excelente. Ofrecemos una metodología eficaz y una experiencia de aprendizaje inigualable para nuestros estudiantes.`,
     images: [
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
   logo: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
   description:
     "Nuestros profesionales son profesores de Educación Física, Kinesiólogos, expertos en Matronatación y se enfocan en una gestión excelente. Ofrecemos una metodología eficaz y una experiencia de aprendizaje inigualable para nuestros estudiantes.",

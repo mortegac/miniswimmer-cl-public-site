@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   title: "Miniswimmer vs Le Corps Flottant: ¿Cuál academia elegir?",
   description: `Comparamos Miniswimmer y Le Corps Flottant en metodología, programas, sedes y enfoque psicopedagógico. Descubre qué diferencia el Método Miniswimmer (PNL + Coaching + Natación) de la pedagogía Catteau.`,
   alternates: {
-    canonical: "https://miniswimmer.cl/miniswimmer-vs-le-corps-flottant",
+    canonical: "https://www.miniswimmer.cl/miniswimmer-vs-le-corps-flottant",
     languages: {
-      "x-default": "https://miniswimmer.cl/miniswimmer-vs-le-corps-flottant",
-      es: "https://miniswimmer.cl/miniswimmer-vs-le-corps-flottant",
+      "x-default": "https://www.miniswimmer.cl/miniswimmer-vs-le-corps-flottant",
+      es: "https://www.miniswimmer.cl/miniswimmer-vs-le-corps-flottant",
     },
   },
   robots: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/miniswimmer-vs-le-corps-flottant",
+    url: "https://www.miniswimmer.cl/miniswimmer-vs-le-corps-flottant",
     title: `Miniswimmer vs Le Corps Flottant: ¿Cuál academia elegir?`,
     description: `Comparamos Miniswimmer y Le Corps Flottant en metodología, programas y sedes. Descubre el Método Miniswimmer: PNL + Coaching + Natación para bebés, niños y adultos.`,
     images: [
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
 const organizationRefSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
 };
 
 const breadcrumbSchema = {
@@ -67,13 +67,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Inicio",
-      item: "https://miniswimmer.cl",
+      item: "https://www.miniswimmer.cl",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Miniswimmer vs Le Corps Flottant",
-      item: "https://miniswimmer.cl/miniswimmer-vs-le-corps-flottant",
+      item: "https://www.miniswimmer.cl/miniswimmer-vs-le-corps-flottant",
     },
   ],
 };

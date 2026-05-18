@@ -350,7 +350,7 @@ const Footer = () => {
                 <li>
                   <a
                     className="text-gray-5 duration-200 ease-out hover:text-white"
-                    href="https://miniswimmer.cl/"
+                    href="https://www.miniswimmer.cl/"
                   >
                     Miniswimmer Chile
                   </a>
@@ -358,7 +358,7 @@ const Footer = () => {
                 <li>
                   <a
                     className="text-gray-5 duration-200 ease-out hover:text-white"
-                    href="https://miniswimmer.cl/"
+                    href="https://www.miniswimmer.cl/"
                   >
                     Miniswimmer USA
                   </a>

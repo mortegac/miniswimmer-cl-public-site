@@ -49,7 +49,7 @@ function cleanRoutes(routes) {
 
 // Generar sitemap
 function generateSitemap() {
-  const baseUrl = "https://miniswimmer.cl";
+  const baseUrl = "https://www.miniswimmer.cl";
   const pagesDir = path.join(process.cwd(), "src/app/(site)");
 
   console.log(`📁 Escaneando directorio: ${pagesDir}`);

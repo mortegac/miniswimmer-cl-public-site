@@ -27,10 +27,10 @@ export const metadata: Metadata = {
     "academia natacion infantil chile",
   ],
   alternates: {
-    canonical: "https://miniswimmer.cl",
+    canonical: "https://www.miniswimmer.cl",
     languages: {
-      "x-default": "https://miniswimmer.cl",
-      es: "https://miniswimmer.cl",
+      "x-default": "https://www.miniswimmer.cl",
+      es: "https://www.miniswimmer.cl",
     },
   },
   robots: {
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl",
+    url: "https://www.miniswimmer.cl",
     title: "Matronatación Santiago — Clases de Natación para Bebés | Miniswimmer",
     description:
       "Matronatación para bebés desde 2 meses en Peñalolén, La Reina, Ñuñoa, Vitacura, Viña del Mar, Rancagua y Chillán. Coaches certificados y piscinas temperadas.",
@@ -77,12 +77,12 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
   logo: {
     "@type": "ImageObject",
-    url: "https://miniswimmer.cl/images/logo/logo.svg",
+    url: "https://www.miniswimmer.cl/images/logo/logo.svg",
     width: 200,
     height: 60,
   },
@@ -102,7 +102,7 @@ const organizationSchema = {
     telephone: "+56973447496",
     contactType: "customer service",
     availableLanguage: ["Spanish", "English"],
-    url: "https://miniswimmer.cl/contacto",
+    url: "https://www.miniswimmer.cl/contacto",
   },
   areaServed: [
     { "@type": "City", name: "Peñalolén", containedInPlace: { "@type": "AdministrativeArea", name: "Región Metropolitana, Chile" } },
@@ -135,12 +135,12 @@ const localBusinessSchemas = [
   {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "SportsActivityLocation"],
-    "@id": "https://miniswimmer.cl/#sede-santiago",
+    "@id": "https://www.miniswimmer.cl/#sede-santiago",
     name: "Miniswimmer — Matronatación Santiago (Peñalolén, La Reina, Ñuñoa, Vitacura)",
     description:
       "Clases de matronatación para bebés desde 2 meses en Santiago. Sedes en Peñalolén, La Reina, Ñuñoa y Vitacura. Piscinas temperadas 28–33°C con coaches certificados. También atendemos La Florida, Macul, Lo Barnechea, San Joaquín y comunas cercanas.",
     telephone: "+56973447496",
-    url: "https://miniswimmer.cl/clases-natacion-penalolen",
+    url: "https://www.miniswimmer.cl/clases-natacion-penalolen",
     image: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
     address: {
       "@type": "PostalAddress",
@@ -155,17 +155,17 @@ const localBusinessSchemas = [
       "Peñalolén", "La Reina", "Ñuñoa", "Vitacura", "La Florida",
       "Macul", "Lo Barnechea", "San Joaquín", "Las Condes", "Santiago",
     ],
-    parentOrganization: { "@id": "https://miniswimmer.cl/#organization" },
+    parentOrganization: { "@id": "https://www.miniswimmer.cl/#organization" },
   },
   {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "SportsActivityLocation"],
-    "@id": "https://miniswimmer.cl/#sede-valparaiso",
+    "@id": "https://www.miniswimmer.cl/#sede-valparaiso",
     name: "Miniswimmer — Matronatación Viña del Mar y Concón",
     description:
       "Clases de matronatación para bebés y natación infantil en Viña del Mar y Concón. Piscinas temperadas 30–32°C. También atendemos Valparaíso, Reñaca, Quilpué y Villa Alemana.",
     telephone: "+56973447496",
-    url: "https://miniswimmer.cl/clases-natacion-vina-del-mar",
+    url: "https://www.miniswimmer.cl/clases-natacion-vina-del-mar",
     image: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
     address: {
       "@type": "PostalAddress",
@@ -176,17 +176,17 @@ const localBusinessSchemas = [
     priceRange: "$$",
     currenciesAccepted: "CLP",
     areaServed: ["Viña del Mar", "Concón", "Valparaíso", "Reñaca", "Quilpué", "Villa Alemana"],
-    parentOrganization: { "@id": "https://miniswimmer.cl/#organization" },
+    parentOrganization: { "@id": "https://www.miniswimmer.cl/#organization" },
   },
   {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "SportsActivityLocation"],
-    "@id": "https://miniswimmer.cl/#sede-rancagua",
+    "@id": "https://www.miniswimmer.cl/#sede-rancagua",
     name: "Miniswimmer — Matronatación Rancagua",
     description:
       "Clases de matronatación para bebés y natación infantil en Rancagua, Región de O'Higgins. Piscina temperada 30–32°C con coaches certificados.",
     telephone: "+56973447496",
-    url: "https://miniswimmer.cl/conoce-nuestras-sedes",
+    url: "https://www.miniswimmer.cl/conoce-nuestras-sedes",
     image: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
     address: {
       "@type": "PostalAddress",
@@ -197,17 +197,17 @@ const localBusinessSchemas = [
     priceRange: "$$",
     currenciesAccepted: "CLP",
     areaServed: ["Rancagua"],
-    parentOrganization: { "@id": "https://miniswimmer.cl/#organization" },
+    parentOrganization: { "@id": "https://www.miniswimmer.cl/#organization" },
   },
   {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "SportsActivityLocation"],
-    "@id": "https://miniswimmer.cl/#sede-chillan",
+    "@id": "https://www.miniswimmer.cl/#sede-chillan",
     name: "Miniswimmer — Matronatación Chillán",
     description:
       "Clases de matronatación para bebés y natación infantil en Chillán, Región de Ñuble. Piscina temperada 30–32°C con coaches certificados.",
     telephone: "+56973447496",
-    url: "https://miniswimmer.cl/conoce-nuestras-sedes",
+    url: "https://www.miniswimmer.cl/conoce-nuestras-sedes",
     image: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
     address: {
       "@type": "PostalAddress",
@@ -218,19 +218,19 @@ const localBusinessSchemas = [
     priceRange: "$$",
     currenciesAccepted: "CLP",
     areaServed: ["Chillán"],
-    parentOrganization: { "@id": "https://miniswimmer.cl/#organization" },
+    parentOrganization: { "@id": "https://www.miniswimmer.cl/#organization" },
   },
 ];
 
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://miniswimmer.cl/#website",
-  url: "https://miniswimmer.cl",
+  "@id": "https://www.miniswimmer.cl/#website",
+  url: "https://www.miniswimmer.cl",
   name: "Miniswimmer",
   description: "Academia de natación para bebés, niños, adultos y embarazadas.",
   inLanguage: ["es", "en"],
-  publisher: { "@id": "https://miniswimmer.cl/#organization" },
+  publisher: { "@id": "https://www.miniswimmer.cl/#organization" },
 };
 
 const faqSchema = {

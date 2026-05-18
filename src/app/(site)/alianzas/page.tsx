@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   title: "Alianzas y Partners de Miniswimmer",
   description: `Explora las colaboraciones y beneficios únicos para nuestras familias. Accede a descuentos exclusivos con nuestros partners en natación infantil`,
   alternates: {
-    canonical: "https://miniswimmer.cl/alianzas",
+    canonical: "https://www.miniswimmer.cl/alianzas",
     languages: {
-      "en-US": "https://miniswimmer.cl/alianzas",
-      es: "https://miniswimmer.cl/alianzas",
+      "en-US": "https://www.miniswimmer.cl/alianzas",
+      es: "https://www.miniswimmer.cl/alianzas",
     },
   },
   robots: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/alianzas",
+    url: "https://www.miniswimmer.cl/alianzas",
     title: `Alianzas y Partners de Miniswimmer`,
     description: `Explora las colaboraciones y beneficios únicos para nuestras familias. Accede a descuentos exclusivos con nuestros partners en natación infantil`,
     images: [
@@ -55,9 +55,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
   logo: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
   description:
     "Explora las colaboraciones y beneficios únicos para nuestras familias. Accede a descuentos exclusivos con nuestros partners en natación infantil",

@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   title: "Enroll Your Child in Swimming in Broward!",
   description: `In-home swimming lessons for babies and children across Broward County — Fort Lauderdale, Hollywood, Coral Springs, Pembroke Pines, Miramar, Weston, and more. Personalized coaching with the Miniswimmer Method.`,
   alternates: {
-    canonical: "https://miniswimmer.cl/swimming-lessons-in-broward",
+    canonical: "https://www.miniswimmer.cl/swimming-lessons-in-broward",
     languages: {
-      "x-default": "https://miniswimmer.cl/swimming-lessons-in-broward",
-      "en-US": "https://miniswimmer.cl/swimming-lessons-in-broward",
+      "x-default": "https://www.miniswimmer.cl/swimming-lessons-in-broward",
+      "en-US": "https://www.miniswimmer.cl/swimming-lessons-in-broward",
     },
   },
   robots: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/swimming-lessons-in-broward",
+    url: "https://www.miniswimmer.cl/swimming-lessons-in-broward",
     title: `Enroll Your Child in Swimming in Broward!`,
     description: `Find our convenient locations for personalized in-home swimming lessons. We help babies and children of all levels improve their technique, build endurance, and gain confidence in the water.`,
     images: [
@@ -53,22 +53,22 @@ export const metadata: Metadata = {
 const organizationRefSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
 };
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "SportsActivityLocation"],
-  "@id": "https://miniswimmer.cl/swimming-lessons-in-broward#localbusiness",
+  "@id": "https://www.miniswimmer.cl/swimming-lessons-in-broward#localbusiness",
   name: "Miniswimmer — Swimming Lessons in Broward County",
-  url: "https://miniswimmer.cl/swimming-lessons-in-broward",
+  url: "https://www.miniswimmer.cl/swimming-lessons-in-broward",
   image:
     "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
   logo: {
     "@type": "ImageObject",
-    url: "https://miniswimmer.cl/images/logo/logo.svg",
+    url: "https://www.miniswimmer.cl/images/logo/logo.svg",
   },
   description:
     "In-home swimming lessons for babies and children across Broward County. Serving Fort Lauderdale, Hollywood, Coral Springs, Pembroke Pines, Miramar, Weston, and more.",
@@ -134,7 +134,7 @@ const localBusinessSchema = {
       },
     },
   ],
-  parentOrganization: { "@id": "https://miniswimmer.cl/#organization" },
+  parentOrganization: { "@id": "https://www.miniswimmer.cl/#organization" },
   sameAs: [
     "https://www.facebook.com/miniswimmer.academy",
     "https://www.instagram.com/miniswimmer.us",
@@ -149,13 +149,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://miniswimmer.cl",
+      item: "https://www.miniswimmer.cl",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Swimming Lessons in Broward",
-      item: "https://miniswimmer.cl/swimming-lessons-in-broward",
+      item: "https://www.miniswimmer.cl/swimming-lessons-in-broward",
     },
   ],
 };

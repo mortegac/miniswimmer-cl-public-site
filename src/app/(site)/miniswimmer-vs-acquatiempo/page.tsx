@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   title: "Miniswimmer vs Acqua Tiempo: ¿Academia o gimnasio con piscina?",
   description: `Comparamos Miniswimmer y Acqua Tiempo en metodología, programas, sedes e instructores. Descubre por qué una academia especializada supera a un gimnasio con piscina para aprender a nadar.`,
   alternates: {
-    canonical: "https://miniswimmer.cl/miniswimmer-vs-acquatiempo",
+    canonical: "https://www.miniswimmer.cl/miniswimmer-vs-acquatiempo",
     languages: {
-      "x-default": "https://miniswimmer.cl/miniswimmer-vs-acquatiempo",
-      es: "https://miniswimmer.cl/miniswimmer-vs-acquatiempo",
+      "x-default": "https://www.miniswimmer.cl/miniswimmer-vs-acquatiempo",
+      es: "https://www.miniswimmer.cl/miniswimmer-vs-acquatiempo",
     },
   },
   robots: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/miniswimmer-vs-acquatiempo",
+    url: "https://www.miniswimmer.cl/miniswimmer-vs-acquatiempo",
     title: `Miniswimmer vs Acqua Tiempo: ¿Academia o gimnasio con piscina?`,
     description: `Comparamos Miniswimmer y Acqua Tiempo en metodología, programas y sedes. Descubre el Método Miniswimmer: PNL + Coaching + Natación para bebés, niños y adultos.`,
     images: [
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
 const organizationRefSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
 };
 
 const breadcrumbSchema = {
@@ -67,13 +67,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Inicio",
-      item: "https://miniswimmer.cl",
+      item: "https://www.miniswimmer.cl",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Miniswimmer vs Acqua Tiempo",
-      item: "https://miniswimmer.cl/miniswimmer-vs-acquatiempo",
+      item: "https://www.miniswimmer.cl/miniswimmer-vs-acquatiempo",
     },
   ],
 };

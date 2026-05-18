@@ -6,7 +6,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import GoogleTagManager from "@/components/GoogleTagManager";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://miniswimmer.cl"),
+  metadataBase: new URL("https://www.miniswimmer.cl"),
 };
 
 export const viewport: Viewport = {

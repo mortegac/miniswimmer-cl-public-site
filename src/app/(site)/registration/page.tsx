@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   title: "¿Cómo podemos ayudar?",
   description: `Cuéntenos sobre usted y le conectaremos con un experto que podrá responder cualquier pregunta que tenga.`,
   alternates: {
-    canonical: "https://miniswimmer.cl/registration",
+    canonical: "https://www.miniswimmer.cl/registration",
     languages: {
-      "en-US": "https://miniswimmer.cl/registration",
-      es: "https://miniswimmer.cl/registration",
+      "en-US": "https://www.miniswimmer.cl/registration",
+      es: "https://www.miniswimmer.cl/registration",
     },
   },
   robots: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/registration",
+    url: "https://www.miniswimmer.cl/registration",
     title: `How can we help?`,
     description: `Cuéntenos sobre usted y le conectaremos con un experto que podrá responder cualquier pregunta que tenga.`,
     images: [
@@ -56,7 +56,7 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl/registration",
+  url: "https://www.miniswimmer.cl/registration",
   logo: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
   description:
     "Cuéntenos sobre usted y le conectaremos con un experto que podrá responder cualquier pregunta que tenga.",

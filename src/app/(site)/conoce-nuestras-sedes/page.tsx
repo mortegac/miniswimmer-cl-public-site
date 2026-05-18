@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   description:
     "Miniswimmer tiene sedes en Santiago (Peñalolén, La Reina, Ñuñoa, Vitacura), Viña del Mar, Rancagua y Chillán. Consulta disponibilidad y fechas de funcionamiento por WhatsApp.",
   alternates: {
-    canonical: "https://miniswimmer.cl/conoce-nuestras-sedes",
+    canonical: "https://www.miniswimmer.cl/conoce-nuestras-sedes",
     languages: {
-      "x-default": "https://miniswimmer.cl/conoce-nuestras-sedes",
-      es: "https://miniswimmer.cl/conoce-nuestras-sedes",
+      "x-default": "https://www.miniswimmer.cl/conoce-nuestras-sedes",
+      es: "https://www.miniswimmer.cl/conoce-nuestras-sedes",
     },
   },
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/conoce-nuestras-sedes",
+    url: "https://www.miniswimmer.cl/conoce-nuestras-sedes",
     title: "Conoce Nuestras Sedes — Miniswimmer",
     description:
       "Sedes en Santiago, Viña del Mar, Rancagua y Chillán. Consulta disponibilidad por WhatsApp.",
@@ -176,8 +176,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://miniswimmer.cl" },
-    { "@type": "ListItem", position: 2, name: "Conoce Nuestras Sedes", item: "https://miniswimmer.cl/conoce-nuestras-sedes" },
+    { "@type": "ListItem", position: 1, name: "Inicio", item: "https://www.miniswimmer.cl" },
+    { "@type": "ListItem", position: 2, name: "Conoce Nuestras Sedes", item: "https://www.miniswimmer.cl/conoce-nuestras-sedes" },
   ],
 };
 

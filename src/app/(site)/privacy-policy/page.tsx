@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: "Conozca nuestra Política de Privacidad",
   description: `Mini Swimmer detalla sus prácticas de privacidad respecto a la recopilación, el uso y la protección de datos personales de niños (con el consentimiento de sus padres) y sus tutores para la gestión de los servicios de natación. Los usuarios tienen derecho a acceder, modificar o eliminar sus datos, y la política describe las medidas de seguridad y la información de contacto para consultas.`,
   alternates: {
-    canonical: "https://miniswimmer.cl/privacy-policy",
+    canonical: "https://www.miniswimmer.cl/privacy-policy",
     languages: {
-      "x-default": "https://miniswimmer.cl/politica-de-privacidad",
-      es: "https://miniswimmer.cl/politica-de-privacidad",
-      "en-US": "https://miniswimmer.cl/privacy-policy",
+      "x-default": "https://www.miniswimmer.cl/politica-de-privacidad",
+      es: "https://www.miniswimmer.cl/politica-de-privacidad",
+      "en-US": "https://www.miniswimmer.cl/privacy-policy",
     },
   },
   robots: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/privacy-policy",
+    url: "https://www.miniswimmer.cl/privacy-policy",
     title: `Conozca nuestra Política de Privacidad`,
     description: `Mini Swimmer detalla sus prácticas de privacidad respecto a la recopilación, el uso y la protección de datos personales de niños (con el consentimiento de sus padres) y sus tutores para la gestión de los servicios de natación. Los usuarios tienen derecho a acceder, modificar o eliminar sus datos, y la política describe las medidas de seguridad y la información de contacto para consultas.`,
     images: [
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
   logo: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
   description:
     "Mini Swimmer detalla sus prácticas de privacidad respecto a la recopilación, el uso y la protección de datos personales de niños (con el consentimiento de sus padres) y sus tutores para la gestión de los servicios de natación. Los usuarios tienen derecho a acceder, modificar o eliminar sus datos, y la política describe las medidas de seguridad y la información de contacto para consultas.",

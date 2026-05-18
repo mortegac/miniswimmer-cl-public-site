@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   description: `¿Clases de natación en la piscina municipal de Peñalolén (CORDEP) o con el Método Miniswimmer? Comparamos metodología, disponibilidad, precios y personalización para ayudarte a decidir. Sin lista de espera en Miniswimmer.`,
   alternates: {
     canonical:
-      "https://miniswimmer.cl/miniswimmer-vs-piscina-municipal-penalolen",
+      "https://www.miniswimmer.cl/miniswimmer-vs-piscina-municipal-penalolen",
     languages: {
       "x-default":
-        "https://miniswimmer.cl/miniswimmer-vs-piscina-municipal-penalolen",
-      es: "https://miniswimmer.cl/miniswimmer-vs-piscina-municipal-penalolen",
+        "https://www.miniswimmer.cl/miniswimmer-vs-piscina-municipal-penalolen",
+      es: "https://www.miniswimmer.cl/miniswimmer-vs-piscina-municipal-penalolen",
     },
   },
   robots: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/miniswimmer-vs-piscina-municipal-penalolen",
+    url: "https://www.miniswimmer.cl/miniswimmer-vs-piscina-municipal-penalolen",
     title: `Miniswimmer vs Piscina Municipal de Peñalolén: ¿Cuál elegir?`,
     description: `¿Clases en la piscina municipal o con el Método Miniswimmer? Comparamos metodología, disponibilidad y personalización para que elijas con información real.`,
     images: [
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
 const organizationRefSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
 };
 
 const breadcrumbSchema = {
@@ -69,19 +69,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Inicio",
-      item: "https://miniswimmer.cl",
+      item: "https://www.miniswimmer.cl",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Clases Natación Peñalolén",
-      item: "https://miniswimmer.cl/clases-natacion-penalolen",
+      item: "https://www.miniswimmer.cl/clases-natacion-penalolen",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Miniswimmer vs Piscina Municipal Peñalolén",
-      item: "https://miniswimmer.cl/miniswimmer-vs-piscina-municipal-penalolen",
+      item: "https://www.miniswimmer.cl/miniswimmer-vs-piscina-municipal-penalolen",
     },
   ],
 };

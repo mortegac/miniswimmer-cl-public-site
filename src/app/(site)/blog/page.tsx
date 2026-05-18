@@ -8,16 +8,16 @@ export const metadata: Metadata = {
   description:
     "Artículos sobre matronatación, desarrollo del bebé en el agua, seguridad acuática y consejos prácticos para padres en Santiago. Escrito por expertos de Miniswimmer.",
   alternates: {
-    canonical: "https://miniswimmer.cl/blog",
+    canonical: "https://www.miniswimmer.cl/blog",
     languages: {
-      "x-default": "https://miniswimmer.cl/blog",
-      es: "https://miniswimmer.cl/blog",
+      "x-default": "https://www.miniswimmer.cl/blog",
+      es: "https://www.miniswimmer.cl/blog",
     },
   },
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/blog",
+    url: "https://www.miniswimmer.cl/blog",
     title: "Blog Miniswimmer — Natación Infantil y Matronatación",
     description:
       "Guías, consejos y artículos sobre natación para bebés y niños en Santiago, Chile.",
@@ -45,21 +45,21 @@ const blogSchema = {
   name: "Blog Miniswimmer",
   description:
     "Artículos sobre matronatación, desarrollo del bebé en el agua, seguridad acuática y consejos para padres.",
-  url: "https://miniswimmer.cl/blog",
+  url: "https://www.miniswimmer.cl/blog",
   publisher: {
     "@type": "Organization",
     name: "Miniswimmer",
-    url: "https://miniswimmer.cl",
+    url: "https://www.miniswimmer.cl",
     logo: {
       "@type": "ImageObject",
-      url: "https://miniswimmer.cl/logo.png",
+      url: "https://www.miniswimmer.cl/logo.png",
     },
   },
   blogPost: allArticles.slice(0, 10).map((article) => ({
     "@type": "BlogPosting",
     headline: article.h1,
     description: article.excerpt,
-    url: `https://miniswimmer.cl/blog/${article.slug}`,
+    url: `https://www.miniswimmer.cl/blog/${article.slug}`,
     datePublished: article.publishDate,
     author: {
       "@type": "Organization",
@@ -76,13 +76,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Inicio",
-      item: "https://miniswimmer.cl",
+      item: "https://www.miniswimmer.cl",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Blog",
-      item: "https://miniswimmer.cl/blog",
+      item: "https://www.miniswimmer.cl/blog",
     },
   ],
 };

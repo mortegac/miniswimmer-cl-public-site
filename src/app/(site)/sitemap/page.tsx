@@ -13,16 +13,16 @@ export const metadata: Metadata = {
   description:
     "Encuentra todas las páginas de Miniswimmer organizadas por categoría: programas de natación, sedes en Chile y USA, precios, comparativas y más.",
   alternates: {
-    canonical: "https://miniswimmer.cl/sitemap",
+    canonical: "https://www.miniswimmer.cl/sitemap",
     languages: {
-      "x-default": "https://miniswimmer.cl/sitemap",
-      es: "https://miniswimmer.cl/sitemap",
+      "x-default": "https://www.miniswimmer.cl/sitemap",
+      es: "https://www.miniswimmer.cl/sitemap",
     },
   },
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/sitemap",
+    url: "https://www.miniswimmer.cl/sitemap",
     title: "Mapa del Sitio — Miniswimmer",
     description:
       "Encuentra todas las páginas de Miniswimmer organizadas por categoría.",
@@ -232,13 +232,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Inicio",
-      item: "https://miniswimmer.cl",
+      item: "https://www.miniswimmer.cl",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Mapa del Sitio",
-      item: "https://miniswimmer.cl/sitemap",
+      item: "https://www.miniswimmer.cl/sitemap",
     },
   ],
 };

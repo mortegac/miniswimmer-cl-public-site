@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   title: "Miniswimmer vs Club Recrear: ¿Academia o club deportivo?",
   description: `Comparamos Miniswimmer y Club Recrear en metodología, programas, instructores y sedes. Descubre por qué una academia de natación especializada supera a un club multifuncional.`,
   alternates: {
-    canonical: "https://miniswimmer.cl/miniswimmer-vs-club-recrear",
+    canonical: "https://www.miniswimmer.cl/miniswimmer-vs-club-recrear",
     languages: {
-      "x-default": "https://miniswimmer.cl/miniswimmer-vs-club-recrear",
-      es: "https://miniswimmer.cl/miniswimmer-vs-club-recrear",
+      "x-default": "https://www.miniswimmer.cl/miniswimmer-vs-club-recrear",
+      es: "https://www.miniswimmer.cl/miniswimmer-vs-club-recrear",
     },
   },
   robots: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/miniswimmer-vs-club-recrear",
+    url: "https://www.miniswimmer.cl/miniswimmer-vs-club-recrear",
     title: `Miniswimmer vs Club Recrear: ¿Academia o club deportivo?`,
     description: `Comparamos Miniswimmer y Club Recrear en metodología, programas e instructores. Descubre el Método Miniswimmer: PNL + Coaching + Natación para bebés, niños y adultos.`,
     images: [
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
 const organizationRefSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
 };
 
 const breadcrumbSchema = {
@@ -67,13 +67,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Inicio",
-      item: "https://miniswimmer.cl",
+      item: "https://www.miniswimmer.cl",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Miniswimmer vs Club Recrear",
-      item: "https://miniswimmer.cl/miniswimmer-vs-club-recrear",
+      item: "https://www.miniswimmer.cl/miniswimmer-vs-club-recrear",
     },
   ],
 };

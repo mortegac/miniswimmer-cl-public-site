@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "Precios de nuestros planes de clases",
   description: `Descubre nuestras planes de natación para clases regulares, premium y a domicilio. Clases para bebés, niños, adultos y embarazadas con instructores certificados, desde los 2 meses hasta niveles avanzados.`,
   alternates: {
-    canonical: "https://miniswimmer.cl/pricing",
+    canonical: "https://www.miniswimmer.cl/pricing",
     languages: {
       "x-default":
-        "https://miniswimmer.cl/precios-y-valores-de-nuestros-servicios",
-      es: "https://miniswimmer.cl/precios-y-valores-de-nuestros-servicios",
-      "en-US": "https://miniswimmer.cl/pricing",
+        "https://www.miniswimmer.cl/precios-y-valores-de-nuestros-servicios",
+      es: "https://www.miniswimmer.cl/precios-y-valores-de-nuestros-servicios",
+      "en-US": "https://www.miniswimmer.cl/pricing",
     },
   },
   robots: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/pricing",
+    url: "https://www.miniswimmer.cl/pricing",
     title: `Precios de nuestros planes de clases`,
     description: `Descubre nuestras planes de natación para clases regulares, premium y a domicilio. Clases para bebés, niños, adultos y embarazadas con instructores certificados, desde los 2 meses hasta niveles avanzados.`,
     images: [
@@ -55,9 +55,9 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://miniswimmer.cl/#organization",
+  "@id": "https://www.miniswimmer.cl/#organization",
   name: "Miniswimmer",
-  url: "https://miniswimmer.cl",
+  url: "https://www.miniswimmer.cl",
   logo: "https://images.prismic.io/miniswimmerchile/aBuatCdWJ-7kRuIZ_SOCIAL-MEDIAv2.png?auto=format,compress",
   description:
     "Descubre nuestras planes de natación para clases regulares, premium y a domicilio. Clases para bebés, niños, adultos y embarazadas con instructores certificados, desde los 2 meses hasta niveles avanzados.",

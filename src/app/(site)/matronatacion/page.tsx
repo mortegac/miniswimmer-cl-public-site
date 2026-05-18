@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   description:
     "Clases de matronatación para bebés desde los 2 meses. Fortalece el vínculo con tu bebé en el agua con el Método Miniswimmer: estimulación temprana, juego y coaches certificados en primera infancia. ¡Agenda tu clase de prueba!",
   alternates: {
-    canonical: "https://miniswimmer.cl/matronatacion",
+    canonical: "https://www.miniswimmer.cl/matronatacion",
     languages: {
-      "x-default": "https://miniswimmer.cl/matronatacion",
-      es: "https://miniswimmer.cl/matronatacion",
+      "x-default": "https://www.miniswimmer.cl/matronatacion",
+      es: "https://www.miniswimmer.cl/matronatacion",
     },
   },
   robots: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/matronatacion",
+    url: "https://www.miniswimmer.cl/matronatacion",
     title:
       "Matronatación | Clases de Natación para Bebés desde los 2 Meses — Miniswimmer",
     description:
@@ -60,14 +60,14 @@ export const metadata: Metadata = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": "https://miniswimmer.cl/matronatacion#service",
+  "@id": "https://www.miniswimmer.cl/matronatacion#service",
   name: "Matronatación — Clases para Bebés",
-  url: "https://miniswimmer.cl/matronatacion",
+  url: "https://www.miniswimmer.cl/matronatacion",
   description:
     "Clases de matronatación para bebés desde los 2 meses. El Método Miniswimmer integra estimulación temprana, PNL, coaching y psicomotricidad para fortalecer el vínculo entre papás y bebés en un entorno acuático seguro y divertido.",
   provider: {
     "@type": "Organization",
-    "@id": "https://miniswimmer.cl/#organization",
+    "@id": "https://www.miniswimmer.cl/#organization",
     name: "Miniswimmer",
   },
   serviceType: "Matronatación y estimulación acuática temprana para bebés",
@@ -89,19 +89,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Inicio",
-      item: "https://miniswimmer.cl",
+      item: "https://www.miniswimmer.cl",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Servicios",
-      item: "https://miniswimmer.cl/servicios",
+      item: "https://www.miniswimmer.cl/servicios",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Matronatación",
-      item: "https://miniswimmer.cl/matronatacion",
+      item: "https://www.miniswimmer.cl/matronatacion",
     },
   ],
 };

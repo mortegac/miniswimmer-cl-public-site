@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     "Programa de natación especializado para niños con Trastorno del Espectro Autista (TEA) y neurodivergencia. Método Miniswimmer con PNL, coaches certificados y ambiente seguro. ¡Inscríbelos hoy!",
   alternates: {
-    canonical: "https://miniswimmer.cl/neuro-swimmer",
+    canonical: "https://www.miniswimmer.cl/neuro-swimmer",
     languages: {
-      "x-default": "https://miniswimmer.cl/neuro-swimmer",
-      es: "https://miniswimmer.cl/neuro-swimmer",
+      "x-default": "https://www.miniswimmer.cl/neuro-swimmer",
+      es: "https://www.miniswimmer.cl/neuro-swimmer",
     },
   },
   robots: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://miniswimmer.cl/neuro-swimmer",
+    url: "https://www.miniswimmer.cl/neuro-swimmer",
     title: "Neuro Swimmer | Natación Adaptada para Niños con TEA — Miniswimmer",
     description:
       "Programa de natación especializado para niños con Trastorno del Espectro Autista (TEA) y neurodivergencia. Método Miniswimmer con PNL, coaches certificados y ambiente seguro.",
@@ -57,14 +57,14 @@ export const metadata: Metadata = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": "https://miniswimmer.cl/neuro-swimmer#service",
+  "@id": "https://www.miniswimmer.cl/neuro-swimmer#service",
   name: "Neuro Swimmer",
-  url: "https://miniswimmer.cl/neuro-swimmer",
+  url: "https://www.miniswimmer.cl/neuro-swimmer",
   description:
     "Programa de natación especializado para niños con Trastorno del Espectro Autista (TEA) y otras condiciones neurodivergentes. Integra Programación Neurolingüística (PNL), enfoque terapéutico y coaches certificados.",
   provider: {
     "@type": "Organization",
-    "@id": "https://miniswimmer.cl/#organization",
+    "@id": "https://www.miniswimmer.cl/#organization",
     name: "Miniswimmer",
   },
   serviceType: "Natación adaptada para niños con TEA",
@@ -87,19 +87,19 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Inicio",
-      item: "https://miniswimmer.cl",
+      item: "https://www.miniswimmer.cl",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Servicios",
-      item: "https://miniswimmer.cl/servicios",
+      item: "https://www.miniswimmer.cl/servicios",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Neuro Swimmer",
-      item: "https://miniswimmer.cl/neuro-swimmer",
+      item: "https://www.miniswimmer.cl/neuro-swimmer",
     },
   ],
 };
