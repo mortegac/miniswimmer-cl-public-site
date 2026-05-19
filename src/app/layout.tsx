@@ -2,7 +2,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { Inter } from "next/font/google";
 import { type Metadata, type Viewport } from "next";
-import Script from "next/script";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import GoogleTagManager from "@/components/GoogleTagManager";
 
@@ -31,6 +30,8 @@ export default async function RootLayout({
       <head>
         <link rel="preload" href="/fonts/Satoshi-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="WaOeUEhQoKBQutXUPN/SEw" async={true} />
         <GoogleTagManager />
       </head>
       <body
@@ -46,11 +47,6 @@ export default async function RootLayout({
             />
           </noscript>
         )}
-        <Script
-          src="https://analytics.ahrefs.com/analytics.js"
-          data-key="WaOeUEhQoKBQutXUPN/SEw"
-          strategy="afterInteractive"
-        />
         <NextIntlClientProvider messages={messages}>
           <GoogleAnalytics />
           {children}
