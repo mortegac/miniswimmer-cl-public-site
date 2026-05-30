@@ -6,6 +6,7 @@ import { useForm, type SubmitHandler, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import emailjs from "@emailjs/browser";
+import confetti from "canvas-confetti";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 
@@ -59,7 +60,7 @@ const INPUT_CLASS =
 
 const LABEL_CLASS = "block font-inter text-sm font-medium text-dark-2 dark:text-dark-4";
 
-const ERROR_CLASS = "mt-1 font-inter text-xs text-error";
+const ERROR_CLASS = "mt-1 font-inter text-xs text-red-300";
 
 interface SubmitState {
   sent: boolean;
@@ -125,6 +126,12 @@ const ConcursoForm = () => {
       );
 
       reset();
+      confetti({
+        particleCount: 200,
+        spread: 120,
+        origin: { y: 0.6 },
+        colors: ["#AE5EAB", "#ffffff", "#1C274C", "#fca5a5"],
+      });
       setSubmitState({
         sent: true,
         isFailure: false,

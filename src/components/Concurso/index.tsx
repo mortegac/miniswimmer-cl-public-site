@@ -12,6 +12,14 @@ const Concurso = () => {
             Completa el formulario y nuestro equipo te contactará lo antes
             posible para agendar tu clase gratis.
           </p>
+          <video
+            src="/videos/gift.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="mt-6 w-full max-w-xs rounded-10 shadow-features sm:max-w-sm"
+          />
         </section>
       </div>
       <ConcursoForm />
