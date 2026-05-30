@@ -2,6 +2,13 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Associated Projects
+
+| Role | Path |
+|------|------|
+| Web (this project) | `/Users/manu/_CODE/MINISWIMMER.us/_CODE/miniswimmer-cl-public-site` |
+| Backend | `/Users/manu/_CODE/MINISWIMMER.us/_CODE/miniswimmercl-sdk-backend-v2` |
+
 ## Commands
 
 ```bash

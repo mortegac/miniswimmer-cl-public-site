@@ -144,3 +144,18 @@
 .active {
   @apply bg-primary/5 text-primary dark:bg-white/5 dark:text-white;
 }
+
+/* react-phone-number-input overrides */
+.PhoneInputInput {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: inherit;
+  width: 100%;
+}
+.PhoneInputCountrySelect {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+}
