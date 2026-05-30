@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useForm, type SubmitHandler, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -96,6 +96,17 @@ const ConcursoForm = () => {
   const embarazada = watch("embarazada");
   const sede = watch("sede");
 
+  useEffect(() => {
+    if (submitState.sent && !submitState.isFailure) {
+      confetti({
+        particleCount: 200,
+        spread: 120,
+        origin: { y: 0.6 },
+        colors: ["#AE5EAB", "#ffffff", "#1C274C", "#fca5a5"],
+      });
+    }
+  }, [submitState.sent, submitState.isFailure]);
+
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     setIsSubmitting(true);
     setSubmitState({
@@ -109,7 +120,15 @@ const ConcursoForm = () => {
       from_name: data.nombreApoderado,
       from_phone: data.whatsapp,
       from_email: data.email,
-      message: `Comuna: ${data.comuna} | Embarazada: ${data.embarazada}${data.embarazada === "si" ? ` (${data.mesesEmbarazo} meses)` : ""} | Edad alumno: ${data.edadAlumno}`,
+      message: [
+        `Nombre apoderado: ${data.nombreApoderado}`,
+        `Email: ${data.email}`,
+        `WhatsApp: ${data.whatsapp}`,
+        `Comuna: ${data.comuna}`,
+        `Edad alumno: ${data.edadAlumno}`,
+        `Embarazada: ${data.embarazada === "si" ? `Sí (${data.mesesEmbarazo} meses)` : "No"}`,
+        `Sede preferencia: ${data.sede}`,
+      ].join("\n"),
       to_name: "Miniswimmer concursos",
       asunto: "Te ganaste una clase gratis",
       html_title:
@@ -126,12 +145,6 @@ const ConcursoForm = () => {
       );
 
       reset();
-      confetti({
-        particleCount: 200,
-        spread: 120,
-        origin: { y: 0.6 },
-        colors: ["#AE5EAB", "#ffffff", "#1C274C", "#fca5a5"],
-      });
       setSubmitState({
         sent: true,
         isFailure: false,
