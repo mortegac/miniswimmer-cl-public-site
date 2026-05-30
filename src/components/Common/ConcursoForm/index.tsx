@@ -133,7 +133,16 @@ const ConcursoForm = () => {
       asunto: "Te ganaste una clase gratis",
       html_title:
         "<h2>Felicitaciones, ganaste una clase gratis</h2><p>Nuestro equipo te contactará lo antes posible para agendar tu clase.</p>",
-      html_service: `<p><b>Clase gratis :</b> ${data.sede}</p>`,
+      html_service: `
+      <p><b>Clase gratis :</b> ${data.sede}</p>
+      <p>Nombre apoderado: ${data.nombreApoderado}</p>
+      <p>Email: ${data.email}</p>
+      <p>WhatsApp: ${data.whatsapp}</p>
+      <p>Comuna: ${data.comuna}</p>
+      <p>Edad alumno: ${data.edadAlumno}</p>
+      <p>Embarazada: ${data.embarazada === "si" ? `Sí (${data.mesesEmbarazo} meses)` : "No"}</p>
+      <p>Sede preferencia: ${data.sede}</p>
+      `,
     };
 
     try {
