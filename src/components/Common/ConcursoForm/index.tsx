@@ -76,7 +76,11 @@ const INITIAL_STATE: SubmitState = {
   text: "",
 };
 
-const ConcursoForm = () => {
+interface ConcursoFormProps {
+  numClases?: 1 | 4;
+}
+
+const ConcursoForm = ({ numClases = 1 }: ConcursoFormProps) => {
   const [submitState, setSubmitState] = useState<SubmitState>(INITIAL_STATE);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -116,6 +120,16 @@ const ConcursoForm = () => {
       text: "Estamos enviando tu inscripción.",
     });
 
+    const asunto =
+      numClases === 4
+        ? "¡Ganaste 4 clases gratis con Miniswimmer!"
+        : "¡Te ganaste una clase gratis con Miniswimmer!";
+
+    const htmlTitle =
+      numClases === 4
+        ? "<h2>¡Ganaste 4 clases gratis!</h2><p>Nuestro equipo te contactará lo antes posible para agendar tus 4 clases gratis.</p>"
+        : "<h2>Felicitaciones, ganaste una clase gratis</h2><p>Nuestro equipo te contactará lo antes posible para agendar tu clase.</p>";
+
     const templateParams = {
       from_name: data.nombreApoderado,
       from_phone: data.whatsapp,
@@ -130,18 +144,19 @@ const ConcursoForm = () => {
         `Sede preferencia: ${data.sede}`,
       ].join("\n"),
       to_name: "Miniswimmer concursos",
-      asunto: "Te ganaste una clase gratis",
-      html_title:
-        "<h2>Felicitaciones, ganaste una clase gratis</h2><p>Nuestro equipo te contactará lo antes posible para agendar tu clase.</p>",
+      asunto,
+      html_title: htmlTitle,
       html_service: `
-      <p><b>Clase gratis :</b> ${data.sede}</p>
-      <p>Nombre apoderado: ${data.nombreApoderado}</p>
-      <p>Email: ${data.email}</p>
-      <p>WhatsApp: ${data.whatsapp}</p>
-      <p>Comuna: ${data.comuna}</p>
-      <p>Edad alumno: ${data.edadAlumno}</p>
-      <p>Embarazada: ${data.embarazada === "si" ? `Sí (${data.mesesEmbarazo} meses)` : "No"}</p>
-      <p>Sede preferencia: ${data.sede}</p>
+        <p><b>Sede:</b> ${data.sede}</p>
+        <p><b>Nombre apoderado:</b> ${data.nombreApoderado}</p>
+        <p><b>Email:</b> ${data.email}</p>
+        <p><b>WhatsApp:</b> ${data.whatsapp}</p>
+        <p><b>Comuna:</b> ${data.comuna}</p>
+        <p><b>Edad alumno:</b> ${data.edadAlumno}</p>
+        <p><b>Embarazada:</b> ${data.embarazada === "si" ? `Sí (${data.mesesEmbarazo} meses)` : "No"}</p>
+        <br/>
+        <p><b>Oferta especial ExpoBebé:</b></p>
+        <img src="https://images.prismic.io/miniswimmerchile/ahuRjAeQX7-eWdGt_planes-valores.jpeg?auto=format,compress" style="max-width:100%;border-radius:8px;" alt="Planes y valores Miniswimmer ExpoBebé" />
       `,
     };
 
@@ -182,23 +197,104 @@ const ConcursoForm = () => {
         <div className="flex justify-center">
           <div className="w-full max-w-[640px] rounded-10 bg-white p-6 shadow-features sm:p-10 dark:bg-gray-dark">
             {submitState.sent ? (
-              <>
-                <h4 className="mb-4 font-satoshi text-2xl font-bold leading-tight text-dark sm:mb-5 sm:text-3xl dark:text-white">
-                  {submitState.title}
-                </h4>
-                <p className="mb-6 font-inter text-base leading-6 text-body sm:mb-8 dark:text-dark-4">
-                  {submitState.text}
-                </p>
-                <Link
-                  href="/"
-                  passHref
-                  prefetch
-                  rel="noopener noreferrer nofollow"
-                  className="inline-flex items-center gap-3 rounded-full bg-primary px-8 py-3.5 font-inter font-semibold text-white hover:opacity-90"
-                >
-                  Volver al inicio
-                </Link>
-              </>
+              submitState.isFailure ? (
+                <>
+                  <h4 className="mb-4 font-satoshi text-2xl font-bold leading-tight text-dark sm:mb-5 sm:text-3xl dark:text-white">
+                    {submitState.title}
+                  </h4>
+                  <p className="mb-6 font-inter text-base leading-6 text-body sm:mb-8 dark:text-dark-4">
+                    {submitState.text}
+                  </p>
+                  <Link
+                    href="/"
+                    passHref
+                    prefetch
+                    rel="noopener noreferrer nofollow"
+                    className="inline-flex items-center gap-3 rounded-full bg-primary px-8 py-3.5 font-inter font-semibold text-white hover:opacity-90"
+                  >
+                    Volver al inicio
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <h4 className="mb-4 font-satoshi text-2xl font-bold leading-tight text-dark sm:mb-5 sm:text-3xl dark:text-white">
+                    {submitState.title}
+                  </h4>
+                  <p className="mb-6 font-inter text-base leading-6 text-body sm:mb-8 dark:text-dark-4">
+                    {submitState.text}
+                  </p>
+                  <Link
+                    href="/"
+                    passHref
+                    prefetch
+                    rel="noopener noreferrer nofollow"
+                    className="inline-flex items-center gap-3 rounded-full bg-primary px-8 py-3.5 font-inter font-semibold text-white hover:opacity-90"
+                  >
+                    Volver al inicio
+                  </Link>
+
+                  {/* Promo: Gorras + Pañal */}
+                  <div className="relative mt-8 overflow-hidden rounded-10 border border-stroke bg-white shadow-features">
+                    <div className="flex items-center justify-between bg-[#1C274C] px-5 py-2.5">
+                      <span className="font-inter text-xs font-semibold uppercase tracking-widest text-white/70">
+                        Solo ExpoBebé
+                      </span>
+                      <span className="rounded-full bg-primary px-3 py-1 font-satoshi text-sm font-bold text-white">
+                        25% OFF
+                      </span>
+                    </div>
+                    <div className="flex items-start gap-4 px-5 py-5">
+                      <div className="shrink-0 text-4xl">🎽</div>
+                      <div className="flex-1">
+                        <p className="mb-1 font-inter text-xs font-semibold uppercase tracking-wider text-primary">
+                          No te vayas sin esto
+                        </p>
+                        <h3 className="font-satoshi text-base font-bold leading-snug text-dark">
+                          2 Gorras de natación{" "}
+                          <span className="text-primary">
+                            + 1 Pañal reutilizable
+                          </span>
+                        </h3>
+                        <p className="mt-1 font-inter text-xs text-body">
+                          Pack completo para comenzar tus clases
+                        </p>
+                        <div className="mt-3 flex flex-wrap items-baseline gap-3">
+                          <span className="font-satoshi text-2xl font-bold text-dark">
+                            $19.990
+                          </span>
+                          <span className="font-inter text-sm text-body line-through decoration-red-400">
+                            $27.000
+                          </span>
+                          <span className="inline-block rounded-full bg-green-50 px-2.5 py-0.5 font-inter text-xs font-semibold text-green-700">
+                            Ahorras $7.010
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Promo: 50% OFF planes ExpoBebé */}
+                  <div className="mt-6 overflow-hidden rounded-10 shadow-features">
+                    <div className="bg-primary px-5 py-3">
+                      <p className="mb-0.5 font-inter text-xs font-semibold uppercase tracking-widest text-white/80">
+                        Promoción especial
+                      </p>
+                      <h3 className="font-satoshi text-xl font-bold text-white">
+                        50% OFF en planes · Sin matrícula
+                      </h3>
+                      <p className="mt-1 font-inter text-sm text-white/90">
+                        Solo comprando en la <strong>ExpoBebé</strong>. ¡No
+                        dejes pasar esta oportunidad!
+                      </p>
+                    </div>
+                    <img
+                      src="https://images.prismic.io/miniswimmerchile/ahuRjAeQX7-eWdGt_planes-valores.jpeg?auto=format,compress"
+                      alt="Planes y valores Miniswimmer 50% OFF ExpoBebé"
+                      className="block w-full"
+                    />
+                  </div>
+                </>
+              )
             ) : (
               <form
                 onSubmit={handleSubmit(onSubmit)}
