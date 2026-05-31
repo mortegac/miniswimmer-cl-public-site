@@ -13,12 +13,12 @@ const Concurso4Clases = () => {
             posible para agendar tus 4 clases gratis.
           </p>
           <video
-            src="/videos/gift.mp4"
+            src="/videos/balloons.mp4"
             autoPlay
             muted
             loop
             playsInline
-            className="mt-4 w-full max-w-xs rounded-10 shadow-features sm:max-w-sm"
+            className="mt-4 w-24 mix-blend-multiply"
           />
         </section>
       </div>
