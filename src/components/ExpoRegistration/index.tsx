@@ -68,6 +68,27 @@ const WhatsAppIcon = () => (
   </svg>
 );
 
+/* ── Sección WhatsApp compartida ── */
+const WhatsAppSection = () => (
+  <section
+    className="mt-12 -mx-4 px-4 py-10 text-center text-white sm:-mx-6 sm:px-6"
+    style={{ background: "linear-gradient(90deg,#7e7e7e,#3b3b3b)" }}
+  >
+    <h4 className="mb-5 font-satoshi font-bold -tracking-[1.6px] text-white dark:text-white lg:text-heading-2 xl:text-[32px] xl:leading-[1.12]">
+      ¡Necesitas otra opcion!
+    </h4>
+    <a
+      href={WHATSAPP}
+      target="_blank"
+      rel="noreferrer noopener"
+      className="inline-flex items-center gap-3 font-satoshi text-3xl font-bold text-white hover:opacity-80 transition"
+    >
+      <WhatsAppIcon />
+      +56 (973) 447 496
+    </a>
+  </section>
+);
+
 /* ── Componente principal ── */
 interface ExpoRegistrationProps { email: string; name: string; }
 
@@ -179,299 +200,350 @@ const ExpoRegistration = ({ email }: ExpoRegistrationProps) => {
   if (done && enrollmentResult) {
     const dateCard = schedule.flatMap((w) => w.dates).find((d) => d.iso === enrollmentResult.fechaISO);
     return (
-      <div className="mx-auto w-full max-w-[600px]">
-        <div className="rounded-[26px] bg-white shadow-[0_40px_90px_-40px_rgba(80,30,76,0.5),0_8px_24px_rgba(0,0,0,0.06)] border border-[#ece4ec] overflow-hidden">
-          <div className="bg-gradient-to-b from-[#c87dc5] via-primary to-[#7f3d7c] px-8 py-6 text-center">
-            <div className="mx-auto mb-3 flex h-[74px] w-[74px] items-center justify-center rounded-full bg-white/20 text-white shadow-lg">
-              <CheckIcon />
+      <>
+        <div className="mx-auto w-full max-w-[600px]">
+          <div className="rounded-[26px] bg-white shadow-[0_40px_90px_-40px_rgba(80,30,76,0.5),0_8px_24px_rgba(0,0,0,0.06)] border border-[#ece4ec] overflow-hidden">
+            <div className="bg-gradient-to-b from-[#c87dc5] via-primary to-[#7f3d7c] px-8 py-6 text-center">
+              <div className="mx-auto mb-3 flex h-[74px] w-[74px] items-center justify-center rounded-full bg-white/20 text-white shadow-lg">
+                <CheckIcon />
+              </div>
+              <h2 className="font-satoshi text-2xl font-bold text-white">¡Inscripción lista! 🎉</h2>
+              <p className="mt-1 font-inter text-sm text-white/80">
+                Enviamos la confirmación a <strong>{enrollmentResult.email}</strong>
+              </p>
             </div>
-            <h2 className="font-satoshi text-2xl font-bold text-white">¡Inscripción lista! 🎉</h2>
-            <p className="mt-1 font-inter text-sm text-white/80">
-              Enviamos la confirmación a <strong>{enrollmentResult.email}</strong>
-            </p>
-          </div>
-          <div className="p-6 sm:p-8">
-            <div className="mb-6 rounded-10 border border-primary/20 bg-primary/5 p-4">
-              {[
-                { k: "Clase", v: isMami ? "Mami Swimmer" : "Bebé" },
-                { k: isMami ? "Nombre" : "Bebé", v: enrollmentResult.nombre },
-                ...(!isMami && ageMonths !== null ? [{ k: "Edad", v: `${ageMonths} meses` }] : []),
-                ...(!isMami && enrollmentResult.relacion ? [{ k: "Inscribe", v: enrollmentResult.relacion }] : []),
-                { k: "Fecha", v: dateCard?.label ?? enrollmentResult.fechaISO },
-                { k: "Hora", v: `${enrollmentResult.hora} hrs` },
-                { k: "Sede", v: SEDE },
-              ].map(({ k, v }) => (
-                <div key={k} className="flex justify-between gap-3 border-b border-dashed border-primary/20 py-2.5 last:border-0">
-                  <span className="font-inter text-sm font-semibold text-primary/70">{k}</span>
-                  <span className="font-inter text-sm font-bold text-dark text-right">{v}</span>
-                </div>
-              ))}
+            <div className="p-6 sm:p-8">
+              <div className="mb-6 rounded-10 border border-primary/20 bg-primary/5 p-4">
+                {[
+                  { k: "Clase", v: isMami ? "Mami Swimmer" : "Bebé" },
+                  { k: isMami ? "Nombre" : "Bebé", v: enrollmentResult.nombre },
+                  ...(!isMami && ageMonths !== null ? [{ k: "Edad", v: `${ageMonths} meses` }] : []),
+                  ...(!isMami && enrollmentResult.relacion ? [{ k: "Inscribe", v: enrollmentResult.relacion }] : []),
+                  { k: "Fecha", v: dateCard?.label ?? enrollmentResult.fechaISO },
+                  { k: "Hora", v: `${enrollmentResult.hora} hrs` },
+                  { k: "Sede", v: SEDE },
+                ].map(({ k, v }) => (
+                  <div key={k} className="flex justify-between gap-3 border-b border-dashed border-primary/20 py-2.5 last:border-0">
+                    <span className="font-inter text-sm font-semibold text-primary/70">{k}</span>
+                    <span className="font-inter text-sm font-bold text-dark text-right">{v}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mb-6 rounded-lg bg-primary/10 py-2.5 px-4 text-center font-inter text-sm font-semibold text-primary">
+                ⏳ Válida hasta el <strong>30 de junio de 2026</strong>
+              </p>
+              <Link href="/" className="block w-full rounded-full bg-primary py-3.5 text-center font-inter font-semibold text-white hover:opacity-90">
+                Volver al inicio
+              </Link>
             </div>
-            <p className="mb-6 rounded-lg bg-primary/10 py-2.5 px-4 text-center font-inter text-sm font-semibold text-primary">
-              ⏳ Válida hasta el <strong>30 de junio de 2026</strong>
-            </p>
-            <Link href="/" className="block w-full rounded-full bg-primary py-3.5 text-center font-inter font-semibold text-white hover:opacity-90">
-              Volver al inicio
-            </Link>
           </div>
         </div>
-      </div>
+        <WhatsAppSection />
+      </>
     );
   }
 
   /* ── Formulario ── */
   return (
-    <div className="mx-auto w-full max-w-[1000px]">
-      <div className="flex w-full overflow-hidden rounded-[26px] bg-white shadow-[0_40px_90px_-40px_rgba(80,30,76,0.5),0_8px_24px_rgba(0,0,0,0.06)] border border-[#ece4ec] flex-col lg:flex-row">
+    <>
+      <div className="mx-auto w-full max-w-[1000px] mt-[70px]">
+        <div className="flex w-full overflow-hidden rounded-none sm:rounded-[26px] bg-white shadow-[0_40px_90px_-40px_rgba(80,30,76,0.5),0_8px_24px_rgba(0,0,0,0.06)] border-y sm:border border-[#ece4ec] flex-col lg:flex-row">
 
-        {/* Sidebar izquierdo */}
-        <aside className="flex flex-none flex-col gap-6 bg-gradient-to-b from-[#c87dc5] via-primary to-[#7f3d7c] p-7 text-white lg:w-[38%] lg:p-9">
-          <div>
-            <span className="font-satoshi text-2xl font-bold tracking-tight">mini swimmer</span>
-            <span className="ml-2 text-lg">💜</span>
-            <p className="mt-2 font-inter text-sm text-white/70">Centro de desarrollo infantil acuático</p>
-          </div>
-          <div className="flex flex-1 flex-col justify-center">
-            <h2 className="mb-5 font-satoshi text-2xl font-bold leading-tight lg:text-3xl">
-              Tu clase gratis<br />en la Expobebé 🎉
-            </h2>
-            <ul className="space-y-3">
-              {[
-                ["📍", "Sede Peñalolén"],
-                ["⏳", "Válida hasta el 30 de junio de 2026"],
-                ["👶", "Bebés hasta 23 meses · Mami Swimmer"],
-                ["🪑", "7 cupos por horario"],
-              ].map(([icon, text]) => (
-                <li key={text} className="flex items-start gap-3 font-inter text-sm text-white/90">
-                  <span className="mt-0.5 text-base">{icon}</span>
-                  <span>{text}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <a
-            href={WHATSAPP}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="flex items-center gap-3 rounded-[14px] border border-white/25 bg-white/15 px-4 py-3 font-inter text-sm font-semibold text-white transition hover:bg-white/25"
+          {/* Sidebar izquierdo */}
+          <aside
+            className="flex flex-none flex-col p-6 text-white lg:w-[38%] lg:p-9"
+            style={{ background: "linear-gradient(90deg,#7e7e7e,#3b3b3b)" }}
           >
-            <WhatsAppIcon />
-            <span>¿Necesitas otra sede? Escríbenos al +56 9 7344 7496</span>
-          </a>
-        </aside>
+            {/* TOP: título + bullets — alineado arriba */}
+            <div>
+              <h2 className="mb-5 font-satoshi text-2xl font-bold leading-tight lg:text-3xl">
+                Agenda tu clase gratis<br />de la Expobebé 🎉
+              </h2>
+              <ul className="hidden lg:flex lg:flex-col space-y-3">
+                {[
+                  ["📍", "Sede Peñalolén"],
+                  ["⏳", "Válida hasta el 30 de junio de 2026"],
+                ].map(([icon, text]) => (
+                  <li key={text} className="flex items-start gap-3 font-inter text-sm text-white/90">
+                    <span className="mt-0.5 text-base">{icon}</span>
+                    <span>{text}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-        {/* Main */}
-        <main className="flex-1 p-6 sm:p-8 lg:p-9">
-          {/* Header + progress */}
-          <div className="mb-3 flex items-baseline justify-between">
-            <h1 className="font-satoshi text-2xl font-bold text-[#7f3d7c] lg:text-3xl">Agenda tu clase</h1>
-            <span className="font-inter text-sm font-bold text-dark-4">{progress}%</span>
-          </div>
-          <div className="mb-5 h-[7px] overflow-hidden rounded-full bg-primary/10">
-            <div className="h-full rounded-full bg-gradient-to-r from-primary to-[#c87dc5] transition-all duration-500" style={{ width: `${progress}%` }} />
-          </div>
-
-          {/* Segmented: Bebé / Mami */}
-          <div className="mb-6 flex gap-1.5 rounded-[14px] bg-primary/10 p-1.5 max-w-xs">
-            {(["bebe", "mami"] as const).map((t) => (
-              <button
-                key={t}
-                type="button"
-                onClick={() => changeTipo(t)}
-                className={`flex-1 rounded-[10px] py-2.5 font-inter text-sm font-bold transition ${
-                  tipo === t ? "bg-white text-[#7f3d7c] shadow-md" : "text-primary/70 hover:text-primary"
-                }`}
-              >
-                {t === "bebe" ? "🐣 Bebé" : "🤰 Mami Swimmer"}
-              </button>
-            ))}
-          </div>
-
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-0">
-            {/* ── Sección 1: Datos ── */}
-            <section className="border-t border-stroke pt-5 mt-2">
-              <h3 className="mb-4 flex items-center gap-2.5 font-satoshi text-lg font-bold text-[#7f3d7c]">
-                <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full font-inter text-sm font-bold ${datosOk ? "bg-green-600 text-white" : "bg-primary/15 text-primary"}`}>
-                  {datosOk ? <CheckIcon /> : "1"}
-                </span>
-                Tus datos
-              </h3>
-
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                {/* Email */}
-                <div>
-                  <label htmlFor="email" className={labelClass}>Correo</label>
-                  <input {...register("email")} type="email" id="email" placeholder="nombre@correo.cl" className={inputClass} />
-                  {errors.email && <p className={errorClass}>{errors.email.message}</p>}
-                </div>
-
-                {/* Nombre */}
-                <div>
-                  <label htmlFor="nombre" className={labelClass}>{isMami ? "Tu nombre" : "Nombre del bebé"}</label>
-                  <input {...register("nombre")} type="text" id="nombre" placeholder={isMami ? "Ej. Daniela" : "Ej. Martina"} className={inputClass} />
-                  {errors.nombre && <p className={errorClass}>{errors.nombre.message}</p>}
-                </div>
-
-                {/* Fecha nacimiento (solo bebé) */}
-                {!isMami && (
-                  <div>
-                    <label htmlFor="fechaNacimiento" className={labelClass}>Fecha de nacimiento</label>
-                    <input
-                      {...register("fechaNacimiento")}
-                      type="date"
-                      id="fechaNacimiento"
-                      className={`${inputClass} ${fechaNacimiento && !ageOk ? "border-red-300 bg-red-50" : ""}`}
-                    />
-                    {fechaNacimiento && (
-                      <p className={`mt-1 font-inter text-xs font-semibold ${ageOk ? "text-green-700" : "text-red-400"}`}>{ageMsg}</p>
-                    )}
-                    {errors.fechaNacimiento && !fechaNacimiento && <p className={errorClass}>{errors.fechaNacimiento.message}</p>}
-                  </div>
-                )}
-
-                {/* Relación (solo bebé) */}
-                {!isMami && (
-                  <div>
-                    <label className={labelClass}>¿Quién inscribe?</label>
-                    <input type="hidden" {...register("relacion")} />
-                    <div className="mt-1 flex flex-wrap gap-2">
-                      {RELACIONES.map((r) => (
-                        <button
-                          key={r}
-                          type="button"
-                          onClick={() => setValue("relacion", r, { shouldValidate: true })}
-                          className={`rounded-full border px-4 py-1.5 font-inter text-sm font-semibold transition ${
-                            relacion === r ? "border-primary bg-primary text-white" : "border-stroke text-dark-2 hover:border-primary/60"
-                          }`}
-                        >
-                          {r}
-                        </button>
-                      ))}
-                    </div>
-                    {errors.relacion && <p className={errorClass}>{errors.relacion.message}</p>}
-                  </div>
-                )}
-              </div>
-            </section>
-
-            {/* ── Sección 2: Fecha y horario ── */}
-            <section className="border-t border-stroke pt-5 mt-6">
-              <h3 className="mb-4 flex items-center gap-2.5 font-satoshi text-lg font-bold text-[#7f3d7c]">
-                <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full font-inter text-sm font-bold ${horarioOk ? "bg-green-600 text-white" : "bg-primary/15 text-primary"}`}>
-                  {horarioOk ? <CheckIcon /> : "2"}
-                </span>
-                Fecha y horario
-              </h3>
-
-              <input type="hidden" {...register("fechaISO")} />
-              <input type="hidden" {...register("hora")} />
-
-              {loadingSchedule ? (
-                <div className="flex items-center gap-2 font-inter text-sm text-body">
-                  <span className="animate-spin">⏳</span> Cargando horarios...
-                </div>
-              ) : !selectedDate ? (
-                <>
-                  <p className="mb-4 inline-block rounded-[10px] bg-primary/8 px-3 py-2 font-inter text-xs font-bold text-primary">
-                    📅 Junio 2026 · {SEDE}
-                  </p>
-                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    {schedule.map((wk) => (
-                      <div key={wk.week}>
-                        <p className="mb-2 font-inter text-[11px] font-bold uppercase tracking-wider text-dark-4">
-                          Semana {wk.week}
-                        </p>
-                        <div className="grid grid-cols-3 gap-2">
-                          {wk.dates.map((dt) => {
-                            const full = dt.totalRem <= 0;
-                            return (
-                              <button
-                                key={dt.iso}
-                                type="button"
-                                disabled={full}
-                                onClick={() => pickDate(dt)}
-                                className={`flex flex-col items-center gap-0.5 rounded-[14px] border px-1 py-2.5 transition ${
-                                  full ? "cursor-not-allowed border-dashed border-stroke bg-neutral-1" : "border-stroke bg-white hover:border-primary/50"
-                                }`}
-                              >
-                                <small className={`font-inter text-[10px] font-bold uppercase tracking-wide ${full ? "text-dark-5" : "text-primary"}`}>
-                                  {DOW_SHORT[dt.dow]}
-                                </small>
-                                <strong className={`font-satoshi text-2xl font-bold ${full ? "text-dark-5 line-through" : "text-dark"}`}>
-                                  {dt.d}
-                                </strong>
-                                <span className={`font-inter text-[9px] font-bold ${full ? "text-dark-5" : "text-green-700"}`}>
-                                  {full ? "Sin cupos" : `${dt.totalRem} cupos`}
-                                </span>
-                              </button>
-                            );
-                          })}
+            {/* CENTRO: pasos — centrados verticalmente */}
+            <div className="hidden lg:flex flex-1 items-center">
+              <section className="w-full">
+                <h3 className="mb-6 font-satoshi text-xl font-bold text-white -tracking-[1px]">
+                  El proceso es fácil y rápido:
+                </h3>
+                <div className="relative">
+                  <div className="absolute left-[18px] top-0 h-52 w-px bg-gradient-to-b from-blue-400 to-blue-600" />
+                  <div className="space-y-6">
+                    {[
+                      {
+                        n: "1",
+                        title: "Ingresa tus datos y completa el formulario",
+                        desc: "Completa todos los campos con tu correo, nombre del bebé, fecha de nacimiento y quién inscribe.",
+                      },
+                      {
+                        n: "2",
+                        title: "Selección de fecha y horario",
+                        desc: "Elige el día y hora que mejor se adapten a tu agenda entre los cupos disponibles.",
+                      },
+                      {
+                        n: "3",
+                        title: "Confirmación de tu inscripción",
+                        desc: "Nuestro equipo revisará tu caso y te contactará para confirmar. ¡Nos vemos en el agua!",
+                      },
+                    ].map((step) => (
+                      <div key={step.n} className="relative flex items-start">
+                        <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-white shadow-lg border-2 border-white/40">
+                          {step.n}
+                        </div>
+                        <div className="ml-4 pt-1">
+                          <h4 className="font-satoshi text-sm font-bold text-white">{step.title}</h4>
+                          <p className="mt-1 font-inter text-xs text-white/75 leading-relaxed">{step.desc}</p>
                         </div>
                       </div>
                     ))}
                   </div>
-                  {errors.fechaISO && <p className={errorClass}>{errors.fechaISO.message}</p>}
-                </>
-              ) : (
-                <>
-                  <button
-                    type="button"
-                    onClick={() => { setSelectedDate(null); setValue("fechaISO", ""); setValue("hora", ""); }}
-                    className="mb-4 inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-4 py-2 font-inter text-sm font-bold text-primary transition hover:bg-primary/20"
-                  >
-                    <ArrowLeftIcon /> Cambiar fecha
-                  </button>
-                  <p className="mb-1 font-satoshi text-lg font-bold text-[#7f3d7c]">{selectedDate.label}</p>
-                  <p className="mb-3 font-inter text-xs text-dark-4">Elige tu horario · 7 cupos por clase</p>
-                  <div className="grid grid-cols-3 gap-2 sm:grid-cols-4">
-                    {selectedDate.slots.map((s) => {
-                      const full = s.rem <= 0;
-                      const sel = hora === s.t;
-                      const low = !full && s.rem <= 2;
-                      return (
-                        <button
-                          key={s.t}
-                          type="button"
-                          disabled={full}
-                          onClick={() => pickSlot(s)}
-                          className={`flex flex-col items-center gap-0.5 rounded-[11px] border px-2 py-2.5 transition ${
-                            full ? "cursor-not-allowed border-dashed border-stroke bg-neutral-1"
-                            : sel ? "border-primary bg-primary/8 shadow-[0_0_0_3px_rgba(174,94,171,0.13)]"
-                            : "border-stroke bg-white hover:border-primary/50"
-                          }`}
-                        >
-                          <span className={`font-satoshi text-sm font-bold ${full ? "text-dark-5 line-through" : "text-dark"}`}>{s.t}</span>
-                          <span className={`font-inter text-[9px] font-bold ${full ? "text-dark-5" : low ? "text-amber-700" : "text-green-700"}`}>
-                            {full ? "Sin cupos" : s.rem === 1 ? "1 cupo" : `${s.rem} cupos`}
-                          </span>
-                        </button>
-                      );
-                    })}
-                  </div>
-                  {errors.hora && <p className={errorClass}>{errors.hora.message}</p>}
-                </>
-              )}
-            </section>
-
-            {/* ── Footer: confirmar ── */}
-            <div className="mt-6 border-t border-stroke pt-5">
-              {(!datosOk || !horarioOk) && (
-                <p className="mb-3 rounded-lg bg-primary/8 px-3 py-2 text-center font-inter text-xs font-semibold text-primary">
-                  {!datosOk ? 'Completa "Tus datos" para continuar' : "Elige una fecha y un horario"}
-                </p>
-              )}
-              <button
-                type="submit"
-                disabled={!datosOk || !horarioOk || isSubmitting}
-                className="flex w-full items-center justify-center gap-2 rounded-full bg-primary py-3.5 font-inter font-semibold text-white shadow-[0_8px_18px_-6px_rgba(174,94,171,0.6)] transition hover:opacity-90 disabled:cursor-not-allowed disabled:bg-dark-5 disabled:shadow-none"
-              >
-                {isSubmitting ? "Enviando…" : <><CheckIcon /> Confirmar inscripción</>}
-              </button>
+                </div>
+              </section>
             </div>
-          </form>
-        </main>
+          </aside>
+
+          {/* Main */}
+          <main className="flex-1 p-6 sm:p-8 lg:p-9">
+            {/* Header + progress */}
+            <div className="mb-3 flex items-baseline justify-between">
+              <h1 className="font-satoshi text-2xl font-bold text-[#7f3d7c] lg:text-3xl">Agenda tu clase</h1>
+              <span className="font-inter text-sm font-bold text-dark-4">{progress}%</span>
+            </div>
+            <div className="mb-5 h-[7px] overflow-hidden rounded-full bg-primary/10">
+              <div className="h-full rounded-full bg-gradient-to-r from-primary to-[#c87dc5] transition-all duration-500" style={{ width: `${progress}%` }} />
+            </div>
+
+            {/* Segmented: Bebé / Mami */}
+            <div className="mb-6 flex gap-1.5 rounded-[14px] bg-primary/10 p-1.5 max-w-xs">
+              {(["bebe", "mami"] as const).map((t) => (
+                <button
+                  key={t}
+                  type="button"
+                  onClick={() => changeTipo(t)}
+                  className={`flex-1 rounded-[10px] py-2.5 font-inter text-sm font-bold transition ${
+                    tipo === t ? "bg-white text-[#7f3d7c] shadow-md" : "text-primary/70 hover:text-primary"
+                  }`}
+                >
+                  {t === "bebe" ? "🐣 Bebé" : "🤰 Mami Swimmer"}
+                </button>
+              ))}
+            </div>
+
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-0">
+              {/* ── Sección 1: Datos ── */}
+              <section className="border-t border-stroke pt-5 mt-2">
+                <h3 className="mb-4 flex items-center gap-2.5 font-satoshi text-lg font-bold text-[#7f3d7c]">
+                  <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full font-inter text-sm font-bold ${datosOk ? "bg-green-600 text-white" : "bg-primary/15 text-primary"}`}>
+                    {datosOk ? <CheckIcon /> : "1"}
+                  </span>
+                  Tus datos
+                </h3>
+
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  {/* Email */}
+                  <div>
+                    <label htmlFor="email" className={labelClass}>Correo</label>
+                    <input {...register("email")} type="email" id="email" placeholder="nombre@correo.cl" className={inputClass} />
+                    {errors.email && <p className={errorClass}>{errors.email.message}</p>}
+                  </div>
+
+                  {/* Nombre */}
+                  <div>
+                    <label htmlFor="nombre" className={labelClass}>{isMami ? "Tu nombre" : "Nombre del bebé"}</label>
+                    <input {...register("nombre")} type="text" id="nombre" placeholder={isMami ? "Ej. Daniela" : "Ej. Martina"} className={inputClass} />
+                    {errors.nombre && <p className={errorClass}>{errors.nombre.message}</p>}
+                  </div>
+
+                  {/* Fecha nacimiento (solo bebé) */}
+                  {!isMami && (
+                    <div>
+                      <label htmlFor="fechaNacimiento" className={labelClass}>Fecha de nacimiento</label>
+                      <input
+                        {...register("fechaNacimiento")}
+                        type="date"
+                        id="fechaNacimiento"
+                        className={`${inputClass} ${fechaNacimiento && !ageOk ? "border-red-300 bg-red-50" : ""}`}
+                      />
+                      {fechaNacimiento && (
+                        <p className={`mt-1 font-inter text-xs font-semibold ${ageOk ? "text-green-700" : "text-red-400"}`}>{ageMsg}</p>
+                      )}
+                      {errors.fechaNacimiento && !fechaNacimiento && <p className={errorClass}>{errors.fechaNacimiento.message}</p>}
+                    </div>
+                  )}
+
+                  {/* Relación (solo bebé) */}
+                  {!isMami && (
+                    <div>
+                      <label className={labelClass}>¿Quién inscribe?</label>
+                      <input type="hidden" {...register("relacion")} />
+                      <div className="mt-1 flex flex-wrap gap-2">
+                        {RELACIONES.map((r) => (
+                          <button
+                            key={r}
+                            type="button"
+                            onClick={() => setValue("relacion", r, { shouldValidate: true })}
+                            className={`rounded-full border px-4 py-1.5 font-inter text-sm font-semibold transition ${
+                              relacion === r ? "border-primary bg-primary text-white" : "border-stroke text-dark-2 hover:border-primary/60"
+                            }`}
+                          >
+                            {r}
+                          </button>
+                        ))}
+                      </div>
+                      {errors.relacion && <p className={errorClass}>{errors.relacion.message}</p>}
+                    </div>
+                  )}
+                </div>
+              </section>
+
+              {/* ── Sección 2: Fecha y horario ── */}
+              <section className="border-t border-stroke pt-5 mt-6">
+                <h3 className="mb-4 flex items-center gap-2.5 font-satoshi text-lg font-bold text-[#7f3d7c]">
+                  <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full font-inter text-sm font-bold ${horarioOk ? "bg-green-600 text-white" : "bg-primary/15 text-primary"}`}>
+                    {horarioOk ? <CheckIcon /> : "2"}
+                  </span>
+                  Fecha y horario
+                </h3>
+
+                <input type="hidden" {...register("fechaISO")} />
+                <input type="hidden" {...register("hora")} />
+
+                {loadingSchedule ? (
+                  <div className="flex items-center gap-2 font-inter text-sm text-body">
+                    <span className="animate-spin">⏳</span> Cargando horarios...
+                  </div>
+                ) : !selectedDate ? (
+                  <>
+                    <p className="mb-4 inline-block rounded-[10px] bg-primary/8 px-3 py-2 font-inter text-xs font-bold text-primary">
+                      📅 Junio 2026 · {SEDE}
+                    </p>
+                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                      {schedule.map((wk) => (
+                        <div key={wk.week}>
+                          <p className="mb-2 font-inter text-[11px] font-bold uppercase tracking-wider text-dark-4">
+                            Semana {wk.week}
+                          </p>
+                          <div className="grid grid-cols-3 gap-2">
+                            {wk.dates.map((dt) => {
+                              const full = dt.totalRem <= 0;
+                              return (
+                                <button
+                                  key={dt.iso}
+                                  type="button"
+                                  disabled={full}
+                                  onClick={() => pickDate(dt)}
+                                  className={`flex flex-col items-center gap-0.5 rounded-[14px] border px-1 py-2.5 transition ${
+                                    full ? "cursor-not-allowed border-dashed border-stroke bg-neutral-1" : "border-stroke bg-white hover:border-primary/50"
+                                  }`}
+                                >
+                                  <small className={`font-inter text-[10px] font-bold uppercase tracking-wide ${full ? "text-dark-5" : "text-primary"}`}>
+                                    {DOW_SHORT[dt.dow]}
+                                  </small>
+                                  <strong className={`font-satoshi text-2xl font-bold ${full ? "text-dark-5 line-through" : "text-dark"}`}>
+                                    {dt.d}
+                                  </strong>
+                                  <span className={`font-inter text-[9px] font-bold ${full ? "text-dark-5" : "text-green-700"}`}>
+                                    {full ? "Sin cupos" : `${dt.totalRem} cupos`}
+                                  </span>
+                                </button>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                    {errors.fechaISO && <p className={errorClass}>{errors.fechaISO.message}</p>}
+                  </>
+                ) : (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() => { setSelectedDate(null); setValue("fechaISO", ""); setValue("hora", ""); }}
+                      className="mb-4 inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-4 py-2 font-inter text-sm font-bold text-primary transition hover:bg-primary/20"
+                    >
+                      <ArrowLeftIcon /> Cambiar fecha
+                    </button>
+                    <p className="mb-1 font-satoshi text-lg font-bold text-[#7f3d7c]">{selectedDate.label}</p>
+                    <p className="mb-3 font-inter text-xs text-dark-4">Elige tu horario · 7 cupos por clase</p>
+                    <div className="grid grid-cols-3 gap-2 sm:grid-cols-4">
+                      {selectedDate.slots.map((s) => {
+                        const full = s.rem <= 0;
+                        const sel = hora === s.t;
+                        const low = !full && s.rem <= 2;
+                        return (
+                          <button
+                            key={s.t}
+                            type="button"
+                            disabled={full}
+                            onClick={() => pickSlot(s)}
+                            className={`flex flex-col items-center gap-0.5 rounded-[11px] border px-2 py-2.5 transition ${
+                              full ? "cursor-not-allowed border-dashed border-stroke bg-neutral-1"
+                              : sel ? "border-primary bg-primary/8 shadow-[0_0_0_3px_rgba(174,94,171,0.13)]"
+                              : "border-stroke bg-white hover:border-primary/50"
+                            }`}
+                          >
+                            <span className={`font-satoshi text-sm font-bold ${full ? "text-dark-5 line-through" : "text-dark"}`}>{s.t}</span>
+                            <span className={`font-inter text-[9px] font-bold ${full ? "text-dark-5" : low ? "text-amber-700" : "text-green-700"}`}>
+                              {full ? "Sin cupos" : s.rem === 1 ? "1 cupo" : `${s.rem} cupos`}
+                            </span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                    {errors.hora && <p className={errorClass}>{errors.hora.message}</p>}
+                  </>
+                )}
+              </section>
+
+              {/* ── Footer: confirmar ── */}
+              <div className="mt-6 border-t border-stroke pt-5">
+                {(!datosOk || !horarioOk) && (
+                  <p className="mb-3 rounded-lg bg-primary/8 px-3 py-2 text-center font-inter text-xs font-semibold text-primary">
+                    {!datosOk ? 'Completa "Tus datos" para continuar' : "Elige una fecha y un horario"}
+                  </p>
+                )}
+                <button
+                  type="submit"
+                  disabled={!datosOk || !horarioOk || isSubmitting}
+                  className="flex w-full items-center justify-center gap-2 rounded-full bg-primary py-3.5 font-inter font-semibold text-white shadow-[0_8px_18px_-6px_rgba(174,94,171,0.6)] transition hover:opacity-90 disabled:cursor-not-allowed disabled:bg-dark-5 disabled:shadow-none"
+                >
+                  {isSubmitting ? "Enviando…" : <><CheckIcon /> Confirmar inscripción</>}
+                </button>
+
+                {/* Mapa */}
+                <p className="mt-6 text-center font-inter text-sm text-body">
+                  Clases válidas para sede Peñalolén, Camino de la tierra s/n, Peñalolén
+                </p>
+                <div className="mt-2 w-full overflow-hidden rounded-10">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.5654133954226!2d-70.53001542277515!3d-33.48666367337539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d1a8bf1c8523%3A0x6d1c5a2d62742540!2sMiniswimmer!5e0!3m2!1ses-419!2scl!4v1780424090586!5m2!1ses-419!2scl"
+                    width="100%"
+                    height="300"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </div>
+              </div>
+            </form>
+          </main>
+        </div>
       </div>
-    </div>
+      <WhatsAppSection />
+    </>
   );
 };
 

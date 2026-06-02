@@ -53,8 +53,10 @@ export default async function ExpoRegistrationPage({
   }
 
   return (
-    <main className="min-h-screen bg-[#eceaef] px-4 py-10 sm:py-16">
-      <ExpoRegistration email={jwtData.sub} name={jwtData.name} />
+    <main className="min-h-screen bg-[#eceaef] py-0">
+      <div className="sm:px-6">
+        <ExpoRegistration email={jwtData.sub} name={jwtData.name} />
+      </div>
     </main>
   );
 }
