@@ -28,8 +28,10 @@ function ageInMonths(birthISO: string): number | null {
 /* ── Schema Yup ── */
 const schema = yup.object({
   tipo: yup.string().oneOf(["bebe", "mami"] as const).required(),
-  email: yup.string().email("Email inválido").required("El correo es requerido"),
-  nombre: yup.string().min(2, "Mínimo 2 caracteres").required("El nombre es requerido"),
+  nombreApoderado: yup.string().required(),
+  email: yup.string().email().required(),
+  nombreAlumno: yup.string().min(2, "Mínimo 2 caracteres").required("El nombre del alumno es requerido"),
+  apellidoAlumno: yup.string().min(2, "Mínimo 2 caracteres").required("El apellido del alumno es requerido"),
   fechaNacimiento: yup.string().when("tipo", {
     is: "bebe",
     then: (s) => s.required("La fecha de nacimiento es requerida")
@@ -92,7 +94,7 @@ const WhatsAppSection = () => (
 /* ── Componente principal ── */
 interface ExpoRegistrationProps { email: string; name: string; }
 
-const ExpoRegistration = ({ email }: ExpoRegistrationProps) => {
+const ExpoRegistration = ({ email, name }: ExpoRegistrationProps) => {
   const [schedule, setSchedule] = useState<Week[]>([]);
   const [loadingSchedule, setLoadingSchedule] = useState(true);
   const [selectedDate, setSelectedDate] = useState<DateCard | null>(null);
@@ -108,13 +110,14 @@ const ExpoRegistration = ({ email }: ExpoRegistrationProps) => {
   } = useForm<FormData>({
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     resolver: yupResolver(schema) as any,
-    defaultValues: { tipo: "bebe", email },
+    defaultValues: { tipo: "bebe", email, nombreApoderado: name },
   });
 
   const tipo = watch("tipo");
   const fechaISO = watch("fechaISO");
   const hora = watch("hora");
-  const nombre = watch("nombre");
+  const nombreAlumno = watch("nombreAlumno");
+  const apellidoAlumno = watch("apellidoAlumno");
   const emailVal = watch("email");
   const fechaNacimiento = watch("fechaNacimiento");
   const relacion = watch("relacion");
@@ -133,7 +136,8 @@ const ExpoRegistration = ({ email }: ExpoRegistrationProps) => {
   /* Progress */
   const datosOk = !!(
     emailVal && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal) &&
-    nombre && nombre.trim().length > 1 &&
+    nombreAlumno && nombreAlumno.trim().length > 1 &&
+    apellidoAlumno && apellidoAlumno.trim().length > 1 &&
     (isMami || (ageOk && relacion))
   );
   const horarioOk = !!(fechaISO && hora);
@@ -174,7 +178,9 @@ const ExpoRegistration = ({ email }: ExpoRegistrationProps) => {
     const payload = {
       tipo: data.tipo,
       email: data.email,
-      nombre: data.nombre,
+      nombreApoderado: data.nombreApoderado,
+      nombreAlumno: data.nombreAlumno,
+      apellidoAlumno: data.apellidoAlumno,
       fechaNacimiento: isMami ? null : (data.fechaNacimiento ?? null),
       relacion: isMami ? null : (data.relacion ?? null),
       fechaISO: data.fechaISO,
@@ -216,7 +222,7 @@ const ExpoRegistration = ({ email }: ExpoRegistrationProps) => {
               <div className="mb-6 rounded-10 border border-primary/20 bg-primary/5 p-4">
                 {[
                   { k: "Clase", v: isMami ? "Mami Swimmer" : "Bebé" },
-                  { k: isMami ? "Nombre" : "Bebé", v: enrollmentResult.nombre },
+                  { k: "Alumno", v: `${enrollmentResult.nombreAlumno} ${enrollmentResult.apellidoAlumno}` },
                   ...(!isMami && ageMonths !== null ? [{ k: "Edad", v: `${ageMonths} meses` }] : []),
                   ...(!isMami && enrollmentResult.relacion ? [{ k: "Inscribe", v: enrollmentResult.relacion }] : []),
                   { k: "Fecha", v: dateCard?.label ?? enrollmentResult.fechaISO },
@@ -352,18 +358,42 @@ const ExpoRegistration = ({ email }: ExpoRegistrationProps) => {
                 </h3>
 
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  {/* Email */}
+                  {/* Nombre apoderado — bloqueado, viene del JWT */}
                   <div>
-                    <label htmlFor="email" className={labelClass}>Correo</label>
-                    <input {...register("email")} type="email" id="email" placeholder="nombre@correo.cl" className={inputClass} />
-                    {errors.email && <p className={errorClass}>{errors.email.message}</p>}
+                    <label htmlFor="nombreApoderado" className={labelClass}>Nombre apoderado</label>
+                    <input
+                      {...register("nombreApoderado")}
+                      type="text"
+                      id="nombreApoderado"
+                      disabled
+                      className="mt-1 block w-full h-[48px] rounded-lg border border-stroke bg-neutral-1 px-4 font-inter text-sm text-dark-4 cursor-not-allowed"
+                    />
                   </div>
 
-                  {/* Nombre */}
+                  {/* Email — bloqueado, viene del JWT */}
                   <div>
-                    <label htmlFor="nombre" className={labelClass}>{isMami ? "Tu nombre" : "Nombre del bebé"}</label>
-                    <input {...register("nombre")} type="text" id="nombre" placeholder={isMami ? "Ej. Daniela" : "Ej. Martina"} className={inputClass} />
-                    {errors.nombre && <p className={errorClass}>{errors.nombre.message}</p>}
+                    <label htmlFor="email" className={labelClass}>Email apoderado</label>
+                    <input
+                      {...register("email")}
+                      type="email"
+                      id="email"
+                      disabled
+                      className="mt-1 block w-full h-[48px] rounded-lg border border-stroke bg-neutral-1 px-4 font-inter text-sm text-dark-4 cursor-not-allowed"
+                    />
+                  </div>
+
+                  {/* Nombre alumno */}
+                  <div>
+                    <label htmlFor="nombreAlumno" className={labelClass}>Nombre alumno</label>
+                    <input {...register("nombreAlumno")} type="text" id="nombreAlumno" placeholder="Ej. Martina" className={inputClass} />
+                    {errors.nombreAlumno && <p className={errorClass}>{errors.nombreAlumno.message}</p>}
+                  </div>
+
+                  {/* Apellido alumno */}
+                  <div>
+                    <label htmlFor="apellidoAlumno" className={labelClass}>Apellido alumno</label>
+                    <input {...register("apellidoAlumno")} type="text" id="apellidoAlumno" placeholder="Ej. González" className={inputClass} />
+                    {errors.apellidoAlumno && <p className={errorClass}>{errors.apellidoAlumno.message}</p>}
                   </div>
 
                   {/* Fecha nacimiento (solo bebé) */}
