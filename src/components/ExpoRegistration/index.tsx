@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -95,6 +96,10 @@ const WhatsAppSection = () => (
 interface ExpoRegistrationProps { email: string; name: string; }
 
 const ExpoRegistration = ({ email, name }: ExpoRegistrationProps) => {
+  const router = useRouter();
+  const [checkStatus, setCheckStatus] = useState<"checking" | "ok" | "not-found" | "error">("checking");
+  const [countdown, setCountdown] = useState(10);
+
   const [schedule, setSchedule] = useState<Week[]>([]);
   const [loadingSchedule, setLoadingSchedule] = useState(true);
   const [selectedDate, setSelectedDate] = useState<DateCard | null>(null);
@@ -142,6 +147,43 @@ const ExpoRegistration = ({ email, name }: ExpoRegistrationProps) => {
   );
   const horarioOk = !!(fechaISO && hora);
   const progress = (datosOk ? 50 : 0) + (horarioOk ? 50 : 0);
+
+  // Verificar que el usuario exista en el sistema
+  useEffect(() => {
+    const token = Object.keys(
+      Object.fromEntries(new URLSearchParams(window.location.search))
+    )[0] ?? "";
+
+    if (!token) {
+      setCheckStatus("not-found");
+      return;
+    }
+
+    fetch("/api/check", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ token }),
+    })
+      .then((r) => r.json())
+      .then((data) => {
+        setCheckStatus(data.exists ? "ok" : "not-found");
+      })
+      .catch(() => {
+        // Si hay error de red, permitir continuar para no bloquear el flujo
+        setCheckStatus("ok");
+      });
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Countdown cuando usuario no existe
+  useEffect(() => {
+    if (checkStatus !== "not-found") return;
+    if (countdown <= 0) {
+      router.push("/");
+      return;
+    }
+    const timer = setTimeout(() => setCountdown((c) => c - 1), 1000);
+    return () => clearTimeout(timer);
+  }, [checkStatus, countdown, router]);
 
   /* Fetch schedule */
   useEffect(() => {
@@ -246,6 +288,46 @@ const ExpoRegistration = ({ email, name }: ExpoRegistrationProps) => {
         </div>
         <WhatsAppSection />
       </>
+    );
+  }
+
+  // Pantalla de carga del check
+  if (checkStatus === "checking") {
+    return (
+      <div className="flex min-h-[60vh] items-center justify-center">
+        <div className="text-center">
+          <div className="mx-auto mb-4 h-10 w-10 animate-spin rounded-full border-4 border-primary border-t-transparent" />
+          <p className="font-inter text-sm text-body">Verificando acceso...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Pantalla usuario no encontrado
+  if (checkStatus === "not-found") {
+    return (
+      <div className="flex min-h-[60vh] items-center justify-center px-4">
+        <div className="w-full max-w-sm rounded-10 bg-white p-8 text-center shadow-features">
+          <div className="mb-4 text-5xl">⚠️</div>
+          <h2 className="mb-2 font-satoshi text-xl font-bold text-dark">
+            Usuario no encontrado
+          </h2>
+          <p className="mb-4 font-inter text-sm text-body">
+            Tu enlace no corresponde a un usuario registrado en nuestro sistema.
+          </p>
+          <p className="font-inter text-sm text-body">
+            Serás redirigido al inicio en{" "}
+            <span className="font-bold text-primary">{countdown}</span>{" "}
+            {countdown === 1 ? "segundo" : "segundos"}...
+          </p>
+          <div className="mt-4 h-1.5 w-full overflow-hidden rounded-full bg-neutral-2">
+            <div
+              className="h-full rounded-full bg-primary transition-all duration-1000"
+              style={{ width: `${(countdown / 10) * 100}%` }}
+            />
+          </div>
+        </div>
+      </div>
     );
   }
 
