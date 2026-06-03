@@ -30,9 +30,9 @@ const BEBE_SCHEDULES: Record<string, SlotEntry[]> = {
     { t: "18:30", scheduleId: "1dd4ef94-0fea-4e89-9c47-e2dcf2597b4b" },
   ],
   Sábado: [
-    { t: "13:30" },
-    { t: "15:00" },
-    { t: "15:40" },
+    { t: "13:30", scheduleId: "24ab9864-e872-4e9b-8dec-210da47916db" },
+    { t: "15:00", scheduleId: "e6ce91e1-f18b-4f5b-a95a-0476ad2b06cd" },
+    { t: "15:40", scheduleId: "3c0b7c42-de68-4d0b-a1bc-b5b9b999bbcb" },
   ],
   Domingo: [
     { t: "9:00",  scheduleId: "6643245f-c948-468c-8c25-5e7b622aa481" },

@@ -31,6 +31,11 @@ const SCHEDULE_LOOKUP: Record<string, { t: string; id: string }[]> = {
     { t: "17:50", id: "f1c75c34-2be2-4717-9a74-895ae316501a" },
     { t: "18:30", id: "1dd4ef94-0fea-4e89-9c47-e2dcf2597b4b" },
   ],
+  Sábado: [
+    { t: "13:30", id: "24ab9864-e872-4e9b-8dec-210da47916db" },
+    { t: "15:00", id: "e6ce91e1-f18b-4f5b-a95a-0476ad2b06cd" },
+    { t: "15:40", id: "3c0b7c42-de68-4d0b-a1bc-b5b9b999bbcb" },
+  ],
   Domingo: [
     { t: "9:00",  id: "6643245f-c948-468c-8c25-5e7b622aa481" },
     { t: "12:30", id: "5f3bb13f-31b8-44dc-98bf-2f433a4c9c10" },
