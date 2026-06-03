@@ -90,12 +90,8 @@ function isoForDay(d: number) {
   return `2026-06-${String(d).padStart(2, "0")}`;
 }
 
-function schedulesForDate(dow: string, iso: string, tipo: string): SlotEntry[] {
+function schedulesForDate(dow: string, _iso: string, tipo: string): SlotEntry[] {
   if (tipo === "mami") return MAMI_SCHEDULES;
-  const overrideTimes: Record<string, string[]> = {
-    "2026-06-05": ["11:40", "12:30"],
-  };
-  if (overrideTimes[iso]) return overrideTimes[iso].map((t) => ({ t }));
   return BEBE_SCHEDULES[dow] ?? [];
 }
 
