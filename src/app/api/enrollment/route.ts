@@ -104,10 +104,14 @@ export async function POST(request: NextRequest) {
         input: {
           name: studentName,
           lastName: studentLastName,
+          middleName: "",
           birthdate: tipo === "bebe" && fechaNacimiento ? toBirthdate(fechaNacimiento) : "",
-          emailPhone: email,
+          placeOfResidence: "",
           contactPhone: "",
+          whoIsTheContact: "",
+          emailPhone: email,
           gender: "MALE",
+          anyIllnessInjuryMedicalCondition: "No ninguna",
         },
       },
     );
