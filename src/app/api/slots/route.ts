@@ -43,8 +43,8 @@ const BEBE_SCHEDULES: Record<string, SlotEntry[]> = {
 };
 
 const MAMI_SCHEDULES: SlotEntry[] = [
-  { t: "11:45" },
-  { t: "12:30" },
+  { t: "11:45", scheduleId: "72eb8ecb-1bde-4039-8dc6-8102830d8ddb" },
+  { t: "12:30", scheduleId: "5bcb4a86-73c0-46b6-9601-c2b74bc0e2ff" },
 ];
 
 /* Solo estas 4 semanas de junio */
