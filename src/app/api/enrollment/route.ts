@@ -10,6 +10,10 @@ interface EnrollmentPayload {
   fechaLabel: string;
   hora: string;
   sede: string;
+  scheduleId?: string;
+  nombreApoderado?: string;
+  nombreAlumno?: string;
+  apellidoAlumno?: string;
 }
 
 export async function POST(request: NextRequest) {

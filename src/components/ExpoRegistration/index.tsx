@@ -8,7 +8,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 /* ── Tipos ── */
-interface SlotItem { t: string; rem: number; }
+interface SlotItem { t: string; rem: number; scheduleId?: string; }
 interface DateCard { dow: string; d: number; iso: string; label: string; slots: SlotItem[]; totalRem: number; }
 interface Week { week: number; dates: DateCard[]; }
 
@@ -103,6 +103,7 @@ const ExpoRegistration = ({ email, name }: ExpoRegistrationProps) => {
   const [schedule, setSchedule] = useState<Week[]>([]);
   const [loadingSchedule, setLoadingSchedule] = useState(true);
   const [selectedDate, setSelectedDate] = useState<DateCard | null>(null);
+  const [selectedScheduleId, setSelectedScheduleId] = useState<string | undefined>(undefined);
   const [done, setDone] = useState(false);
   const [enrollmentResult, setEnrollmentResult] = useState<FormData | null>(null);
 
@@ -209,10 +210,17 @@ const ExpoRegistration = ({ email, name }: ExpoRegistrationProps) => {
     setSelectedDate(dt);
     setValue("fechaISO", dt.iso, { shouldValidate: true });
     setValue("hora", "");
+    setSelectedScheduleId(undefined);
   }
 
   function pickSlot(s: SlotItem) {
     setValue("hora", s.t, { shouldValidate: true });
+    setSelectedScheduleId(s.scheduleId);
+    console.log("[ExpoRegistration] Slot seleccionado:", {
+      fecha: selectedDate?.label,
+      hora: s.t,
+      scheduleId: s.scheduleId ?? "(sin id)",
+    });
   }
 
   const onSubmit = async (data: FormData) => {
@@ -229,6 +237,7 @@ const ExpoRegistration = ({ email, name }: ExpoRegistrationProps) => {
       fechaLabel: dateCard?.label ?? data.fechaISO,
       hora: data.hora,
       sede: SEDE,
+      scheduleId: selectedScheduleId,
     };
     const res = await fetch("/api/enrollment", {
       method: "POST",
@@ -590,16 +599,17 @@ const ExpoRegistration = ({ email, name }: ExpoRegistrationProps) => {
                     <p className="mb-1 font-satoshi text-lg font-bold text-[#7f3d7c]">{selectedDate.label}</p>
                     <p className="mb-3 font-inter text-xs text-dark-4">Elige tu horario · 7 cupos por clase</p>
                     <div className="grid grid-cols-3 gap-2 sm:grid-cols-4">
-                      {selectedDate.slots.map((s) => {
+                      {selectedDate.slots.map((s, idx) => {
                         const full = s.rem <= 0;
                         const sel = hora === s.t;
                         const low = !full && s.rem <= 2;
                         return (
                           <button
-                            key={s.t}
+                            key={s.scheduleId ?? `${s.t}-${idx}`}
                             type="button"
                             disabled={full}
                             onClick={() => pickSlot(s)}
+                            data-schedule-id={s.scheduleId}
                             className={`flex flex-col items-center gap-0.5 rounded-[11px] border px-2 py-2.5 transition ${
                               full ? "cursor-not-allowed border-dashed border-stroke bg-neutral-1"
                               : sel ? "border-primary bg-primary/8 shadow-[0_0_0_3px_rgba(174,94,171,0.13)]"
