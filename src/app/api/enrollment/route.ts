@@ -68,6 +68,73 @@ const GENERATE_ENROLLMENT = `
   }
 `;
 
+const UPDATE_SHOPPING_CART = `
+  mutation UpdateShoppingCart($input: UpdateShoppingCartInput!) {
+    updateShoppingCart(input: $input) { id }
+  }
+`;
+
+const GET_SESSION_DETAIL = `
+  query GetSessionDetail($id: ID!) {
+    getSessionDetail(id: $id) {
+      id
+      enrollmentSessionDetailsId
+    }
+  }
+`;
+
+const UPDATE_ENROLLMENT = `
+  mutation UpdateEnrollment($input: UpdateEnrollmentInput!) {
+    updateEnrollment(input: $input) { id }
+  }
+`;
+
+/**
+ * Parses the raw string returned by generateEnrollment.
+ * The Lambda returns a string shaped like:
+ *   {statusCode=200, body={sessions=[{id=abc, ...}], cartId=xyz}}
+ * We do a best-effort JSON parse after normalising the format.
+ */
+function parseGenerateEnrollmentResponse(raw: string): {
+  statusCode: number;
+  cartId: string | null;
+  sessions: Array<{ id: string }>;
+} | null {
+  try {
+    // Replace = separators with : to make it JSON-like, then wrap values
+    // The string may be in Java Map toString format or already JSON.
+    // Try direct JSON parse first (in case it is proper JSON).
+    const attemptJson = raw.trim();
+    if (attemptJson.startsWith("{")) {
+      // Normalise Java/Groovy Map format: {key=value, ...} → {"key":"value", ...}
+      // 1. Replace top-level key=value pairs (non-nested)
+      const normalised = attemptJson
+        // Replace `=` used as key-value separator with `:`
+        .replace(/([{,]\s*)([a-zA-Z_][a-zA-Z0-9_]*)=/g, '$1"$2":')
+        // Wrap unquoted scalar values that follow `:` — but only non-{ non-[ values
+        .replace(/:\s*([^",\[\]{}\s][^,\[\]{}]*?)(?=[,}\]])/g, (_, v) => {
+          const trimmed = v.trim();
+          // Already quoted or numeric-ish
+          if (/^-?\d+(\.\d+)?$/.test(trimmed)) return `: ${trimmed}`;
+          return `: "${trimmed}"`;
+        });
+      const parsed = JSON.parse(normalised);
+      const body = parsed.body ?? parsed;
+      const sessions = Array.isArray(body?.sessions)
+        ? (body.sessions as Array<{ id: string }>)
+        : [];
+      return {
+        statusCode: Number(parsed.statusCode ?? 200),
+        cartId: body?.cartId ?? null,
+        sessions,
+      };
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -143,10 +210,92 @@ export async function POST(request: NextRequest) {
       },
     );
 
+    // ── Pasos post-enrollment (fallos no cancelan el enrollment) ──
+    const rawEnrollment = enrollmentResult?.generateEnrollment;
+    const postSteps: {
+      cartUpdated: boolean;
+      enrollmentUpdated: boolean;
+      cartId: string | null;
+      sessionId: string | null;
+      enrollmentId: string | null;
+      errors: string[];
+    } = {
+      cartUpdated: false,
+      enrollmentUpdated: false,
+      cartId: null,
+      sessionId: null,
+      enrollmentId: null,
+      errors: [],
+    };
+
+    // Paso 4: Parsear respuesta de generateEnrollment
+    const parsed = typeof rawEnrollment === "string"
+      ? parseGenerateEnrollmentResponse(rawEnrollment)
+      : null;
+
+    if (!parsed) {
+      postSteps.errors.push("No se pudo parsear la respuesta de generateEnrollment");
+    } else {
+      postSteps.cartId = parsed.cartId;
+      postSteps.sessionId = parsed.sessions?.[0]?.id ?? null;
+
+      // Paso 5: updateShoppingCart con status AUTHORIZED
+      if (parsed.cartId) {
+        try {
+          await appsyncMutation(UPDATE_SHOPPING_CART, {
+            input: { id: parsed.cartId, status: "AUTHORIZED" },
+          });
+          postSteps.cartUpdated = true;
+        } catch (cartErr) {
+          const msg = cartErr instanceof Error ? cartErr.message : String(cartErr);
+          console.error("[api/enrollment] updateShoppingCart error:", msg);
+          postSteps.errors.push(`updateShoppingCart: ${msg}`);
+        }
+      } else {
+        postSteps.errors.push("cartId no disponible para updateShoppingCart");
+      }
+
+      // Paso 6: Obtener SessionDetail → extraer enrollmentSessionDetailsId
+      const sessionId = parsed.sessions?.[0]?.id;
+      if (sessionId) {
+        try {
+          const sessionDetailResult = await appsyncMutation<{
+            getSessionDetail: { id: string; enrollmentSessionDetailsId: string | null } | null;
+          }>(GET_SESSION_DETAIL, { id: sessionId });
+
+          const enrollmentId = sessionDetailResult?.getSessionDetail?.enrollmentSessionDetailsId ?? null;
+          postSteps.enrollmentId = enrollmentId;
+
+          // Paso 7: updateEnrollment con wasPaid: true
+          if (enrollmentId) {
+            try {
+              await appsyncMutation(UPDATE_ENROLLMENT, {
+                input: { id: enrollmentId, wasPaid: "true" },
+              });
+              postSteps.enrollmentUpdated = true;
+            } catch (enrollErr) {
+              const msg = enrollErr instanceof Error ? enrollErr.message : String(enrollErr);
+              console.error("[api/enrollment] updateEnrollment error:", msg);
+              postSteps.errors.push(`updateEnrollment: ${msg}`);
+            }
+          } else {
+            postSteps.errors.push("enrollmentSessionDetailsId no disponible en SessionDetail");
+          }
+        } catch (sessionErr) {
+          const msg = sessionErr instanceof Error ? sessionErr.message : String(sessionErr);
+          console.error("[api/enrollment] getSessionDetail error:", msg);
+          postSteps.errors.push(`getSessionDetail: ${msg}`);
+        }
+      } else {
+        postSteps.errors.push("sessions[0].id no disponible para getSessionDetail");
+      }
+    }
+
     return NextResponse.json({
       success: true,
       studentId,
-      enrollmentResult: enrollmentResult?.generateEnrollment,
+      enrollmentResult: rawEnrollment,
+      postEnrollment: postSteps,
     });
   } catch (err) {
     console.error("[api/enrollment] error:", err);
