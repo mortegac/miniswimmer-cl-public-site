@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import { appsyncQueryAll } from "@/lib/appsync";
 
 /* ── Constantes de negocio ── */
 const CUPO_TOTAL = 7;
@@ -55,18 +54,45 @@ const JUNE_2026 = [
   { week: 4, dates: [{ dow:"Viernes",d:26 },{ dow:"Sábado",d:27 },{ dow:"Domingo",d:28 }] },
 ];
 
+/* ── AppSync v1 client ── */
+const V1_ENDPOINT =
+  "https://m2hmnszh4je2rk3mdemcrudxw4.appsync-api.us-east-2.amazonaws.com/graphql";
+const V1_API_KEY = "da2-ccnqqjpecvc33ijvwiphn2gjku";
+
+async function v1QueryAll<T>(
+  query: string,
+  variables: Record<string, unknown>,
+  getPage: (data: unknown) => { items: T[]; nextToken?: string | null },
+): Promise<T[]> {
+  const all: T[] = [];
+  let nextToken: string | null = null;
+  do {
+    const res = await fetch(V1_ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-api-key": V1_API_KEY,
+      },
+      body: JSON.stringify({ query, variables: { ...variables, nextToken } }),
+      cache: "no-store",
+    });
+    const json = (await res.json()) as { data?: unknown; errors?: { message: string }[] };
+    if (json.errors?.length) throw new Error(json.errors[0].message);
+    const page = getPage(json.data);
+    all.push(...page.items);
+    nextToken = page.nextToken ?? null;
+  } while (nextToken);
+  return all;
+}
+
 /* ── GraphQL ── */
 const LIST_SESSION_DETAILS = /* GraphQL */ `
-  query ListV2SessionDetailsByCourse(
-    $filter: ModelV2SessionDetailFilterInput
+  query ListSessionDetailsByCourse(
+    $filter: ModelSessionDetailFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listV2SessionDetails(
-      filter: $filter
-      limit: $limit
-      nextToken: $nextToken
-    ) {
+    listSessionDetails(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         date
@@ -126,7 +152,7 @@ export async function GET(request: NextRequest) {
   let enrolledByDate: Record<string, number> = {};
 
   try {
-    const items = await appsyncQueryAll<SessionDetailItem>(
+    const items = await v1QueryAll<SessionDetailItem>(
       LIST_SESSION_DETAILS,
       {
         filter: {
@@ -136,7 +162,9 @@ export async function GET(request: NextRequest) {
         },
         limit: 1000,
       },
-      (data: any) => data?.listV2SessionDetails ?? { items: [], nextToken: null },
+      (data: unknown) =>
+        (data as { listSessionDetails?: { items: SessionDetailItem[]; nextToken?: string | null } })
+          ?.listSessionDetails ?? { items: [], nextToken: null },
     );
 
     /* 2. Agrupar por fecha (YYYY-MM-DD) y contar */
