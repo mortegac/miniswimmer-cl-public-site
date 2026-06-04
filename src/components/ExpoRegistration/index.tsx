@@ -131,7 +131,7 @@ interface ExpoRegistrationProps { email: string; name: string; }
 
 const ExpoRegistration = ({ email, name }: ExpoRegistrationProps) => {
   const router = useRouter();
-  const [checkStatus, setCheckStatus] = useState<"checking" | "ok" | "not-found" | "error">("checking");
+  const [checkStatus, setCheckStatus] = useState<"checking" | "ok" | "not-found" | "already-enrolled" | "error">("checking");
   const [countdown, setCountdown] = useState(10);
 
   const [schedule, setSchedule] = useState<Week[]>([]);
@@ -201,7 +201,13 @@ const ExpoRegistration = ({ email, name }: ExpoRegistrationProps) => {
     })
       .then((r) => r.json())
       .then((data) => {
-        setCheckStatus(data.exists ? "ok" : "not-found");
+        if (!data.exists) {
+          setCheckStatus("not-found");
+        } else if (data.alreadyEnrolled) {
+          setCheckStatus("already-enrolled");
+        } else {
+          setCheckStatus("ok");
+        }
       })
       .catch(() => {
         // Si hay error de red, permitir continuar para no bloquear el flujo
@@ -343,6 +349,35 @@ const ExpoRegistration = ({ email, name }: ExpoRegistrationProps) => {
         <div className="text-center">
           <div className="mx-auto mb-4 h-10 w-10 animate-spin rounded-full border-4 border-primary border-t-transparent" />
           <p className="font-inter text-sm text-body">Verificando acceso...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Pantalla inscripción duplicada — bloqueante, sin redirect
+  if (checkStatus === "already-enrolled") {
+    return (
+      <div className="flex min-h-[60vh] items-center justify-center px-4">
+        <div className="w-full max-w-sm rounded-10 bg-white p-8 text-center shadow-features">
+          <div className="mb-4 text-5xl">⛔</div>
+          <h2 className="mb-3 font-satoshi text-xl font-bold text-dark">
+            Ya reservaste tu clase gratis
+          </h2>
+          <p className="mb-6 font-inter text-sm text-body leading-relaxed">
+            Este email ya tiene una inscripción activa en nuestra promoción ExpoBebé.
+            Si necesitas ayuda, contacta a nuestro equipo de ventas.
+          </p>
+          <a
+            href={WHATSAPP}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-inter text-sm font-semibold text-white hover:opacity-90 transition"
+          >
+            <svg width={18} height={18} viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2zm4.4 14c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.5-.2-.3.2-.3.5-.9.1-.1 0-.3 0-.4l-.7-1.6c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.7.7-.9 1.7-.2 2.9.7 1.2 1.7 2.4 3.4 3.1 1.7.7 1.7.5 2 .5.4 0 1.2-.5 1.4-1 .2-.5.2-.9.1-1-.1-.1-.2-.2-.4-.3z" />
+            </svg>
+            Contactar equipo de ventas
+          </a>
         </div>
       </div>
     );
