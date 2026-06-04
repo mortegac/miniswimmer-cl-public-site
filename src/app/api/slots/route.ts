@@ -97,6 +97,7 @@ const LIST_SESSION_DETAILS = /* GraphQL */ `
         id
         date
         courseId
+        scheduleId
         status
       }
       nextToken
@@ -108,6 +109,7 @@ interface SessionDetailItem {
   id: string;
   date: string;       // ISO datetime "2026-06-05T..."
   courseId: string;
+  scheduleId?: string;
   status: string;
 }
 
@@ -126,19 +128,13 @@ function isoDateOnly(datetimeStr: string): string {
   return datetimeStr.slice(0, 10);
 }
 
-/* Distribuye inscritos entre slots y calcula remaining */
+/* Calcula remaining por slot usando el scheduleId exacto */
 function buildSlots(
   schedules: SlotEntry[],
-  enrolledTotal: number,
+  enrolledBySchedule: Record<string, number>,
 ): { t: string; rem: number; scheduleId?: string }[] {
-  const n = schedules.length;
-  if (n === 0) return [];
-
-  const enrolledPerSlot = Math.floor(enrolledTotal / n);
-  const extra = enrolledTotal % n;
-
-  return schedules.map((s, i) => {
-    const enrolled = enrolledPerSlot + (i < extra ? 1 : 0);
+  return schedules.map((s) => {
+    const enrolled = s.scheduleId ? (enrolledBySchedule[s.scheduleId] ?? 0) : 0;
     return { t: s.t, rem: Math.max(0, CUPO_TOTAL - enrolled), scheduleId: s.scheduleId };
   });
 }
@@ -149,7 +145,8 @@ export async function GET(request: NextRequest) {
   const courseId = COURSE_IDS[tipo] ?? COURSE_IDS.bebe;
 
   /* 1. Traer todos los SessionDetails del curso en junio 2026 */
-  let enrolledByDate: Record<string, number> = {};
+  // date → scheduleId → count
+  let enrolledMap: Record<string, Record<string, number>> = {};
 
   try {
     const items = await v1QueryAll<SessionDetailItem>(
@@ -167,15 +164,17 @@ export async function GET(request: NextRequest) {
           ?.listSessionDetails ?? { items: [], nextToken: null },
     );
 
-    /* 2. Agrupar por fecha (YYYY-MM-DD) y contar */
+    /* 2. Agrupar por fecha + scheduleId */
     for (const item of items) {
+      // Las fechas se guardan en UTC ("2026-06-20T00:00:00.000Z") → tomamos los primeros 10 chars
       const dateKey = isoDateOnly(item.date);
-      enrolledByDate[dateKey] = (enrolledByDate[dateKey] ?? 0) + 1;
+      const sid = item.scheduleId ?? "__unknown__";
+      if (!enrolledMap[dateKey]) enrolledMap[dateKey] = {};
+      enrolledMap[dateKey][sid] = (enrolledMap[dateKey][sid] ?? 0) + 1;
     }
   } catch (err) {
     console.error("[api/slots] AppSync error:", err);
-    /* Si falla la query, devuelve datos sin cupos para no romper la UI */
-    enrolledByDate = {};
+    enrolledMap = {};
   }
 
   /* 3. Construir estructura de semanas/fechas con cupos reales */
@@ -185,9 +184,10 @@ export async function GET(request: NextRequest) {
       .map((dt) => {
         const iso = isoForDay(dt.d);
         const schedules = schedulesForDate(dt.dow, iso, tipo);
-        const enrolled = enrolledByDate[iso] ?? 0;
-        const slots = buildSlots(schedules, enrolled);
+        const enrolledBySchedule = enrolledMap[iso] ?? {};
+        const slots = buildSlots(schedules, enrolledBySchedule);
         const totalRem = slots.reduce((acc, s) => acc + s.rem, 0);
+        const totalEnrolled = Object.values(enrolledBySchedule).reduce((a, b) => a + b, 0);
 
         return {
           dow: dt.dow,
@@ -196,7 +196,7 @@ export async function GET(request: NextRequest) {
           label: `${dt.dow} ${dt.d} de junio`,
           slots,
           totalRem,
-          enrolled,
+          enrolled: totalEnrolled,
         };
       });
 
