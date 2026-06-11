@@ -153,41 +153,6 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* ExpoBebé 2026 banner — max 1170px centered */}
-      <section className="overflow-hidden">
-        <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">
-          <a href="/expo-bebe-2026" className="block overflow-hidden rounded-lg">
-            <img
-              src="/images/blog/miniswimmer-blog-22-vive-la-experiencia-miniswimmer-en-expo-bebe-2026-concurso.png"
-              alt="Vive la experiencia Miniswimmer en Expo Bebé 2026 — Concursa por entradas gratis"
-              className="h-[200px] w-full object-cover object-center sm:h-[260px] lg:h-[320px]"
-            />
-          </a>
-        </div>
-        {/* CTA strip */}
-        <div className="bg-[rgb(14,23,43)] px-6 py-4">
-          <div className="mx-auto flex w-full max-w-[1170px] flex-col items-center justify-between gap-4 sm:flex-row">
-            <p className="font-inter text-[1.5rem] font-semibold text-white">
-              🎟️ Quieres ganar entradas gratis para ExpoBebé 2026
-            </p>
-            <div className="flex shrink-0 gap-3">
-              <a
-                href="/blog/guia-completa-expobebe-2026"
-                className="rounded-full border border-white px-5 py-2 font-inter text-sm font-semibold text-white transition-colors hover:bg-white hover:text-primary"
-              >
-                Leer la guía
-              </a>
-              <a
-                href="/expo-bebe-2026"
-                className="rounded-full bg-white px-5 py-2 font-inter text-[1.1rem] font-semibold text-primary transition-opacity hover:opacity-90"
-              >
-                Concursa Aqui
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Articles grid */}
       <section className="py-16 lg:py-24">
         <div className="mx-auto w-full max-w-[1170px] px-4 sm:px-8 xl:px-0">

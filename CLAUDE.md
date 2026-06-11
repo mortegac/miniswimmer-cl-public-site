@@ -29,6 +29,18 @@ yarn test-build       # check-style + build
 
 > Install: `yarn install --legacy-peer-deps` (required due to React 19 peer dep conflicts)
 
+## Pre-Push Build Gate (CRITICAL)
+
+**NEVER push to git remote without first running a successful build.**
+
+```bash
+yarn build   # must complete with zero errors before any git push
+```
+
+- If the build fails, fix all errors before pushing.
+- Do not skip this step even for "small" or "safe" changes — TypeScript and Next.js catch issues at build time that are invisible in dev mode.
+- Use `yarn test-build` (check-style + build) as the full pre-deploy check when time allows.
+
 ## Architecture
 
 **Next.js 15 App Router** with TypeScript, Tailwind CSS, and next-intl for i18n.
