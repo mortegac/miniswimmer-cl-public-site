@@ -18,18 +18,13 @@ const RELACIONES = ["Mamá", "Papá", "Abuela", "Abuelo", "Otro"] as const;
 /* Lookup: día de semana + hora → scheduleId (bebé) */
 const SCHEDULE_LOOKUP: Record<string, { t: string; id: string }[]> = {
   Viernes: [
-    { t: "10:00", id: "b1c0676b-13b2-4cc9-933a-960721713dda" },
     { t: "10:30", id: "f7f21ba2-93f5-4fb2-8ff2-52c264709455" },
     { t: "11:00", id: "9099a579-d793-4849-86f1-76c7d8df1373" },
     { t: "11:30", id: "8d9f4e94-42a6-4018-b10d-5934d82b55e9" },
-    { t: "13:30", id: "975d6856-d33f-444e-b46f-38e6346e63be" },
-    { t: "15:00", id: "2c1cc4c2-1a37-4915-86ad-08121d7bc0a4" },
-    { t: "15:40", id: "2f24853d-2397-414c-a4bf-9e0cf04ed808" },
     { t: "16:00", id: "a3b52d49-d6a4-4466-a56d-bdfd67886f25" },
     { t: "16:30", id: "ce3a2d94-967c-4d8f-b3e6-61386868d399" },
     { t: "17:10", id: "cf9e59e3-0a47-4138-a22e-53601054809c" },
     { t: "17:50", id: "f1c75c34-2be2-4717-9a74-895ae316501a" },
-    { t: "18:30", id: "1dd4ef94-0fea-4e89-9c47-e2dcf2597b4b" },
   ],
   Sábado: [
     { t: "13:30", id: "24ab9864-e872-4e9b-8dec-210da47916db" },
