@@ -1,14 +1,43 @@
-# Allow all crawlers
+# Miniswimmer.cl — robots.txt
+# https://www.miniswimmer.cl
+
+# ── Regla general: permitir todo ──
 User-agent: *
 Allow: /
 
-# Sitemap location
-Sitemap: https://miniswimmer.cl/sitemap.xml
-
-# Disallow admin and api routes
+# Rutas sin valor SEO (formularios, auth, errores)
 Disallow: /api/
 Disallow: /admin/
-Disallow: /_next/
-Disallow: /static/
+Disallow: /expo-registration
 Disallow: /registration
 Disallow: /reagendamiento
+Disallow: /403
+
+# ── Bots de IA: permitidos para visibilidad de marca ──
+# Citaciones en ChatGPT, Perplexity y AI Overviews benefician a la marca
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Bloquear entrenamiento Gemini (no afecta Google Search ni AI Overviews)
+User-agent: Google-Extended
+Disallow: /
+
+# Bloquear scrapers de entrenamiento sin beneficio de visibilidad
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# ── Sitemap ──
+Sitemap: https://www.miniswimmer.cl/sitemap.xml
