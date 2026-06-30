@@ -8,7 +8,6 @@ Allow: /
 # Rutas sin valor SEO (formularios, auth, errores)
 Disallow: /api/
 Disallow: /admin/
-Disallow: /expo-registration
 Disallow: /registration
 Disallow: /reagendamiento
 Disallow: /403
