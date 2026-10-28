@@ -158,10 +158,6 @@ const staticCategories: SitemapCategory[] = [
         href: "/miniswimmer-vs-salmon-swim",
       },
       {
-        label: "Miniswimmer vs Color Splash",
-        href: "/miniswimmer-vs-color-splash",
-      },
-      {
         label: "Miniswimmer vs Piscina Municipal Peñalolén",
         href: "/miniswimmer-vs-piscina-municipal-penalolen",
       },
