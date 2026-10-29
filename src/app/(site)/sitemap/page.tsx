@@ -147,39 +147,6 @@ const staticCategories: SitemapCategory[] = [
     ],
   },
   {
-    title: "Miniswimmer vs Competidores",
-    description: "Comparativas con otras escuelas de natación",
-    icon: "⚡",
-    iconBg: "bg-purple-50 dark:bg-purple-900/20",
-    pages: [
-      { label: "Miniswimmer vs Aqualuz", href: "/miniswimmer-vs-aqualuz" },
-      {
-        label: "Miniswimmer vs Salmon Swim",
-        href: "/miniswimmer-vs-salmon-swim",
-      },
-      {
-        label: "Miniswimmer vs Piscina Municipal Peñalolén",
-        href: "/miniswimmer-vs-piscina-municipal-penalolen",
-      },
-      {
-        label: "Miniswimmer vs Atrévete y Sumérgate",
-        href: "/miniswimmer-vs-atrevete-y-sumergete",
-      },
-      {
-        label: "Miniswimmer vs Acquatiempo",
-        href: "/miniswimmer-vs-acquatiempo",
-      },
-      {
-        label: "Miniswimmer vs Le Corps Flottant",
-        href: "/miniswimmer-vs-le-corps-flottant",
-      },
-      {
-        label: "Miniswimmer vs Club Recrear",
-        href: "/miniswimmer-vs-club-recrear",
-      },
-    ],
-  },
-  {
     title: "Eventos",
     description: "Miniswimmer en ferias y eventos nacionales",
     icon: "🎪",
